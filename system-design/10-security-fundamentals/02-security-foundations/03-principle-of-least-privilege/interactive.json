@@ -1,0 +1,92 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main goal of the Principle of Least Privilege?",
+      "answers": [
+        {
+          "answer": "To ensure users have maximum access to resources",
+          "correct": false
+        },
+        {
+          "answer": "To minimize accidental or malicious misuse of resources",
+          "correct": true
+        },
+        {
+          "answer": "To provide equal access to all users",
+          "correct": false
+        },
+        {
+          "answer": "To simplify user management by providing generic access",
+          "correct": false
+        }
+      ],
+      "explanation": "The Principle of Least Privilege aims to minimize the risk of misuse by ensuring users and systems have only the access necessary for their tasks."
+    },
+    {
+      "question": "Which of the following best describes how permissions should be assigned according to the Principle of Least Privilege?",
+      "answers": [
+        {
+          "answer": "Broad permissions to ensure task completion",
+          "correct": false
+        },
+        {
+          "answer": "Permissions based on group rather than individual roles",
+          "correct": false
+        },
+        {
+          "answer": "Minimal necessary permissions to perform tasks",
+          "correct": true
+        },
+        {
+          "answer": "Permissions should be the same for all users",
+          "correct": false
+        }
+      ],
+      "explanation": "Permissions should be limited to what is necessary for the task to reduce security vulnerabilities, in line with the Principle of Least Privilege."
+    },
+    {
+      "question": "Which of the access levels best represents the Principle of Least Privilege?",
+      "answers": [
+        {
+          "answer": "Admin Access",
+          "correct": false
+        },
+        {
+          "answer": "Read-Only Access",
+          "correct": true
+        },
+        {
+          "answer": "No Access",
+          "correct": false
+        },
+        {
+          "answer": "All Access",
+          "correct": false
+        }
+      ],
+      "explanation": "Read-Only Access represents a practical example of granting just enough access to complete a task, aligning with the Principle of Least Privilege."
+    },
+    {
+      "question": "What is a potential consequence of overlooking the Principle of Least Privilege?",
+      "answers": [
+        {
+          "answer": "Increased system responsiveness",
+          "correct": false
+        },
+        {
+          "answer": "Unauthorized access and potential data breaches",
+          "correct": true
+        },
+        {
+          "answer": "Improved user satisfaction",
+          "correct": false
+        },
+        {
+          "answer": "Simplified permissions management",
+          "correct": false
+        }
+      ],
+      "explanation": "Failure to adhere to the Principle of Least Privilege can lead to unauthorized access and data breaches due to unnecessarily broad access."
+    }
+  ]
+}

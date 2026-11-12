@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "Which of these are included in our CI pipeline?",
+      "answers": [
+        {
+          "answer": "Lint checks, unit tests, and golden tests",
+          "correct": true
+        },
+        {
+          "answer": "Only unit tests",
+          "correct": false
+        },
+        {
+          "answer": "Only deployment steps",
+          "correct": false
+        },
+        {
+          "answer": "Database migrations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why do we separate golden tests from other tests in the CI pipeline?",
+      "answers": [
+        {
+          "answer": "Because they're not important",
+          "correct": false
+        },
+        {
+          "answer": "As sometimes golden test can require special handling per platform",
+          "correct": true
+        },
+        {
+          "answer": "Because they only run on production",
+          "correct": false
+        },
+        {
+          "answer": "To save money on CI costs",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

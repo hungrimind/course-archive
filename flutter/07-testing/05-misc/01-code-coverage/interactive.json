@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "What is code coverage primarily used for?",
+      "answers": [
+        {
+          "answer": "To make code run faster",
+          "correct": false
+        },
+        {
+          "answer": "To measure how much of your code is being tested",
+          "correct": true
+        },
+        {
+          "answer": "To find runtime errors",
+          "correct": false
+        },
+        {
+          "answer": "To optimize build times",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command generates coverage reports in Flutter?",
+      "answers": [
+        {
+          "answer": "flutter coverage",
+          "correct": false
+        },
+        {
+          "answer": "flutter test --coverage",
+          "correct": true
+        },
+        {
+          "answer": "flutter analyze",
+          "correct": false
+        },
+        {
+          "answer": "flutter test --report",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What file is generated when running coverage tests?",
+      "answers": [
+        {
+          "answer": "coverage.json",
+          "correct": false
+        },
+        {
+          "answer": "test-report.xml",
+          "correct": false
+        },
+        {
+          "answer": "lcov.info",
+          "correct": true
+        },
+        {
+          "answer": "coverage.html",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the HTML coverage report, what does a red line indicate?",
+      "answers": [
+        {
+          "answer": "Code that causes errors",
+          "correct": false
+        },
+        {
+          "answer": "Code that runs slowly",
+          "correct": false
+        },
+        {
+          "answer": "Uncovered lines of code",
+          "correct": true
+        },
+        {
+          "answer": "Deprecated code",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

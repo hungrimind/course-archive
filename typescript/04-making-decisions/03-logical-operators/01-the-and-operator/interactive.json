@@ -1,0 +1,24 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const age: number = 20;\nconst hasTicket: boolean = true;\n\nif (age >= 18 "
+      },
+      {
+        "type": "blank",
+        "answer": "&&"
+      },
+      {
+        "type": "code",
+        "value": " hasTicket) {\n  console.log(\"Enjoy the show!\");\n}"
+      }
+    ],
+    "options": [
+      "||",
+      "!",
+      "&"
+    ]
+  }
+}

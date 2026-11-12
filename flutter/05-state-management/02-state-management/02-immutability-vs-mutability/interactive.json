@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main benefit of immutability in Flutter?",
+      "answers": [
+        {
+          "answer": "It makes the code run faster",
+          "correct": false
+        },
+        {
+          "answer": "It makes state changes more predictable and consistent",
+          "correct": true
+        },
+        {
+          "answer": "It reduces memory usage",
+          "correct": false
+        },
+        {
+          "answer": "It makes the code shorter",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How can you make a variable immutable in Dart?",
+      "answers": [
+        {
+          "answer": "Use the static keyword",
+          "correct": false
+        },
+        {
+          "answer": "Use the const or final keyword",
+          "correct": true
+        },
+        {
+          "answer": "Use the immutable keyword",
+          "correct": false
+        },
+        {
+          "answer": "Make it private with an underscore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In Flutter, widgets are:",
+      "answers": [
+        {
+          "answer": "Mutable by default",
+          "correct": false
+        },
+        {
+          "answer": "Immutable by default, and updates happen through rebuilding",
+          "correct": true
+        },
+        {
+          "answer": "Both mutable and immutable depending on the context",
+          "correct": false
+        },
+        {
+          "answer": "Neither mutable nor immutable",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

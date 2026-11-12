@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A system with 99.9% availability is expected to have approximately 4.3 hours of downtime per month.",
+        "correct": false,
+        "explanation": "A system with 99.9% availability is expected to have about 43 minutes of downtime per month, not 4.3 hours."
+      },
+      {
+        "statement": "Redundancy can help improve a system's availability by having multiple instances to handle requests.",
+        "correct": true,
+        "explanation": "Redundancy increases availability by ensuring that if one instance fails, others can take over and continue serving requests."
+      },
+      {
+        "statement": "Failover mechanisms automatically switch to a backup system to improve reliability when the primary system fails.",
+        "correct": true,
+        "explanation": "Failover enhances reliability by automatically redirecting traffic to a different instance, ensuring continuous availability even if the main instance fails."
+      },
+      {
+        "statement": "Adding a single load balancer is not effective in improving system availability.",
+        "correct": false,
+        "explanation": "Adding a load balancer helps distribute requests efficiently across multiple instances, enhancing system availability by preventing overload on a single instance."
+      }
+    ]
+  }
+}

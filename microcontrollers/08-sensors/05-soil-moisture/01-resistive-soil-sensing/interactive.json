@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "How does a resistive soil moisture sensor detect moisture levels?",
+      "answers": [
+        {
+          "answer": "It measures the temperature difference between the probes",
+          "correct": false
+        },
+        {
+          "answer": "It measures the resistance between two metal probes; wet soil conducts better, so resistance drops",
+          "correct": true
+        },
+        {
+          "answer": "It detects water molecules using an infrared beam between the probes",
+          "correct": false
+        },
+        {
+          "answer": "It weighs the soil sample using a built-in load cell",
+          "correct": false
+        }
+      ],
+      "explanation": "The sensor works by measuring electrical resistance between its two exposed metal probes. Wet soil conducts electricity better than dry soil, causing the resistance to drop as moisture increases."
+    },
+    {
+      "question": "Why do you need to calibrate a resistive soil moisture sensor yourself?",
+      "answers": [
+        {
+          "answer": "Because each sensor has a different operating voltage",
+          "correct": false
+        },
+        {
+          "answer": "Because the exact analog values depend on your specific soil type",
+          "correct": true
+        },
+        {
+          "answer": "Because the ADC needs a firmware update for each sensor model",
+          "correct": false
+        },
+        {
+          "answer": "Because the probes must be trimmed to match your pot size",
+          "correct": false
+        }
+      ],
+      "explanation": "Different soil types produce different resistance values at the same moisture level, so you need to test with your own soil in both dry and wet conditions to know what the readings mean."
+    },
+    {
+      "question": "What is the main drawback of resistive soil sensors for long-term projects?",
+      "answers": [
+        {
+          "answer": "They consume too much power for battery operation",
+          "correct": false
+        },
+        {
+          "answer": "They can only measure sandy soil types",
+          "correct": false
+        },
+        {
+          "answer": "The metal probes corrode over time because current flows through wet soil",
+          "correct": true
+        },
+        {
+          "answer": "They require recalibration every 24 hours",
+          "correct": false
+        }
+      ],
+      "explanation": "Because current constantly flows between the probes through wet soil, the metal corrodes over time. For long-term projects, capacitive soil sensors are a better choice."
+    }
+  ]
+}

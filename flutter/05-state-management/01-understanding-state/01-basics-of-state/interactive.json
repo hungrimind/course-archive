@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is Ephemeral State in Flutter?",
+      "answers": [
+        {
+          "answer": "State that is shared between multiple widgets",
+          "correct": false
+        },
+        {
+          "answer": "State contained within a single widget",
+          "correct": true
+        },
+        {
+          "answer": "State that only exists temporarily",
+          "correct": false
+        },
+        {
+          "answer": "State that cannot be modified",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does setState() do in Flutter?",
+      "answers": [
+        {
+          "answer": "It only updates variable values",
+          "correct": false
+        },
+        {
+          "answer": "It directly modifies the UI elements",
+          "correct": false
+        },
+        {
+          "answer": "It notifies the framework that state has changed and schedules a rebuild",
+          "correct": true
+        },
+        {
+          "answer": "It creates new widget instances",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these is an example of App State?",
+      "answers": [
+        {
+          "answer": "Current page in a PageView",
+          "correct": false
+        },
+        {
+          "answer": "A local counter value",
+          "correct": false
+        },
+        {
+          "answer": "Authentication/login information",
+          "correct": true
+        },
+        {
+          "answer": "Current scroll position",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

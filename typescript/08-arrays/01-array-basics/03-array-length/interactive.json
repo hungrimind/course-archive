@@ -1,0 +1,24 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const fruits = [\"apple\", \"banana\", \"cherry\"];\nconst last = fruits[fruits."
+      },
+      {
+        "type": "blank",
+        "answer": "length"
+      },
+      {
+        "type": "code",
+        "value": " - 1];\nconsole.log(last); // \"cherry\""
+      }
+    ],
+    "options": [
+      "size",
+      "count",
+      "indexOf"
+    ]
+  }
+}

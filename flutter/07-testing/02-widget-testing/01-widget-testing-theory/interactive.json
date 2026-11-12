@@ -1,0 +1,109 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main difference between unit tests and widget tests?",
+      "answers": [
+        {
+          "answer": "Widget tests are faster than unit tests",
+          "correct": false
+        },
+        {
+          "answer": "Widget tests don't require any special setup",
+          "correct": false
+        },
+        {
+          "answer": "Unit tests are only for UI testing",
+          "correct": false
+        },
+        {
+          "answer": "Widget tests verify UI and behavior, while unit tests verify input and output",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which function is used for widget testing?",
+      "answers": [
+        {
+          "answer": "test",
+          "correct": false
+        },
+        {
+          "answer": "widgetTest",
+          "correct": false
+        },
+        {
+          "answer": "testWidgets",
+          "correct": true
+        },
+        {
+          "answer": "uiTest",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why do we need to call pump() after interactions?",
+      "answers": [
+        {
+          "answer": "To render the next frame in the simulated environment",
+          "correct": true
+        },
+        {
+          "answer": "To make the test run faster",
+          "correct": false
+        },
+        {
+          "answer": "To clear the widget tree",
+          "correct": false
+        },
+        {
+          "answer": "To reset the test environment",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of pumpAndSettle()?",
+      "answers": [
+        {
+          "answer": "To reset the widget tree",
+          "correct": false
+        },
+        {
+          "answer": "To find widgets on the screen",
+          "correct": false
+        },
+        {
+          "answer": "To simulate user interactions",
+          "correct": false
+        },
+        {
+          "answer": "To wait for all animations, transitions and pending work to complete",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which matcher would you use to verify that exactly one widget exists?",
+      "answers": [
+        {
+          "answer": "findsWidgets",
+          "correct": false
+        },
+        {
+          "answer": "findsNothing",
+          "correct": false
+        },
+        {
+          "answer": "findsOneWidget",
+          "correct": true
+        },
+        {
+          "answer": "findsNWidgets",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

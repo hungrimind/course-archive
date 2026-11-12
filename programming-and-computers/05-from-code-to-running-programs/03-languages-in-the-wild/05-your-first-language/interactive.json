@@ -1,0 +1,34 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Web Development",
+        "items": [
+          "JavaScript is the go-to choice",
+          "Build interactive websites"
+        ]
+      },
+      {
+        "label": "AI and Data Science",
+        "items": [
+          "Python is the most popular pick",
+          "Analyze data and train models"
+        ]
+      },
+      {
+        "label": "Mobile Apps",
+        "items": [
+          "Swift, Kotlin, or Dart",
+          "Build apps for phones and tablets"
+        ]
+      },
+      {
+        "label": "All Languages",
+        "items": [
+          "Variables, loops, and functions work the same way",
+          "Learning one makes the next much easier"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of mocking in widget tests?",
+      "answers": [
+        {
+          "answer": "To make tests run faster",
+          "correct": false
+        },
+        {
+          "answer": "To test UI layouts",
+          "correct": false
+        },
+        {
+          "answer": "To simulate external dependencies that aren't available during testing",
+          "correct": true
+        },
+        {
+          "answer": "To debug widget tests",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What's the difference between mocking and stubbing?",
+      "answers": [
+        {
+          "answer": "They are exactly the same thing",
+          "correct": false
+        },
+        {
+          "answer": "Stubbing creates the class, while mocking defines the return values",
+          "correct": false
+        },
+        {
+          "answer": "Mocking is for classes, stubbing is for functions",
+          "correct": false
+        },
+        {
+          "answer": "Mocking creates the alternate class, while stubbing defines the return values",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "How do you create a mock class using mocktail?",
+      "answers": [
+        {
+          "answer": "Extend Mock and implement the class you want to mock",
+          "correct": true
+        },
+        {
+          "answer": "Create a new instance of the original class",
+          "correct": false
+        },
+        {
+          "answer": "Copy and paste the original class",
+          "correct": false
+        },
+        {
+          "answer": "Use the @mock annotation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why might you need mocks in a login form widget test?",
+      "answers": [
+        {
+          "answer": "To test the UI layout",
+          "correct": false
+        },
+        {
+          "answer": "To validate form inputs",
+          "correct": false
+        },
+        {
+          "answer": "To simulate authentication service responses without real network calls",
+          "correct": true
+        },
+        {
+          "answer": "To test button clicks",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

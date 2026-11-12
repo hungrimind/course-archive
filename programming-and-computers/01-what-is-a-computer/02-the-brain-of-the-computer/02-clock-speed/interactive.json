@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A 3 GHz CPU performs 3 million operations per second.",
+        "correct": false,
+        "explanation": "GHz means billions, not millions. A 3 GHz CPU gets 3 billion ticks per second."
+      },
+      {
+        "statement": "GHz stands for gigahertz, the unit used to measure a CPU's clock speed.",
+        "correct": true,
+        "explanation": "Gigahertz (GHz) is the standard unit for measuring how many clock ticks a CPU completes per second."
+      },
+      {
+        "statement": "A faster clock speed always means a faster computer overall.",
+        "correct": false,
+        "explanation": "Clock speed is just one factor. Other things like the number of cores, memory speed, and how efficiently the CPU handles instructions also matter."
+      }
+    ]
+  }
+}

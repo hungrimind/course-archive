@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is source code?",
+      "answers": [
+        {
+          "answer": "The physical wires inside a computer",
+          "correct": false
+        },
+        {
+          "answer": "The plain text that programmers write as instructions",
+          "correct": true
+        },
+        {
+          "answer": "A picture of what a program will look like",
+          "correct": false
+        },
+        {
+          "answer": "The electricity that powers a machine",
+          "correct": false
+        }
+      ],
+      "explanation": "Source code is the plain text programmers write. It is readable by humans and becomes the raw instructions a machine runs."
+    },
+    {
+      "question": "Which best describes what source code looks like?",
+      "answers": [
+        {
+          "answer": "Only numbers in long rows",
+          "correct": false
+        },
+        {
+          "answer": "Structured English mixed with symbols and punctuation",
+          "correct": true
+        },
+        {
+          "answer": "Hand-drawn diagrams and charts",
+          "correct": false
+        },
+        {
+          "answer": "Audio recordings of commands",
+          "correct": false
+        }
+      ],
+      "explanation": "Source code reads like structured English combined with symbols and punctuation, making it human-readable while still being runnable by machines."
+    },
+    {
+      "question": "What's the relationship between source code and working programs?",
+      "answers": [
+        {
+          "answer": "Programs and source code are unrelated",
+          "correct": false
+        },
+        {
+          "answer": "Source code replaces the need for programs",
+          "correct": false
+        },
+        {
+          "answer": "Everything a computer does started as someone's source code",
+          "correct": true
+        },
+        {
+          "answer": "Working programs are written without source code",
+          "correct": false
+        }
+      ],
+      "explanation": "Every working program begins as source code. Those text files are the raw instructions that eventually become the software you use."
+    }
+  ]
+}

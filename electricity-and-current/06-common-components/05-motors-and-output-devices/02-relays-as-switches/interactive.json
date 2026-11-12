@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A relay is a switch that is controlled by electricity rather than by hand.",
+        "correct": true,
+        "explanation": "A relay uses a small electrical current through a coil to create a magnetic field that mechanically closes a switch contact, completing a separate circuit."
+      },
+      {
+        "statement": "In a relay, the control signal and the switched circuit share the same current path.",
+        "correct": false,
+        "explanation": "A key advantage of relays is that the control circuit and the switched circuit are separate. A tiny signal can safely control a high-power circuit without the delicate electronics touching the dangerous current."
+      },
+      {
+        "statement": "A microcontroller can use a relay to safely switch on a high-power appliance.",
+        "correct": true,
+        "explanation": "Relays allow a small, low-power signal from a microcontroller to control a separate high-power circuit, keeping the delicate electronics safely isolated."
+      },
+      {
+        "statement": "Relays can only switch low-power devices like LEDs.",
+        "correct": false,
+        "explanation": "Relays are specifically useful for switching high-power devices like motors and appliances. The whole point is that a small signal can control a much larger current."
+      }
+    ]
+  }
+}

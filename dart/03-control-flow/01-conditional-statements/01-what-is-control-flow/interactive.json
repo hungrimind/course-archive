@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the best definition of \"control flow\"?",
+      "answers": [
+        {
+          "answer": "The speed at which a program executes its instructions.",
+          "correct": false
+        },
+        {
+          "answer": "The order in which a program's statements are executed.",
+          "correct": true
+        },
+        {
+          "answer": "The way a program stores variables in memory.",
+          "correct": false
+        },
+        {
+          "answer": "The process of turning source code into a runnable program.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following scenarios is the BEST example of needing to alter a program's control flow?",
+      "answers": [
+        {
+          "answer": "A program that calculates the sum of 5 and 10 and prints the result.",
+          "correct": false
+        },
+        {
+          "answer": "A program that asks for a user's name and then prints a greeting with that name.",
+          "correct": false
+        },
+        {
+          "answer": "A program that checks if a user is over 18 and shows a different message depending on their age.",
+          "correct": true
+        },
+        {
+          "answer": "A program that prints the first three lines of a song.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

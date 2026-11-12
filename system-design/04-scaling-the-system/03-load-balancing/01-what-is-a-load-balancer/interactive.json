@@ -1,0 +1,16 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A load balancer can distribute incoming traffic unevenly across servers to create bottlenecks.",
+        "correct": false,
+        "explanation": "Load balancers are designed to distribute traffic evenly across servers to prevent any single server from becoming a bottleneck and ensure efficient resource utilization."
+      },
+      {
+        "statement": "Load balancers play a critical role in maintaining service availability by redirecting traffic away from servers that have failed.",
+        "correct": true,
+        "explanation": "Load balancers enhance fault tolerance by detecting failed servers and automatically redirecting traffic to operational servers, thus maintaining the availability of the service."
+      }
+    ]
+  }
+}

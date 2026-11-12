@@ -1,0 +1,35 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "function multiplyNumbers(x: number, y: number) {\n  return x * y;\n}\n\nconst result = "
+      },
+      {
+        "type": "blank",
+        "answer": "multiplyNumbers"
+      },
+      {
+        "type": "code",
+        "value": "(4, 3); // Calls the function with 4 and 3 as arguments\n\n// By using a function, we adhere to the "
+      },
+      {
+        "type": "blank",
+        "answer": "D.R.Y."
+      },
+      {
+        "type": "code",
+        "value": " principle and avoid code "
+      },
+      {
+        "type": "blank",
+        "answer": "duplication"
+      },
+      {
+        "type": "code",
+        "value": "."
+      }
+    ]
+  }
+}

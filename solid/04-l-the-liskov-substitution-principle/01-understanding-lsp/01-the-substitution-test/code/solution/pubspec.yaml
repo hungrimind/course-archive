@@ -1,0 +1,7 @@
+name: substitution_test
+description: A small lesson demonstrating the Substitution Test (Liskov Substitution Principle)
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.0

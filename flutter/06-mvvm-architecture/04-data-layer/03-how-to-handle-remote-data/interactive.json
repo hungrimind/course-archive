@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "Why is it important to have local data in most apps?",
+      "answers": [
+        {
+          "answer": "To reduce server costs",
+          "correct": false
+        },
+        {
+          "answer": "To make the app faster",
+          "correct": false
+        },
+        {
+          "answer": "To reduce code complexity",
+          "correct": false
+        },
+        {
+          "answer": "To provide a good user experience when offline or with slow connections",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which apps might NOT need local data storage?",
+      "answers": [
+        {
+          "answer": "Todo list apps",
+          "correct": false
+        },
+        {
+          "answer": "Notes apps",
+          "correct": false
+        },
+        {
+          "answer": "Video call apps",
+          "correct": true
+        },
+        {
+          "answer": "Fitness tracking apps",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the recommended approach for handling data in most apps?",
+      "answers": [
+        {
+          "answer": "Use only remote data",
+          "correct": false
+        },
+        {
+          "answer": "Use only local data",
+          "correct": false
+        },
+        {
+          "answer": "Use direct database connections",
+          "correct": false
+        },
+        {
+          "answer": "Use both local and remote data sources through a repository",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "When using Firestore, do you need to implement your own caching?",
+      "answers": [
+        {
+          "answer": "No, Firestore handles caching internally",
+          "correct": true
+        },
+        {
+          "answer": "Yes, always",
+          "correct": false
+        },
+        {
+          "answer": "Only for offline support",
+          "correct": false
+        },
+        {
+          "answer": "Only for large datasets",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

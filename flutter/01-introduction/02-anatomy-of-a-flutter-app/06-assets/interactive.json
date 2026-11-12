@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What is the purpose of the assets section in the pubspec.yaml file?",
+      "answers": [
+        {
+          "answer": "To store fonts",
+          "correct": false
+        },
+        {
+          "answer": "To store only images",
+          "correct": false
+        },
+        {
+          "answer": "To store dependencies",
+          "correct": false
+        },
+        {
+          "answer": "To store many file types",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a hotspot problem in a database system?",
+      "answers": [
+        {
+          "answer": "When the database is on fire",
+          "correct": false
+        },
+        {
+          "answer": "When too many requests target a single shard",
+          "correct": true
+        },
+        {
+          "answer": "When data is deleted accidentally",
+          "correct": false
+        },
+        {
+          "answer": "When the entire database crashes",
+          "correct": false
+        }
+      ],
+      "explanation": "A hotspot problem occurs when a disproportionate amount of data or requests are directed towards a single shard, leading to performance issues."
+    },
+    {
+      "question": "What is a common cause of a hotspot problem in range-based sharding?",
+      "answers": [
+        {
+          "answer": "Using random IDs for data distribution",
+          "correct": false
+        },
+        {
+          "answer": "Using sequential IDs that are not evenly distributed",
+          "correct": true
+        },
+        {
+          "answer": "Having too many shards",
+          "correct": false
+        },
+        {
+          "answer": "Employing hash-based sharding",
+          "correct": false
+        }
+      ],
+      "explanation": "Hotspots often arise in range-based sharding due to uneven data distribution, especially when using sequential IDs."
+    },
+    {
+      "question": "Which method can help mitigate hotspot problems?",
+      "answers": [
+        {
+          "answer": "Using more shards without changing the sharding strategy",
+          "correct": false
+        },
+        {
+          "answer": "Switching to a NoSQL database",
+          "correct": false
+        },
+        {
+          "answer": "Implementing hash-based sharding",
+          "correct": true
+        },
+        {
+          "answer": "Increasing the request rate",
+          "correct": false
+        }
+      ],
+      "explanation": "Hash-based sharding can distribute data more evenly across shards, thereby reducing the risk of hotspots."
+    }
+  ]
+}

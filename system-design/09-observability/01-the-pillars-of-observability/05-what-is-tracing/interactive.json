@@ -1,0 +1,228 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "api_gateway",
+        "label": "API Gateway",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "service_a",
+        "label": "Service A",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "service_b",
+        "label": "Service B",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "service_c",
+        "label": "Service C",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "tracing_collector",
+        "label": "Tracing Collector",
+        "icon": "archive",
+        "category": "observability"
+      },
+      {
+        "id": "trace_storage",
+        "label": "Trace Storage",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "api_gateway"
+      },
+      {
+        "from": "api_gateway",
+        "to": "service_a"
+      },
+      {
+        "from": "service_a",
+        "to": "service_b"
+      },
+      {
+        "from": "service_b",
+        "to": "service_c"
+      },
+      {
+        "from": "service_a",
+        "to": "tracing_collector"
+      },
+      {
+        "from": "service_b",
+        "to": "tracing_collector"
+      },
+      {
+        "from": "service_c",
+        "to": "tracing_collector"
+      },
+      {
+        "from": "tracing_collector",
+        "to": "trace_storage"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "api_gateway",
+        "message": "Add an API Gateway so there is a clear entry point where requests first enter the system (a common place to start a trace)."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "service_a",
+        "count": 1,
+        "message": "Include Service A as the first backend hop so the trace has at least one service span beyond the gateway."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "service_b",
+        "count": 1,
+        "message": "Include Service B to show a multi-hop distributed request (traces are most valuable when requests cross service boundaries)."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "service_c",
+        "count": 1,
+        "message": "Include Service C to make the request path long enough to reveal latency and dependency chains."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "service_c",
+        "message": "Ensure the request can flow from Client all the way to Service C through the system so the trace represents an end-to-end journey."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "tracing_collector",
+        "message": "Add a Tracing Collector to receive spans from services; without it, traces can't be assembled across components."
+      },
+      {
+        "type": "min_connections",
+        "nodeType": "tracing_collector",
+        "count": 4,
+        "message": "Connect the Tracing Collector to all three services and to Trace Storage so it can aggregate spans and persist completed traces."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "service_a",
+        "message": "Do not connect Client directly to Service A. Requests should enter through the API Gateway to keep the trace entry point consistent."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_gateway",
+          "componentId": "api_gateway",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_service_a",
+          "componentId": "service_a",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_service_b",
+          "componentId": "service_b",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_service_c",
+          "componentId": "service_c",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_collector",
+          "componentId": "tracing_collector",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_trace_storage",
+          "componentId": "trace_storage",
+          "x": 100,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_gateway"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_gateway",
+          "to": "sol_service_a"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_service_a",
+          "to": "sol_service_b"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_service_b",
+          "to": "sol_service_c"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_service_a",
+          "to": "sol_collector"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_service_b",
+          "to": "sol_collector"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_service_c",
+          "to": "sol_collector"
+        },
+        {
+          "id": "se_8",
+          "from": "sol_collector",
+          "to": "sol_trace_storage"
+        }
+      ]
+    },
+    "assignment": "Build a diagram that shows an end-to-end request journey through multiple services, and how tracing data from those services is collected and stored. Your design must include an API Gateway entry point, a multi-hop path reaching Service C, and a Tracing Collector that receives spans from all services and persists them to trace storage. Avoid connecting the client directly to backend services."
+  }
+}

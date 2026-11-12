@@ -1,0 +1,210 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "stateless_app_server",
+        "label": "Stateless App Server",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "cache",
+        "label": "Cache (Redis)",
+        "icon": "zap",
+        "category": "storage"
+      },
+      {
+        "id": "database",
+        "label": "Primary Database",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "vertical_scaled_server",
+        "label": "Vertically Scaled Server (Scale Up)",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "database_read_replica",
+        "label": "DB Read Replica",
+        "icon": "layers",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "load_balancer"
+      },
+      {
+        "from": "client",
+        "to": "vertical_scaled_server"
+      },
+      {
+        "from": "load_balancer",
+        "to": "stateless_app_server"
+      },
+      {
+        "from": "stateless_app_server",
+        "to": "cache"
+      },
+      {
+        "from": "stateless_app_server",
+        "to": "database"
+      },
+      {
+        "from": "stateless_app_server",
+        "to": "database_read_replica"
+      },
+      {
+        "from": "database_read_replica",
+        "to": "database"
+      },
+      {
+        "from": "vertical_scaled_server",
+        "to": "database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "load_balancer",
+        "message": "To scale out, you need a load balancer to distribute requests across multiple servers."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "stateless_app_server",
+        "count": 2,
+        "message": "Horizontal scaling requires multiple stateless app servers so traffic can be spread across instances."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "cache",
+        "message": "Add a cache to reduce repeated database work and keep performance acceptable as load increases."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "database",
+        "message": "A scalable architecture still needs a system of record (primary database) behind the services."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "database",
+        "message": "Clients should not connect directly to the database; route through services (and typically a load balancer) to control scaling and security."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "database",
+        "message": "Ensure there is an end-to-end path for requests to reach the primary database through your service layer."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "stateless_app_server",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "stateless_app_server",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "cache",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_6",
+          "componentId": "cache",
+          "x": 400,
+          "y": 450
+        },
+        {
+          "id": "sol_7",
+          "componentId": "database",
+          "x": 250,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_4",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_3",
+          "to": "sol_7"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_4",
+          "to": "sol_7"
+        }
+      ]
+    },
+    "assignment": "Build a scalable request path that demonstrates horizontal scaling: place a load balancer in front of multiple stateless app servers, include a cache to reduce database load, and ensure requests can reach the primary database through the service layer (without clients connecting directly to the database)."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "What is a constructor in Dart and when does it run?",
+      "answers": [
+        {
+          "answer": "A function that runs when the program starts",
+          "correct": false
+        },
+        {
+          "answer": "A special function used to destroy objects when they are no longer needed",
+          "correct": false
+        },
+        {
+          "answer": "A regular method that must return a value",
+          "correct": false
+        },
+        {
+          "answer": "A special function that runs when an object is created to help initialize it",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is a valid constructor definition for a Player class in Dart?",
+      "answers": [
+        {
+          "answer": "Player(String n, int a, String t) { name = n; age = a; team = t; }",
+          "correct": true
+        },
+        {
+          "answer": "void Player(String n, int a, String t) { name = n; age = a; team = t; }",
+          "correct": false
+        },
+        {
+          "answer": "constructor Player(String n, int a, String t) { name = n; age = a; team = t; }",
+          "correct": false
+        },
+        {
+          "answer": "Player(String n, int a, String t) { return Player(); }",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Given:\n```dart\nclass Player {\n  String name;\n  int age;\n  String team;\n  Player(String n, int a, String t) {\n    name = n;\n    age = a;\n    team = t;\n  }\n}\n```\nWhich line correctly creates an instance?",
+      "answers": [
+        {
+          "answer": "Player('Lionel Messi', 36, 'Inter Miami')",
+          "correct": true
+        },
+        {
+          "answer": "Player()",
+          "correct": false
+        },
+        {
+          "answer": "Player(name: 'Lionel Messi', age: 36, team: 'Inter Miami')",
+          "correct": false
+        },
+        {
+          "answer": "new Player('Inter Miami', 'Lionel Messi', 36)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the version without a constructor:\n```dart\nclass Player {\n  String? name;\n  int? age;\n  String? team;\n}\nprint(player1.name);\n```\nprints what and why?",
+      "answers": [
+        {
+          "answer": "\"\", because strings default to an empty string",
+          "correct": false
+        },
+        {
+          "answer": "Compile-time error, because name must be non-null",
+          "correct": false
+        },
+        {
+          "answer": "null, because name is declared as String? and was never assigned",
+          "correct": true
+        },
+        {
+          "answer": "undefined, because Dart doesn't initialize fields",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

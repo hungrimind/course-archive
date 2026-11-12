@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "Which code snippet correctly defines a function named `calculateScore` that returns an integer?",
+      "answers": [
+        {
+          "answer": "`function calculateScore() { return 100; }`",
+          "correct": false
+        },
+        {
+          "answer": "`int calculateScore[] { return 100; }`",
+          "correct": false
+        },
+        {
+          "answer": "`int calculateScore() { return 100; }`",
+          "correct": true
+        },
+        {
+          "answer": "`calculateScore(): int { return 100; }`",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the `void` return type signify?",
+      "answers": [
+        {
+          "answer": "The function will return a `null` value.",
+          "correct": false
+        },
+        {
+          "answer": "The function does not return any value.",
+          "correct": true
+        },
+        {
+          "answer": "The function's body is empty.",
+          "correct": false
+        },
+        {
+          "answer": "The function contains an error and is invalid.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

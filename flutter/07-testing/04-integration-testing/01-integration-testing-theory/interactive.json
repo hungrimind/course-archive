@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the key difference between widget tests and integration tests?",
+      "answers": [
+        {
+          "answer": "Integration tests are faster",
+          "correct": false
+        },
+        {
+          "answer": "Integration tests run on actual devices and can access external services",
+          "correct": true
+        },
+        {
+          "answer": "Integration tests don't require any setup",
+          "correct": false
+        },
+        {
+          "answer": "Widget tests can't test UI",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What package is required for integration testing?",
+      "answers": [
+        {
+          "answer": "test",
+          "correct": false
+        },
+        {
+          "answer": "flutter_test",
+          "correct": false
+        },
+        {
+          "answer": "integration_test",
+          "correct": true
+        },
+        {
+          "answer": "widget_test",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Where should integration test files be located?",
+      "answers": [
+        {
+          "answer": "test/ directory",
+          "correct": false
+        },
+        {
+          "answer": "lib/ directory",
+          "correct": false
+        },
+        {
+          "answer": "integration_test/ directory",
+          "correct": true
+        },
+        {
+          "answer": "test/integration/ directory",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

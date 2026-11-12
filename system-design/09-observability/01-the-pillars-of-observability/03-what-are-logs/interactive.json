@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of a log in a system?",
+      "answers": [
+        {
+          "answer": "To store system passwords",
+          "correct": false
+        },
+        {
+          "answer": "To capture detailed information about system operations",
+          "correct": true
+        },
+        {
+          "answer": "To act as a user interface",
+          "correct": false
+        },
+        {
+          "answer": "To replace system backups",
+          "correct": false
+        }
+      ],
+      "explanation": "Logs capture detailed information about system operations, which aids in debugging and monitoring, making them essential for understanding system behavior."
+    },
+    {
+      "question": "Why are logs essential during troubleshooting?",
+      "answers": [
+        {
+          "answer": "They provide aesthetic improvements to the system",
+          "correct": false
+        },
+        {
+          "answer": "They automatically resolve issues",
+          "correct": false
+        },
+        {
+          "answer": "They help trace specific events and provide context for issues",
+          "correct": true
+        },
+        {
+          "answer": "They offer real-time user feedback",
+          "correct": false
+        }
+      ],
+      "explanation": "Logs help trace specific events and provide essential context, making them invaluable for identifying and resolving issues during troubleshooting."
+    }
+  ]
+}

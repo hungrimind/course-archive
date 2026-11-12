@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "button = Pin(15, Pin.IN, Pin.PULL_UP)\n\nwhile True:\n    if button."
+      },
+      {
+        "type": "blank",
+        "answer": "value()"
+      },
+      {
+        "type": "code",
+        "value": " == "
+      },
+      {
+        "type": "blank",
+        "answer": "0"
+      },
+      {
+        "type": "code",
+        "value": ":\n        led.on()\n    else:\n        led.off()"
+      }
+    ],
+    "options": [
+      "read()",
+      "1",
+      "state()"
+    ]
+  }
+}

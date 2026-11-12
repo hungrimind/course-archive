@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Always Do",
+        "items": [
+          "Use low-voltage power supplies (USB or batteries)",
+          "Disconnect power before changing wiring",
+          "Keep drinks away from your workspace"
+        ]
+      },
+      {
+        "label": "Never Do",
+        "items": [
+          "Connect a hobby circuit to mains power",
+          "Modify wall outlets as a beginner",
+          "Work on mains-powered circuits without training"
+        ]
+      },
+      {
+        "label": "Safe to Do at Low Voltage",
+        "items": [
+          "Touch exposed wires on a 5V circuit",
+          "Experiment freely on a breadboard"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "When you reassign a variable, the old value is kept alongside the new one.",
+        "correct": false,
+        "explanation": "The old value is replaced and gone. The variable only holds one value at a time."
+      },
+      {
+        "statement": "Reassigning a variable changes the value inside, but the label stays the same.",
+        "correct": true,
+        "explanation": "Exactly right. The name of the variable stays the same; only the contents change."
+      },
+      {
+        "statement": "A variable can be updated more than once during a program.",
+        "correct": true,
+        "explanation": "Variables can be reassigned as many times as needed while the program runs."
+      }
+    ]
+  }
+}

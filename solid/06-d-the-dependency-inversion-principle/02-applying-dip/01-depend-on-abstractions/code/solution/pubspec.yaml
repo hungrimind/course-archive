@@ -1,0 +1,7 @@
+name: dependency_inversion
+description: A small example demonstrating the Dependency Inversion Principle using notification services
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.0

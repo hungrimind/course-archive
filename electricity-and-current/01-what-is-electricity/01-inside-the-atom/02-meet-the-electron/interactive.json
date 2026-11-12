@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "Why are electrons important for electricity?",
+      "answers": [
+        {
+          "answer": "They are the heaviest particles in an atom",
+          "correct": false
+        },
+        {
+          "answer": "They can break free from one atom and move to another",
+          "correct": true
+        },
+        {
+          "answer": "They are locked inside the nucleus with protons",
+          "correct": false
+        },
+        {
+          "answer": "They repel all other particles equally",
+          "correct": false
+        }
+      ],
+      "explanation": "Electrons on the outer edge of an atom are not stuck. They can break free and jump to neighboring atoms. This movement of electrons between atoms is the entire basis of electricity."
+    },
+    {
+      "question": "How does the mass of an electron compare to a proton?",
+      "answers": [
+        {
+          "answer": "An electron is about 1,800 times lighter than a proton",
+          "correct": true
+        },
+        {
+          "answer": "An electron and a proton have roughly the same mass",
+          "correct": false
+        },
+        {
+          "answer": "An electron is about 1,800 times heavier than a proton",
+          "correct": false
+        },
+        {
+          "answer": "An electron has no mass at all",
+          "correct": false
+        }
+      ],
+      "explanation": "Electrons are incredibly small and lightweight, roughly 1,800 times lighter than a proton, which is why they can move so easily between atoms."
+    }
+  ]
+}

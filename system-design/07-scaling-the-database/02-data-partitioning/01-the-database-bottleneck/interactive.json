@@ -1,0 +1,198 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "client"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "app_server",
+        "label": "App Server",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "cache_layer",
+        "label": "Cache Layer",
+        "icon": "zap",
+        "category": "performance"
+      },
+      {
+        "id": "db_primary",
+        "label": "DB Primary (Writes)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "db_read_replica",
+        "label": "DB Read Replica",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "db_shard",
+        "label": "DB Shard / Partition",
+        "icon": "git-branch",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "load_balancer"
+      },
+      {
+        "from": "load_balancer",
+        "to": "app_server"
+      },
+      {
+        "from": "app_server",
+        "to": "cache_layer"
+      },
+      {
+        "from": "app_server",
+        "to": "db_primary"
+      },
+      {
+        "from": "app_server",
+        "to": "db_read_replica"
+      },
+      {
+        "from": "app_server",
+        "to": "db_shard"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "cache_layer",
+        "message": "Add a cache to reduce repeated reads hitting the database, which is a common source of bottlenecks."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "db_primary",
+        "message": "Include a primary database to handle writes (and any reads that miss cache or require strong consistency)."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "db_read_replica",
+        "count": 1,
+        "message": "Add at least one read replica to offload read traffic from the primary database."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "db_shard",
+        "count": 1,
+        "message": "Add at least one shard/partition to distribute data and write/read load across multiple partitions."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "db_primary",
+        "message": "Ensure requests can flow from the client through your stack to the primary database for write operations."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "db_primary",
+        "message": "Clients should not connect directly to the database. Route traffic through the application tier to control access and load."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "app_server",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "cache_layer",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_5",
+          "componentId": "db_read_replica",
+          "x": 400,
+          "y": 450
+        },
+        {
+          "id": "sol_6",
+          "componentId": "db_primary",
+          "x": 180,
+          "y": 600
+        },
+        {
+          "id": "sol_7",
+          "componentId": "db_shard",
+          "x": 420,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_3",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_3",
+          "to": "sol_7"
+        }
+      ]
+    },
+    "assignment": "Build an architecture that mitigates a database bottleneck by (1) routing client traffic through an application tier, (2) adding a cache to reduce database reads, and (3) distributing database load using at least one read replica and at least one shard/partition. Ensure there is a request path from the client to the primary database for writes, but do not allow clients to connect directly to the primary database."
+  }
+}

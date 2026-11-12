@@ -1,0 +1,17 @@
+{
+  "quiz": [
+    {
+      "question": "Let's start with the login screen. Are you ready?",
+      "answers": [
+        {
+          "answer": "Yes",
+          "correct": true
+        },
+        {
+          "answer": "No",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

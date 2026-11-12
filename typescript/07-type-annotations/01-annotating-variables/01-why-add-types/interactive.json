@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "When is a type annotation most useful?",
+      "answers": [
+        {
+          "answer": "When TypeScript already infers the correct type from a literal value",
+          "correct": false
+        },
+        {
+          "answer": "When the inferred type is ambiguous or incorrect, such as with JSON.parse",
+          "correct": true
+        },
+        {
+          "answer": "When you want your code to run faster at runtime",
+          "correct": false
+        },
+        {
+          "answer": "When you want to skip compilation entirely",
+          "correct": false
+        }
+      ],
+      "explanation": "Type annotations shine where inference falls short. For example, JSON.parse returns 'any', so an annotation lets you specify the actual expected type."
+    },
+    {
+      "question": "What is an additional benefit of explicit type annotations beyond catching errors?",
+      "answers": [
+        {
+          "answer": "They reduce the file size of your compiled JavaScript",
+          "correct": false
+        },
+        {
+          "answer": "They make your code self-documenting so others know the expected type without tracing logic",
+          "correct": true
+        },
+        {
+          "answer": "They allow you to use variables without declaring them first",
+          "correct": false
+        },
+        {
+          "answer": "They automatically convert values to the annotated type at runtime",
+          "correct": false
+        }
+      ],
+      "explanation": "Annotations serve as documentation: anyone reading the code immediately knows the expected type without having to trace through the surrounding logic."
+    }
+  ]
+}

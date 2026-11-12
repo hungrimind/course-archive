@@ -1,0 +1,38 @@
+{
+  "quiz": [
+    {
+      "question": "What is the most secure form of authentication?",
+      "answers": [
+        {
+          "answer": "Knowledge Based Authentication",
+          "correct": false
+        },
+        {
+          "answer": "Possession Based Authentication",
+          "correct": false
+        },
+        {
+          "answer": "Inherence Based Authentication",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which statement about authentication is correct?",
+      "answers": [
+        {
+          "answer": "Authentication is only needed for mobile apps",
+          "correct": false
+        },
+        {
+          "answer": "Authentication is only about passwords",
+          "correct": false
+        },
+        {
+          "answer": "Authentication verifies the identity of users",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

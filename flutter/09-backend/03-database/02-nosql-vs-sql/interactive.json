@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following best characterizes SQL databases?",
+      "answers": [
+        {
+          "answer": "They are schema-less and store data in flexible, nested documents.",
+          "correct": false
+        },
+        {
+          "answer": "They are designed primarily for rapid scaling and dynamic data types.",
+          "correct": false
+        },
+        {
+          "answer": "They store data as loosely organized files, similar to folders on your computer.",
+          "correct": false
+        },
+        {
+          "answer": "They use a fixed schema with tables and strong relationships.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which characteristic best describes NoSQL databases?",
+      "answers": [
+        {
+          "answer": "Offers flexible data structures and schema-less storage",
+          "correct": true
+        },
+        {
+          "answer": "Requires strict table schemas and predefined relationships",
+          "correct": false
+        },
+        {
+          "answer": "Enforces rigid data normalization across tables",
+          "correct": false
+        },
+        {
+          "answer": "Maintains fixed column definitions for all records",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

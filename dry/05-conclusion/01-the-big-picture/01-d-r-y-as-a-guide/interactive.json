@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary focus of the D.R.Y principle in programming?",
+      "answers": [
+        {
+          "answer": "Increasing code redundancy",
+          "correct": false
+        },
+        {
+          "answer": "Ensuring each piece of knowledge exists in a single, unambiguous place",
+          "correct": true
+        },
+        {
+          "answer": "Writing more code for clarity",
+          "correct": false
+        },
+        {
+          "answer": "Creating as many functions as possible",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does adhering to the D.R.Y principle benefit a codebase?",
+      "answers": [
+        {
+          "answer": "It makes the codebase more complex",
+          "correct": false
+        },
+        {
+          "answer": "It ensures the code is less readable",
+          "correct": false
+        },
+        {
+          "answer": "It reduces potential errors and improves maintainability",
+          "correct": true
+        },
+        {
+          "answer": "It increases the size of the codebase",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which example best illustrates the application of the D.R.Y principle?",
+      "answers": [
+        {
+          "answer": "Copying the same function multiple times throughout the codebase",
+          "correct": false
+        },
+        {
+          "answer": "Integrating repeated logic in a single function to be reused",
+          "correct": true
+        },
+        {
+          "answer": "Writing out variable declarations repeatedly across different files",
+          "correct": false
+        },
+        {
+          "answer": "Duplicating configurations in multiple locations for easy access",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

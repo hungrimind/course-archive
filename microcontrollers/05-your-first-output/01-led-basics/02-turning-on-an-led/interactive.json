@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "import gpiozero\n\nled = gpiozero."
+      },
+      {
+        "type": "blank",
+        "answer": "LED"
+      },
+      {
+        "type": "code",
+        "value": "(17)\nled."
+      },
+      {
+        "type": "blank",
+        "answer": "on"
+      },
+      {
+        "type": "code",
+        "value": "()"
+      }
+    ],
+    "options": [
+      "PWMLED",
+      "off",
+      "toggle"
+    ]
+  }
+}

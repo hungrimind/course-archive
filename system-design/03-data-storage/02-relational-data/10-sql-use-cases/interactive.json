@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "SQL databases are best suited for applications that require flexible and unstructured data storage.",
+        "correct": false,
+        "explanation": "SQL databases are designed for structured data and scenarios requiring complex queries, data integrity, and ACID compliance, not for flexible or unstructured data."
+      },
+      {
+        "statement": "The SQL query `SELECT * FROM orders WHERE customer_id = 123;` is an example of SQL's ability to perform complex data retrieval operations.",
+        "correct": true,
+        "explanation": "This query demonstrates SQL's capability to filter and retrieve specific data efficiently based on given criteria, which is a part of SQL's strength in handling complex queries."
+      },
+      {
+        "statement": "SQL databases excel in online transaction processing (OLTP) due to their lack of ACID compliance.",
+        "correct": false,
+        "explanation": "SQL databases excel in OLTP specifically because of their ACID compliance, which ensures reliable transactions and data integrity."
+      },
+      {
+        "statement": "For applications requiring strong consistency and reliable transaction support, SQL databases are a suitable choice.",
+        "correct": true,
+        "explanation": "SQL databases provide strong consistency and support reliable transactions due to their adherence to ACID properties, making them ideal for applications needing these features."
+      }
+    ]
+  }
+}

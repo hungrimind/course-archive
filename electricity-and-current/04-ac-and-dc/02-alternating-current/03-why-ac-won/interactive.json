@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What device allows AC voltage to be easily changed from high to low or low to high?",
+      "answers": [
+        {
+          "answer": "Rectifier",
+          "correct": false
+        },
+        {
+          "answer": "Transformer",
+          "correct": true
+        },
+        {
+          "answer": "Capacitor",
+          "correct": false
+        },
+        {
+          "answer": "Resistor",
+          "correct": false
+        }
+      ],
+      "explanation": "A transformer is a simple device that can step AC voltage up or down. This ability is AC's key advantage over DC."
+    },
+    {
+      "question": "Why is high voltage used for long-distance power transmission?",
+      "answers": [
+        {
+          "answer": "High voltage makes electricity travel faster through the wires",
+          "correct": false
+        },
+        {
+          "answer": "High voltage prevents the wires from overheating",
+          "correct": false
+        },
+        {
+          "answer": "High voltage reduces energy lost as heat during transmission",
+          "correct": true
+        },
+        {
+          "answer": "High voltage is required by law for safety reasons",
+          "correct": false
+        }
+      ],
+      "explanation": "Transmitting at high voltage means less current is needed for the same power, which results in far less energy wasted as heat in the wires."
+    },
+    {
+      "question": "Who backed AC in the famous 'war of currents'?",
+      "answers": [
+        {
+          "answer": "Edison and Ford",
+          "correct": false
+        },
+        {
+          "answer": "Tesla and Edison",
+          "correct": false
+        },
+        {
+          "answer": "Tesla and Westinghouse",
+          "correct": true
+        },
+        {
+          "answer": "Westinghouse and Edison",
+          "correct": false
+        }
+      ],
+      "explanation": "Nikola Tesla and George Westinghouse championed AC, while Thomas Edison backed DC. AC won because transformers made long-distance transmission practical and affordable."
+    }
+  ]
+}

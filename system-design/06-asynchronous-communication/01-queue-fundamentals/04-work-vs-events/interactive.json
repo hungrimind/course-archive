@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Work Items",
+        "items": [
+          "processTask(\"Task 1\")",
+          "Execute a specific task",
+          "Require processing in a queue"
+        ]
+      },
+      {
+        "label": "Events",
+        "items": [
+          "notifyEvent(\"Task 1 Completed\")",
+          "Notify a change in state",
+          "Trigger additional actions"
+        ]
+      }
+    ]
+  }
+}

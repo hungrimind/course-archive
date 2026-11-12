@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Voltage (push strength)",
+        "items": [
+          "AA battery: 1.5V",
+          "Lithium cell: 3.7V",
+          "9V battery: 9V"
+        ]
+      },
+      {
+        "label": "Capacity (how long it lasts)",
+        "items": [
+          "Measured in milliamp-hours (mAh)",
+          "2,000 mAh at 200 mA lasts 10 hours",
+          "Higher mAh means more runtime"
+        ]
+      },
+      {
+        "label": "What it tells you",
+        "items": [
+          "Voltage: how hard electrons are pushed",
+          "Capacity: total energy stored for use"
+        ]
+      }
+    ]
+  }
+}

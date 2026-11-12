@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main benefit of using a function?",
+      "answers": [
+        {
+          "answer": "It makes your code run faster",
+          "correct": false
+        },
+        {
+          "answer": "You can define logic once and reuse it multiple times",
+          "correct": true
+        },
+        {
+          "answer": "It prevents all errors in your program",
+          "correct": false
+        },
+        {
+          "answer": "It automatically stores data in a database",
+          "correct": false
+        }
+      ],
+      "explanation": "Functions let you define a block of code once and call it whenever you need it, avoiding repetition and making your code easier to maintain."
+    },
+    {
+      "question": "Which analogy best describes how a function works?",
+      "answers": [
+        {
+          "answer": "A bookmark that saves your place in a book",
+          "correct": false
+        },
+        {
+          "answer": "A recipe you write once and follow whenever you want to make the dish",
+          "correct": true
+        },
+        {
+          "answer": "A calculator that only works once",
+          "correct": false
+        },
+        {
+          "answer": "A lock that keeps code from running",
+          "correct": false
+        }
+      ],
+      "explanation": "A function is like a recipe: you write the instructions once, and you can follow them (call the function) as many times as you need."
+    }
+  ]
+}

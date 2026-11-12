@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "function logMessage(msg: "
+      },
+      {
+        "type": "blank",
+        "answer": "string"
+      },
+      {
+        "type": "code",
+        "value": "): "
+      },
+      {
+        "type": "blank",
+        "answer": "void"
+      },
+      {
+        "type": "code",
+        "value": " {\n  console.log(msg);\n}"
+      }
+    ],
+    "options": [
+      "number",
+      "any",
+      "null"
+    ]
+  }
+}

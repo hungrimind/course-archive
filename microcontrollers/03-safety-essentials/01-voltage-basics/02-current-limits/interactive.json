@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "How much current can a single Raspberry Pi GPIO pin safely supply?",
+      "answers": [
+        {
+          "answer": "50mA",
+          "correct": false
+        },
+        {
+          "answer": "16mA",
+          "correct": true
+        },
+        {
+          "answer": "100mA",
+          "correct": false
+        },
+        {
+          "answer": "5mA",
+          "correct": false
+        }
+      ],
+      "explanation": "Each GPIO pin can supply about 16mA. The 50mA figure is the safe maximum across all active pins combined."
+    },
+    {
+      "question": "What should you use when a component needs more current than a GPIO pin can provide?",
+      "answers": [
+        {
+          "answer": "A longer wire to increase current flow",
+          "correct": false
+        },
+        {
+          "answer": "Multiple GPIO pins wired together",
+          "correct": false
+        },
+        {
+          "answer": "An external power supply with a transistor or relay",
+          "correct": true
+        },
+        {
+          "answer": "A higher-voltage SD card",
+          "correct": false
+        }
+      ],
+      "explanation": "When a component demands more power, use an external power supply and let the GPIO pin send only the control signal through a transistor or relay."
+    },
+    {
+      "question": "Which statement best describes the relationship between voltage and current?",
+      "answers": [
+        {
+          "answer": "Both voltage and current are chosen by the designer",
+          "correct": false
+        },
+        {
+          "answer": "Voltage is what you choose; current is what the component demands",
+          "correct": true
+        },
+        {
+          "answer": "Current is what you choose; voltage is what the component demands",
+          "correct": false
+        },
+        {
+          "answer": "Voltage and current are always equal",
+          "correct": false
+        }
+      ],
+      "explanation": "You set the voltage, but the component determines how much current it draws. You cannot negotiate with the component's current demand."
+    }
+  ]
+}

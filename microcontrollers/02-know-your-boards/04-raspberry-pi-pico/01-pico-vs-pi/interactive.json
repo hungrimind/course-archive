@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "The Raspberry Pi Pico is a smaller version of the Raspberry Pi that runs Linux.",
+        "correct": false,
+        "explanation": "Despite sharing the Raspberry Pi name, the Pico is a true microcontroller with no OS, no desktop, and no boot sequence. It is in a completely different category from the Raspberry Pi."
+      },
+      {
+        "statement": "The Pico runs MicroPython natively, giving you Python syntax on a microcontroller.",
+        "correct": true,
+        "explanation": "Unlike Arduino which traditionally uses C/C++, the Pico runs MicroPython natively, combining Python's friendly syntax with microcontroller simplicity."
+      },
+      {
+        "statement": "When you plug in a Pico, your code runs instantly without a boot sequence.",
+        "correct": true,
+        "explanation": "Like an Arduino, the Pico has no OS to boot. You plug it in and your program runs immediately."
+      },
+      {
+        "statement": "The Raspberry Pi Pico costs significantly more than a full Raspberry Pi.",
+        "correct": false,
+        "explanation": "The Pico costs around $4, making it one of the cheapest boards available and far less expensive than a full Raspberry Pi."
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What does the Open/Closed Principle advocate for in software development?",
+      "answers": [
+        {
+          "answer": "Software should be open for modification but closed for extension.",
+          "correct": false
+        },
+        {
+          "answer": "Software should be open for extension but closed for modification.",
+          "correct": true
+        },
+        {
+          "answer": "Software should allow unlimited changes without restrictions.",
+          "correct": false
+        },
+        {
+          "answer": "Software should be closed for both extension and modification.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How can you add new functionality to a class that is 'closed for modification'?",
+      "answers": [
+        {
+          "answer": "By modifying the existing class's source code directly.",
+          "correct": false
+        },
+        {
+          "answer": "By using inheritance to extend the existing class.",
+          "correct": true
+        },
+        {
+          "answer": "By copying the class and making changes to the copy.",
+          "correct": false
+        },
+        {
+          "answer": "By writing additional functions within the original class.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which programming technique is NOT recommended when adhering to the Open/Closed Principle?",
+      "answers": [
+        {
+          "answer": "Inheritance",
+          "correct": false
+        },
+        {
+          "answer": "Composition",
+          "correct": false
+        },
+        {
+          "answer": "Modifying existing method implementations directly",
+          "correct": true
+        },
+        {
+          "answer": "Using interfaces or abstract classes",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

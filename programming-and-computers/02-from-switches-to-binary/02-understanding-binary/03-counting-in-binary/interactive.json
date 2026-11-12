@@ -1,0 +1,7 @@
+{
+  "binaryconverter": {
+    "targetNumber": 42,
+    "bits": 8,
+    "hint": "42 = 32 + 8 + 2"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "app_server",
+        "label": "Application Server",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "primary_database",
+        "label": "Primary Database (Writes)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "replica_database",
+        "label": "Replica Database (Reads)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "replication_link",
+        "label": "Replication Stream",
+        "icon": "git-branch",
+        "category": "network"
+      },
+      {
+        "id": "read_only_endpoint",
+        "label": "Read-Only Endpoint",
+        "icon": "network",
+        "category": "network"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "app_server",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "app_server",
+        "to": "primary_database"
+      },
+      {
+        "from": "app_server",
+        "to": "read_only_endpoint"
+      },
+      {
+        "from": "read_only_endpoint",
+        "to": "replica_database"
+      },
+      {
+        "from": "primary_database",
+        "to": "replication_link"
+      },
+      {
+        "from": "replication_link",
+        "to": "replica_database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "primary_database",
+        "message": "Include a Primary Database to handle writes and act as the source of truth."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "replica_database",
+        "message": "Include a Replica Database to receive copied data and serve read traffic."
+      },
+      {
+        "type": "required_edge",
+        "from": "primary_database",
+        "to": "replication_link",
+        "message": "Replication must originate from the Primary Database (the source of truth)."
+      },
+      {
+        "type": "required_edge",
+        "from": "replication_link",
+        "to": "replica_database",
+        "message": "Replication must deliver updates into the Replica Database."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "app_server",
+        "to": "replica_database",
+        "message": "Don’t connect the app directly to the replica. Route reads through a read-only endpoint so replicas can be swapped/added without changing the app."
+      },
+      {
+        "type": "path_exists",
+        "from": "app_server",
+        "to": "replica_database",
+        "message": "There must be a read path from the app to the replica (typically via a read-only endpoint)."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_app",
+          "componentId": "app_server",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_primary",
+          "componentId": "primary_database",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_read_endpoint",
+          "componentId": "read_only_endpoint",
+          "x": 100,
+          "y": 150
+        },
+        {
+          "id": "sol_repl_link",
+          "componentId": "replication_link",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_replica",
+          "componentId": "replica_database",
+          "x": 100,
+          "y": 300
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_app",
+          "to": "sol_primary"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_primary",
+          "to": "sol_repl_link"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_repl_link",
+          "to": "sol_replica"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_app",
+          "to": "sol_read_endpoint"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_read_endpoint",
+          "to": "sol_replica"
+        }
+      ]
+    },
+    "assignment": "Build a simple replicated database architecture. Your diagram must include a Primary Database and a Replica Database, with replication flowing from the primary into the replica. Also create a read path from the Application Server to the replica using a read-only endpoint (the app should not connect directly to the replica)."
+  }
+}

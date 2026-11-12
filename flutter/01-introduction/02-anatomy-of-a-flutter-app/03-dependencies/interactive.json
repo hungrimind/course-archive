@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "When does a package become a dependency?",
+      "answers": [
+        {
+          "answer": "When it's hosted on pub.dev",
+          "correct": false
+        },
+        {
+          "answer": "When it's added to the pubspec.yaml file",
+          "correct": true
+        },
+        {
+          "answer": "Whenever it's used in your project",
+          "correct": false
+        },
+        {
+          "answer": "They mean the same thing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these would make sense as a dev dependency?",
+      "answers": [
+        {
+          "answer": "Integration with a Database",
+          "correct": false
+        },
+        {
+          "answer": "Generating code that will be used in the app",
+          "correct": true
+        },
+        {
+          "answer": "A confetti animation",
+          "correct": false
+        },
+        {
+          "answer": "Retrieving the weather data",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

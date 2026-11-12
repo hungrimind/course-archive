@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main disadvantage of repetitive code as described in the lesson?",
+      "answers": [
+        {
+          "answer": "It makes the code easier to read.",
+          "correct": false
+        },
+        {
+          "answer": "It increases the chances of bugs, known as the bug multiplier.",
+          "correct": true
+        },
+        {
+          "answer": "It improves program execution speed.",
+          "correct": false
+        },
+        {
+          "answer": "It reduces the need for documentation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the provided Dart example, what issue arises from having both functions `calculateTotal` and `calculateSum`?",
+      "answers": [
+        {
+          "answer": "The functions use too many parameters.",
+          "correct": false
+        },
+        {
+          "answer": "Changes or bug fixes must be applied to each function separately.",
+          "correct": true
+        },
+        {
+          "answer": "They can't handle subtraction operations.",
+          "correct": false
+        },
+        {
+          "answer": "They have syntax errors in their definitions.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does repetitive code affect bug fixes according to the lesson?",
+      "answers": [
+        {
+          "answer": "Bug fixes automatically propagate across all instances of the code.",
+          "correct": false
+        },
+        {
+          "answer": "Bug fixes become easier and quicker to implement.",
+          "correct": false
+        },
+        {
+          "answer": "Bug fixes must be applied to each duplicate instance, making the process time-consuming.",
+          "correct": true
+        },
+        {
+          "answer": "Bug fixes are unnecessary if the code is repetitive.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

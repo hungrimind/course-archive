@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Input",
+        "items": [
+          "Button",
+          "Temperature sensor",
+          "Light detector"
+        ]
+      },
+      {
+        "label": "Output",
+        "items": [
+          "LED",
+          "Motor",
+          "Buzzer"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Modern Code Editor Feature",
+        "items": [
+          "Color-coded syntax highlighting",
+          "Auto-complete suggestions as you type",
+          "Catches mistakes before you run the program"
+        ]
+      },
+      {
+        "label": "Punch Card Era Limitation",
+        "items": [
+          "No screen to display results",
+          "Errors discovered only after hours of waiting",
+          "Instructions encoded as physical holes in paper"
+        ]
+      },
+      {
+        "label": "True Across All Eras",
+        "items": [
+          "Giving precise instructions to a computer",
+          "Programs must be logically correct to work"
+        ]
+      }
+    ]
+  }
+}

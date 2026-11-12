@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What does the repetition of `print` statements in the given code suggest about the structure of the code?",
+      "answers": [
+        {
+          "answer": "It suggests the code is optimized and efficient.",
+          "correct": false
+        },
+        {
+          "answer": "It suggests that a loop might be a better solution to handle repeated actions.",
+          "correct": true
+        },
+        {
+          "answer": "It suggests that more print statements are needed.",
+          "correct": false
+        },
+        {
+          "answer": "It suggests that the code cannot be improved.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following would best implement a loop for the greeting task?",
+      "answers": [
+        {
+          "answer": "Use a for loop to iterate over an array of names and print greetings.",
+          "correct": true
+        },
+        {
+          "answer": "Add conditional statements to decide which greeting to print.",
+          "correct": false
+        },
+        {
+          "answer": "Write a separate print statement for each name.",
+          "correct": false
+        },
+        {
+          "answer": "Use a switch statement to handle each name's greeting.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is an advantage of transforming repeated code into a loop?",
+      "answers": [
+        {
+          "answer": "It makes the code less readable.",
+          "correct": false
+        },
+        {
+          "answer": "It increases the potential for bugs.",
+          "correct": false
+        },
+        {
+          "answer": "It reduces code duplication and enhances maintainability.",
+          "correct": true
+        },
+        {
+          "answer": "It has no impact on code quality.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Liskov Substitution Principle (LSP)",
+        "items": [
+          "Derived classes interchangeable with base",
+          "Ensures correctness when substituting classes",
+          "Key to flexible and maintainable code"
+        ]
+      },
+      {
+        "label": "Benefits of LSP",
+        "items": [
+          "Improves code reusability",
+          "Enhances polymorphism",
+          "Treats objects as parent class instances"
+        ]
+      }
+    ]
+  }
+}

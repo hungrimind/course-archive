@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Calling lcd.clear() in every loop iteration on a character LCD is a good practice for updating live data.",
+        "correct": false,
+        "explanation": "Calling lcd.clear() each iteration causes a visible blink/flicker. Instead, overwrite old text in place or use fixed-width formatting."
+      },
+      {
+        "statement": "OLED displays using a framebuffer approach don't flicker during redraws because the entire frame is composed off-screen before being sent.",
+        "correct": true,
+        "explanation": "With a framebuffer, the full frame is drawn in memory first, then pushed to the display at once, avoiding the flicker that comes from clearing and redrawing on screen."
+      },
+      {
+        "statement": "A temperature display should update every 100ms to keep the reading accurate.",
+        "correct": false,
+        "explanation": "Temperature changes slowly, so updating every 2-5 seconds is fine. Very fast update intervals (100ms) are better suited for rapidly changing values like a dial position."
+      }
+    ]
+  }
+}

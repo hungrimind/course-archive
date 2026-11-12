@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Hobby electronics like Arduino and Raspberry Pi typically run at 3.3V or 5V.",
+        "correct": true,
+        "explanation": "These platforms are designed to run at low voltages (3.3V or 5V), powered by USB ports or small batteries, making them completely safe to handle."
+      },
+      {
+        "statement": "You should never touch an exposed wire on a 5V breadboard circuit because you could get shocked.",
+        "correct": false,
+        "explanation": "At 5V, your body's resistance is so high that virtually no current can flow through you. It is completely safe to touch wires and components in low-voltage hobby circuits."
+      },
+      {
+        "statement": "Short-circuiting a 5V hobby circuit is dangerous to the person touching it.",
+        "correct": false,
+        "explanation": "While short-circuiting is not ideal for the components, at 3.3V or 5V there is no danger to you personally. The voltage is far too low to push harmful current through your body."
+      },
+      {
+        "statement": "USB ports provide a safe voltage level for hobby electronics.",
+        "correct": true,
+        "explanation": "USB ports supply 5V, which is well within the safe range for hobby electronics. This is why many beginner boards like Arduino are powered via USB."
+      }
+    ]
+  }
+}

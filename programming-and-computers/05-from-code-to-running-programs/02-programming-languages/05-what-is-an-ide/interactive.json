@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "IDE features",
+        "items": [
+          "Highlights errors as you type",
+          "Suggests code completions",
+          "Built-in run button"
+        ]
+      },
+      {
+        "label": "Not IDE features",
+        "items": [
+          "Runs your code faster",
+          "Writes code for you automatically",
+          "Replaces the programming language"
+        ]
+      }
+    ]
+  }
+}

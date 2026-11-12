@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary characteristic that distinguishes a `Set` from a `List` in Dart?",
+      "answers": [
+        {
+          "answer": "A `Set` preserves the order of its elements, while a `List` does not.",
+          "correct": false
+        },
+        {
+          "answer": "A `Set` is created using square brackets `[]`, while a `List` uses curly brackets `{}`.",
+          "correct": false
+        },
+        {
+          "answer": "A `Set` can only contain `String` values, while a `List` can contain any data type.",
+          "correct": false
+        },
+        {
+          "answer": "A `Set` can only contain unique values, while a `List` can contain duplicates.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Consider the following Dart code. What will be the output?\n\n```dart\nvoid main() {\n  var numberSet = {10, 20, 30, 20, 10};\n  print(numberSet);\n}\n```",
+      "answers": [
+        {
+          "answer": "`{10, 20, 30, 20, 10}`",
+          "correct": false
+        },
+        {
+          "answer": "`[10, 20, 30]`",
+          "correct": false
+        },
+        {
+          "answer": "`{10, 20, 30}`",
+          "correct": true
+        },
+        {
+          "answer": "The code will produce an error.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which line of code correctly initializes a `Set` of numbers?",
+      "answers": [
+        {
+          "answer": "`var myNumbers = [100, 200, 300];`",
+          "correct": false
+        },
+        {
+          "answer": "`var myNumbers = {100, 200, 300};`",
+          "correct": true
+        },
+        {
+          "answer": "`var myNumbers = (100, 200, 300);`",
+          "correct": false
+        },
+        {
+          "answer": "`var myNumbers = \"100, 200, 300\";`",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

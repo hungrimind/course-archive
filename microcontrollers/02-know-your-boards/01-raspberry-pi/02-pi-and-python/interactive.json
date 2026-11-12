@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "from gpiozero import "
+      },
+      {
+        "type": "blank",
+        "answer": "Button"
+      },
+      {
+        "type": "code",
+        "value": "\n\nbtn = Button("
+      },
+      {
+        "type": "blank",
+        "answer": "4"
+      },
+      {
+        "type": "code",
+        "value": ")\nbtn.wait_for_press()\nprint(\"Pressed!\")"
+      }
+    ],
+    "options": [
+      "Motor",
+      "LED",
+      "17"
+    ]
+  }
+}

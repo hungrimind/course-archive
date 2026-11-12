@@ -1,0 +1,177 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "user_browser",
+        "label": "User Browser",
+        "icon": "monitor",
+        "category": "client"
+      },
+      {
+        "id": "dns_geo_router",
+        "label": "Geo DNS / Request Router",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "cdn_edge",
+        "label": "CDN Edge Server",
+        "icon": "globe",
+        "category": "compute"
+      },
+      {
+        "id": "origin_server",
+        "label": "Origin Web Server",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "object_storage",
+        "label": "Static Asset Storage",
+        "icon": "archive",
+        "category": "storage"
+      },
+      {
+        "id": "waf",
+        "label": "WAF / DDoS Protection",
+        "icon": "shield",
+        "category": "security"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "user_browser",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "user_browser",
+        "to": "dns_geo_router"
+      },
+      {
+        "from": "dns_geo_router",
+        "to": "waf"
+      },
+      {
+        "from": "waf",
+        "to": "cdn_edge"
+      },
+      {
+        "from": "cdn_edge",
+        "to": "origin_server"
+      },
+      {
+        "from": "origin_server",
+        "to": "object_storage"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "cdn_edge",
+        "message": "Include a CDN Edge Server to cache content close to users and reduce latency."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "origin_server",
+        "message": "Include an Origin Web Server as the source of truth for content when the CDN has a cache miss."
+      },
+      {
+        "type": "path_exists",
+        "from": "user_browser",
+        "to": "cdn_edge",
+        "message": "User traffic should be routed to the CDN Edge (typically via a DNS/geo router and optional security layer)."
+      },
+      {
+        "type": "path_exists",
+        "from": "cdn_edge",
+        "to": "origin_server",
+        "message": "The CDN Edge must be able to reach the Origin Web Server for cache misses."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "user_browser",
+        "to": "origin_server",
+        "message": "Avoid sending users directly to the origin; the CDN should sit in front to reduce load and latency."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "user_browser",
+        "to": "cdn_edge",
+        "message": "Users typically resolve to the nearest edge via a routing layer (e.g., Geo DNS) rather than directly selecting an edge."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_user",
+          "componentId": "user_browser",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_dns",
+          "componentId": "dns_geo_router",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_waf",
+          "componentId": "waf",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_edge",
+          "componentId": "cdn_edge",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_origin",
+          "componentId": "origin_server",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_storage",
+          "componentId": "object_storage",
+          "x": 250,
+          "y": 750
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_user",
+          "to": "sol_dns"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_dns",
+          "to": "sol_waf"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_waf",
+          "to": "sol_edge"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_edge",
+          "to": "sol_origin"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_origin",
+          "to": "sol_storage"
+        }
+      ]
+    },
+    "assignment": "Build a basic CDN request flow that routes a user to a CDN edge through a routing layer, ensures the CDN can fetch from an origin on cache misses, and avoids direct user access to the origin. Include the key components necessary to represent edge caching and an origin-backed content source."
+  }
+}

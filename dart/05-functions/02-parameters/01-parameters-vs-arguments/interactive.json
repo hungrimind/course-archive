@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "Consider the following Dart function:\n\n\n```dart\nvoid printMessage(String message) {\n  print(message);\n}\n\nprintMessage('Hello, Dart!');\n```\n\nIn the code above, what is the **parameter**?",
+      "answers": [
+        {
+          "answer": "printMessage",
+          "correct": false
+        },
+        {
+          "answer": "'Hello, Dart!'",
+          "correct": false
+        },
+        {
+          "answer": "message",
+          "correct": true
+        },
+        {
+          "answer": "void",
+          "correct": false
+        }
+      ],
+      "explanation": "The correct answer is `message`. A **parameter** is the variable name (`message`) declared inside the parentheses of the function definition. It acts as a placeholder for the value that will be passed in."
+    },
+    {
+      "question": "Consider the following Dart function call:\n\n\n```dart\nint subtract(int a, int b) {\n  return a - b;\n}\n\nint difference = subtract(10, 4);\n```\n\nIn the code above, what is the **argument**?",
+      "answers": [
+        {
+          "answer": "a",
+          "correct": false
+        },
+        {
+          "answer": "10",
+          "correct": true
+        },
+        {
+          "answer": "difference",
+          "correct": false
+        },
+        {
+          "answer": "int",
+          "correct": false
+        }
+      ],
+      "explanation": "The correct answer is `10`. An **argument** is the actual value (`10` or `4`) that is passed to the function when it is called. It provides the value for the corresponding parameter."
+    },
+    {
+      "question": "Which statement best describes the difference between parameters and arguments?",
+      "answers": [
+        {
+          "answer": "Parameters and arguments are two different names for the exact same thing.",
+          "correct": false
+        },
+        {
+          "answer": "A parameter is the value you pass to a function; an argument is the variable that receives the value.",
+          "correct": false
+        },
+        {
+          "answer": "A parameter is the variable in the function definition; an argument is the actual value passed during the function call.",
+          "correct": true
+        },
+        {
+          "answer": "Arguments are used when a function returns a value, and parameters are used when it does not.",
+          "correct": false
+        }
+      ],
+      "explanation": "The correct answer is the third option. **Parameters** are the variables you define when you create a function. **Arguments** are the concrete values you provide for those parameters when you call the function."
+    }
+  ]
+}

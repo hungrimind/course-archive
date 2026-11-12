@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "When does setUp() run in relation to tests?",
+      "answers": [
+        {
+          "answer": "Before each test",
+          "correct": true
+        },
+        {
+          "answer": "After each test",
+          "correct": false
+        },
+        {
+          "answer": "Only once before all tests",
+          "correct": false
+        },
+        {
+          "answer": "Only when explicitly called",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the main purpose of grouping tests?",
+      "answers": [
+        {
+          "answer": "To make the code look organized",
+          "correct": false
+        },
+        {
+          "answer": "To share common setup and teardown code between related tests",
+          "correct": true
+        },
+        {
+          "answer": "To run tests faster",
+          "correct": false
+        },
+        {
+          "answer": "To separate test files",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What's the difference between setUpAll and setUp?",
+      "answers": [
+        {
+          "answer": "setUp runs before each test, setUpAll runs once before all tests",
+          "correct": true
+        },
+        {
+          "answer": "setUp runs after each test, setUpAll runs before each test",
+          "correct": false
+        },
+        {
+          "answer": "They are the same thing",
+          "correct": false
+        },
+        {
+          "answer": "setUpAll is for groups, setUp is for individual tests",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "Which of these is not something configured in the pubspec.yaml?",
+      "answers": [
+        {
+          "answer": "App metadata",
+          "correct": false
+        },
+        {
+          "answer": "Dependencies and Assets",
+          "correct": false
+        },
+        {
+          "answer": "SDK version",
+          "correct": false
+        },
+        {
+          "answer": "Environment variables",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

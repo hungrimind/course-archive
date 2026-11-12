@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "High-level Modules",
+        "items": [
+          "Defines core logic",
+          "OrderService"
+        ]
+      },
+      {
+        "label": "Low-level Modules",
+        "items": [
+          "Handles details",
+          "PayPalProcessor"
+        ]
+      },
+      {
+        "label": "Abstractions",
+        "items": [
+          "Interfaces",
+          "PaymentProcessor"
+        ]
+      }
+    ]
+  }
+}

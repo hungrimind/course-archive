@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of golden tests?",
+      "answers": [
+        {
+          "answer": "To test widget interactions",
+          "correct": false
+        },
+        {
+          "answer": "To compare UI against a reference image pixel-by-pixel",
+          "correct": true
+        },
+        {
+          "answer": "To test business logic",
+          "correct": false
+        },
+        {
+          "answer": "To measure test performance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command is used to generate golden files?",
+      "answers": [
+        {
+          "answer": "flutter test",
+          "correct": false
+        },
+        {
+          "answer": "flutter golden",
+          "correct": false
+        },
+        {
+          "answer": "flutter test --update-goldens",
+          "correct": true
+        },
+        {
+          "answer": "flutter create-golden",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What happens when a golden test fails?",
+      "answers": [
+        {
+          "answer": "The app crashes",
+          "correct": false
+        },
+        {
+          "answer": "Nothing, it just shows an error message",
+          "correct": false
+        },
+        {
+          "answer": "A failures folder is created showing the differences",
+          "correct": true
+        },
+        {
+          "answer": "The test is automatically updated",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

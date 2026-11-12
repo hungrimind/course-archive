@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of repositories in MVVM?",
+      "answers": [
+        {
+          "answer": "To provide a consistent interface between the app and external resources",
+          "correct": true
+        },
+        {
+          "answer": "To handle UI logic",
+          "correct": false
+        },
+        {
+          "answer": "To manage application state",
+          "correct": false
+        },
+        {
+          "answer": "To create database tables",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these is NOT mentioned as a benefit of using repositories?",
+      "answers": [
+        {
+          "answer": "Improved app performance",
+          "correct": true
+        },
+        {
+          "answer": "Ability to fetch data from multiple sources",
+          "correct": false
+        },
+        {
+          "answer": "Easier testing through mocking",
+          "correct": false
+        },
+        {
+          "answer": "Switching between different data sources without changing app logic",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

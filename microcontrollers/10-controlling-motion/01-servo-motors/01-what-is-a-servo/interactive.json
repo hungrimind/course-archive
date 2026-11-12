@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What makes a servo motor different from a regular DC motor?",
+      "answers": [
+        {
+          "answer": "It spins faster than a DC motor",
+          "correct": false
+        },
+        {
+          "answer": "It moves to a specific angle and holds it there",
+          "correct": true
+        },
+        {
+          "answer": "It only rotates in one direction",
+          "correct": false
+        },
+        {
+          "answer": "It does not require any electrical power",
+          "correct": false
+        }
+      ],
+      "explanation": "A servo motor moves to a specific angle and holds that position, unlike a regular DC motor which just spins continuously."
+    },
+    {
+      "question": "What three components work together inside a servo motor?",
+      "answers": [
+        {
+          "answer": "A battery, a speaker, and a sensor",
+          "correct": false
+        },
+        {
+          "answer": "A stepper coil, a capacitor, and an LED",
+          "correct": false
+        },
+        {
+          "answer": "A small DC motor, gears, and a feedback circuit",
+          "correct": true
+        },
+        {
+          "answer": "A transformer, a relay, and a resistor",
+          "correct": false
+        }
+      ],
+      "explanation": "A servo contains a small DC motor for rotation, gears to slow it down and increase torque, and a feedback circuit that constantly checks and corrects the shaft's position."
+    },
+    {
+      "question": "What does the feedback circuit inside a servo do?",
+      "answers": [
+        {
+          "answer": "It converts AC power to DC power",
+          "correct": false
+        },
+        {
+          "answer": "It generates the PWM signal for the motor",
+          "correct": false
+        },
+        {
+          "answer": "It constantly checks the shaft's position and corrects it if pushed off target",
+          "correct": true
+        },
+        {
+          "answer": "It limits the motor's maximum speed",
+          "correct": false
+        }
+      ],
+      "explanation": "The feedback circuit monitors the shaft's position and automatically corrects it if something pushes the shaft off its target angle."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "How does the HC-SR04 ultrasonic sensor measure distance?",
+      "answers": [
+        {
+          "answer": "It shines a laser beam and measures reflection intensity",
+          "correct": false
+        },
+        {
+          "answer": "It sends ultrasonic sound and times how long the echo takes to return",
+          "correct": true
+        },
+        {
+          "answer": "It measures changes in air pressure between two points",
+          "correct": false
+        },
+        {
+          "answer": "It uses infrared light to detect nearby objects",
+          "correct": false
+        }
+      ],
+      "explanation": "The HC-SR04 works like a bat: it sends out a burst of ultrasonic sound and measures the time it takes for the echo to bounce back."
+    },
+    {
+      "question": "Why do you divide the calculated distance by 2 in the distance formula?",
+      "answers": [
+        {
+          "answer": "Because the sensor has two transducers",
+          "correct": false
+        },
+        {
+          "answer": "Because the sound wave travels to the object and back, covering twice the actual distance",
+          "correct": true
+        },
+        {
+          "answer": "Because the speed of sound is measured in round-trip units",
+          "correct": false
+        },
+        {
+          "answer": "Because the sensor samples twice per measurement",
+          "correct": false
+        }
+      ],
+      "explanation": "The sound travels from the sensor to the object and then back again, so the total distance traveled is twice the actual distance to the object."
+    },
+    {
+      "question": "What is the approximate effective range of the HC-SR04 sensor?",
+      "answers": [
+        {
+          "answer": "0 cm to 10 meters",
+          "correct": false
+        },
+        {
+          "answer": "1 cm to 2 meters",
+          "correct": false
+        },
+        {
+          "answer": "2 cm to 4 meters",
+          "correct": true
+        },
+        {
+          "answer": "10 cm to 20 meters",
+          "correct": false
+        }
+      ],
+      "explanation": "The HC-SR04 reliably measures distances from roughly 2 cm to 4 meters. Objects closer or farther give unreliable results."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "import { add "
+      },
+      {
+        "type": "blank",
+        "answer": "as"
+      },
+      {
+        "type": "code",
+        "value": " sum } from \"./math\";\nimport { add "
+      },
+      {
+        "type": "blank",
+        "answer": "as"
+      },
+      {
+        "type": "code",
+        "value": " concat } from \"./strings\";\n\nconsole.log("
+      },
+      {
+        "type": "blank",
+        "answer": "sum"
+      },
+      {
+        "type": "code",
+        "value": "(1, 2));\nconsole.log(concat(\"hello\", \" world\"));"
+      }
+    ],
+    "options": [
+      "from",
+      "rename",
+      "import"
+    ]
+  }
+}

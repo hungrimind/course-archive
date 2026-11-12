@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "TypeScript automatically infers the type of each property when you create an object.",
+        "correct": true,
+        "explanation": "TypeScript examines the initial values you assign and infers each property's type from them."
+      },
+      {
+        "statement": "After creating an object, you can assign a string to a property that was originally a number.",
+        "correct": false,
+        "explanation": "TypeScript enforces the inferred types. If a property was inferred as number, assigning a string causes a compile-time error."
+      },
+      {
+        "statement": "Accessing a property that does not exist on an object will only cause an error at runtime, not at compile time.",
+        "correct": false,
+        "explanation": "TypeScript catches missing properties at compile time, so you get an error before the code even runs."
+      },
+      {
+        "statement": "You can reassign a property to a new value of the same type without any error.",
+        "correct": true,
+        "explanation": "As long as the new value matches the inferred type, the assignment is valid. For example, changing a number property from 2020 to 2022 is fine."
+      }
+    ]
+  }
+}

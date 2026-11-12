@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Servo",
+        "items": [
+          "Best for pivoting within a limited angle range",
+          "Robot joints and camera gimbals",
+          "Has a built-in feedback circuit"
+        ]
+      },
+      {
+        "label": "DC Motor",
+        "items": [
+          "Best for fast continuous spinning",
+          "Wheels, fans, and propellers",
+          "Speed controlled with PWM but position is hard to control"
+        ]
+      },
+      {
+        "label": "Stepper",
+        "items": [
+          "Best for precise continuous rotation",
+          "Used in 3D printers and CNC machines",
+          "No feedback circuit required for accuracy"
+        ]
+      }
+    ]
+  }
+}

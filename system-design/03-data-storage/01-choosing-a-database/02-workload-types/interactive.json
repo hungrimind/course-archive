@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Transactional Workloads",
+        "items": [
+          "High read/write operations",
+          "Requires ACID properties",
+          "Data integrity focus"
+        ]
+      },
+      {
+        "label": "Analytical Workloads",
+        "items": [
+          "Complex queries",
+          "Large dataset focus",
+          "Data retrieval emphasis"
+        ]
+      }
+    ]
+  }
+}

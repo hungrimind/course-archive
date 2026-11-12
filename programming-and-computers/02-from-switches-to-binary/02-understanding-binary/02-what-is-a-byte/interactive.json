@@ -1,0 +1,28 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "1 Bit",
+        "items": [
+          "Can represent ON or OFF",
+          "Has 2 possible values"
+        ]
+      },
+      {
+        "label": "1 Byte (8 Bits)",
+        "items": [
+          "Can hold a single letter",
+          "Has 256 possible values",
+          "Standard chunk for working with data"
+        ]
+      },
+      {
+        "label": "Multiple Bytes",
+        "items": [
+          "Needed to store a file",
+          "Measured in kilobytes or megabytes"
+        ]
+      }
+    ]
+  }
+}

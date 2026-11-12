@@ -1,0 +1,176 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "service",
+        "label": "Service / App",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "secret_manager",
+        "label": "Secret Manager",
+        "icon": "lock",
+        "category": "security"
+      },
+      {
+        "id": "secret",
+        "label": "Secret (API Key / Password)",
+        "icon": "shield",
+        "category": "security"
+      },
+      {
+        "id": "identity_provider",
+        "label": "Identity Provider (AuthN)",
+        "icon": "network",
+        "category": "security"
+      },
+      {
+        "id": "rotation_job",
+        "label": "Secret Rotation Job",
+        "icon": "zap",
+        "category": "security"
+      },
+      {
+        "id": "audit_logs",
+        "label": "Audit Logs",
+        "icon": "archive",
+        "category": "security"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "service",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "service",
+        "to": "secret_manager"
+      },
+      {
+        "from": "secret_manager",
+        "to": "secret"
+      },
+      {
+        "from": "secret_manager",
+        "to": "audit_logs"
+      },
+      {
+        "from": "secret_manager",
+        "to": "identity_provider"
+      },
+      {
+        "from": "rotation_job",
+        "to": "secret_manager"
+      },
+      {
+        "from": "rotation_job",
+        "to": "secret"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "secret_manager",
+        "message": "Add a Secret Manager to securely store and broker access to secrets (avoid hardcoding secrets in services)."
+      },
+      {
+        "type": "required_edge",
+        "from": "service",
+        "to": "secret_manager",
+        "message": "The Service should fetch secrets from the Secret Manager, not from a raw secret store."
+      },
+      {
+        "type": "required_edge",
+        "from": "secret_manager",
+        "to": "secret",
+        "message": "The Secret Manager must be connected to the Secret so it can store/retrieve the sensitive value."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "service",
+        "to": "secret",
+        "message": "Avoid connecting the Service directly to the Secret. This models risky patterns like embedding secrets in configs or accessing a secret store without controls."
+      },
+      {
+        "type": "path_exists",
+        "from": "rotation_job",
+        "to": "secret",
+        "message": "Include a rotation path so secrets can be regularly rotated, reducing impact if a secret is compromised."
+      },
+      {
+        "type": "required_edge",
+        "from": "secret_manager",
+        "to": "audit_logs",
+        "message": "Send Secret Manager access events to Audit Logs so secret reads/changes can be monitored and investigated."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "service",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "secret_manager",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "rotation_job",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "audit_logs",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "secret",
+          "x": 250,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_3",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_3",
+          "to": "sol_5"
+        }
+      ]
+    },
+    "assignment": "Build a secrets management flow where the Service retrieves sensitive values through a Secret Manager (not directly from the Secret). Ensure secret access is auditable by connecting the Secret Manager to Audit Logs, and include a rotation path so secrets can be regularly rotated."
+  }
+}

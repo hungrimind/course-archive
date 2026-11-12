@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Edit",
+        "items": [
+          "Change a line of code in a file",
+          "Add a new function to handle user input"
+        ]
+      },
+      {
+        "label": "Run",
+        "items": [
+          "Press the play button to execute the program",
+          "See your changes appear on screen"
+        ]
+      },
+      {
+        "label": "Debug",
+        "items": [
+          "Read an error message to find which line failed",
+          "Track down why a button does nothing when clicked"
+        ]
+      }
+    ]
+  }
+}

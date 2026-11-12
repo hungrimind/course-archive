@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary function of authorization in a system?",
+      "answers": [
+        {
+          "answer": "To verify the identity of a user",
+          "correct": false
+        },
+        {
+          "answer": "To determine what actions a user can perform",
+          "correct": true
+        },
+        {
+          "answer": "To encrypt user data",
+          "correct": false
+        },
+        {
+          "answer": "To provide user interface features",
+          "correct": false
+        }
+      ],
+      "explanation": "Authorization is responsible for determining what actions a user is allowed to perform within a system, ensuring they have the necessary permissions."
+    },
+    {
+      "question": "How does authorization differ from authentication?",
+      "answers": [
+        {
+          "answer": "Authorization ensures user information is confidential",
+          "correct": false
+        },
+        {
+          "answer": "Authorization verifies user identity, while authentication grants access to resources",
+          "correct": false
+        },
+        {
+          "answer": "Authentication defines access levels, while authorization verifies identity",
+          "correct": false
+        },
+        {
+          "answer": "Authentication verifies who you are, while authorization defines what you can do",
+          "correct": true
+        }
+      ],
+      "explanation": "Authentication is about verifying a user's identity, whereas authorization defines what resources or actions the user is permitted to access."
+    },
+    {
+      "question": "What happens if a user has been authenticated but not authorized?",
+      "answers": [
+        {
+          "answer": "The user can access all functionalities",
+          "correct": false
+        },
+        {
+          "answer": "The user cannot perform any actions",
+          "correct": false
+        },
+        {
+          "answer": "The user gains access to limited functionalities based on permissions",
+          "correct": true
+        },
+        {
+          "answer": "The user encounters a security threat",
+          "correct": false
+        }
+      ],
+      "explanation": "If a user is authenticated but not authorized, they can only access limited functionalities according to the permissions that have been set for them."
+    }
+  ]
+}

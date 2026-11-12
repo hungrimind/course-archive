@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "",
+    "segments": [
+      {
+        "type": "code",
+        "value": "In REST, a resource is any entity that can be accessed via an API. Each resource is identified by a unique "
+      },
+      {
+        "type": "blank",
+        "answer": "URL"
+      },
+      {
+        "type": "code",
+        "value": ". For example, '/products/456' could represent a product resource with ID 456. It's important to use "
+      },
+      {
+        "type": "blank",
+        "answer": "nouns"
+      },
+      {
+        "type": "code",
+        "value": " in URLs rather than verbs, ensuring they are descriptive and hierarchical."
+      }
+    ],
+    "options": [
+      "URI",
+      "verbs",
+      "endpoints"
+    ]
+  }
+}

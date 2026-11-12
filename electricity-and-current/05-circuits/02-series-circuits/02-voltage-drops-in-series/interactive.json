@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "A 9V battery powers three identical LEDs in series. Approximately how much voltage does each LED receive?",
+      "answers": [
+        {
+          "answer": "9V each",
+          "correct": false
+        },
+        {
+          "answer": "6V each",
+          "correct": false
+        },
+        {
+          "answer": "3V each",
+          "correct": true
+        },
+        {
+          "answer": "1V each",
+          "correct": false
+        }
+      ],
+      "explanation": "In a series circuit, the total voltage is divided among the components. With three identical LEDs sharing a 9V supply, each gets about 3V (9V / 3 = 3V)."
+    },
+    {
+      "question": "What happens to the voltage per component if you add a fourth identical LED to a series circuit with a fixed battery?",
+      "answers": [
+        {
+          "answer": "Each LED gets more voltage because there are more components",
+          "correct": false
+        },
+        {
+          "answer": "Each LED gets less voltage because the battery's voltage is shared among more components",
+          "correct": true
+        },
+        {
+          "answer": "The voltage stays the same for each LED",
+          "correct": false
+        },
+        {
+          "answer": "The battery automatically increases its voltage output",
+          "correct": false
+        }
+      ],
+      "explanation": "The battery's voltage is a fixed budget. Adding more components in series means each one gets a smaller share of the total voltage."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary benefit of applying S.O.L.I.D principles in object-oriented programming?",
+      "answers": [
+        {
+          "answer": "They improve code security.",
+          "correct": false
+        },
+        {
+          "answer": "They make software maintainable, scalable, and readable.",
+          "correct": true
+        },
+        {
+          "answer": "They enhance code compilation speed.",
+          "correct": false
+        },
+        {
+          "answer": "They ensure adherence to the latest programming paradigms.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What's a key consideration when applying S.O.L.I.D principles?",
+      "answers": [
+        {
+          "answer": "Apply them to every piece of code without exception.",
+          "correct": false
+        },
+        {
+          "answer": "Apply them dogmatically, regardless of context.",
+          "correct": false
+        },
+        {
+          "answer": "Apply them where they make sense, and not dogmatically.",
+          "correct": true
+        },
+        {
+          "answer": "Avoid them unless you are working on a large-scale project.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which aspect of software is NOT directly addressed by S.O.L.I.D principles?",
+      "answers": [
+        {
+          "answer": "Code scalability",
+          "correct": false
+        },
+        {
+          "answer": "Code readability",
+          "correct": false
+        },
+        {
+          "answer": "Code maintainability",
+          "correct": false
+        },
+        {
+          "answer": "Code execution speed",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

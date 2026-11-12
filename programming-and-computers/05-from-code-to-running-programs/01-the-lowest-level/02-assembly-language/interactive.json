@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What problem does assembly language solve compared to raw machine code?",
+      "answers": [
+        {
+          "answer": "It makes programs run much faster than binary",
+          "correct": false
+        },
+        {
+          "answer": "It replaces binary with short, human-readable commands",
+          "correct": true
+        },
+        {
+          "answer": "It lets the CPU execute English sentences directly",
+          "correct": false
+        },
+        {
+          "answer": "It removes the need for a CPU entirely",
+          "correct": false
+        }
+      ],
+      "explanation": "Assembly uses short mnemonics like MOV instead of raw 1s and 0s, making instructions much easier for humans to read and write."
+    },
+    {
+      "question": "In the assembly instruction MOV AL, 61h, what does MOV represent?",
+      "answers": [
+        {
+          "answer": "A type of CPU register",
+          "correct": false
+        },
+        {
+          "answer": "A memory address",
+          "correct": false
+        },
+        {
+          "answer": "A command that moves a value",
+          "correct": true
+        },
+        {
+          "answer": "A hexadecimal number",
+          "correct": false
+        }
+      ],
+      "explanation": "MOV is a mnemonic that tells the CPU to move a value. AL is the destination register, and 61h is the value being moved."
+    },
+    {
+      "question": "What is a major limitation of assembly language?",
+      "answers": [
+        {
+          "answer": "It cannot produce working programs",
+          "correct": false
+        },
+        {
+          "answer": "It is tied to one specific CPU type and tedious for full programs",
+          "correct": true
+        },
+        {
+          "answer": "It is slower than writing in Python",
+          "correct": false
+        },
+        {
+          "answer": "It cannot be read by humans",
+          "correct": false
+        }
+      ],
+      "explanation": "Assembly is specific to one CPU architecture, so code written for one chip won't run on another. It is also very tedious for large programs."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What type of file format are fonts stored into?",
+      "answers": [
+        {
+          "answer": "TTF",
+          "correct": true
+        },
+        {
+          "answer": "FONT",
+          "correct": false
+        },
+        {
+          "answer": "SVG",
+          "correct": false
+        },
+        {
+          "answer": "TXT",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

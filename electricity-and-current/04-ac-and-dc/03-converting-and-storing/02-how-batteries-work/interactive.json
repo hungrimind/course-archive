@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A battery produces electricity through a chemical reaction between two different materials inside it.",
+        "correct": true,
+        "explanation": "Batteries contain two different materials that react chemically, and this reaction pushes electrons out of the negative terminal."
+      },
+      {
+        "statement": "When a battery dies, the electrons inside it have been used up.",
+        "correct": false,
+        "explanation": "Electrons are not consumed. A battery dies when the chemicals that drive the reaction are used up, not the electrons themselves."
+      },
+      {
+        "statement": "Rechargeable batteries restore their chemicals by running the internal reaction in reverse.",
+        "correct": true,
+        "explanation": "Plugging in a rechargeable battery forces the chemical reaction to run backward, restoring the original chemicals so the battery can discharge again."
+      },
+      {
+        "statement": "Electrons exit a battery through the positive terminal and return through the negative terminal.",
+        "correct": false,
+        "explanation": "Electrons exit through the negative terminal, travel through the circuit, and return through the positive terminal."
+      }
+    ]
+  }
+}

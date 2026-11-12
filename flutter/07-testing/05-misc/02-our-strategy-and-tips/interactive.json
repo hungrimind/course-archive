@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "According to the lesson, what's the recommended priority when building an unverified product?",
+      "answers": [
+        {
+          "answer": "Writing comprehensive tests for all features",
+          "correct": false
+        },
+        {
+          "answer": "Shipping features and getting users",
+          "correct": true
+        },
+        {
+          "answer": "Achieving 100% test coverage",
+          "correct": false
+        },
+        {
+          "answer": "Writing integration tests for all user flows",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What's described as a better approach than aiming for 100% test coverage?",
+      "answers": [
+        {
+          "answer": "Having no tests at all",
+          "correct": false
+        },
+        {
+          "answer": "Using cost/benefit analysis to determine what to test",
+          "correct": true
+        },
+        {
+          "answer": "Only writing unit tests",
+          "correct": false
+        },
+        {
+          "answer": "Testing everything manually",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

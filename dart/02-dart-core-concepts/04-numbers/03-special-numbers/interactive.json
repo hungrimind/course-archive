@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the result of the expression `0 / 0` in Dart?",
+      "answers": [
+        {
+          "answer": "`0`",
+          "correct": false
+        },
+        {
+          "answer": "An error is thrown",
+          "correct": false
+        },
+        {
+          "answer": "`double.nan`",
+          "correct": true
+        },
+        {
+          "answer": "`double.infinity`",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following expressions will result in `double.infinity`?",
+      "answers": [
+        {
+          "answer": "`0 / 5`",
+          "correct": false
+        },
+        {
+          "answer": "`5 / 0`",
+          "correct": true
+        },
+        {
+          "answer": "`-5 / 0`",
+          "correct": false
+        },
+        {
+          "answer": "`0 / 0`",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

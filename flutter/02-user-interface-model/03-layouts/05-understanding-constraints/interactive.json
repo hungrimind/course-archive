@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "What are the three rules of the Box Constraint Model?",
+      "answers": [
+        {
+          "answer": "Constraints go down, sizes go up, parent sets position",
+          "correct": true
+        },
+        {
+          "answer": "Sizes go down, constraints go up, child sets position",
+          "correct": false
+        },
+        {
+          "answer": "Parent sets size, child sets position, constraints go down",
+          "correct": false
+        },
+        {
+          "answer": "Child sets everything",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the initial constraint for the widget at the top of the widget tree?",
+      "answers": [
+        {
+          "answer": "Zero pixels",
+          "correct": false
+        },
+        {
+          "answer": "The parent widget's size",
+          "correct": false
+        },
+        {
+          "answer": "An infinite size",
+          "correct": false
+        },
+        {
+          "answer": "The entire screen of the device",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "When does the Box Constraint Model not work?",
+      "answers": [
+        {
+          "answer": "When using StatefulWidgets",
+          "correct": false
+        },
+        {
+          "answer": "When the screen is too small",
+          "correct": false
+        },
+        {
+          "answer": "When the parent doesn't know the constraints",
+          "correct": true
+        },
+        {
+          "answer": "When using MaterialApp",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the Box Constraint Model, who determines the final position of a widget?",
+      "answers": [
+        {
+          "answer": "The child widget",
+          "correct": false
+        },
+        {
+          "answer": "The Flutter framework",
+          "correct": false
+        },
+        {
+          "answer": "The device screen",
+          "correct": false
+        },
+        {
+          "answer": "The parent widget",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

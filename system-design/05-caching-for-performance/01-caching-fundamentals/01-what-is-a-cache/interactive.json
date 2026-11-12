@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A cache stores data permanently to ensure it's always available.",
+        "correct": false,
+        "explanation": "Caches store data temporarily to allow quick access to frequently used data, but it's not meant for permanent storage."
+      },
+      {
+        "statement": "Using a cache can help reduce the load on a server by handling requests for frequently accessed data.",
+        "correct": true,
+        "explanation": "By serving cached data, fewer requests need to reach the server, thus reducing server load and improving performance."
+      },
+      {
+        "statement": "Caches always provide the most up-to-date data available from the original source.",
+        "correct": false,
+        "explanation": "Since caches store copies, they may not always have the most recent data compared to querying the original source directly."
+      },
+      {
+        "statement": "The example `cache: { [key: string]: string } = { 'user123': 'Profile Data' };` defines a cache that stores user profiles by user ID.",
+        "correct": true,
+        "explanation": "This example creates an object that maps user IDs to their profile data, demonstrating a simple caching mechanism."
+      }
+    ]
+  }
+}

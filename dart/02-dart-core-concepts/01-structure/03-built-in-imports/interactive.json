@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Which Dart library is automatically imported into every Dart file, allowing you to use functions like `print()` without an explicit import statement?",
+      "answers": [
+        {
+          "answer": "dart:io",
+          "correct": false
+        },
+        {
+          "answer": "dart:math",
+          "correct": false
+        },
+        {
+          "answer": "dart:core",
+          "correct": true
+        },
+        {
+          "answer": "dart:convert",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "You want to use a function from the `dart:math` library. What is the correct line of code to make this library's contents available in your file?",
+      "answers": [
+        {
+          "answer": "include 'dart:math';",
+          "correct": false
+        },
+        {
+          "answer": "import 'dart:math';",
+          "correct": true
+        },
+        {
+          "answer": "You don't need to do anything, all libraries are available by default.",
+          "correct": false
+        },
+        {
+          "answer": "using 'dart:math';",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the context of Dart, what is the best definition of a \"library\"?",
+      "answers": [
+        {
+          "answer": "A single function that performs one specific task.",
+          "correct": false
+        },
+        {
+          "answer": "A special comment that explains what your code does.",
+          "correct": false
+        },
+        {
+          "answer": "The main file where you write all your application code.",
+          "correct": false
+        },
+        {
+          "answer": "A collection of reusable code, like functions and classes, that can be imported into your program.",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "According to the lesson, what was the primary reason for the creation of Object-Oriented Programming (OOP)?",
+      "answers": [
+        {
+          "answer": "To make programs run faster than with Procedural Programming.",
+          "correct": false
+        },
+        {
+          "answer": "To replace the need for functions and variables in code.",
+          "correct": false
+        },
+        {
+          "answer": "To provide a better way to organize and manage large, complex codebases.",
+          "correct": true
+        },
+        {
+          "answer": "To be the first-ever programming paradigm created.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In Object-Oriented Programming, what is the role of a `Class`?",
+      "answers": [
+        {
+          "answer": "A `Class` is the final, usable object itself, like a specific red car.",
+          "correct": false
+        },
+        {
+          "answer": "A `Class` is a blueprint used to define the properties and functionalities of an object.",
+          "correct": true
+        },
+        {
+          "answer": "A `Class` is another name for a function that returns a value.",
+          "correct": false
+        },
+        {
+          "answer": "A `Class` is a type of loop, similar to a `for` loop.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Using the example of a `Car` object, which of the following correctly identifies a \"property\" and a \"functionality\"?",
+      "answers": [
+        {
+          "answer": "The car's `color` is a functionality, and its ability to `drive` is a property.",
+          "correct": false
+        },
+        {
+          "answer": "The car's `color` and its `brand` are both functionalities.",
+          "correct": false
+        },
+        {
+          "answer": "The car's `color` is a property, and its ability to `drive` is a functionality.",
+          "correct": true
+        },
+        {
+          "answer": "The ability to `drive` and `brake` are both properties.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Storage keeps your files even when the computer is turned off.",
+        "correct": true,
+        "explanation": "That is the key advantage of storage (hard drives and SSDs). Unlike RAM, which is wiped when power is lost, storage retains your photos, apps, and documents permanently."
+      },
+      {
+        "statement": "Storage is faster than RAM, which is why we use it for long-term files.",
+        "correct": false,
+        "explanation": "Storage is actually much slower than RAM. We use it for long-term files because it keeps data without power, not because of speed. The tradeoff is permanence in exchange for slower access."
+      },
+      {
+        "statement": "When you open an app, the computer copies it from storage into RAM so the CPU can work with it.",
+        "correct": true,
+        "explanation": "Apps live on storage permanently, but the CPU needs data in fast RAM to process it. That is why opening an app for the first time takes a moment: the computer is loading it from slow storage into fast RAM."
+      },
+      {
+        "statement": "RAM and storage do the same job, they are just different brands of memory.",
+        "correct": false,
+        "explanation": "RAM and storage serve different purposes. RAM is fast, temporary workspace that loses data when power is off. Storage is slower, permanent memory that keeps files indefinitely. They work together but are not interchangeable."
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the role of the parseRouteInformation?",
+      "answers": [
+        {
+          "answer": "Updates the widget tree based on user gestures",
+          "correct": false
+        },
+        {
+          "answer": "Converts app navigation state back to a URL string",
+          "correct": false
+        },
+        {
+          "answer": "Converts the URL to app navigation state",
+          "correct": true
+        },
+        {
+          "answer": "Handles the visual transition animations between pages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the role of the restoreRouteInformation?",
+      "answers": [
+        {
+          "answer": "Updates the widget tree based on user gestures",
+          "correct": false
+        },
+        {
+          "answer": "Converts app navigation state back to a URL string",
+          "correct": true
+        },
+        {
+          "answer": "Converts the URL to app navigation state",
+          "correct": false
+        },
+        {
+          "answer": "Listens for back button presses and closes routes",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

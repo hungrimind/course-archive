@@ -1,0 +1,7 @@
+name: lsp_hierarchy
+description: A lesson demonstrating fixing hierarchy issues using interfaces/abstract classes to satisfy LSP
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.0

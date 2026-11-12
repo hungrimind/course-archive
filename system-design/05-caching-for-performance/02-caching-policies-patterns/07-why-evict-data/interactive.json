@@ -1,0 +1,155 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "cache_layer",
+        "label": "In-Memory Cache",
+        "icon": "layers",
+        "category": "compute"
+      },
+      {
+        "id": "eviction_policy",
+        "label": "Eviction Policy (LRU/TTL)",
+        "icon": "git-branch",
+        "category": "compute"
+      },
+      {
+        "id": "metrics_monitoring",
+        "label": "Metrics & Alerts",
+        "icon": "zap",
+        "category": "observability"
+      },
+      {
+        "id": "persistent_store",
+        "label": "Database (Source of Truth)",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "cache_layer"
+      },
+      {
+        "from": "cache_layer",
+        "to": "persistent_store"
+      },
+      {
+        "from": "eviction_policy",
+        "to": "cache_layer"
+      },
+      {
+        "from": "cache_layer",
+        "to": "metrics_monitoring"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "cache_layer",
+        "message": "Add an in-memory cache so requests don't always hit the database."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "eviction_policy",
+        "message": "Add an eviction policy (e.g., LRU/TTL) so the cache cannot grow indefinitely and exhaust memory."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "persistent_store",
+        "message": "Add a persistent store as the source of truth for cache misses."
+      },
+      {
+        "type": "required_edge",
+        "from": "client",
+        "to": "cache_layer",
+        "message": "The client should query the cache first to reduce latency and database load."
+      },
+      {
+        "type": "required_edge",
+        "from": "eviction_policy",
+        "to": "cache_layer",
+        "message": "Connect the eviction policy to the cache so it can enforce size/TTL limits and remove less critical entries."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "persistent_store",
+        "message": "Avoid having the client directly access the database in this design. Route reads through the cache first so eviction and cache behavior matter."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_eviction",
+          "componentId": "eviction_policy",
+          "x": 100,
+          "y": 150
+        },
+        {
+          "id": "sol_cache",
+          "componentId": "cache_layer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_metrics",
+          "componentId": "metrics_monitoring",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_db",
+          "componentId": "persistent_store",
+          "x": 250,
+          "y": 300
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_cache"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_eviction",
+          "to": "sol_cache"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_cache",
+          "to": "sol_db"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_cache",
+          "to": "sol_metrics"
+        }
+      ]
+    },
+    "assignment": "Build a caching setup where the client reads through an in-memory cache backed by a database, and the cache has an explicit eviction policy to prevent unbounded growth. Ensure the client talks to the cache (not directly to the database), connect the cache to the database for cache misses, and wire an eviction policy into the cache so entries can be removed when the cache is full or data expires."
+  }
+}

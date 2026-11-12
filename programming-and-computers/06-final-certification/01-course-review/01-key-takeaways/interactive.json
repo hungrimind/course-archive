@@ -1,0 +1,114 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main job of the CPU inside a computer?",
+      "answers": [
+        {
+          "answer": "To permanently store files and documents",
+          "correct": false
+        },
+        {
+          "answer": "To fetch, decode, and execute instructions",
+          "correct": true
+        },
+        {
+          "answer": "To display images on the screen",
+          "correct": false
+        },
+        {
+          "answer": "To connect the computer to the internet",
+          "correct": false
+        }
+      ],
+      "explanation": "The CPU is the brain of the computer, and its core loop is fetch-decode-execute: it grabs an instruction, figures out what it means, and carries it out. This cycle happens billions of times per second."
+    },
+    {
+      "question": "Why can a single byte represent 256 different values?",
+      "answers": [
+        {
+          "answer": "Because a byte is made of 256 transistors",
+          "correct": false
+        },
+        {
+          "answer": "Because 256 is the maximum number in hexadecimal",
+          "correct": false
+        },
+        {
+          "answer": "Because a byte is 8 bits, and 2 to the power of 8 equals 256",
+          "correct": true
+        },
+        {
+          "answer": "Because computers count in groups of 256",
+          "correct": false
+        }
+      ],
+      "explanation": "A byte contains 8 bits, and each bit can be 0 or 1, giving 2^8 = 256 possible combinations. This is why text, colors, and other data are often built from byte-sized chunks."
+    },
+    {
+      "question": "What does it mean to say computers are 'literal'?",
+      "answers": [
+        {
+          "answer": "They can only understand the English language",
+          "correct": false
+        },
+        {
+          "answer": "They do exactly what you tell them, nothing more, nothing less",
+          "correct": true
+        },
+        {
+          "answer": "They can guess what you meant if your instructions are unclear",
+          "correct": false
+        },
+        {
+          "answer": "They only work with literal numbers, not text",
+          "correct": false
+        }
+      ],
+      "explanation": "Computers follow instructions precisely without inferring intent, which is why programming requires clear, step-by-step thinking. A small mistake in your instructions leads to a bug."
+    },
+    {
+      "question": "Which of the following best describes a function in programming?",
+      "answers": [
+        {
+          "answer": "A single value that never changes",
+          "correct": false
+        },
+        {
+          "answer": "A type of loop that runs forever",
+          "correct": false
+        },
+        {
+          "answer": "A reusable block of instructions that can take inputs and return an output",
+          "correct": true
+        },
+        {
+          "answer": "A list of key-value pairs",
+          "correct": false
+        }
+      ],
+      "explanation": "Functions let you package logic once and reuse it anywhere, often taking inputs and producing an output. They are one of the core building blocks of every programming language."
+    },
+    {
+      "question": "What is the key difference between compiled and interpreted languages?",
+      "answers": [
+        {
+          "answer": "Compiled languages are translated to machine code ahead of time, while interpreted languages are translated and run line-by-line",
+          "correct": true
+        },
+        {
+          "answer": "Compiled languages only run on phones, interpreted languages only run on desktops",
+          "correct": false
+        },
+        {
+          "answer": "Interpreted languages do not use variables or loops",
+          "correct": false
+        },
+        {
+          "answer": "Compiled languages do not need a CPU to run",
+          "correct": false
+        }
+      ],
+      "explanation": "Compiled languages convert all the source code into machine code before running, while interpreted languages translate and execute it on the fly. Either way, the CPU ultimately runs machine code."
+    }
+  ]
+}

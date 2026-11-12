@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What happens when an error is thrown and nothing handles it?",
+      "answers": [
+        {
+          "answer": "The error is silently ignored and code continues",
+          "correct": false
+        },
+        {
+          "answer": "The program crashes and the rest of the code never runs",
+          "correct": true
+        },
+        {
+          "answer": "The error is logged but execution continues normally",
+          "correct": false
+        },
+        {
+          "answer": "The program restarts automatically from the beginning",
+          "correct": false
+        }
+      ],
+      "explanation": "When an error is thrown and nothing handles it, the program crashes. The rest of the code never runs, which is why error handling exists."
+    },
+    {
+      "question": "Which of the following would throw an error in JavaScript/TypeScript?",
+      "answers": [
+        {
+          "answer": "Declaring a variable with let",
+          "correct": false
+        },
+        {
+          "answer": "Calling console.log with a string",
+          "correct": false
+        },
+        {
+          "answer": "Parsing invalid JSON with JSON.parse",
+          "correct": true
+        },
+        {
+          "answer": "Adding two numbers together",
+          "correct": false
+        }
+      ],
+      "explanation": "JSON.parse throws an error when given invalid JSON. Operations like variable declarations, logging, and arithmetic do not throw errors on their own."
+    }
+  ]
+}

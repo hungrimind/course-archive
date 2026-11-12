@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const status: string = \"active\";\nconst isNotActive: boolean = status "
+      },
+      {
+        "type": "blank",
+        "answer": "!=="
+      },
+      {
+        "type": "code",
+        "value": " \"active\"; // false\nconst isNotPending: boolean = status "
+      },
+      {
+        "type": "blank",
+        "answer": "!=="
+      },
+      {
+        "type": "code",
+        "value": " \"pending\"; // true"
+      }
+    ],
+    "options": [
+      "!=",
+      "===",
+      "=="
+    ]
+  }
+}

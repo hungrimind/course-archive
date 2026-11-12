@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main challenge with golden tests across different operating systems?",
+      "answers": [
+        {
+          "answer": "Tests run slower on different operating systems",
+          "correct": false
+        },
+        {
+          "answer": "Golden files are not compatible across operating systems",
+          "correct": false
+        },
+        {
+          "answer": "Different operating systems render UI elements slightly differently",
+          "correct": true
+        },
+        {
+          "answer": "Golden tests only work on one operating system",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does tolerancePercentage represent in GoldenDiffComparator?",
+      "answers": [
+        {
+          "answer": "The maximum allowed time for the test to run",
+          "correct": false
+        },
+        {
+          "answer": "The percentage of pixels that can be different between images",
+          "correct": true
+        },
+        {
+          "answer": "The image compression rate",
+          "correct": false
+        },
+        {
+          "answer": "The minimum required test coverage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What's the best practice for handling cross-platform golden tests?",
+      "answers": [
+        {
+          "answer": "Disable golden tests on certain platforms",
+          "correct": false
+        },
+        {
+          "answer": "Run tests only on Windows",
+          "correct": false
+        },
+        {
+          "answer": "Either run tests on the same OS or use tolerance settings",
+          "correct": true
+        },
+        {
+          "answer": "Ignore platform differences",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

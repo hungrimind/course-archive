@@ -1,0 +1,35 @@
+{
+  "fillblank": {
+    "language": "dart",
+    "segments": [
+      {
+        "type": "code",
+        "value": "String userRole = "
+      },
+      {
+        "type": "blank",
+        "answer": "\"admin\""
+      },
+      {
+        "type": "code",
+        "value": ";\n\n// Avoid magic strings by using constants\nconst String "
+      },
+      {
+        "type": "blank",
+        "answer": "ADMIN_ROLE"
+      },
+      {
+        "type": "code",
+        "value": " = \"admin\";\n\nif ("
+      },
+      {
+        "type": "blank",
+        "answer": "userRole"
+      },
+      {
+        "type": "code",
+        "value": " == ADMIN_ROLE) {\n  // do something\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "battery-3v3",
+        "label": "3.3V Battery",
+        "type": "battery",
+        "value": 3.3,
+        "count": 1
+      },
+      {
+        "id": "resistor-100",
+        "label": "100Ω Resistor",
+        "type": "resistor",
+        "value": 100,
+        "count": 1
+      },
+      {
+        "id": "blue-led",
+        "label": "Blue LED",
+        "type": "led",
+        "value": 3,
+        "maxCurrent": 0.02,
+        "count": 1
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "The circuit must form a complete loop for the LED to light up."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Add the blue LED to the circuit."
+      },
+      {
+        "type": "has_component",
+        "componentType": "resistor",
+        "message": "Always pair an LED with a resistor to limit current."
+      },
+      {
+        "type": "series_with",
+        "component": "led",
+        "withComponent": "resistor",
+        "message": "The resistor must be in series with the LED."
+      },
+      {
+        "type": "led_safe",
+        "message": "The LED current must not exceed 20mA. With 100Ω: (3.3V - 3V) / 100Ω = 3mA — safe and working."
+      }
+    ],
+    "assignment": "Wire the blue LED with a resistor so it lights up safely. The 3.3V battery barely exceeds the LED's 3V forward voltage, so the 100Ω resistor keeps current at a gentle 3mA.",
+    "solution": {
+      "nodes": [
+        {
+          "id": "n1",
+          "componentId": "battery-3v3",
+          "x": 100,
+          "y": 200
+        },
+        {
+          "id": "n2",
+          "componentId": "resistor-100",
+          "x": 300,
+          "y": 100
+        },
+        {
+          "id": "n3",
+          "componentId": "blue-led",
+          "x": 300,
+          "y": 300
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "n1",
+            "terminal": "+"
+          },
+          "to": {
+            "nodeId": "n2",
+            "terminal": "in"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "n2",
+            "terminal": "out"
+          },
+          "to": {
+            "nodeId": "n3",
+            "terminal": "anode"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "n3",
+            "terminal": "cathode"
+          },
+          "to": {
+            "nodeId": "n1",
+            "terminal": "-"
+          }
+        }
+      ]
+    }
+  }
+}

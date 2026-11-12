@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What voltage does a GPIO pin read when using a pull-up resistor and the button is NOT pressed?",
+      "answers": [
+        {
+          "answer": "LOW (0V)",
+          "correct": false
+        },
+        {
+          "answer": "HIGH (3.3V)",
+          "correct": true
+        },
+        {
+          "answer": "It floats between HIGH and LOW",
+          "correct": false
+        },
+        {
+          "answer": "It depends on the resistor value",
+          "correct": false
+        }
+      ],
+      "explanation": "A pull-up resistor connects the pin to 3.3V, so when the button is open (not pressed), the pin gently sits at HIGH."
+    },
+    {
+      "question": "What happens when you press the button in a pull-up resistor circuit?",
+      "answers": [
+        {
+          "answer": "The pin stays at HIGH because the resistor holds it there",
+          "correct": false
+        },
+        {
+          "answer": "The pin reads a voltage between HIGH and LOW",
+          "correct": false
+        },
+        {
+          "answer": "The pin is pulled to LOW because the button connects it to ground",
+          "correct": true
+        },
+        {
+          "answer": "The pin starts floating",
+          "correct": false
+        }
+      ],
+      "explanation": "Pressing the button connects the pin directly to ground, which overpowers the gentle pull-up to 3.3V and pulls the pin to LOW."
+    },
+    {
+      "question": "How does a pull-down resistor differ from a pull-up resistor?",
+      "answers": [
+        {
+          "answer": "A pull-down uses a capacitor instead of a resistor",
+          "correct": false
+        },
+        {
+          "answer": "A pull-down holds the pin at LOW by default; pressing the button pulls it HIGH",
+          "correct": true
+        },
+        {
+          "answer": "A pull-down eliminates the need for a button entirely",
+          "correct": false
+        },
+        {
+          "answer": "A pull-down resistor only works with 5V systems",
+          "correct": false
+        }
+      ],
+      "explanation": "A pull-down resistor is the opposite of a pull-up: it holds the pin at LOW when the button is open, and pressing the button pulls the pin to HIGH."
+    }
+  ]
+}

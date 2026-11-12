@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "How does a character LCD render text on screen?",
+      "answers": [
+        {
+          "answer": "You draw each letter pixel by pixel using a graphics library",
+          "correct": false
+        },
+        {
+          "answer": "You send a character code and the display renders it from a built-in font",
+          "correct": true
+        },
+        {
+          "answer": "You upload a custom font file to the display before each message",
+          "correct": false
+        },
+        {
+          "answer": "The microcontroller streams a video signal like a monitor",
+          "correct": false
+        }
+      ],
+      "explanation": "Character LCDs have a built-in font baked into memory. You send a character code, and the display handles all the pixel rendering internally."
+    },
+    {
+      "question": "What is the most common size for a character LCD?",
+      "answers": [
+        {
+          "answer": "8x1 (8 columns, 1 row)",
+          "correct": false
+        },
+        {
+          "answer": "20x4 (20 columns, 4 rows)",
+          "correct": false
+        },
+        {
+          "answer": "16x2 (16 columns, 2 rows)",
+          "correct": true
+        },
+        {
+          "answer": "32x4 (32 columns, 4 rows)",
+          "correct": false
+        }
+      ],
+      "explanation": "16x2 is the most common character LCD size, giving you 16 columns and 2 rows. 20x4 models also exist but are less common."
+    },
+    {
+      "question": "Which of the following is a good use case for a character LCD?",
+      "answers": [
+        {
+          "answer": "Rendering a full graphical user interface with icons",
+          "correct": false
+        },
+        {
+          "answer": "Displaying a short sensor reading or status message",
+          "correct": true
+        },
+        {
+          "answer": "Playing back video clips from an SD card",
+          "correct": false
+        },
+        {
+          "answer": "Drawing animated charts of real-time data",
+          "correct": false
+        }
+      ],
+      "explanation": "Character LCDs excel at showing sensor readings, status messages, and short labels. They cannot draw arbitrary graphics or video since they only display characters from a fixed font."
+    }
+  ]
+}

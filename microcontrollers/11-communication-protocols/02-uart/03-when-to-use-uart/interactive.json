@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What type of connection is UART best suited for?",
+      "answers": [
+        {
+          "answer": "Connecting dozens of sensors on a shared bus",
+          "correct": false
+        },
+        {
+          "answer": "Point-to-point links between exactly two devices",
+          "correct": true
+        },
+        {
+          "answer": "High-speed data transfer to displays",
+          "correct": false
+        },
+        {
+          "answer": "Networking multiple microcontrollers together",
+          "correct": false
+        }
+      ],
+      "explanation": "UART shines for point-to-point links between exactly two devices, such as GPS modules, Bluetooth adapters, and serial debug consoles."
+    },
+    {
+      "question": "Which of the following is a limitation of UART?",
+      "answers": [
+        {
+          "answer": "It requires a clock wire",
+          "correct": false
+        },
+        {
+          "answer": "It uses too many wires",
+          "correct": false
+        },
+        {
+          "answer": "It can only connect two devices at a time",
+          "correct": true
+        },
+        {
+          "answer": "It cannot send data bidirectionally",
+          "correct": false
+        }
+      ],
+      "explanation": "UART's simplicity is also its limit -- it only connects two devices at a time. For communicating with many devices on the same bus, SPI or I2C are better choices."
+    },
+    {
+      "question": "Which device would typically use UART for communication?",
+      "answers": [
+        {
+          "answer": "An SD card reader",
+          "correct": false
+        },
+        {
+          "answer": "A GPS module",
+          "correct": true
+        },
+        {
+          "answer": "A chain of LED strips",
+          "correct": false
+        },
+        {
+          "answer": "An array of temperature sensors",
+          "correct": false
+        }
+      ],
+      "explanation": "GPS modules, Bluetooth adapters, and serial debug consoles all typically use UART because they involve simple point-to-point communication between two devices."
+    }
+  ]
+}

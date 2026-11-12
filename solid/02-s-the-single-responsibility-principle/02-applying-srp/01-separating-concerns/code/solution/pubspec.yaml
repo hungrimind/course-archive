@@ -1,0 +1,7 @@
+name: separating_concerns
+description: A small lesson demonstrating separating concerns with authentication and data services
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.0

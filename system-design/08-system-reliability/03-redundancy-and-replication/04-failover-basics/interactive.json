@@ -1,0 +1,203 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "user_client",
+        "label": "User Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "health_check",
+        "label": "Health Check Monitor",
+        "icon": "shield",
+        "category": "reliability"
+      },
+      {
+        "id": "primary_system",
+        "label": "Primary System",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "standby_system",
+        "label": "Standby System",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "failover_router",
+        "label": "Failover Router",
+        "icon": "git-branch",
+        "category": "network"
+      },
+      {
+        "id": "shared_storage",
+        "label": "Shared Storage",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "user_client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "user_client",
+        "to": "failover_router"
+      },
+      {
+        "from": "failover_router",
+        "to": "primary_system"
+      },
+      {
+        "from": "failover_router",
+        "to": "standby_system"
+      },
+      {
+        "from": "health_check",
+        "to": "primary_system"
+      },
+      {
+        "from": "health_check",
+        "to": "standby_system"
+      },
+      {
+        "from": "primary_system",
+        "to": "shared_storage"
+      },
+      {
+        "from": "standby_system",
+        "to": "shared_storage"
+      },
+      {
+        "from": "health_check",
+        "to": "failover_router"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "primary_system",
+        "message": "Include a Primary System to represent the main active component that can fail."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "standby_system",
+        "message": "Include a Standby System so the design can automatically take over when the primary fails."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "failover_router",
+        "message": "Add a Failover Router to switch traffic between primary and standby during a failure."
+      },
+      {
+        "type": "path_exists",
+        "from": "user_client",
+        "to": "primary_system",
+        "message": "Users must be able to reach the Primary System through the traffic path (typically via the failover component)."
+      },
+      {
+        "type": "path_exists",
+        "from": "user_client",
+        "to": "standby_system",
+        "message": "Users must also be able to reach the Standby System (so traffic can be redirected during failover)."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "user_client",
+        "to": "primary_system",
+        "message": "Do not connect users directly to the Primary System. Traffic should go through a failover mechanism so switching is automatic."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_user",
+          "componentId": "user_client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_router",
+          "componentId": "failover_router",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_health",
+          "componentId": "health_check",
+          "x": 430,
+          "y": 150
+        },
+        {
+          "id": "sol_primary",
+          "componentId": "primary_system",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_standby",
+          "componentId": "standby_system",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_storage",
+          "componentId": "shared_storage",
+          "x": 250,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_user",
+          "to": "sol_router"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_router",
+          "to": "sol_primary"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_router",
+          "to": "sol_standby"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_health",
+          "to": "sol_primary"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_health",
+          "to": "sol_standby"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_health",
+          "to": "sol_router"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_primary",
+          "to": "sol_storage"
+        },
+        {
+          "id": "se_8",
+          "from": "sol_standby",
+          "to": "sol_storage"
+        }
+      ]
+    },
+    "assignment": "Build a failover architecture where user traffic goes through a failover component (not directly to the primary), includes both a primary and standby system, and ensures users can reach either system via the traffic path so automatic switching is possible during failures."
+  }
+}

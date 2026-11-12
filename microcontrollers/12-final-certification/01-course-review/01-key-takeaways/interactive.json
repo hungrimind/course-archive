@@ -1,0 +1,114 @@
+{
+  "quiz": [
+    {
+      "question": "What does setting a GPIO pin to HIGH do?",
+      "answers": [
+        {
+          "answer": "It converts an analog signal to digital",
+          "correct": false
+        },
+        {
+          "answer": "It outputs a voltage (e.g., 3.3V or 5V) on the pin",
+          "correct": true
+        },
+        {
+          "answer": "It activates the pin's built-in pull-up resistor",
+          "correct": false
+        },
+        {
+          "answer": "It configures the pin as an input",
+          "correct": false
+        }
+      ],
+      "explanation": "Setting a GPIO pin HIGH outputs a voltage level (typically 3.3V or 5V depending on the board). This is how you control outputs like LEDs: HIGH turns them on, LOW turns them off."
+    },
+    {
+      "question": "What does the duty cycle of a PWM signal control?",
+      "answers": [
+        {
+          "answer": "The frequency of the signal in hertz",
+          "correct": false
+        },
+        {
+          "answer": "The voltage level of each pulse",
+          "correct": false
+        },
+        {
+          "answer": "The percentage of time the signal stays HIGH within each cycle",
+          "correct": true
+        },
+        {
+          "answer": "The number of connected devices on the bus",
+          "correct": false
+        }
+      ],
+      "explanation": "Duty cycle is the percentage of time the PWM signal remains HIGH in each period. A 50% duty cycle means the signal is HIGH half the time, which effectively delivers half the average power. That's useful for dimming LEDs or controlling motor speed."
+    },
+    {
+      "question": "Why would you use a pull-up resistor on a GPIO input pin?",
+      "answers": [
+        {
+          "answer": "To increase the current flowing through the pin",
+          "correct": false
+        },
+        {
+          "answer": "To convert an analog signal into a digital value",
+          "correct": false
+        },
+        {
+          "answer": "To prevent the pin from floating in an undefined state when nothing is driving it",
+          "correct": true
+        },
+        {
+          "answer": "To allow the pin to output PWM signals",
+          "correct": false
+        }
+      ],
+      "explanation": "An unconnected (floating) input pin can randomly read HIGH or LOW due to electrical noise. A pull-up resistor ties the pin to a known HIGH state by default, so it only reads LOW when actively pulled down, for example by a button press."
+    },
+    {
+      "question": "Which communication protocol uses only two wires (SDA and SCL) and can connect many devices on the same bus?",
+      "answers": [
+        {
+          "answer": "UART",
+          "correct": false
+        },
+        {
+          "answer": "SPI",
+          "correct": false
+        },
+        {
+          "answer": "I2C",
+          "correct": true
+        },
+        {
+          "answer": "PWM",
+          "correct": false
+        }
+      ],
+      "explanation": "I2C (Inter-Integrated Circuit) uses just two wires (SDA for data and SCL for clock) and supports multiple devices on the same bus, each identified by a unique address. UART is point-to-point between two devices, and SPI requires additional chip-select lines per device."
+    },
+    {
+      "question": "Which motor type moves in precise discrete steps, making it ideal for applications like 3D printers?",
+      "answers": [
+        {
+          "answer": "Servo motor",
+          "correct": false
+        },
+        {
+          "answer": "DC motor",
+          "correct": false
+        },
+        {
+          "answer": "Stepper motor",
+          "correct": true
+        },
+        {
+          "answer": "Brushless motor",
+          "correct": false
+        }
+      ],
+      "explanation": "Stepper motors divide a full rotation into a fixed number of discrete steps, allowing precise position control without feedback. Servos move to exact angles but within a limited range, and DC motors spin continuously with variable speed but lack inherent position precision."
+    }
+  ]
+}

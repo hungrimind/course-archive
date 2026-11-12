@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "It is safe to connect a 5V output directly to a Raspberry Pi GPIO pin.",
+        "correct": false,
+        "explanation": "GPIO pins expect at most 3.3V. Feeding 5V into them can permanently destroy the pin or the entire Pi."
+      },
+      {
+        "statement": "A level shifter can be used to safely connect a 5V device to a 3.3V GPIO pin.",
+        "correct": true,
+        "explanation": "A level shifter steps the 5V signal down to 3.3V, making it safe for the GPIO pin."
+      },
+      {
+        "statement": "If you accidentally send 5V into a 3.3V GPIO pin, the Pi will display an error message before any damage occurs.",
+        "correct": false,
+        "explanation": "There is no warning or error message. The pin or the entire Pi can be permanently damaged silently."
+      }
+    ]
+  }
+}

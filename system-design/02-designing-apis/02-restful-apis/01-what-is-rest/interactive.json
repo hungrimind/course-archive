@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "REST is a protocol that mandates how web services should be structured.",
+        "correct": false,
+        "explanation": "REST is not a protocol, but an architectural style that provides guidelines for creating scalable web services."
+      },
+      {
+        "statement": "RESTful systems use HTTP methods such as GET, POST, PUT, and DELETE to manipulate resources.",
+        "correct": true,
+        "explanation": "RESTful systems utilize standard HTTP methods to perform operations on resources represented by URLs, allowing for uniform interaction."
+      },
+      {
+        "statement": "In a REST architecture, the communication between the client and server must be stateful.",
+        "correct": false,
+        "explanation": "REST relies on stateless communication, meaning each request from the client contains all the information needed to process it, without relying on stored context on the server."
+      },
+      {
+        "statement": "A key advantage of REST is that it promotes scalability and simplicity in networked applications.",
+        "correct": true,
+        "explanation": "By using a stateless client-server architecture and standard HTTP methods, REST promotes scalability and simplicity through uniform interfaces and reduced server workload."
+      }
+    ]
+  }
+}

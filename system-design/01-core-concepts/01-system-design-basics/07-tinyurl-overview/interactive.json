@@ -1,0 +1,185 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client (Browser/App)",
+        "icon": "globe",
+        "category": "entry"
+      },
+      {
+        "id": "api_server",
+        "label": "API / Web Server",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "id_generator",
+        "label": "Short Code / ID Generator",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "url_database",
+        "label": "URL Mapping Database",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "cache_layer",
+        "label": "Cache (Redirect Lookups)",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "collision_handler",
+        "label": "Collision Check + Retry",
+        "icon": "git-branch",
+        "category": "compute"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "api_server"
+      },
+      {
+        "from": "api_server",
+        "to": "id_generator"
+      },
+      {
+        "from": "id_generator",
+        "to": "collision_handler"
+      },
+      {
+        "from": "collision_handler",
+        "to": "url_database"
+      },
+      {
+        "from": "api_server",
+        "to": "cache_layer"
+      },
+      {
+        "from": "cache_layer",
+        "to": "url_database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "api_server",
+        "message": "You need an API/Web Server to accept shorten + redirect requests."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "id_generator",
+        "message": "Add an ID generator to create the short code for new URLs."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "url_database",
+        "message": "Add a database to persist the mapping from short_code to long_url."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "url_database",
+        "message": "There must be a request path from the client to the database so the system can store/look up URL mappings."
+      },
+      {
+        "type": "required_edge",
+        "from": "api_server",
+        "to": "id_generator",
+        "message": "The API/Web Server should call the ID generator during the shorten flow."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "url_database",
+        "message": "Clients should never access the database directly. Route through the API/Web Server."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "api_server",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "id_generator",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "cache_layer",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "collision_handler",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_6",
+          "componentId": "url_database",
+          "x": 250,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_5",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_4",
+          "to": "sol_6"
+        }
+      ]
+    },
+    "assignment": "Build a TinyURL-style architecture that supports both shortening and redirecting. Your diagram must include an API/Web Server, an ID generator to create short codes, and a database to store short_code → long_url mappings. Ensure the client reaches the database only through the server (no direct client→DB connection), and make sure there is an end-to-end path from the client to the database for storing and/or looking up mappings."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "When you plug in a gaming console, the power brick first uses a "
+      },
+      {
+        "type": "blank",
+        "answer": "rectifier"
+      },
+      {
+        "type": "code",
+        "value": " to flip the negative half of the AC wave so current flows only one way. Then a "
+      },
+      {
+        "type": "blank",
+        "answer": "smoothing circuit"
+      },
+      {
+        "type": "code",
+        "value": " removes the remaining bumps to produce clean, steady "
+      },
+      {
+        "type": "blank",
+        "answer": "DC"
+      },
+      {
+        "type": "code",
+        "value": " output."
+      }
+    ],
+    "options": [
+      "transformer",
+      "AC",
+      "capacitor bank"
+    ]
+  }
+}

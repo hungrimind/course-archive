@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Which operator asserts that a nullable value is not null and will throw a runtime error if it is?",
+      "answers": [
+        {
+          "answer": "!",
+          "correct": true
+        },
+        {
+          "answer": "??",
+          "correct": false
+        },
+        {
+          "answer": "??=",
+          "correct": false
+        },
+        {
+          "answer": "==",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the following print?\n```dart\nvoid main() {\n  int? num1;\n  int num2 = num1 ?? 10;\n  print(num2);\n}\n```",
+      "answers": [
+        {
+          "answer": "null",
+          "correct": false
+        },
+        {
+          "answer": "0",
+          "correct": false
+        },
+        {
+          "answer": "10",
+          "correct": true
+        },
+        {
+          "answer": "It throws a runtime error",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the following print?\n```dart\nvoid main() {\n  int? n = 2;\n  n ??= 10;\n  print(n);\n}\n```",
+      "answers": [
+        {
+          "answer": "null",
+          "correct": false
+        },
+        {
+          "answer": "2",
+          "correct": true
+        },
+        {
+          "answer": "10",
+          "correct": false
+        },
+        {
+          "answer": "It throws a runtime error",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

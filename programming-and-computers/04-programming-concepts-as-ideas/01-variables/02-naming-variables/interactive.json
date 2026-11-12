@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Good variable name",
+        "items": [
+          "playerScore",
+          "emailAddress",
+          "totalPrice"
+        ]
+      },
+      {
+        "label": "Bad variable name",
+        "items": [
+          "x",
+          "data2",
+          "stuff"
+        ]
+      }
+    ]
+  }
+}

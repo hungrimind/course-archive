@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "Imagine a water park: a pump keeps water moving through a slide in a loop. In the same way, a "
+      },
+      {
+        "type": "blank",
+        "answer": "battery"
+      },
+      {
+        "type": "code",
+        "value": " provides the push, and a "
+      },
+      {
+        "type": "blank",
+        "answer": "wire"
+      },
+      {
+        "type": "code",
+        "value": " provides the path, creating a steady stream called "
+      },
+      {
+        "type": "blank",
+        "answer": "current"
+      },
+      {
+        "type": "code",
+        "value": " electricity."
+      }
+    ],
+    "options": [
+      "static",
+      "insulator",
+      "neutron"
+    ]
+  }
+}

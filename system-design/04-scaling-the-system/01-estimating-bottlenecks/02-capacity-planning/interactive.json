@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A capacity plan is solely a guess about future system requirements.",
+        "correct": false,
+        "explanation": "A capacity plan is not just guessing; it involves measuring current usage, forecasting needs, and deciding on the necessary headroom to avoid hitting system limits."
+      },
+      {
+        "statement": "Running a system consistently at 95–100% utilization is ideal for efficiency.",
+        "correct": false,
+        "explanation": "Running systems at 95-100% utilization is risky as small traffic spikes or slowdowns can lead to timeouts and outages. It's essential to operate at lower utilization levels."
+      },
+      {
+        "statement": "Monitoring both CPU and memory is essential in capacity planning.",
+        "correct": true,
+        "explanation": "CPU and memory are critical resources that can become bottlenecks, so they must be monitored in capacity planning to ensure overall system stability."
+      },
+      {
+        "statement": "Capacity planning includes considering network and disk I/O limits.",
+        "correct": true,
+        "explanation": "Network bandwidth and disk I/O can also become limiting factors, so they should be tracked and planned for in order to handle varying loads effectively."
+      }
+    ]
+  }
+}

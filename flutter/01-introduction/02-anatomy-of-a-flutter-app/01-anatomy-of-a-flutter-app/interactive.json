@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What is the entry point of a Flutter application?",
+      "answers": [
+        {
+          "answer": "main.dart",
+          "correct": true
+        },
+        {
+          "answer": "pubspec.yaml",
+          "correct": false
+        },
+        {
+          "answer": "main.js",
+          "correct": false
+        },
+        {
+          "answer": "entryfile.dart",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

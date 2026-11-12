@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Two I2C devices on the same bus can have the same address without causing any issues.",
+        "correct": false,
+        "explanation": "No two devices on the same I2C bus can have the same address. If they did, both would try to respond simultaneously, causing communication errors."
+      },
+      {
+        "statement": "All devices on an I2C bus share the same two wires (SDA and SCL).",
+        "correct": true,
+        "explanation": "Every device on an I2C bus shares the same SDA and SCL wires and responds only when it hears its own unique address."
+      },
+      {
+        "statement": "Some I2C modules let you change their address with a solder jumper or configuration pin.",
+        "correct": true,
+        "explanation": "Some modules allow address changes via a solder jumper or configuration pin, specifically so you can use two of the same sensor on one bus."
+      }
+    ]
+  }
+}

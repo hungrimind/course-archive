@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const isLoggedIn: boolean = "
+      },
+      {
+        "type": "blank",
+        "answer": "true"
+      },
+      {
+        "type": "code",
+        "value": ";\nconst hasPermission: "
+      },
+      {
+        "type": "blank",
+        "answer": "boolean"
+      },
+      {
+        "type": "code",
+        "value": " = false;"
+      }
+    ],
+    "options": [
+      "string",
+      "yes",
+      "number"
+    ]
+  }
+}

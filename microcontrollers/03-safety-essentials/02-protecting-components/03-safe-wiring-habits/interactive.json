@@ -1,0 +1,28 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Before Wiring",
+        "items": [
+          "Disconnect power from the board",
+          "Plan which pins and rails you will use"
+        ]
+      },
+      {
+        "label": "Before Reconnecting Power",
+        "items": [
+          "Trace each wire from start to end",
+          "Verify no 5V lines touch GPIO pins",
+          "Check that power goes through a load before ground"
+        ]
+      },
+      {
+        "label": "Dangerous Habits",
+        "items": [
+          "Changing wires while the board is powered",
+          "Skipping the double-check step"
+        ]
+      }
+    ]
+  }
+}

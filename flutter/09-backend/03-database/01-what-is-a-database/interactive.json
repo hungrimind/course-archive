@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "Which of these is NOT a main benefit of using a database?",
+      "answers": [
+        {
+          "answer": "Storing data permanently",
+          "correct": false
+        },
+        {
+          "answer": "Writing code faster",
+          "correct": true
+        },
+        {
+          "answer": "Finding data quickly",
+          "correct": false
+        },
+        {
+          "answer": "Keeping data organized",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In Flutter applications, where is the database typically located?",
+      "answers": [
+        {
+          "answer": "Only within the Flutter app",
+          "correct": false
+        },
+        {
+          "answer": "Handwritten on a piece of paper",
+          "correct": false
+        },
+        {
+          "answer": "In the backend, separate from the Flutter app",
+          "correct": true
+        },
+        {
+          "answer": "In the user's web browser",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

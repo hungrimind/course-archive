@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What is the correct way to include a bearer token in an HTTP request?",
+      "answers": [
+        {
+          "answer": "Bearer: <token>",
+          "correct": false
+        },
+        {
+          "answer": "Token: Bearer <token>",
+          "correct": false
+        },
+        {
+          "answer": "Authorization: Bearer <token>",
+          "correct": true
+        },
+        {
+          "answer": "Authentication: <token>",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

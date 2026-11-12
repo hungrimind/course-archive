@@ -1,0 +1,131 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "bat1",
+        "label": "GPIO Pin (3.3V)",
+        "type": "battery",
+        "value": 3.3
+      },
+      {
+        "id": "sw1",
+        "label": "Push Button",
+        "type": "switch"
+      },
+      {
+        "id": "led1",
+        "label": "LED Indicator",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02
+      },
+      {
+        "id": "r1",
+        "label": "220Ω Resistor",
+        "type": "resistor",
+        "value": 220
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "The circuit must form a complete loop."
+      },
+      {
+        "type": "has_component",
+        "componentType": "switch",
+        "message": "Place the button in the circuit. It controls when the circuit is complete."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Add an LED so you can see when the button completes the circuit."
+      },
+      {
+        "type": "series_with",
+        "component": "led",
+        "withComponent": "resistor",
+        "message": "The LED needs a resistor in series for protection."
+      },
+      {
+        "type": "led_safe",
+        "message": "Too much current through the LED!"
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "s1",
+          "componentId": "bat1",
+          "x": 50,
+          "y": 120
+        },
+        {
+          "id": "s2",
+          "componentId": "sw1",
+          "x": 200,
+          "y": 40
+        },
+        {
+          "id": "s3",
+          "componentId": "r1",
+          "x": 350,
+          "y": 40
+        },
+        {
+          "id": "s4",
+          "componentId": "led1",
+          "x": 480,
+          "y": 120
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "s1",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s2",
+            "terminal": "left"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "s2",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s3",
+            "terminal": "left"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "s3",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s4",
+            "terminal": "left"
+          }
+        },
+        {
+          "id": "w4",
+          "from": {
+            "nodeId": "s4",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s1",
+            "terminal": "left"
+          }
+        }
+      ]
+    },
+    "assignment": "Build a circuit where pressing the button lights up the LED. The button should control whether the circuit is complete."
+  }
+}

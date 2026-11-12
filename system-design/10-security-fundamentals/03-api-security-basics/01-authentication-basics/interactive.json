@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of authentication in a system?",
+      "answers": [
+        {
+          "answer": "To encrypt data during transmission",
+          "correct": false
+        },
+        {
+          "answer": "To verify a user's identity before granting access",
+          "correct": true
+        },
+        {
+          "answer": "To monitor user activity within the system",
+          "correct": false
+        },
+        {
+          "answer": "To backup user data",
+          "correct": false
+        }
+      ],
+      "explanation": "The primary purpose of authentication is to verify the identity of a user or system to ensure access is granted only to legitimate users."
+    },
+    {
+      "question": "Which of the following is a common method used during the authentication process?",
+      "answers": [
+        {
+          "answer": "Using a firewall",
+          "correct": false
+        },
+        {
+          "answer": "Biometric scanning",
+          "correct": false
+        },
+        {
+          "answer": "Requesting a username and password",
+          "correct": true
+        },
+        {
+          "answer": "Encrypting files",
+          "correct": false
+        }
+      ],
+      "explanation": "Requesting a username and password is a common method for identity verification in authentication processes."
+    },
+    {
+      "question": "How does multi-factor authentication enhance security?",
+      "answers": [
+        {
+          "answer": "By requiring multiple passwords for login",
+          "correct": false
+        },
+        {
+          "answer": "By ensuring only encrypted data is transmitted",
+          "correct": false
+        },
+        {
+          "answer": "By requiring additional verification steps beyond just passwords",
+          "correct": true
+        },
+        {
+          "answer": "By limiting login attempts to three",
+          "correct": false
+        }
+      ],
+      "explanation": "Multi-factor authentication enhances security by requiring additional verification steps, making it harder for unauthorized users to gain access."
+    }
+  ]
+}

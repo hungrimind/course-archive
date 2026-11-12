@@ -1,0 +1,41 @@
+{
+  "ohmscalculator": {
+    "showFormulaTriangle": true,
+    "problems": [
+      {
+        "given": {
+          "voltage": 9,
+          "resistance": 1000
+        },
+        "solveFor": "current",
+        "unit": "A",
+        "hint": "I = V ÷ R",
+        "explanation": "9V ÷ 1000Ω = 0.009A (9mA)",
+        "answer": 0.009
+      },
+      {
+        "given": {
+          "voltage": 3.3,
+          "resistance": 220
+        },
+        "solveFor": "current",
+        "unit": "A",
+        "hint": "I = V ÷ R",
+        "explanation": "3.3V ÷ 220Ω = 0.015A (15mA)",
+        "answer": 0.015
+      },
+      {
+        "given": {
+          "voltage": 12,
+          "resistance": 4700
+        },
+        "solveFor": "current",
+        "tolerance": 0.0001,
+        "unit": "A",
+        "hint": "I = V ÷ R",
+        "explanation": "12V ÷ 4700Ω ≈ 0.00255A (2.55mA)",
+        "answer": 0.00255
+      }
+    ]
+  }
+}

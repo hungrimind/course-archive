@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "System design is solely focused on the coding phase of software development.",
+        "correct": false,
+        "explanation": "System design encompasses planning the architecture, components, interfaces, and data flow, not just coding. It's about structuring the system before implementation."
+      },
+      {
+        "statement": "A critical aspect of system design is balancing trade-offs between performance, scalability, and maintainability.",
+        "correct": true,
+        "explanation": "System designers must trade off between improving performance, scaling the system to handle more users, and ensuring the system can be easily maintained."
+      },
+      {
+        "statement": "The main purpose of system design is to directly implement code as quickly as possible.",
+        "correct": false,
+        "explanation": "The purpose of system design is to create a structured plan that outlines how the system will be built, addressing requirements and potential challenges before coding begins."
+      },
+      {
+        "statement": "System design defines how data flows through a software system.",
+        "correct": true,
+        "explanation": "Part of system design is to outline the data flow through the system, ensuring that information is processed and passed correctly between components and interfaces."
+      }
+    ]
+  }
+}

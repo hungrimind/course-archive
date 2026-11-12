@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Whole number",
+        "items": [
+          "Number of students in a class",
+          "Pages in a book",
+          "Items in a shopping cart"
+        ]
+      },
+      {
+        "label": "Decimal number",
+        "items": [
+          "Price of a coffee",
+          "Average test score",
+          "Distance in kilometers"
+        ]
+      }
+    ]
+  }
+}

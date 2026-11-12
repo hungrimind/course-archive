@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "class Order {\n  "
+      },
+      {
+        "type": "blank",
+        "answer": "readonly"
+      },
+      {
+        "type": "code",
+        "value": " id: string;\n  total: number;\n\n  constructor(id: string, total: number) {\n    this.id = id;\n    this.total = total;\n  }\n}\n\nconst order = new Order(\"abc\", 49.99);\norder.total = 59.99;\n// order."
+      },
+      {
+        "type": "blank",
+        "answer": "id"
+      },
+      {
+        "type": "code",
+        "value": " = \"xyz\"; // Error!"
+      }
+    ],
+    "options": [
+      "const",
+      "static",
+      "total"
+    ]
+  }
+}

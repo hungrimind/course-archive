@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A digital signal can be copied a million times without losing quality.",
+        "correct": true,
+        "explanation": "Digital signals are just sequences of 1s and 0s. Each copy reproduces those exact values, so the information remains perfect no matter how many times it is duplicated."
+      },
+      {
+        "statement": "An analog signal maintains its quality perfectly when transmitted across long distances.",
+        "correct": false,
+        "explanation": "An analog signal degrades with every mile of cable. Noise and interference accumulate along the way, and since the signal is continuous, there is no way to separate the original information from the distortion."
+      },
+      {
+        "statement": "Digital signals can be error-corrected during transmission.",
+        "correct": true,
+        "explanation": "Because digital data is made of discrete 1s and 0s, extra error-correction codes can be added to detect and fix mistakes introduced during transmission, something impossible with analog signals."
+      },
+      {
+        "statement": "Modern electronics went overwhelmingly digital because analog signals are easier to store and transmit.",
+        "correct": false,
+        "explanation": "It is the opposite. Digital signals are far easier to store, transmit, copy, and error-correct. Analog signals degrade with every copy and over distance, which is exactly why modern electronics shifted to digital."
+      }
+    ]
+  }
+}

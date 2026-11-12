@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "A dimmer switch on a lamp is an example of a "
+      },
+      {
+        "type": "blank",
+        "answer": "potentiometer"
+      },
+      {
+        "type": "code",
+        "value": " in action. Rotating the dial changes the "
+      },
+      {
+        "type": "blank",
+        "answer": "resistance"
+      },
+      {
+        "type": "code",
+        "value": " smoothly from zero to a "
+      },
+      {
+        "type": "blank",
+        "answer": "maximum"
+      },
+      {
+        "type": "code",
+        "value": " value, controlling how much current reaches the bulb."
+      }
+    ],
+    "options": [
+      "capacitor",
+      "voltage",
+      "minimum"
+    ]
+  }
+}

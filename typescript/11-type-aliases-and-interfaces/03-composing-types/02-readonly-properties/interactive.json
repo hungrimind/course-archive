@@ -1,0 +1,33 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "type Config = {\n  "
+      },
+      {
+        "type": "blank",
+        "answer": "readonly"
+      },
+      {
+        "type": "code",
+        "value": " apiUrl: string;\n  "
+      },
+      {
+        "type": "blank",
+        "answer": "readonly"
+      },
+      {
+        "type": "code",
+        "value": " maxRetries: number;\n};"
+      }
+    ],
+    "options": [
+      "const",
+      "immutable",
+      "static",
+      "final"
+    ]
+  }
+}

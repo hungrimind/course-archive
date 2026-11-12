@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Reducing Code Complexity",
+        "items": [
+          "Split interfaces",
+          "Cleaner code"
+        ]
+      },
+      {
+        "label": "Improved Maintainability",
+        "items": [
+          "Less risk of bugs",
+          "Unrelated parts unaffected"
+        ]
+      },
+      {
+        "label": "Enhanced Flexibility",
+        "items": [
+          "Easier to extend",
+          "Implement necessary interfaces"
+        ]
+      }
+    ]
+  }
+}

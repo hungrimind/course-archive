@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "When calling a generic function, you must always explicitly specify the type parameter in angle brackets.",
+        "correct": false,
+        "explanation": "TypeScript can infer the type parameter from the arguments you pass. You only need to specify it explicitly when inference gets it wrong or when there are no arguments to infer from."
+      },
+      {
+        "statement": "If you pass a `string[]` to a function with signature `<T>(items: T[]): T`, TypeScript infers `T` as `string`.",
+        "correct": true,
+        "explanation": "TypeScript examines the argument type and works backwards to determine the type parameter. Since `string[]` matches `T[]`, it infers `T` as `string`."
+      },
+      {
+        "statement": "Type inference with generics only works for primitive types like `string` and `number`, not for complex types.",
+        "correct": false,
+        "explanation": "Type inference works for any type, including objects, arrays, and custom types. TypeScript infers the type parameter based on whatever argument is passed, regardless of complexity."
+      }
+    ]
+  }
+}

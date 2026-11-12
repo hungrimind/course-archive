@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Query Per Second (QPS) is only relevant during peak times of user activity.",
+        "correct": false,
+        "explanation": "While peak times are critical for understanding maximum system load, QPS is also important during non-peak times to ensure consistent performance and plan for average capacity needs."
+      },
+      {
+        "statement": "The QPS estimate is essential for making informed decisions about system scaling and resource allocation.",
+        "correct": true,
+        "explanation": "QPS provides insight into how many queries the system handles, which is vital for determining resource needs and ensuring the system can handle current and future loads without performance issues."
+      },
+      {
+        "statement": "Calculating QPS does not require understanding the average number of requests per user.",
+        "correct": false,
+        "explanation": "The average number of requests per user is a key factor in the QPS formula, as it directly influences the total number of queries handled by the system."
+      },
+      {
+        "statement": "Using historical data can refine QPS estimates to improve accuracy.",
+        "correct": true,
+        "explanation": "Historical data provides insights into user behavior and system performance over time, allowing for more accurate predictions of future query loads by identifying trends and patterns."
+      }
+    ]
+  }
+}

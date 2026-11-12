@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Serial Communication",
+        "items": [
+          "Sends bits one after another on a single data wire",
+          "Simpler circuits and cheaper cables",
+          "Used by UART, SPI, and I2C"
+        ]
+      },
+      {
+        "label": "Parallel Communication",
+        "items": [
+          "Sends multiple bits at the same time on separate wires",
+          "Uses 8 data wires for one byte at a time",
+          "Harder to keep synchronized at high speeds"
+        ]
+      }
+    ]
+  }
+}

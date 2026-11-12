@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What does PWM stand for?",
+      "answers": [
+        {
+          "answer": "Pulse Width Modulation",
+          "correct": true
+        },
+        {
+          "answer": "Power Width Management",
+          "correct": false
+        },
+        {
+          "answer": "Pin Wave Modulation",
+          "correct": false
+        },
+        {
+          "answer": "Pulse Watt Measurement",
+          "correct": false
+        }
+      ],
+      "explanation": "PWM stands for Pulse Width Modulation -- it rapidly switches a pin on and off to simulate voltages between 0V and 3.3V."
+    },
+    {
+      "question": "Why is PWM needed on a GPIO pin?",
+      "answers": [
+        {
+          "answer": "GPIO pins can only output specific preset voltages",
+          "correct": false
+        },
+        {
+          "answer": "GPIO pins can only be fully on or fully off",
+          "correct": true
+        },
+        {
+          "answer": "GPIO pins are too slow to drive LEDs directly",
+          "correct": false
+        },
+        {
+          "answer": "GPIO pins require an external clock signal",
+          "correct": false
+        }
+      ],
+      "explanation": "A GPIO pin has no 'half power' setting -- it's either HIGH or LOW. PWM works around this by switching so fast that the component behaves as if it's receiving a steady, reduced voltage."
+    },
+    {
+      "question": "How does PWM create the illusion of a lower voltage?",
+      "answers": [
+        {
+          "answer": "It reduces the pin's maximum voltage output",
+          "correct": false
+        },
+        {
+          "answer": "It adds a resistor to the circuit automatically",
+          "correct": false
+        },
+        {
+          "answer": "It switches the pin on and off thousands of times per second",
+          "correct": true
+        },
+        {
+          "answer": "It uses a secondary low-voltage pin",
+          "correct": false
+        }
+      ],
+      "explanation": "PWM flips the pin on and off so fast that the component -- and your eyes -- perceive a steady, reduced voltage rather than rapid blinking."
+    }
+  ]
+}

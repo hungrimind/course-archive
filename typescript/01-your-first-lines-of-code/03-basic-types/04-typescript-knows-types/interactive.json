@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Inferred as string",
+        "items": [
+          "const name = \"Alice\"",
+          "const city = 'Oslo'"
+        ]
+      },
+      {
+        "label": "Inferred as number",
+        "items": [
+          "const age = 30",
+          "const price = 9.99"
+        ]
+      },
+      {
+        "label": "Inferred as boolean",
+        "items": [
+          "const active = true",
+          "const done = false"
+        ]
+      }
+    ]
+  }
+}

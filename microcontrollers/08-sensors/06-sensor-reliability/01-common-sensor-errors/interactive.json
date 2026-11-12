@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Loose Wires",
+        "items": [
+          "Intermittent connections",
+          "Readings that cut in and out randomly"
+        ]
+      },
+      {
+        "label": "Electrical Noise",
+        "items": [
+          "Interference from nearby motors",
+          "Long cables picking up stray signals"
+        ]
+      },
+      {
+        "label": "Timing Failures",
+        "items": [
+          "Pi too busy to catch microsecond-precise signals",
+          "Missed sensor responses during high CPU load"
+        ]
+      }
+    ]
+  }
+}

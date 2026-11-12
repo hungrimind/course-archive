@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Synchronous operations allow tasks to proceed without waiting for previous tasks to complete.",
+        "correct": false,
+        "explanation": "Synchronous operations require each task to wait for the previous one to complete before proceeding, like waiting in line at a store."
+      },
+      {
+        "statement": "Asynchronous programming is often used to improve the responsiveness of applications.",
+        "correct": true,
+        "explanation": "Asynchronous programming allows tasks to be executed without blocking, which can increase responsiveness, especially for I/O-bound tasks."
+      },
+      {
+        "statement": "In the provided code, the 'await' keyword blocks the entire program until 'networkRequest' completes.",
+        "correct": false,
+        "explanation": "The 'await' keyword pauses the execution of the 'fetchData' function until 'networkRequest' completes, but it does not block the entire program. Other operations can continue while awaiting."
+      },
+      {
+        "statement": "Asynchronous operations are not beneficial for I/O-bound tasks.",
+        "correct": false,
+        "explanation": "Asynchronous operations are particularly useful for I/O-bound tasks as they allow other operations to continue without waiting for I/O operations to complete, enhancing efficiency and responsiveness."
+      }
+    ]
+  }
+}

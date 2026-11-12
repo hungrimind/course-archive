@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "console.log(\"42\") and console.log(42) produce the same type of value in TypeScript.",
+        "correct": false,
+        "explanation": "They look the same on screen, but \"42\" is a string (text) while 42 is a number. TypeScript treats them as completely different types."
+      },
+      {
+        "statement": "Numbers in console.log do not need to be wrapped in quotes.",
+        "correct": true,
+        "explanation": "Numbers go directly into console.log without quotes. Adding quotes would make them strings instead of numbers."
+      },
+      {
+        "statement": "console.log(3.14) is valid TypeScript.",
+        "correct": true,
+        "explanation": "Decimal numbers like 3.14 can be passed directly to console.log just like whole numbers."
+      }
+    ]
+  }
+}

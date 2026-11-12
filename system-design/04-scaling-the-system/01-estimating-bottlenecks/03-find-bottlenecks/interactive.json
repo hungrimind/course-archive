@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Bottlenecks in a system only occur with the CPU.",
+        "correct": false,
+        "explanation": "Bottlenecks can occur in the CPU, memory, network, or disk I/O, not just the CPU."
+      },
+      {
+        "statement": "Monitoring metrics is a crucial step in identifying system bottlenecks.",
+        "correct": true,
+        "explanation": "Monitoring metrics like CPU usage, memory, I/O, and network latency helps detect performance issues in different system components."
+      },
+      {
+        "statement": "Bottlenecks remain constant as the system scales.",
+        "correct": false,
+        "explanation": "Bottlenecks often shift as systems scale, necessitating continual monitoring and load testing."
+      },
+      {
+        "statement": "Load testing is used to simulate high traffic conditions to identify system bottlenecks.",
+        "correct": true,
+        "explanation": "Load testing helps reveal where the system struggles under high traffic, making it an effective tool for identifying bottlenecks."
+      }
+    ]
+  }
+}

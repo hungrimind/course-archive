@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of HTTP interceptors?",
+      "answers": [
+        {
+          "answer": "To block all HTTP requests",
+          "correct": false
+        },
+        {
+          "answer": "To execute common logic before/after HTTP requests",
+          "correct": true
+        },
+        {
+          "answer": "To increase network speed",
+          "correct": false
+        },
+        {
+          "answer": "To compress HTTP responses",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these is a common use case for interceptors?",
+      "answers": [
+        {
+          "answer": "Adding authentication headers to requests",
+          "correct": true
+        },
+        {
+          "answer": "Storing HTTP responses",
+          "correct": false
+        },
+        {
+          "answer": "Creating new HTTP endpoints",
+          "correct": false
+        },
+        {
+          "answer": "Compressing request data",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What's the advantage of using interceptors over manual request modification?",
+      "answers": [
+        {
+          "answer": "They make requests faster",
+          "correct": false
+        },
+        {
+          "answer": "They reduce code duplication by centralizing common request logic",
+          "correct": true
+        },
+        {
+          "answer": "They improve security",
+          "correct": false
+        },
+        {
+          "answer": "They compress data automatically",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

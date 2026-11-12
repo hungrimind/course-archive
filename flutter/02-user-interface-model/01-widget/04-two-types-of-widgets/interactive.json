@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "Which widget type would be most appropriate for displaying a counter that can be incremented?",
+      "answers": [
+        {
+          "answer": "StatelessWidget",
+          "correct": false
+        },
+        {
+          "answer": "StatefulWidget",
+          "correct": true
+        },
+        {
+          "answer": "Both would work equally well",
+          "correct": false
+        },
+        {
+          "answer": "Neither, you need a different widget type",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following would be best implemented as a StatelessWidget?",
+      "answers": [
+        {
+          "answer": "A form with input fields",
+          "correct": false
+        },
+        {
+          "answer": "A logo image that doesn't change",
+          "correct": true
+        },
+        {
+          "answer": "A toggle switch",
+          "correct": false
+        },
+        {
+          "answer": "A shopping cart with items",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

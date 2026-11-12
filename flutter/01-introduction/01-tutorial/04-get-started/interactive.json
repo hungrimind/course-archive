@@ -1,0 +1,17 @@
+{
+  "quiz": [
+    {
+      "question": "Will this course be kept up to date?",
+      "answers": [
+        {
+          "answer": "Yes",
+          "correct": true
+        },
+        {
+          "answer": "No",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

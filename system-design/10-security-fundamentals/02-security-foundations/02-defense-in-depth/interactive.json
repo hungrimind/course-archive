@@ -1,0 +1,196 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "internet_client",
+        "label": "Internet Client",
+        "icon": "globe",
+        "category": "entry"
+      },
+      {
+        "id": "firewall",
+        "label": "Firewall / WAF",
+        "icon": "shield",
+        "category": "security"
+      },
+      {
+        "id": "intrusion_detection",
+        "label": "IDS/IPS",
+        "icon": "wifi",
+        "category": "security"
+      },
+      {
+        "id": "encryption_layer",
+        "label": "Encryption (TLS + KMS)",
+        "icon": "lock",
+        "category": "security"
+      },
+      {
+        "id": "access_controls",
+        "label": "Access Controls (IAM/RBAC)",
+        "icon": "layers",
+        "category": "security"
+      },
+      {
+        "id": "app_service",
+        "label": "Protected App Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "data_store",
+        "label": "Sensitive Data Store",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "internet_client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "internet_client",
+        "to": "firewall"
+      },
+      {
+        "from": "firewall",
+        "to": "intrusion_detection"
+      },
+      {
+        "from": "intrusion_detection",
+        "to": "encryption_layer"
+      },
+      {
+        "from": "encryption_layer",
+        "to": "access_controls"
+      },
+      {
+        "from": "access_controls",
+        "to": "app_service"
+      },
+      {
+        "from": "app_service",
+        "to": "data_store"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "firewall",
+        "message": "Include a perimeter Firewall/WAF layer to block common attacks before they reach internal systems."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "intrusion_detection",
+        "message": "Add an IDS/IPS layer so suspicious traffic can be detected/blocked even if it passes the firewall."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "encryption_layer",
+        "message": "Add an encryption layer (e.g., TLS + key management) so intercepted traffic/data is still protected."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "access_controls",
+        "message": "Add access controls (IAM/RBAC) so only authorized identities can reach the app and data."
+      },
+      {
+        "type": "path_exists",
+        "from": "internet_client",
+        "to": "data_store",
+        "message": "There must be an end-to-end path from the Internet Client to the Data Store showing how requests flow through your layered defenses."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "internet_client",
+        "to": "app_service",
+        "message": "Avoid exposing the app directly to the internet; requests should traverse the defense layers first."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "internet_client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "firewall",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "intrusion_detection",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "encryption_layer",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_5",
+          "componentId": "access_controls",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_6",
+          "componentId": "app_service",
+          "x": 250,
+          "y": 750
+        },
+        {
+          "id": "sol_7",
+          "componentId": "data_store",
+          "x": 250,
+          "y": 900
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_4",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_5",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_6",
+          "to": "sol_7"
+        }
+      ]
+    },
+    "assignment": "Build a defense-in-depth request path from an Internet Client to a Sensitive Data Store. Your design must include layered security controls (Firewall/WAF, IDS/IPS, Encryption, and Access Controls) and ensure traffic reaches the data store through these layers rather than directly to the app."
+  }
+}

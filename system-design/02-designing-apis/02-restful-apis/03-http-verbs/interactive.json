@@ -1,0 +1,26 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "State-Altering Verbs",
+        "items": [
+          "POST",
+          "PUT",
+          "DELETE"
+        ]
+      },
+      {
+        "label": "Retrieval Verb",
+        "items": [
+          "GET"
+        ]
+      },
+      {
+        "label": "Partial Update Verb",
+        "items": [
+          "PATCH"
+        ]
+      }
+    ]
+  }
+}

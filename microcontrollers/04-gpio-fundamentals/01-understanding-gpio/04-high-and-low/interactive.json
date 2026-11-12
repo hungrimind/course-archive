@@ -1,0 +1,43 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "# Turn the LED on\nGPIO.output(17, GPIO.",
+        "language": "python"
+      },
+      {
+        "type": "blank",
+        "answer": "HIGH"
+      },
+      {
+        "type": "code",
+        "value": ")  # outputs ",
+        "language": "python"
+      },
+      {
+        "type": "blank",
+        "answer": "3.3"
+      },
+      {
+        "type": "code",
+        "value": "V\n\n# Turn the LED off\nGPIO.output(17, GPIO.",
+        "language": "python"
+      },
+      {
+        "type": "blank",
+        "answer": "LOW"
+      },
+      {
+        "type": "code",
+        "value": ")   # outputs 0V",
+        "language": "python"
+      }
+    ],
+    "options": [
+      "5",
+      "INPUT",
+      "OUTPUT"
+    ]
+  }
+}

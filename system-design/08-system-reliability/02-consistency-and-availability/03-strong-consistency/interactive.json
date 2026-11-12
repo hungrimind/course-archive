@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What is a key characteristic of a system with strong consistency?",
+      "answers": [
+        {
+          "answer": "It can tolerate data loss.",
+          "correct": false
+        },
+        {
+          "answer": "It guarantees the lowest possible latency.",
+          "correct": false
+        },
+        {
+          "answer": "It ensures all read requests return the most recent write.",
+          "correct": true
+        },
+        {
+          "answer": "It allows for eventual correctness of data.",
+          "correct": false
+        }
+      ],
+      "explanation": "In strong consistency, every read operation reflects the most recent write, ensuring all users see the same data at the same time."
+    },
+    {
+      "question": "What is a potential downside of choosing strong consistency for a system?",
+      "answers": [
+        {
+          "answer": "Higher potential for data corruption.",
+          "correct": false
+        },
+        {
+          "answer": "Limitation on the number of concurrent users.",
+          "correct": false
+        },
+        {
+          "answer": "Increased complexity in application code.",
+          "correct": false
+        },
+        {
+          "answer": "Higher latency due to the need for coordination across distributed nodes.",
+          "correct": true
+        }
+      ],
+      "explanation": "Strong consistency may lead to higher latency because it often requires coordination among distributed nodes to ensure the most recent data is read."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Electrons are found inside the nucleus of an atom.",
+        "correct": false,
+        "explanation": "Electrons orbit outside the nucleus. It is protons and neutrons that are packed inside the nucleus."
+      },
+      {
+        "statement": "Atoms are the building blocks that make up all physical matter you can touch or stand on.",
+        "correct": true,
+        "explanation": "Everything around us (solids, liquids, and gases) is composed of atoms, even though they are far too small to see with the naked eye."
+      },
+      {
+        "statement": "The nucleus of an atom contains protons and neutrons.",
+        "correct": true,
+        "explanation": "The nucleus is the dense center of an atom and is packed with two types of particles: protons (positively charged) and neutrons (no charge)."
+      }
+    ]
+  }
+}

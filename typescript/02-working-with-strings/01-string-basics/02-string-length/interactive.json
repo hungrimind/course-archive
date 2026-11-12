@@ -1,0 +1,24 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const message = \"Hi there!\";\nconsole.log(message."
+      },
+      {
+        "type": "blank",
+        "answer": "length"
+      },
+      {
+        "type": "code",
+        "value": "); // 9"
+      }
+    ],
+    "options": [
+      "size",
+      "count",
+      "length()"
+    ]
+  }
+}

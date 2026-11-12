@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following widgets was not in the image?",
+      "answers": [
+        {
+          "answer": "Row",
+          "correct": false
+        },
+        {
+          "answer": "Column",
+          "correct": false
+        },
+        {
+          "answer": "Text",
+          "correct": false
+        },
+        {
+          "answer": "Image",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

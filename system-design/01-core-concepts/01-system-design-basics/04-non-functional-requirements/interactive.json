@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a primary characteristic of a non-functional requirement (NFR)?",
+      "answers": [
+        {
+          "answer": "It describes a specific feature of the system.",
+          "correct": false
+        },
+        {
+          "answer": "It defines how well a system performs.",
+          "correct": true
+        },
+        {
+          "answer": "It specifies the interface of the system.",
+          "correct": false
+        },
+        {
+          "answer": "It details the user interactions with the system.",
+          "correct": false
+        }
+      ],
+      "explanation": "NFRs describe quality attributes of a system, such as performance and scalability, and define how well a system must operate."
+    },
+    {
+      "question": "Which of the following is an example of a non-functional requirement?",
+      "answers": [
+        {
+          "answer": "Implement a user login feature.",
+          "correct": false
+        },
+        {
+          "answer": "Add a new dashboard for analytics.",
+          "correct": false
+        },
+        {
+          "answer": "Ensure data is encrypted at rest.",
+          "correct": true
+        },
+        {
+          "answer": "Create a user profile section.",
+          "correct": false
+        }
+      ],
+      "explanation": "Ensuring data is encrypted at rest is a security-related non-functional requirement, focusing on the quality attribute of security."
+    },
+    {
+      "question": "Why do non-functional requirements strongly influence architecture decisions?",
+      "answers": [
+        {
+          "answer": "They dictate the programming languages used.",
+          "correct": false
+        },
+        {
+          "answer": "They specify user interface design.",
+          "correct": false
+        },
+        {
+          "answer": "They often require specific architectural strategies to be met.",
+          "correct": true
+        },
+        {
+          "answer": "They determine the color scheme of the application.",
+          "correct": false
+        }
+      ],
+      "explanation": "NFRs often require specific architectural considerations, like redundancy for high availability or load balancing for scalability."
+    }
+  ]
+}

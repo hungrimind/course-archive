@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Least Connections Concept",
+        "items": [
+          "Server with fewest connections",
+          "Dynamic load balancing",
+          "Balances current usage"
+        ]
+      },
+      {
+        "label": "Example Servers and Connections",
+        "items": [
+          "Server A: 10 connections",
+          "Server B: 5 connections",
+          "Server C: 7 connections"
+        ]
+      },
+      {
+        "label": "Benefits of Least Connections",
+        "items": [
+          "Adapt to server performance",
+          "Handle varying loads"
+        ]
+      }
+    ]
+  }
+}

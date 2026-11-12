@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "button = Pin(15, Pin."
+      },
+      {
+        "type": "blank",
+        "answer": "IN"
+      },
+      {
+        "type": "code",
+        "value": ", Pin."
+      },
+      {
+        "type": "blank",
+        "answer": "PULL_UP"
+      },
+      {
+        "type": "code",
+        "value": ")"
+      }
+    ],
+    "options": [
+      "OUT",
+      "PULL_DOWN",
+      "HIGH"
+    ]
+  }
+}

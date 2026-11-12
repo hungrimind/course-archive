@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Good fit for a list",
+        "items": [
+          "Songs in a playlist",
+          "Students in a class roster",
+          "Steps in a recipe"
+        ]
+      },
+      {
+        "label": "Better as a single variable",
+        "items": [
+          "A person's age",
+          "The current temperature",
+          "A user's email address"
+        ]
+      }
+    ]
+  }
+}

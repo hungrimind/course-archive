@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A buzzer converts electrical signals into sound by vibrating a small disc.",
+        "correct": true,
+        "explanation": "Buzzers produce sound by rapidly vibrating a disc, which pushes air back and forth to create sound waves."
+      },
+      {
+        "statement": "A piezo buzzer uses a tiny motor to produce sound.",
+        "correct": false,
+        "explanation": "A piezo buzzer uses a crystal that physically flexes when voltage is applied, not a motor. This flexing vibrates the disc to produce sound."
+      },
+      {
+        "statement": "The most common type of buzzer is a piezo buzzer.",
+        "correct": true,
+        "explanation": "Piezo buzzers are the most common type, using a piezoelectric crystal that deforms when voltage is applied to create vibrations and sound."
+      }
+    ]
+  }
+}

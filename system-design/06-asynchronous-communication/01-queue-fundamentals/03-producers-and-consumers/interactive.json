@@ -1,0 +1,217 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "producer_service",
+        "label": "Producer Service",
+        "icon": "monitor",
+        "category": "compute"
+      },
+      {
+        "id": "message_queue",
+        "label": "Message Queue",
+        "icon": "layers",
+        "category": "network"
+      },
+      {
+        "id": "consumer_worker",
+        "label": "Consumer Worker",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "results_store",
+        "label": "Results Store",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "dead_letter_queue",
+        "label": "Dead-Letter Queue (DLQ)",
+        "icon": "archive",
+        "category": "network"
+      },
+      {
+        "id": "monitoring",
+        "label": "Monitoring/Alerting",
+        "icon": "shield",
+        "category": "security"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "producer_service",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "producer_service",
+        "to": "message_queue"
+      },
+      {
+        "from": "message_queue",
+        "to": "consumer_worker"
+      },
+      {
+        "from": "consumer_worker",
+        "to": "results_store"
+      },
+      {
+        "from": "message_queue",
+        "to": "dead_letter_queue"
+      },
+      {
+        "from": "producer_service",
+        "to": "monitoring"
+      },
+      {
+        "from": "message_queue",
+        "to": "monitoring"
+      },
+      {
+        "from": "consumer_worker",
+        "to": "monitoring"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "message_queue",
+        "message": "Add a Message Queue to decouple the producer from the consumers."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "consumer_worker",
+        "count": 2,
+        "message": "Use at least two Consumer Workers to demonstrate scaling message processing with multiple consumers."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "producer_service",
+        "to": "consumer_worker",
+        "message": "The Producer should not send tasks directly to Consumers. Route tasks through the Message Queue so producers and consumers can scale independently."
+      },
+      {
+        "type": "path_exists",
+        "from": "producer_service",
+        "to": "consumer_worker",
+        "message": "Ensure tasks can flow from Producer to Consumer via the Message Queue (a path must exist)."
+      },
+      {
+        "type": "path_exists",
+        "from": "consumer_worker",
+        "to": "results_store",
+        "message": "Consumers should write outputs somewhere, so add a Results Store and connect Consumers to it."
+      },
+      {
+        "type": "required_edge",
+        "from": "message_queue",
+        "to": "dead_letter_queue",
+        "message": "Add a Dead-Letter Queue connection so failed/unprocessable messages can be isolated instead of blocking the main queue."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "producer_service",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "message_queue",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "consumer_worker",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "consumer_worker",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "results_store",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_6",
+          "componentId": "dead_letter_queue",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_7",
+          "componentId": "monitoring",
+          "x": 550,
+          "y": 300
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_4",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_2",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_1",
+          "to": "sol_7"
+        },
+        {
+          "id": "se_8",
+          "from": "sol_2",
+          "to": "sol_7"
+        },
+        {
+          "id": "se_9",
+          "from": "sol_3",
+          "to": "sol_7"
+        },
+        {
+          "id": "se_10",
+          "from": "sol_4",
+          "to": "sol_7"
+        }
+      ]
+    },
+    "assignment": "Build a producer–consumer architecture where a Producer sends tasks into a Message Queue, and multiple Consumer Workers pull tasks from the queue and store processing results. Ensure the Producer does not connect directly to Consumers, and include a Dead-Letter Queue path for failed messages."
+  }
+}

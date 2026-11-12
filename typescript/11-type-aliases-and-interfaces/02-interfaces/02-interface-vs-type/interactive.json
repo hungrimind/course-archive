@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Only Type Alias",
+        "items": [
+          "Union types like string | number",
+          "Aliasing primitive types"
+        ]
+      },
+      {
+        "label": "Only Interface",
+        "items": [
+          "Declaration merging",
+          "extends keyword"
+        ]
+      },
+      {
+        "label": "Both",
+        "items": [
+          "Describing object shapes",
+          "Annotating function parameters"
+        ]
+      }
+    ]
+  }
+}

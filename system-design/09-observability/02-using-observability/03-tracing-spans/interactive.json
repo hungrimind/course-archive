@@ -1,0 +1,225 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "api_gateway",
+        "label": "API Gateway",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "service_a",
+        "label": "Service A",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "service_b",
+        "label": "Service B",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "database",
+        "label": "Database",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "tracing_collector",
+        "label": "Tracing Collector",
+        "icon": "archive",
+        "category": "observability"
+      },
+      {
+        "id": "trace_ui",
+        "label": "Trace UI",
+        "icon": "layers",
+        "category": "observability"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "api_gateway"
+      },
+      {
+        "from": "api_gateway",
+        "to": "service_a"
+      },
+      {
+        "from": "service_a",
+        "to": "service_b"
+      },
+      {
+        "from": "service_a",
+        "to": "database"
+      },
+      {
+        "from": "service_b",
+        "to": "database"
+      },
+      {
+        "from": "api_gateway",
+        "to": "tracing_collector"
+      },
+      {
+        "from": "service_a",
+        "to": "tracing_collector"
+      },
+      {
+        "from": "service_b",
+        "to": "tracing_collector"
+      },
+      {
+        "from": "tracing_collector",
+        "to": "trace_ui"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "tracing_collector",
+        "message": "Add a Tracing Collector so spans from multiple services can be centralized into one trace pipeline."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "trace_ui",
+        "message": "Add a Trace UI so collected spans can be viewed and analyzed to find where time is spent."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "database",
+        "message": "Ensure there is a request path from the Client to the Database (through the gateway/services) to represent a real end-to-end operation being traced."
+      },
+      {
+        "type": "path_exists",
+        "from": "service_a",
+        "to": "tracing_collector",
+        "message": "Service A should export spans to the Tracing Collector so its operation timing appears in the trace."
+      },
+      {
+        "type": "path_exists",
+        "from": "service_b",
+        "to": "tracing_collector",
+        "message": "Service B should export spans to the Tracing Collector so downstream time is visible and bottlenecks can be isolated."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "database",
+        "message": "Avoid connecting the Client directly to the Database; requests should go through the gateway/services so spans reflect the full distributed lifecycle."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_gateway",
+          "componentId": "api_gateway",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_service_a",
+          "componentId": "service_a",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_service_b",
+          "componentId": "service_b",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_database",
+          "componentId": "database",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_collector",
+          "componentId": "tracing_collector",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_ui",
+          "componentId": "trace_ui",
+          "x": 250,
+          "y": 750
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_gateway"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_gateway",
+          "to": "sol_service_a"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_service_a",
+          "to": "sol_service_b"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_service_a",
+          "to": "sol_database"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_service_b",
+          "to": "sol_database"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_gateway",
+          "to": "sol_collector"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_service_a",
+          "to": "sol_collector"
+        },
+        {
+          "id": "se_8",
+          "from": "sol_service_b",
+          "to": "sol_collector"
+        },
+        {
+          "id": "se_9",
+          "from": "sol_collector",
+          "to": "sol_ui"
+        }
+      ]
+    },
+    "assignment": "Build a simple distributed request flow and an observability pipeline for tracing spans: create an end-to-end request path from the Client to the Database through intermediary components, ensure both services export spans to a central Tracing Collector, and connect the collector to a Trace UI for analysis. Do not connect the Client directly to the Database."
+  }
+}

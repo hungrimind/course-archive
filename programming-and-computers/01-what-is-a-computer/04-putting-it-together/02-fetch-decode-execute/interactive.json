@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Fetch",
+        "items": [
+          "Grabs next instruction from RAM",
+          "Reads from a memory address"
+        ]
+      },
+      {
+        "label": "Decode",
+        "items": [
+          "Figures out the operation type",
+          "Identifies data vs command"
+        ]
+      },
+      {
+        "label": "Execute",
+        "items": [
+          "Performs the calculation",
+          "Writes result to memory"
+        ]
+      }
+    ]
+  }
+}

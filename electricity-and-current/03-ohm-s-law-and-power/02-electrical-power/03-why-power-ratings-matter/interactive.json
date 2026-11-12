@@ -1,0 +1,40 @@
+{
+  "ohmscalculator": {
+    "showFormulaTriangle": true,
+    "problems": [
+      {
+        "given": {
+          "voltage": 5,
+          "current": 0.04
+        },
+        "solveFor": "power",
+        "unit": "W",
+        "hint": "P = V × I",
+        "explanation": "5V × 0.04A = 0.2W — safe for a 0.25W resistor",
+        "answer": 0.2
+      },
+      {
+        "given": {
+          "voltage": 9,
+          "current": 0.06
+        },
+        "solveFor": "power",
+        "unit": "W",
+        "hint": "P = V × I",
+        "explanation": "9V × 0.06A = 0.54W — exceeds a 0.25W resistor rating!",
+        "answer": 0.54
+      },
+      {
+        "given": {
+          "voltage": 3.3,
+          "current": 0.01
+        },
+        "solveFor": "power",
+        "unit": "W",
+        "hint": "P = V × I",
+        "explanation": "3.3V × 0.01A = 0.033W — well within any standard rating",
+        "answer": 0.033
+      }
+    ]
+  }
+}

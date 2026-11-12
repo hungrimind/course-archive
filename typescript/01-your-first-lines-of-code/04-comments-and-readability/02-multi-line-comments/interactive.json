@@ -1,0 +1,28 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "blank",
+        "answer": "/*"
+      },
+      {
+        "type": "code",
+        "value": "\n  Price is calculated before discount.\n  Discount logic lives in applyDiscount().\n"
+      },
+      {
+        "type": "blank",
+        "answer": "*/"
+      },
+      {
+        "type": "code",
+        "value": "\nconst price = 49.99;"
+      }
+    ],
+    "options": [
+      "//",
+      "<!--",
+      "-->"
+    ]
+  }
+}

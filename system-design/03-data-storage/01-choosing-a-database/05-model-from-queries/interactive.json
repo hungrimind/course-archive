@@ -1,0 +1,216 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client_app",
+        "label": "Client App",
+        "icon": "monitor",
+        "category": "client"
+      },
+      {
+        "id": "api_service",
+        "label": "API Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "query_patterns",
+        "label": "Query Patterns (Hot Reads/Writes)",
+        "icon": "layers",
+        "category": "design"
+      },
+      {
+        "id": "denormalized_document_store",
+        "label": "Denormalized Document Store",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "normalized_relational_db",
+        "label": "Normalized Relational DB",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "sync_worker",
+        "label": "Sync Worker (Keep Copies in Sync)",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "cache_layer",
+        "label": "Cache Layer",
+        "icon": "hard-drive",
+        "category": "performance"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client_app",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client_app",
+        "to": "api_service"
+      },
+      {
+        "from": "api_service",
+        "to": "query_patterns"
+      },
+      {
+        "from": "query_patterns",
+        "to": "denormalized_document_store"
+      },
+      {
+        "from": "api_service",
+        "to": "cache_layer"
+      },
+      {
+        "from": "cache_layer",
+        "to": "denormalized_document_store"
+      },
+      {
+        "from": "api_service",
+        "to": "normalized_relational_db"
+      },
+      {
+        "from": "normalized_relational_db",
+        "to": "sync_worker"
+      },
+      {
+        "from": "sync_worker",
+        "to": "denormalized_document_store"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "query_patterns",
+        "message": "Include a 'Query Patterns' step to show that the data model is driven by the application's hottest reads/writes."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "denormalized_document_store",
+        "message": "Include a denormalized document store to represent a query-optimized storage shape (e.g., user profile + recent posts in one read)."
+      },
+      {
+        "type": "path_exists",
+        "from": "api_service",
+        "to": "denormalized_document_store",
+        "message": "There must be a read/write path from the API to the denormalized document store to support query-optimized access."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "api_service",
+        "to": "denormalized_document_store",
+        "message": "Don't model the denormalized store as a direct choice without query reasoning. Route through 'Query Patterns' to emphasize modeling from queries."
+      },
+      {
+        "type": "required_edge",
+        "from": "query_patterns",
+        "to": "denormalized_document_store",
+        "message": "Connect 'Query Patterns' to the denormalized document store to show the storage shape is chosen based on the hottest queries."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "sync_worker",
+        "count": 1,
+        "message": "Denormalization introduces duplication, so add a sync worker to represent the effort required to keep copies in sync."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client_app",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "api_service",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "query_patterns",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "cache_layer",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "normalized_relational_db",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_6",
+          "componentId": "sync_worker",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_7",
+          "componentId": "denormalized_document_store",
+          "x": 250,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_7"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_4",
+          "to": "sol_7"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_2",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_5",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_8",
+          "from": "sol_6",
+          "to": "sol_7"
+        }
+      ]
+    },
+    "assignment": "Build a diagram that shows how an API designs and uses a denormalized storage shape based on the application's hottest query patterns. Include a 'Query Patterns' step that leads to a denormalized document store, ensure the API can reach the denormalized store via a valid path (not directly), and include a sync worker to represent the extra work required to keep duplicated/denormalized copies in sync."
+  }
+}

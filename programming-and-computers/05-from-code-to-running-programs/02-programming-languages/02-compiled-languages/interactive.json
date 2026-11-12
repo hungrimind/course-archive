@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A compiled language translates the entire program into machine code before the program runs.",
+        "correct": true,
+        "explanation": "That is exactly what compilation means, the entire source code is translated into machine code ahead of time, and then the resulting program can be executed directly by the CPU."
+      },
+      {
+        "statement": "Compiled programs need to be re-translated every time you run them.",
+        "correct": false,
+        "explanation": "Compiling happens once. After the program is compiled into machine code, you can run the resulting file as many times as you want without re-compiling."
+      },
+      {
+        "statement": "C, Go, and Rust are examples of compiled languages.",
+        "correct": true,
+        "explanation": "C, Go, and Rust are all compiled languages. Their source code is translated entirely into machine code by a compiler before execution."
+      },
+      {
+        "statement": "Compiling a program is like having a live translator read one sentence at a time.",
+        "correct": false,
+        "explanation": "That describes interpretation, not compilation. Compiling is like translating an entire book before anyone reads it, the whole translation is done up front."
+      }
+    ]
+  }
+}

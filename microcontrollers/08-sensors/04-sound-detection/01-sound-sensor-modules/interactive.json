@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A sound sensor module's digital output (D0) goes HIGH when sound crosses a set threshold.",
+        "correct": true,
+        "explanation": "The digital output works like a simple switch: when the detected sound level exceeds the threshold set by the onboard potentiometer, the pin goes HIGH."
+      },
+      {
+        "statement": "The analog output (A0) of a sound sensor can be read directly by a Raspberry Pi GPIO pin without any extra hardware.",
+        "correct": false,
+        "explanation": "The analog output varies with volume and needs an ADC (analog-to-digital converter) to convert the varying voltage into a number the Pi can use, since Pi GPIO pins only read digital HIGH/LOW."
+      },
+      {
+        "statement": "Sound sensor modules are suitable for recording high-quality audio.",
+        "correct": false,
+        "explanation": "Sound sensor modules are designed for simple detection tasks like clap-detection or noise-triggered alerts, not for recording audio."
+      },
+      {
+        "statement": "A potentiometer on the sound sensor board sets the threshold for the digital output.",
+        "correct": true,
+        "explanation": "The onboard potentiometer lets you adjust at what volume level the digital output triggers, making it configurable for different use cases."
+      }
+    ]
+  }
+}

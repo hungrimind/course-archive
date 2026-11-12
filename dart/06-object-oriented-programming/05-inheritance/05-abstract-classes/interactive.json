@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of an `abstract` class in Dart?",
+      "answers": [
+        {
+          "answer": "To create a class that can be instantiated only once.",
+          "correct": false
+        },
+        {
+          "answer": "To serve as a blueprint for other classes, which cannot be instantiated on its own.",
+          "correct": true
+        },
+        {
+          "answer": "To prevent any other class from inheriting its properties and methods.",
+          "correct": false
+        },
+        {
+          "answer": "To automatically hide all of its methods from other classes.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Given the code below, what will happen when you try to run the `main` function?\n\n```dart\nabstract class Vehicle {\n  void startEngine() {\n    print('Engine started');\n  }\n}\n\nvoid main() {\n  Vehicle myCar = Vehicle();\n  myCar.startEngine();\n}\n```",
+      "answers": [
+        {
+          "answer": "The code will run and print \"Engine started\".",
+          "correct": false
+        },
+        {
+          "answer": "The code will run, but it will throw an error when `startEngine()` is called.",
+          "correct": false
+        },
+        {
+          "answer": "The code will not compile because `Vehicle` is an abstract class.",
+          "correct": true
+        },
+        {
+          "answer": "The code will not compile because abstract classes cannot have methods with code inside them.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which line of code correctly defines an abstract class named `DataSource`?",
+      "answers": [
+        {
+          "answer": "`abstract class DataSource { ... }`",
+          "correct": true
+        },
+        {
+          "answer": "`class DataSource abstract { ... }`",
+          "correct": false
+        },
+        {
+          "answer": "`blueprint class DataSource { ... }`",
+          "correct": false
+        },
+        {
+          "answer": "`abstract DataSource { ... }`",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

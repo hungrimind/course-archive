@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of a loop in programming?",
+      "answers": [
+        {
+          "answer": "To make a decision based on a condition, like an `if` statement.",
+          "correct": false
+        },
+        {
+          "answer": "To store a collection of values, like a list of usernames.",
+          "correct": false
+        },
+        {
+          "answer": "To execute the same block of code repeatedly.",
+          "correct": true
+        },
+        {
+          "answer": "To stop the program from running.",
+          "correct": false
+        }
+      ],
+      "explanation": "The correct answer is C. Loops are a fundamental control flow structure designed to repeat a set of instructions, which saves you from having to write the same code over and over again."
+    },
+    {
+      "question": "Imagine you are writing a program to process a list of 500 user profiles. For each profile, you need to check if the user is active and then print their username. Which programming concept is best suited for this repetitive task?",
+      "answers": [
+        {
+          "answer": "An `if-else` statement.",
+          "correct": false
+        },
+        {
+          "answer": "A `String` variable.",
+          "correct": false
+        },
+        {
+          "answer": "A loop.",
+          "correct": true
+        },
+        {
+          "answer": "A `const` variable.",
+          "correct": false
+        }
+      ],
+      "explanation": "The correct answer is C. The task involves repeating the same action (checking status and printing a username) for 500 different profiles. A loop is the perfect tool to handle this kind of repetition efficiently."
+    },
+    {
+      "question": "What is the main advantage of using a loop to perform a task 1,000 times versus copying and pasting the code 1,000 times?",
+      "answers": [
+        {
+          "answer": "The program will always run faster with a loop.",
+          "correct": false
+        },
+        {
+          "answer": "The code is much shorter, cleaner, and easier to modify.",
+          "correct": true
+        },
+        {
+          "answer": "It's the only way to make a program repeat a task.",
+          "correct": false
+        },
+        {
+          "answer": "Using a loop allows you to use the `print()` function.",
+          "correct": false
+        }
+      ],
+      "explanation": "The correct answer is B. As shown in the lesson, writing 1,000 lines of code is impractical. If you needed to change the repeated action, you'd have to edit all 1,000 lines. With a loop, you only have to edit the code in one place, making your program far more manageable."
+    }
+  ]
+}

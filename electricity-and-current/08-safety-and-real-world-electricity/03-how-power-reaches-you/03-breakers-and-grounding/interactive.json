@@ -1,0 +1,92 @@
+{
+  "quiz": [
+    {
+      "question": "What does a circuit breaker do when too much current flows through a circuit?",
+      "answers": [
+        {
+          "answer": "It increases resistance to slow the current down",
+          "correct": false
+        },
+        {
+          "answer": "It trips and cuts power instantly",
+          "correct": true
+        },
+        {
+          "answer": "It redirects excess current into the ground wire",
+          "correct": false
+        },
+        {
+          "answer": "It sends an alert to the power company",
+          "correct": false
+        }
+      ],
+      "explanation": "When a circuit breaker detects excessive current from a short circuit or overloaded outlet, it trips and cuts power instantly to prevent wiring from overheating and starting fires."
+    },
+    {
+      "question": "What is the primary purpose of grounding in your home's electrical system?",
+      "answers": [
+        {
+          "answer": "To make circuits run more efficiently",
+          "correct": false
+        },
+        {
+          "answer": "To reduce your electricity bill",
+          "correct": false
+        },
+        {
+          "answer": "To route stray current safely into the earth instead of through you",
+          "correct": true
+        },
+        {
+          "answer": "To increase the voltage available at outlets",
+          "correct": false
+        }
+      ],
+      "explanation": "Grounding provides a safe path for stray current to flow into the earth, preventing you from becoming the path for fault current."
+    },
+    {
+      "question": "What are the two layers of your home's electrical safety net?",
+      "answers": [
+        {
+          "answer": "Fuses and surge protectors",
+          "correct": false
+        },
+        {
+          "answer": "Circuit breakers and grounding",
+          "correct": true
+        },
+        {
+          "answer": "Transformers and insulators",
+          "correct": false
+        },
+        {
+          "answer": "Hot wires and neutral wires",
+          "correct": false
+        }
+      ],
+      "explanation": "Circuit breakers stop overcurrent (too much current flowing) and grounding stops you from becoming the path for stray current. Together they form a two-layer safety net."
+    },
+    {
+      "question": "What danger does a circuit breaker primarily protect against?",
+      "answers": [
+        {
+          "answer": "Lightning strikes",
+          "correct": false
+        },
+        {
+          "answer": "Voltage spikes from the power grid",
+          "correct": false
+        },
+        {
+          "answer": "Wiring overheating and starting fires",
+          "correct": true
+        },
+        {
+          "answer": "Power outages",
+          "correct": false
+        }
+      ],
+      "explanation": "When too much current flows through a circuit, the wiring can overheat and start a fire. Circuit breakers detect this overcurrent and cut power before that can happen."
+    }
+  ]
+}

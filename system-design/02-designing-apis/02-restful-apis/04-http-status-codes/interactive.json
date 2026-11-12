@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Success Status Codes (2xx)",
+        "items": [
+          "200 OK",
+          "204 No Content"
+        ]
+      },
+      {
+        "label": "Client Error Status Codes (4xx)",
+        "items": [
+          "404 Not Found",
+          "403 Forbidden"
+        ]
+      },
+      {
+        "label": "Server Error Status Codes (5xx)",
+        "items": [
+          "500 Internal Error",
+          "503 Service Unavailable"
+        ]
+      }
+    ]
+  }
+}

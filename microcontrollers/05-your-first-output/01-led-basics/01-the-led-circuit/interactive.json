@@ -1,0 +1,109 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "gpio17",
+        "label": "GPIO 17 (3.3V)",
+        "type": "battery",
+        "value": 3.3
+      },
+      {
+        "id": "r1",
+        "label": "220Ω Resistor",
+        "type": "resistor",
+        "value": 220
+      },
+      {
+        "id": "led1",
+        "label": "Red LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "The circuit must form a complete loop from GPIO pin through the components and back to ground."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Place the LED in the circuit."
+      },
+      {
+        "type": "has_component",
+        "componentType": "resistor",
+        "message": "You need a resistor to protect the LED."
+      },
+      {
+        "type": "series_with",
+        "component": "led",
+        "withComponent": "resistor",
+        "message": "The resistor must be in series with the LED to limit current."
+      },
+      {
+        "type": "led_safe",
+        "message": "Too much current! The LED would burn out. Check your resistor value."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "s1",
+          "componentId": "gpio17",
+          "x": 50,
+          "y": 120
+        },
+        {
+          "id": "s2",
+          "componentId": "r1",
+          "x": 220,
+          "y": 60
+        },
+        {
+          "id": "s3",
+          "componentId": "led1",
+          "x": 400,
+          "y": 120
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "s1",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s2",
+            "terminal": "left"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "s2",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s3",
+            "terminal": "left"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "s3",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s1",
+            "terminal": "left"
+          }
+        }
+      ]
+    },
+    "assignment": "Build a circuit that safely lights up the LED. Connect the GPIO pin through the resistor and LED in a complete loop."
+  }
+}

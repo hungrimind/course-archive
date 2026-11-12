@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Latency",
+        "items": [
+          "120 ms per request",
+          "Emphasized in chat apps",
+          "Speed per request"
+        ]
+      },
+      {
+        "label": "Throughput",
+        "items": [
+          "1,000 requests/second",
+          "Batch processing focus",
+          "Work per second"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const isAdmin: boolean = false;\nconst isOwner: boolean = true;\n\nif (isAdmin "
+      },
+      {
+        "type": "blank",
+        "answer": "||"
+      },
+      {
+        "type": "code",
+        "value": " isOwner) {\n  console.log(\"Access granted.\");\n}"
+      }
+    ],
+    "options": [
+      "&&",
+      "!",
+      "|"
+    ]
+  }
+}

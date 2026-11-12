@@ -1,0 +1,31 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "function add(a, b) {\n  "
+      },
+      {
+        "type": "blank",
+        "answer": "return"
+      },
+      {
+        "type": "code",
+        "value": " a + b;\n}\n\nlet result = "
+      },
+      {
+        "type": "blank",
+        "answer": "add"
+      },
+      {
+        "type": "code",
+        "value": "(2, 3);\n// result is 5"
+      }
+    ],
+    "options": [
+      "console.log",
+      "let"
+    ]
+  }
+}

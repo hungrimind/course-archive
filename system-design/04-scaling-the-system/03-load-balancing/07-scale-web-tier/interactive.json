@@ -1,0 +1,165 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client_browser",
+        "label": "Client / Browser",
+        "icon": "monitor",
+        "category": "client"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "web_server",
+        "label": "Web Server",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "app_database",
+        "label": "App Database",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "dns",
+        "label": "DNS",
+        "icon": "globe",
+        "category": "network"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client_browser",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client_browser",
+        "to": "dns"
+      },
+      {
+        "from": "dns",
+        "to": "load_balancer"
+      },
+      {
+        "from": "client_browser",
+        "to": "load_balancer"
+      },
+      {
+        "from": "load_balancer",
+        "to": "web_server"
+      },
+      {
+        "from": "web_server",
+        "to": "app_database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "load_balancer",
+        "message": "Add a load balancer so incoming traffic can be distributed instead of overwhelming a single web server."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "web_server",
+        "count": 2,
+        "message": "Use horizontal scaling: add at least two web servers behind the load balancer."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "app_database",
+        "message": "Add a database so the web tier has a backend dependency to connect to."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client_browser",
+        "to": "web_server",
+        "message": "Clients should not connect directly to web servers in this design. Route traffic through the load balancer to avoid bottlenecks and improve scalability."
+      },
+      {
+        "type": "path_exists",
+        "from": "client_browser",
+        "to": "web_server",
+        "message": "Ensure requests can reach the web tier by creating a path from the client to the web servers (typically via a load balancer)."
+      },
+      {
+        "type": "path_exists",
+        "from": "load_balancer",
+        "to": "web_server",
+        "message": "The load balancer must have a path to the web servers so it can distribute requests across them."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client_browser",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "web_server",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "web_server",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "app_database",
+          "x": 250,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_4",
+          "to": "sol_5"
+        }
+      ]
+    },
+    "assignment": "Build a scalable web tier using horizontal scaling: add a load balancer and multiple web servers so client requests reach the web servers through the load balancer (not directly). Also include a database and connect the web servers to it."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following correctly creates a multi-line string in Dart?",
+      "answers": [
+        {
+          "answer": "String poem = \"Roses are red\\n Violets are blue\";",
+          "correct": false
+        },
+        {
+          "answer": "String haiku = '''An old silent pond...\nA frog jumps into the pond,\nSplash! Silence again.''';",
+          "correct": true
+        },
+        {
+          "answer": "String address = // 123 Main St\n// Anytown, USA;",
+          "correct": false
+        },
+        {
+          "answer": "String single = 'This is a string that\nspans multiple lines';",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the primary purpose of using triple slashes (`///`) in Dart?",
+      "answers": [
+        {
+          "answer": "To create a string that spans multiple lines.",
+          "correct": false
+        },
+        {
+          "answer": "To comment out a large block of code for debugging.",
+          "correct": false
+        },
+        {
+          "answer": "To write documentation comments that tools can use to generate API documentation.",
+          "correct": true
+        },
+        {
+          "answer": "To perform a special type of division operation.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

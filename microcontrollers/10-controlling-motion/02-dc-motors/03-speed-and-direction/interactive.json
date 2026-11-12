@@ -1,0 +1,31 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "in1 = Pin(14, Pin.OUT)\nin2 = Pin(15, Pin.OUT)\nspeed = PWM(Pin(16), freq=1000)\n\nin1.value(1)\nin2.value("
+      },
+      {
+        "type": "blank",
+        "answer": "0"
+      },
+      {
+        "type": "code",
+        "value": ")\nspeed.duty_u16("
+      },
+      {
+        "type": "blank",
+        "answer": "32768"
+      },
+      {
+        "type": "code",
+        "value": ")  # 50% speed"
+      }
+    ],
+    "options": [
+      "1",
+      "65535",
+      "16384"
+    ]
+  }
+}

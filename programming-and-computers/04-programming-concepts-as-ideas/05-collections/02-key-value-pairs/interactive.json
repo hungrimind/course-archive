@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "How does a key-value pair find a value?",
+      "answers": [
+        {
+          "answer": "By its position in a line, like first or third",
+          "correct": false
+        },
+        {
+          "answer": "By a name (the key) that points to the value",
+          "correct": true
+        },
+        {
+          "answer": "By the size of the value in memory",
+          "correct": false
+        },
+        {
+          "answer": "By the order you typed it into the program",
+          "correct": false
+        }
+      ],
+      "explanation": "Key-value pairs use a name, the key, to look up a value. This is the opposite of a list, which finds things by counting positions."
+    },
+    {
+      "question": "If you stored name as \"Alice\" and age as 30, how would you get Alice's age?",
+      "answers": [
+        {
+          "answer": "Count through the positions until you reach the second one",
+          "correct": false
+        },
+        {
+          "answer": "Ask for the value behind the age key",
+          "correct": true
+        },
+        {
+          "answer": "Add name and age together",
+          "correct": false
+        },
+        {
+          "answer": "Guess a number and check if it matches",
+          "correct": false
+        }
+      ],
+      "explanation": "Because age is the key that points to 30, you just ask for the value behind age. There is no counting or guessing involved."
+    },
+    {
+      "question": "Which everyday object works most like a key-value pair?",
+      "answers": [
+        {
+          "answer": "A stack of numbered tickets",
+          "correct": false
+        },
+        {
+          "answer": "A line of people waiting in order",
+          "correct": false
+        },
+        {
+          "answer": "A dictionary where you look up a word to get its definition",
+          "correct": true
+        },
+        {
+          "answer": "A clock that counts seconds in order",
+          "correct": false
+        }
+      ],
+      "explanation": "A dictionary maps each word (key) to its definition (value), which is exactly how key-value pairs work. You jump directly to the definition without reading the whole book."
+    }
+  ]
+}

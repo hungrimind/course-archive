@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Button contacts land cleanly on the first press, producing a single stable signal.",
+        "correct": false,
+        "explanation": "Metal contacts bounce when they make contact, causing the signal to rapidly flicker between HIGH and LOW for a few milliseconds before settling."
+      },
+      {
+        "statement": "Without debouncing, a single button press might be detected as multiple presses by your code.",
+        "correct": true,
+        "explanation": "The rapid flickering from contact bounce can register as several separate presses. Debouncing ignores changes for a short window (typically 50-200ms) to ensure one press equals one signal."
+      },
+      {
+        "statement": "A common debouncing technique is to wait a short time after the first detected press and then check the button state again.",
+        "correct": true,
+        "explanation": "By adding a small delay (e.g., 100ms) and re-reading the pin, you skip past the bouncing period and confirm the button is truly pressed."
+      }
+    ]
+  }
+}

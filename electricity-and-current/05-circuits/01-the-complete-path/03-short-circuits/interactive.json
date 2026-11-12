@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What happens during a short circuit?",
+      "answers": [
+        {
+          "answer": "Current flows normally through all components",
+          "correct": false
+        },
+        {
+          "answer": "Current bypasses components and flows with almost no resistance",
+          "correct": true
+        },
+        {
+          "answer": "The circuit opens and current stops flowing",
+          "correct": false
+        },
+        {
+          "answer": "Voltage drops to zero across all components",
+          "correct": false
+        }
+      ],
+      "explanation": "A short circuit occurs when current finds a shortcut that bypasses components, flowing straight from positive to negative with almost no resistance, causing a dangerous surge."
+    },
+    {
+      "question": "What is the purpose of fuses and circuit breakers?",
+      "answers": [
+        {
+          "answer": "They increase the voltage in a circuit",
+          "correct": false
+        },
+        {
+          "answer": "They store extra current for later use",
+          "correct": false
+        },
+        {
+          "answer": "They cut the connection when current spikes too high",
+          "correct": true
+        },
+        {
+          "answer": "They redirect current to bypass damaged components",
+          "correct": false
+        }
+      ],
+      "explanation": "Fuses and circuit breakers monitor current flow and break the circuit the moment current spikes dangerously high, preventing wires from overheating, melting, or catching fire."
+    }
+  ]
+}

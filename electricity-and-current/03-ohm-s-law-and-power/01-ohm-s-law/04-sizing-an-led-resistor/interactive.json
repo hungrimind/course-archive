@@ -1,0 +1,126 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "battery-5v",
+        "label": "5V Battery",
+        "type": "battery",
+        "value": 5,
+        "count": 1
+      },
+      {
+        "id": "resistor-47",
+        "label": "47Ω Resistor",
+        "type": "resistor",
+        "value": 47,
+        "count": 1
+      },
+      {
+        "id": "resistor-150",
+        "label": "150Ω Resistor",
+        "type": "resistor",
+        "value": 150,
+        "count": 1
+      },
+      {
+        "id": "resistor-1k",
+        "label": "1kΩ Resistor",
+        "type": "resistor",
+        "value": 1000,
+        "count": 1
+      },
+      {
+        "id": "red-led",
+        "label": "Red LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02,
+        "count": 1
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "The circuit must form a complete loop."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Add the red LED to the circuit."
+      },
+      {
+        "type": "has_component",
+        "componentType": "resistor",
+        "message": "Choose a resistor to protect the LED. Use Ohm’s Law: R = (5V - 2V) / 0.02A = 150Ω."
+      },
+      {
+        "type": "series_with",
+        "component": "led",
+        "withComponent": "resistor",
+        "message": "The resistor must be in series with the LED."
+      },
+      {
+        "type": "led_safe",
+        "message": "The LED current must not exceed 20mA. The 47Ω gives 63.8mA (burns out!), the 150Ω gives exactly 20mA (perfect), and the 1kΩ gives 3mA (too dim)."
+      }
+    ],
+    "assignment": "Pick the right resistor to safely light the LED at its rated current of 20mA with the 5V battery. Use Ohm’s Law: R = V / I. The LED drops 2V, so the resistor must handle the remaining 3V. Only one resistor gives exactly 20mA.",
+    "solution": {
+      "nodes": [
+        {
+          "id": "n1",
+          "componentId": "battery-5v",
+          "x": 100,
+          "y": 200
+        },
+        {
+          "id": "n2",
+          "componentId": "resistor-150",
+          "x": 300,
+          "y": 100
+        },
+        {
+          "id": "n3",
+          "componentId": "red-led",
+          "x": 300,
+          "y": 300
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "n1",
+            "terminal": "+"
+          },
+          "to": {
+            "nodeId": "n2",
+            "terminal": "in"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "n2",
+            "terminal": "out"
+          },
+          "to": {
+            "nodeId": "n3",
+            "terminal": "anode"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "n3",
+            "terminal": "cathode"
+          },
+          "to": {
+            "nodeId": "n1",
+            "terminal": "-"
+          }
+        }
+      ]
+    }
+  }
+}

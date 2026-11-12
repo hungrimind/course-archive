@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "When you plug in a heater, a large "
+      },
+      {
+        "type": "blank",
+        "answer": "current"
+      },
+      {
+        "type": "code",
+        "value": " flows because many "
+      },
+      {
+        "type": "blank",
+        "answer": "electrons"
+      },
+      {
+        "type": "code",
+        "value": " pass through the wire each second. A small device like a watch uses only a tiny "
+      },
+      {
+        "type": "blank",
+        "answer": "trickle"
+      },
+      {
+        "type": "code",
+        "value": " of charge by comparison."
+      }
+    ],
+    "options": [
+      "voltage",
+      "resistance",
+      "photon"
+    ]
+  }
+}

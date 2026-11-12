@@ -1,0 +1,48 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "To convert an analog signal to digital, a circuit measures the voltage many times per second. This process is called "
+      },
+      {
+        "type": "blank",
+        "answer": "sampling"
+      },
+      {
+        "type": "code",
+        "value": ". Each measurement is recorded as a "
+      },
+      {
+        "type": "blank",
+        "answer": "number"
+      },
+      {
+        "type": "code",
+        "value": ". Taking more samples per second makes the digital version more "
+      },
+      {
+        "type": "blank",
+        "answer": "accurate"
+      },
+      {
+        "type": "code",
+        "value": ". This is how a microphone records sound: the smooth wave is measured thousands of times per second, and each snapshot is stored by a "
+      },
+      {
+        "type": "blank",
+        "answer": "computer"
+      },
+      {
+        "type": "code",
+        "value": "."
+      }
+    ],
+    "options": [
+      "filtering",
+      "letter",
+      "louder",
+      "resistor"
+    ]
+  }
+}

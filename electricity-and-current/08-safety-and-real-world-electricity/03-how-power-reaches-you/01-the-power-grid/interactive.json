@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "Electricity is generated at power plants, then stepped up to "
+      },
+      {
+        "type": "blank",
+        "answer": "high voltage"
+      },
+      {
+        "type": "code",
+        "value": " for long-distance travel. This reduces energy lost as "
+      },
+      {
+        "type": "blank",
+        "answer": "heat"
+      },
+      {
+        "type": "code",
+        "value": " during transmission. Before reaching your home, "
+      },
+      {
+        "type": "blank",
+        "answer": "transformers"
+      },
+      {
+        "type": "code",
+        "value": " step the voltage back down in stages to the 120V or 230V at your wall outlet."
+      }
+    ],
+    "options": [
+      "low voltage",
+      "light",
+      "capacitors"
+    ]
+  }
+}

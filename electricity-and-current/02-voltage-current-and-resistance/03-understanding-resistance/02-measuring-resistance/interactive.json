@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What unit is used to measure resistance?",
+      "answers": [
+        {
+          "answer": "Volts (V)",
+          "correct": false
+        },
+        {
+          "answer": "Amperes (A)",
+          "correct": false
+        },
+        {
+          "answer": "Ohms (Ω)",
+          "correct": true
+        },
+        {
+          "answer": "Watts (W)",
+          "correct": false
+        }
+      ],
+      "explanation": "Resistance is measured in ohms, represented by the Greek letter omega (Ω)."
+    },
+    {
+      "question": "How many ohms are in 1 kilohm (kΩ)?",
+      "answers": [
+        {
+          "answer": "100Ω",
+          "correct": false
+        },
+        {
+          "answer": "1,000Ω",
+          "correct": true
+        },
+        {
+          "answer": "10,000Ω",
+          "correct": false
+        },
+        {
+          "answer": "1,000,000Ω",
+          "correct": false
+        }
+      ],
+      "explanation": "The prefix 'kilo' means one thousand, so 1 kΩ equals 1,000Ω."
+    },
+    {
+      "question": "A resistor is labeled 2.2 MΩ. How many ohms is that?",
+      "answers": [
+        {
+          "answer": "2,200Ω",
+          "correct": false
+        },
+        {
+          "answer": "22,000Ω",
+          "correct": false
+        },
+        {
+          "answer": "220,000Ω",
+          "correct": false
+        },
+        {
+          "answer": "2,200,000Ω",
+          "correct": true
+        }
+      ],
+      "explanation": "The prefix 'mega' means one million, so 2.2 MΩ equals 2,200,000Ω."
+    }
+  ]
+}

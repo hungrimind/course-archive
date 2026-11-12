@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "In full stepping mode, two coils are energized simultaneously to move the shaft one step.",
+        "correct": false,
+        "explanation": "In full stepping, only one coil is activated at a time -- coil A, then B, then C, then D. Each switch from one coil to the next is one step."
+      },
+      {
+        "statement": "Half stepping doubles the step resolution from 200 to 400 steps per revolution.",
+        "correct": true,
+        "explanation": "Half stepping alternates between energizing one coil and two coils at once, which doubles the number of steps from 200 to 400 per revolution."
+      },
+      {
+        "statement": "Half stepping provides more holding force per step than full stepping.",
+        "correct": false,
+        "explanation": "Half stepping actually has slightly less holding force at the single-coil positions, since those positions are weaker than the full-step positions."
+      },
+      {
+        "statement": "A stepper motor requires its coils to be energized in a specific sequence to rotate.",
+        "correct": true,
+        "explanation": "The coils must be energized in a particular order (e.g., A, B, C, D) to create the rotating magnetic field that moves the shaft step by step."
+      }
+    ]
+  }
+}

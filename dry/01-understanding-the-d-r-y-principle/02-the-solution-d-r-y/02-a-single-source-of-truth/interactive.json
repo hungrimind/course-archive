@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Examples of Single Source of Truth",
+        "items": [
+          "const double pi = 3.14159;",
+          "function getApiBaseUrl()"
+        ]
+      },
+      {
+        "label": "Benefits of Single Source of Truth",
+        "items": [
+          "Reduces inconsistencies",
+          "Simplifies updates"
+        ]
+      },
+      {
+        "label": "Violations of Single Source of Truth",
+        "items": [
+          "Hard-coded values in multiple files",
+          "Duplicated function logic"
+        ]
+      }
+    ]
+  }
+}

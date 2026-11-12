@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "led_on = False\n\nwhile True:\n    if button.value() == 0:\n        sleep_ms(100)\n        if button.value() == 0:\n            led_on = "
+      },
+      {
+        "type": "blank",
+        "answer": "not led_on"
+      },
+      {
+        "type": "code",
+        "value": "\n            led.value(led_on)\n            while button."
+      },
+      {
+        "type": "blank",
+        "answer": "value()"
+      },
+      {
+        "type": "code",
+        "value": " == 0:\n                pass"
+      }
+    ],
+    "options": [
+      "True",
+      "led_on",
+      "read()"
+    ]
+  }
+}

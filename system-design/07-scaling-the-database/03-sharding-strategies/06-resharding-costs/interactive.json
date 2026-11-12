@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of resharding in a database system?",
+      "answers": [
+        {
+          "answer": "To back up data for disaster recovery",
+          "correct": false
+        },
+        {
+          "answer": "To balance load and accommodate growth",
+          "correct": true
+        },
+        {
+          "answer": "To encrypt data for security",
+          "correct": false
+        },
+        {
+          "answer": "To optimize query performance",
+          "correct": false
+        }
+      ],
+      "explanation": "Resharding helps to balance load across shards and manage data growth by redistributing data effectively."
+    },
+    {
+      "question": "Which of the following is a potential downside of resharding?",
+      "answers": [
+        {
+          "answer": "Reduced data redundancy",
+          "correct": false
+        },
+        {
+          "answer": "Increased data security",
+          "correct": false
+        },
+        {
+          "answer": "Decreased system availability",
+          "correct": true
+        },
+        {
+          "answer": "Reduced storage costs",
+          "correct": false
+        }
+      ],
+      "explanation": "During resharding, system availability may decrease temporarily and latency may increase due to data movement and reindexing."
+    },
+    {
+      "question": "Why is it important to choose an appropriate shard key initially?",
+      "answers": [
+        {
+          "answer": "To eliminate all future maintenance needs",
+          "correct": false
+        },
+        {
+          "answer": "To minimize the need for future data redistribution",
+          "correct": true
+        },
+        {
+          "answer": "To ensure data is encrypted",
+          "correct": false
+        },
+        {
+          "answer": "To restrict data access",
+          "correct": false
+        }
+      ],
+      "explanation": "Selecting a good shard key is crucial as it minimizes the likelihood of needing resharding, thus avoiding the costs and downtime associated with it."
+    }
+  ]
+}

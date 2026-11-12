@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "According to the Single Responsibility Principle, what defines a class's 'responsibility'?",
+      "answers": [
+        {
+          "answer": "A list of functions the class performs",
+          "correct": false
+        },
+        {
+          "answer": "A reason for the class to change",
+          "correct": true
+        },
+        {
+          "answer": "The number of methods it contains",
+          "correct": false
+        },
+        {
+          "answer": "The complexity of its methods",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why should a class like OrderManager, which handles both processing orders and sending confirmation emails, be split into separate classes?",
+      "answers": [
+        {
+          "answer": "To make the code more visually appealing",
+          "correct": false
+        },
+        {
+          "answer": "To reduce the number of classes in the project",
+          "correct": false
+        },
+        {
+          "answer": "To adhere to the Single Responsibility Principle by reducing independent reasons for the class to change",
+          "correct": true
+        },
+        {
+          "answer": "To simplify the method names for clarity",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When analyzing a class to determine its responsibilities, which question is most helpful?",
+      "answers": [
+        {
+          "answer": "How many lines of code does each method have?",
+          "correct": false
+        },
+        {
+          "answer": "Why might this class need to change?",
+          "correct": true
+        },
+        {
+          "answer": "How frequently is this class used?",
+          "correct": false
+        },
+        {
+          "answer": "Who wrote the class and when?",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

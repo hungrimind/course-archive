@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What does the `new` keyword do when used with a class?",
+      "answers": [
+        {
+          "answer": "It defines a new class blueprint",
+          "correct": false
+        },
+        {
+          "answer": "It creates an independent instance of the class",
+          "correct": true
+        },
+        {
+          "answer": "It copies all methods from another class",
+          "correct": false
+        },
+        {
+          "answer": "It deletes the previous instance of the class",
+          "correct": false
+        }
+      ],
+      "explanation": "The `new` keyword creates a new instance (object) from the class blueprint. Each instance is an independent copy with its own property values."
+    },
+    {
+      "question": "If two objects are created from the same class, what is true about them?",
+      "answers": [
+        {
+          "answer": "They share the same property values and changing one changes the other",
+          "correct": false
+        },
+        {
+          "answer": "They must have different property names",
+          "correct": false
+        },
+        {
+          "answer": "They start with the same shape but are independent copies",
+          "correct": true
+        },
+        {
+          "answer": "Only the first object gets the class properties",
+          "correct": false
+        }
+      ],
+      "explanation": "Every object created from the same class starts with the same shape (same properties and methods), but each one is an independent copy that can be modified without affecting others."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is an edge case in testing?",
+      "answers": [
+        {
+          "answer": "A scenario that tests boundary conditions or unusual inputs",
+          "correct": true
+        },
+        {
+          "answer": "The main functionality of the code",
+          "correct": false
+        },
+        {
+          "answer": "The happy path scenario",
+          "correct": false
+        },
+        {
+          "answer": "A type of performance test",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In Test Driven Development (TDD), what comes first?",
+      "answers": [
+        {
+          "answer": "The implementation code",
+          "correct": false
+        },
+        {
+          "answer": "The tests",
+          "correct": true
+        },
+        {
+          "answer": "The documentation",
+          "correct": false
+        },
+        {
+          "answer": "The deployment",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What would be considered an edge case in the division function example?",
+      "answers": [
+        {
+          "answer": "Dividing by zero",
+          "correct": true
+        },
+        {
+          "answer": "Dividing 1 by 2",
+          "correct": false
+        },
+        {
+          "answer": "Dividing positive numbers",
+          "correct": false
+        },
+        {
+          "answer": "Multiplying numbers",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

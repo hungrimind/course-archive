@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of rate limiting in an API?",
+      "answers": [
+        {
+          "answer": "To encourage users to send more requests",
+          "correct": false
+        },
+        {
+          "answer": "To control the number of requests a user can make in a set timeframe",
+          "correct": true
+        },
+        {
+          "answer": "To improve the quality of user data",
+          "correct": false
+        },
+        {
+          "answer": "To permanently ban users",
+          "correct": false
+        }
+      ],
+      "explanation": "Rate limiting is employed to manage the number of requests a user can make to ensure fair usage and prevent abuse of the system."
+    },
+    {
+      "question": "What can happen if a user exceeds the rate limit for an API?",
+      "answers": [
+        {
+          "answer": "Their requests may be processed faster",
+          "correct": false
+        },
+        {
+          "answer": "They might receive more data than requested",
+          "correct": false
+        },
+        {
+          "answer": "Requests may be delayed or rejected",
+          "correct": true
+        },
+        {
+          "answer": "They are granted unlimited access temporarily",
+          "correct": false
+        }
+      ],
+      "explanation": "Exceeding the rate limit can result in requests being delayed or rejected to protect the system from overload and ensure resources are fairly distributed."
+    },
+    {
+      "question": "What are potential consequences for a user who consistently exceeds rate limits?",
+      "answers": [
+        {
+          "answer": "Their account may be upgraded automatically",
+          "correct": false
+        },
+        {
+          "answer": "They could face temporary bans or throttling",
+          "correct": true
+        },
+        {
+          "answer": "They might receive complimentary API service",
+          "correct": false
+        },
+        {
+          "answer": "Their requests will be prioritized",
+          "correct": false
+        }
+      ],
+      "explanation": "Users who exceed rate limits consistently may experience temporary bans or throttling, which can negatively impact their user experience."
+    }
+  ]
+}

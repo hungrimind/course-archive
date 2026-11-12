@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "The text \"100\" is a number, not a string, because it contains digits.",
+        "correct": false,
+        "explanation": "When digits are wrapped in quotes they are treated as text (a string), not a number. You cannot do math with them until they are converted."
+      },
+      {
+        "statement": "A string can contain letters, digits, spaces, and symbols all together.",
+        "correct": true,
+        "explanation": "A string is any sequence of characters, so it can mix letters, digits, spaces, and symbols freely."
+      },
+      {
+        "statement": "You can do math with a string like \"42\" without converting it first.",
+        "correct": false,
+        "explanation": "A string that looks like a number is still text. It must be converted to a number before math operations work."
+      }
+    ]
+  }
+}

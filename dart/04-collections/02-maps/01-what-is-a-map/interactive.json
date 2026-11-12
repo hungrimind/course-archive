@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the fundamental difference between a `Map` and a `List` in Dart?",
+      "answers": [
+        {
+          "answer": "A `List` stores collection of values, while a `Map` stores a collection of key-value pairs.",
+          "correct": true
+        },
+        {
+          "answer": "A `Map` can only store `String` values, while a `List` can store any data type.",
+          "correct": false
+        },
+        {
+          "answer": "A `List` uses curly braces `{}` for its syntax, while a `Map` uses square brackets `[]`.",
+          "correct": false
+        },
+        {
+          "answer": "A `Map` is a collection of unique values, while a `List` can have duplicates.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In a Dart `Map` literal, which symbol is used to separate a key from its value?",
+      "answers": [
+        {
+          "answer": "`=` (Equals sign)",
+          "correct": false
+        },
+        {
+          "answer": "`=>` (Arrow)",
+          "correct": false
+        },
+        {
+          "answer": "`:` (Colon)",
+          "correct": true
+        },
+        {
+          "answer": "`,` (Comma)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Given the following `Map`, how would you access the French translation for the word \"three\"?\n\n\nMap<String, String> numbers = {\n  \"one\": \"un\",\n  \"two\": \"deux\",\n  \"three\": \"trois\"\n};\n```",
+      "answers": [
+        {
+          "answer": "`numbers[2]`",
+          "correct": false
+        },
+        {
+          "answer": "`numbers[\"three\"]`",
+          "correct": true
+        },
+        {
+          "answer": "`numbers.three`",
+          "correct": false
+        },
+        {
+          "answer": "`numbers(\"trois\")`",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

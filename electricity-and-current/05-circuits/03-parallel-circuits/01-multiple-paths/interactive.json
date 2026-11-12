@@ -1,0 +1,166 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "battery-5v",
+        "label": "5V Battery",
+        "type": "battery",
+        "value": 5,
+        "count": 1
+      },
+      {
+        "id": "resistor-150-a",
+        "label": "150Ω Resistor",
+        "type": "resistor",
+        "value": 150,
+        "count": 1
+      },
+      {
+        "id": "resistor-150-b",
+        "label": "150Ω Resistor",
+        "type": "resistor",
+        "value": 150,
+        "count": 1
+      },
+      {
+        "id": "green-led-a",
+        "label": "Green LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02,
+        "count": 1
+      },
+      {
+        "id": "green-led-b",
+        "label": "Green LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02,
+        "count": 1
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "The circuit must form complete loops so current can flow through both paths."
+      },
+      {
+        "type": "has_component",
+        "componentType": "battery",
+        "message": "You need a battery to power the parallel circuit."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Add both LEDs — each on its own parallel branch."
+      },
+      {
+        "type": "led_safe",
+        "message": "Each LED must be safe. With 150Ω per branch: (5V - 2V) / 150Ω = 20mA per LED — within limits."
+      }
+    ],
+    "assignment": "Wire two LEDs in parallel so each has its own resistor. Both should light up, and removing one shouldn't affect the other. Each branch carries 20mA.",
+    "solution": {
+      "nodes": [
+        {
+          "id": "n1",
+          "componentId": "battery-5v",
+          "x": 100,
+          "y": 200
+        },
+        {
+          "id": "n2",
+          "componentId": "resistor-150-a",
+          "x": 350,
+          "y": 80
+        },
+        {
+          "id": "n3",
+          "componentId": "green-led-a",
+          "x": 550,
+          "y": 80
+        },
+        {
+          "id": "n4",
+          "componentId": "resistor-150-b",
+          "x": 350,
+          "y": 320
+        },
+        {
+          "id": "n5",
+          "componentId": "green-led-b",
+          "x": 550,
+          "y": 320
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "n1",
+            "terminal": "+"
+          },
+          "to": {
+            "nodeId": "n2",
+            "terminal": "in"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "n1",
+            "terminal": "+"
+          },
+          "to": {
+            "nodeId": "n4",
+            "terminal": "in"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "n2",
+            "terminal": "out"
+          },
+          "to": {
+            "nodeId": "n3",
+            "terminal": "anode"
+          }
+        },
+        {
+          "id": "w4",
+          "from": {
+            "nodeId": "n4",
+            "terminal": "out"
+          },
+          "to": {
+            "nodeId": "n5",
+            "terminal": "anode"
+          }
+        },
+        {
+          "id": "w5",
+          "from": {
+            "nodeId": "n3",
+            "terminal": "cathode"
+          },
+          "to": {
+            "nodeId": "n1",
+            "terminal": "-"
+          }
+        },
+        {
+          "id": "w6",
+          "from": {
+            "nodeId": "n5",
+            "terminal": "cathode"
+          },
+          "to": {
+            "nodeId": "n1",
+            "terminal": "-"
+          }
+        }
+      ]
+    }
+  }
+}

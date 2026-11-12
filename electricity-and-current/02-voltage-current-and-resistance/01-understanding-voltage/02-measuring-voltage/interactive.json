@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "Why can't you measure voltage at a single point?",
+      "answers": [
+        {
+          "answer": "Because voltage only exists in AC circuits",
+          "correct": false
+        },
+        {
+          "answer": "Because voltage is the difference in electrical pressure between two points",
+          "correct": true
+        },
+        {
+          "answer": "Because voltmeters require at least three connections",
+          "correct": false
+        },
+        {
+          "answer": "Because voltage disappears when you stop the circuit",
+          "correct": false
+        }
+      ],
+      "explanation": "Voltage is always a pressure difference between two points, so you need two reference points to measure it."
+    },
+    {
+      "question": "A device operates on two AA batteries wired in series. What total voltage do the batteries provide?",
+      "answers": [
+        {
+          "answer": "1.5V",
+          "correct": false
+        },
+        {
+          "answer": "0.75V",
+          "correct": false
+        },
+        {
+          "answer": "3V",
+          "correct": true
+        },
+        {
+          "answer": "6V",
+          "correct": false
+        }
+      ],
+      "explanation": "Each AA battery provides 1.5V. In series, voltages add together: 1.5V + 1.5V = 3V."
+    },
+    {
+      "question": "Which of the following has the highest voltage?",
+      "answers": [
+        {
+          "answer": "A AA battery",
+          "correct": false
+        },
+        {
+          "answer": "A car battery",
+          "correct": false
+        },
+        {
+          "answer": "A European wall outlet",
+          "correct": true
+        },
+        {
+          "answer": "A 9V battery",
+          "correct": false
+        }
+      ],
+      "explanation": "A European wall outlet delivers 230V, which is higher than a car battery (12V), a 9V battery, or a AA battery (1.5V)."
+    }
+  ]
+}

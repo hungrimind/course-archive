@@ -1,0 +1,198 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "app_service",
+        "label": "App Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "quorum_router",
+        "label": "Quorum / Consensus Layer",
+        "icon": "git-branch",
+        "category": "consistency"
+      },
+      {
+        "id": "primary_db",
+        "label": "Primary DB (Leader)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "replica_db",
+        "label": "Replica DB (Follower)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "cache",
+        "label": "Cache (Stale-tolerant)",
+        "icon": "layers",
+        "category": "performance"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "load_balancer"
+      },
+      {
+        "from": "load_balancer",
+        "to": "app_service"
+      },
+      {
+        "from": "app_service",
+        "to": "quorum_router"
+      },
+      {
+        "from": "quorum_router",
+        "to": "primary_db"
+      },
+      {
+        "from": "quorum_router",
+        "to": "replica_db"
+      },
+      {
+        "from": "app_service",
+        "to": "cache"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "load_balancer",
+        "message": "Add a load balancer so clients have a stable entry point even if some service instances become unreachable during a partition."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "quorum_router",
+        "message": "Include a quorum/consensus layer to make partition-aware decisions (e.g., require majority for writes) instead of letting isolated nodes accept conflicting writes."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "replica_db",
+        "count": 1,
+        "message": "Add at least one replica to represent multi-node storage where partitions can cause divergence if not managed."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "primary_db",
+        "message": "Ensure there is a request path from the client to the primary database (through the load balancer and app) so the system can serve consistent reads/writes when quorum is available."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "app_service",
+        "to": "primary_db",
+        "message": "Do not connect the app directly to the primary DB. Route through the quorum/consensus layer so writes can be rejected or fenced during a partition."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "app_service",
+        "to": "replica_db",
+        "message": "Do not connect the app directly to replicas. Reads/writes must be mediated by quorum rules to avoid serving unsafe results during partitions."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "app_service",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "quorum_router",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_5",
+          "componentId": "primary_db",
+          "x": 100,
+          "y": 600
+        },
+        {
+          "id": "sol_6",
+          "componentId": "replica_db",
+          "x": 400,
+          "y": 600
+        },
+        {
+          "id": "sol_7",
+          "componentId": "cache",
+          "x": 400,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_4",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_4",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_3",
+          "to": "sol_7"
+        }
+      ]
+    },
+    "assignment": "Build a partition-tolerant request flow. Include a load balancer and an app service, and ensure storage is accessed through a quorum/consensus layer (not directly). Add at least one replica database. Your diagram must provide a complete path from the client to the primary database while preventing direct app-to-database connections that would allow unsafe reads/writes during a network partition."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "When a power supply has small voltage fluctuations, a "
+      },
+      {
+        "type": "blank",
+        "answer": "capacitor"
+      },
+      {
+        "type": "code",
+        "value": " can smooth them out. It works by "
+      },
+      {
+        "type": "blank",
+        "answer": "storing"
+      },
+      {
+        "type": "code",
+        "value": " energy when voltage is high and "
+      },
+      {
+        "type": "blank",
+        "answer": "releasing"
+      },
+      {
+        "type": "code",
+        "value": " it when voltage drops. This makes capacitors ideal for "
+      },
+      {
+        "type": "blank",
+        "answer": "filtering"
+      },
+      {
+        "type": "code",
+        "value": " electrical noise in circuits."
+      }
+    ],
+    "options": [
+      "resistor",
+      "blocking",
+      "amplifying",
+      "generating"
+    ]
+  }
+}

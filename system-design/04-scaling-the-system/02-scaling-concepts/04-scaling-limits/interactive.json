@@ -1,0 +1,210 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "app_server",
+        "label": "App Server (Stateless)",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "cache",
+        "label": "Cache (Shared)",
+        "icon": "zap",
+        "category": "storage"
+      },
+      {
+        "id": "primary_db",
+        "label": "Primary Database (Write)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "read_replica",
+        "label": "Read Replica",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "message_queue",
+        "label": "Message Queue",
+        "icon": "archive",
+        "category": "compute"
+      },
+      {
+        "id": "worker",
+        "label": "Background Worker",
+        "icon": "cpu",
+        "category": "compute"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "load_balancer"
+      },
+      {
+        "from": "load_balancer",
+        "to": "app_server"
+      },
+      {
+        "from": "app_server",
+        "to": "cache"
+      },
+      {
+        "from": "app_server",
+        "to": "primary_db"
+      },
+      {
+        "from": "app_server",
+        "to": "read_replica"
+      },
+      {
+        "from": "app_server",
+        "to": "message_queue"
+      },
+      {
+        "from": "message_queue",
+        "to": "worker"
+      },
+      {
+        "from": "worker",
+        "to": "primary_db"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "load_balancer",
+        "message": "Add a Load Balancer so you can scale the app tier horizontally behind a single entry point."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "app_server",
+        "count": 2,
+        "message": "Use at least 2 App Servers to demonstrate horizontal scaling (adding more servers)."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "primary_db",
+        "message": "Include a Primary Database, since it's a common shared dependency that can become the scaling limit."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "load_balancer",
+        "to": "primary_db",
+        "message": "The Load Balancer should not talk directly to the database; all DB access should go through the application tier."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "primary_db",
+        "message": "Ensure requests can reach the Primary Database through the system (client traffic ultimately depends on it)."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "cache",
+        "message": "Add a shared Cache to show a typical technique for reducing load on a shared bottleneck (like the database)."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "app_server",
+          "x": 120,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "app_server",
+          "x": 380,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "cache",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_6",
+          "componentId": "primary_db",
+          "x": 250,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_4",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_3",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_4",
+          "to": "sol_6"
+        }
+      ]
+    },
+    "assignment": "Build a small scalable web architecture that demonstrates a scaling limit caused by a shared dependency. Your diagram must: (1) route client traffic through a load balancer, (2) scale the application tier horizontally with at least two app servers, (3) include a primary database that the client traffic depends on (through the app tier), (4) avoid connecting the load balancer directly to the database, and (5) include a shared cache used by the app servers to reduce pressure on the shared database bottleneck."
+  }
+}

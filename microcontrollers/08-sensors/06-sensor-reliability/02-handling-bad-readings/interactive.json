@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a 'range check' used for when reading sensor data?",
+      "answers": [
+        {
+          "answer": "To verify the sensor is within Bluetooth range of the Pi",
+          "correct": false
+        },
+        {
+          "answer": "To discard readings that fall outside physically possible values",
+          "correct": true
+        },
+        {
+          "answer": "To measure the maximum distance a sensor can detect",
+          "correct": false
+        },
+        {
+          "answer": "To calibrate the sensor's operating voltage range",
+          "correct": false
+        }
+      ],
+      "explanation": "A range check filters out garbage readings by throwing away values that are clearly impossible, like a temperature of -999 °C or a distance of 0 cm."
+    },
+    {
+      "question": "Why is using the median of multiple readings often better than using the average?",
+      "answers": [
+        {
+          "answer": "The median is faster to compute than the average",
+          "correct": false
+        },
+        {
+          "answer": "The median automatically ignores outliers without extra filtering logic",
+          "correct": true
+        },
+        {
+          "answer": "The median gives more decimal places of precision",
+          "correct": false
+        },
+        {
+          "answer": "The median works without needing to sort the data",
+          "correct": false
+        }
+      ],
+      "explanation": "If four out of five readings say 23 °C and one says -40 °C, the median gives you 23 °C. An average would be dragged down by the outlier, giving you an incorrect result."
+    },
+    {
+      "question": "What should you check first before concluding that a sensor is broken?",
+      "answers": [
+        {
+          "answer": "The manufacturer's return policy",
+          "correct": false
+        },
+        {
+          "answer": "Whether a newer sensor model is available",
+          "correct": false
+        },
+        {
+          "answer": "Your wiring, cable length, and whether anything is pulling too much power from the same rail",
+          "correct": true
+        },
+        {
+          "answer": "The ambient room temperature and humidity levels",
+          "correct": false
+        }
+      ],
+      "explanation": "The sensor itself is rarely broken. Loose wiring, long cables, and power issues on the same rail are the most common causes of bad readings."
+    }
+  ]
+}

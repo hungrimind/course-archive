@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "HTML",
+        "items": [
+          "Defines the structure of a web page",
+          "Creates headings, paragraphs, and links",
+          "The skeleton or bones of a website"
+        ]
+      },
+      {
+        "label": "CSS",
+        "items": [
+          "Controls colors, fonts, and layout",
+          "Makes a web page look visually appealing",
+          "The styling and clothing of a website"
+        ]
+      },
+      {
+        "label": "JavaScript",
+        "items": [
+          "Adds interactive behavior to a page",
+          "Responds when a user clicks a button",
+          "Makes pages respond to user actions"
+        ]
+      }
+    ]
+  }
+}

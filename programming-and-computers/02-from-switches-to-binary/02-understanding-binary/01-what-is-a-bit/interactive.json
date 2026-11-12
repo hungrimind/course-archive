@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A single bit can represent 10 different values.",
+        "correct": false,
+        "explanation": "A single bit can only be 0 or 1, giving it exactly 2 possible values, not 10."
+      },
+      {
+        "statement": "Adding one more bit to a group doubles the number of possible values.",
+        "correct": true,
+        "explanation": "Each additional bit doubles the possibilities. 1 bit = 2 values, 2 bits = 4 values, 3 bits = 8 values, and so on."
+      },
+      {
+        "statement": "The word 'bit' is short for 'binary digit.'",
+        "correct": true,
+        "explanation": "A bit, short for binary digit, is the smallest unit of data in computing, representing a single 1 or 0."
+      },
+      {
+        "statement": "4 bits can represent 32 different values.",
+        "correct": false,
+        "explanation": "4 bits can represent 2 x 2 x 2 x 2 = 16 different values. You would need 5 bits to reach 32 values."
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is a potential consequence of duplicating knowledge in code?",
+      "answers": [
+        {
+          "answer": "Improved performance",
+          "correct": false
+        },
+        {
+          "answer": "Increased risk of inconsistencies",
+          "correct": true
+        },
+        {
+          "answer": "Easier code readability",
+          "correct": false
+        },
+        {
+          "answer": "Reduction in code complexity",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why is hardcoding validation rules in multiple files a bad practice?",
+      "answers": [
+        {
+          "answer": "It makes the code execution faster",
+          "correct": false
+        },
+        {
+          "answer": "It simplifies the debugging process",
+          "correct": false
+        },
+        {
+          "answer": "It requires changes in every location when updates are needed",
+          "correct": true
+        },
+        {
+          "answer": "It enhances code modularity",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is a recommended approach to manage shared logic or data effectively?",
+      "answers": [
+        {
+          "answer": "Use hardcoded values for each instance",
+          "correct": false
+        },
+        {
+          "answer": "Use a centralized function or configuration file",
+          "correct": true
+        },
+        {
+          "answer": "Duplicate the logic across different files",
+          "correct": false
+        },
+        {
+          "answer": "Rely on multiple sources of truth",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

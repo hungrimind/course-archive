@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "let password = \"secret123\";\n\n"
+      },
+      {
+        "type": "blank",
+        "answer": "if"
+      },
+      {
+        "type": "code",
+        "value": " (password === \"secret123\") {\n  console.log(\"Welcome!\");\n} "
+      },
+      {
+        "type": "blank",
+        "answer": "else"
+      },
+      {
+        "type": "code",
+        "value": " {\n  console.log(\"Wrong password.\");\n}"
+      }
+    ],
+    "options": [
+      "then",
+      "otherwise",
+      "switch"
+    ]
+  }
+}

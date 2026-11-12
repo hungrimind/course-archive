@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main risk associated with code duplication across a project?",
+      "answers": [
+        {
+          "answer": "Slower application performance",
+          "correct": false
+        },
+        {
+          "answer": "Update nightmares leading to increased error risk",
+          "correct": true
+        },
+        {
+          "answer": "Less readable code",
+          "correct": false
+        },
+        {
+          "answer": "Larger file sizes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why is updating a hardcoded value in multiple files considered problematic?",
+      "answers": [
+        {
+          "answer": "It ensures that all files have the most recent update",
+          "correct": false
+        },
+        {
+          "answer": "It increases the risk of overlooking instances, causing inconsistency",
+          "correct": true
+        },
+        {
+          "answer": "It makes the code easier to read",
+          "correct": false
+        },
+        {
+          "answer": "It simplifies version control",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How can you prevent the complications of code duplication?",
+      "answers": [
+        {
+          "answer": "By using unique variables for each instance",
+          "correct": false
+        },
+        {
+          "answer": "By consolidating repeated values into constants or variables",
+          "correct": true
+        },
+        {
+          "answer": "By avoiding the use of functions",
+          "correct": false
+        },
+        {
+          "answer": "By increasing the number of comments in the code",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

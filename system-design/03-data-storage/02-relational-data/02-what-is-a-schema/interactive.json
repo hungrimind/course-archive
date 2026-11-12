@@ -1,0 +1,31 @@
+{
+  "fillblank": {
+    "language": "sql",
+    "segments": [
+      {
+        "type": "code",
+        "value": "CREATE TABLE orders (\n    order_id INT "
+      },
+      {
+        "type": "blank",
+        "answer": "PRIMARY KEY"
+      },
+      {
+        "type": "code",
+        "value": ",\n    user_id INT "
+      },
+      {
+        "type": "blank",
+        "answer": "FOREIGN KEY"
+      },
+      {
+        "type": "code",
+        "value": " REFERENCES users(id),\n    date DATE,\n    total DECIMAL(10, 2)\n);"
+      }
+    ],
+    "options": [
+      "UNIQUE",
+      "CHECK"
+    ]
+  }
+}

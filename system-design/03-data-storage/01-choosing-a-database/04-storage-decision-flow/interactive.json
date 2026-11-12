@@ -1,0 +1,229 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "application",
+        "label": "Application Requirements",
+        "icon": "monitor",
+        "category": "compute"
+      },
+      {
+        "id": "workload_type_decision",
+        "label": "Decide: Transactional vs Analytical",
+        "icon": "git-branch",
+        "category": "decision"
+      },
+      {
+        "id": "access_pattern_decision",
+        "label": "Decide: Read/Write Pattern",
+        "icon": "git-branch",
+        "category": "decision"
+      },
+      {
+        "id": "sql_decision",
+        "label": "Decide: SQL vs NoSQL",
+        "icon": "git-branch",
+        "category": "decision"
+      },
+      {
+        "id": "oltp_database",
+        "label": "OLTP Database (Transactional)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "olap_warehouse",
+        "label": "OLAP Warehouse (Analytical)",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "nosql_database",
+        "label": "NoSQL Database (Flexible Schema)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "cache_layer",
+        "label": "Cache (for Read-Heavy)",
+        "icon": "hard-drive",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "application",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "application",
+        "to": "workload_type_decision"
+      },
+      {
+        "from": "workload_type_decision",
+        "to": "access_pattern_decision"
+      },
+      {
+        "from": "workload_type_decision",
+        "to": "olap_warehouse"
+      },
+      {
+        "from": "access_pattern_decision",
+        "to": "sql_decision"
+      },
+      {
+        "from": "access_pattern_decision",
+        "to": "cache_layer"
+      },
+      {
+        "from": "sql_decision",
+        "to": "oltp_database"
+      },
+      {
+        "from": "sql_decision",
+        "to": "nosql_database"
+      },
+      {
+        "from": "cache_layer",
+        "to": "oltp_database"
+      },
+      {
+        "from": "cache_layer",
+        "to": "nosql_database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "workload_type_decision",
+        "message": "Include a workload-type decision node first (transactional vs analytical) so the storage choice starts from the right workload category."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "access_pattern_decision",
+        "message": "Add an access-pattern decision node (read-heavy/write-heavy/balanced) to reflect how performance needs influence the storage path."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "sql_decision",
+        "message": "Add a SQL vs NoSQL decision node so the final database choice matches data structure and flexibility needs."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "oltp_database",
+        "message": "Include an OLTP database option to represent transactional workloads that benefit from strong consistency and point queries."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "olap_warehouse",
+        "message": "Include an OLAP warehouse option to represent analytical workloads optimized for large scans and aggregations."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "application",
+        "to": "oltp_database",
+        "message": "Don't jump straight from requirements to an OLTP database. Use the decision steps (workload type, access pattern, SQL/NoSQL) to justify the choice."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_application",
+          "componentId": "application",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_workload",
+          "componentId": "workload_type_decision",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_access",
+          "componentId": "access_pattern_decision",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_olap",
+          "componentId": "olap_warehouse",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_cache",
+          "componentId": "cache_layer",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_sql_choice",
+          "componentId": "sql_decision",
+          "x": 400,
+          "y": 450
+        },
+        {
+          "id": "sol_oltp",
+          "componentId": "oltp_database",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_nosql",
+          "componentId": "nosql_database",
+          "x": 450,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_application",
+          "to": "sol_workload"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_workload",
+          "to": "sol_access"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_workload",
+          "to": "sol_olap"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_access",
+          "to": "sol_cache"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_access",
+          "to": "sol_sql_choice"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_sql_choice",
+          "to": "sol_oltp"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_sql_choice",
+          "to": "sol_nosql"
+        },
+        {
+          "id": "se_8",
+          "from": "sol_cache",
+          "to": "sol_oltp"
+        }
+      ]
+    },
+    "assignment": "Build a storage decision flow starting from Application Requirements. Your diagram must include decision steps for workload type (transactional vs analytical), access pattern (read/write mix), and SQL vs NoSQL. Include both OLTP and OLAP outcomes, and avoid directly selecting an OLTP database from requirements without passing through decision nodes."
+  }
+}

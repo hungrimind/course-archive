@@ -1,0 +1,7 @@
+name: inverting_dependency
+description: A small lesson demonstrating dependency inversion using abstractions.
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.0

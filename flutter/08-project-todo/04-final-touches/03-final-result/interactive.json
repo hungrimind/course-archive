@@ -1,0 +1,21 @@
+{
+  "quiz": [
+    {
+      "question": "How well did you do?",
+      "answers": [
+        {
+          "answer": "I did great!",
+          "correct": true
+        },
+        {
+          "answer": "I did okay",
+          "correct": true
+        },
+        {
+          "answer": "I did not do well",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "pinoutmapper": {
+    "pins": [
+      {
+        "number": 1,
+        "label": "3.3V",
+        "category": "power"
+      },
+      {
+        "number": 2,
+        "label": "5V",
+        "category": "power"
+      },
+      {
+        "number": 3,
+        "label": "GPIO2 (SDA1)",
+        "category": "i2c"
+      },
+      {
+        "number": 4,
+        "label": "5V",
+        "category": "power"
+      },
+      {
+        "number": 5,
+        "label": "GPIO3 (SCL1)",
+        "category": "i2c"
+      },
+      {
+        "number": 6,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 7,
+        "label": "GPIO4",
+        "category": "gpio"
+      },
+      {
+        "number": 8,
+        "label": "GPIO14",
+        "category": "gpio"
+      },
+      {
+        "number": 9,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 10,
+        "label": "GPIO15",
+        "category": "gpio"
+      },
+      {
+        "number": 11,
+        "label": "GPIO17",
+        "category": "gpio"
+      },
+      {
+        "number": 12,
+        "label": "GPIO18",
+        "category": "gpio"
+      },
+      {
+        "number": 13,
+        "label": "GPIO27",
+        "category": "gpio"
+      },
+      {
+        "number": 14,
+        "label": "GND",
+        "category": "ground"
+      }
+    ],
+    "blanks": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "labels": [
+      "3.3V",
+      "GPIO2 (SDA1)",
+      "GPIO3 (SCL1)",
+      "GND",
+      "5V",
+      "GPIO4"
+    ],
+    "assignment": "An I2C OLED display needs four connections: power, ground, SDA, and SCL. Find these pins on the GPIO header."
+  }
+}

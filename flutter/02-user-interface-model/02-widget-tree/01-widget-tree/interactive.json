@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of a Widget Tree in Flutter?",
+      "answers": [
+        {
+          "answer": "To organize code files in a project",
+          "correct": false
+        },
+        {
+          "answer": "To create the structure and hierarchy of the application",
+          "correct": true
+        },
+        {
+          "answer": "To manage state in the application",
+          "correct": false
+        },
+        {
+          "answer": "To handle user interactions",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In a Widget Tree, how are widgets typically organized?",
+      "answers": [
+        {
+          "answer": "Randomly placed wherever they fit",
+          "correct": false
+        },
+        {
+          "answer": "In a horizontal line only",
+          "correct": false
+        },
+        {
+          "answer": "In a tree-like structure with parent-child relationships",
+          "correct": true
+        },
+        {
+          "answer": "In alphabetical order",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the correct widget hierarchy for the image in this lesson?",
+      "answers": [
+        {
+          "answer": "Row → Text → Icon → Column",
+          "correct": false
+        },
+        {
+          "answer": "Container → Row → Column → (Icon + Text)",
+          "correct": true
+        },
+        {
+          "answer": "Column → Container → Row → Icon",
+          "correct": false
+        },
+        {
+          "answer": "Icon → Text → Row → Container",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What role does the Widget Tree serve in Flutter's rendering process?",
+      "answers": [
+        {
+          "answer": "It's only used for documentation purposes",
+          "correct": false
+        },
+        {
+          "answer": "It serves as a blueprint for rendering the application UI",
+          "correct": true
+        },
+        {
+          "answer": "It manages the application's database",
+          "correct": false
+        },
+        {
+          "answer": "It handles network requests",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

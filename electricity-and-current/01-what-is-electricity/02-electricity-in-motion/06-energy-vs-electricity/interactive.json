@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Electricity is a form of energy itself.",
+        "correct": false,
+        "explanation": "Electricity is not energy. It is a way to carry energy from one place to another. Think of it as the delivery truck, not the package. The actual energy comes from sources like chemical reactions in a battery."
+      },
+      {
+        "statement": "A lightbulb converts electrical energy into light and heat.",
+        "correct": true,
+        "explanation": "A lightbulb receives electrical energy carried by the flow of electrons and transforms it into light and heat. This shows that electricity is just the carrier, and the device at the end does the actual energy conversion."
+      },
+      {
+        "statement": "A battery creates electrical energy from nothing.",
+        "correct": false,
+        "explanation": "A battery does not create energy from nothing. It stores chemical energy and converts it into electrical energy. Energy is never created from nothing; it is always converted from one form to another."
+      }
+    ]
+  }
+}

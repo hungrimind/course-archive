@@ -1,0 +1,92 @@
+{
+  "quiz": [
+    {
+      "question": "How many different digits does the hexadecimal system use?",
+      "answers": [
+        {
+          "answer": "2",
+          "correct": false
+        },
+        {
+          "answer": "10",
+          "correct": false
+        },
+        {
+          "answer": "16",
+          "correct": true
+        },
+        {
+          "answer": "32",
+          "correct": false
+        }
+      ],
+      "explanation": "Hexadecimal uses 16 digits: 0-9 followed by A-F, where A represents 10 and F represents 15. That's why it's called 'hex' (six) plus 'decimal' (ten)."
+    },
+    {
+      "question": "How many bits does a single hexadecimal digit represent?",
+      "answers": [
+        {
+          "answer": "2 bits",
+          "correct": false
+        },
+        {
+          "answer": "4 bits",
+          "correct": true
+        },
+        {
+          "answer": "8 bits",
+          "correct": false
+        },
+        {
+          "answer": "16 bits",
+          "correct": false
+        }
+      ],
+      "explanation": "One hex digit maps exactly to 4 bits because 2^4 = 16, matching the 16 possible hex values. This clean mapping is why hex is a compact way to write binary."
+    },
+    {
+      "question": "In hexadecimal, what decimal value does the letter 'B' represent?",
+      "answers": [
+        {
+          "answer": "10",
+          "correct": false
+        },
+        {
+          "answer": "11",
+          "correct": true
+        },
+        {
+          "answer": "12",
+          "correct": false
+        },
+        {
+          "answer": "13",
+          "correct": false
+        }
+      ],
+      "explanation": "After 9, hex continues with letters: A=10, B=11, C=12, D=13, E=14, F=15. Letters are used so each digit stays a single character."
+    },
+    {
+      "question": "Why is hexadecimal commonly used in color codes like #FF5733?",
+      "answers": [
+        {
+          "answer": "Because it can express decimals",
+          "correct": false
+        },
+        {
+          "answer": "Because it's the only system computers understand",
+          "correct": false
+        },
+        {
+          "answer": "Because two hex digits compactly represent one byte (0-255) per color channel",
+          "correct": true
+        },
+        {
+          "answer": "Because it uses fewer digits than binary for large numbers only",
+          "correct": false
+        }
+      ],
+      "explanation": "Each color channel (red, green, blue) fits in one byte (8 bits), and two hex digits perfectly represent one byte. So #FF5733 cleanly encodes three color values in just six characters."
+    }
+  ]
+}

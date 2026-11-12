@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Polling",
+        "items": [
+          "Checks the pin in a loop repeatedly",
+          "Simpler to reason about",
+          "Code spends time asking with no new answer"
+        ]
+      },
+      {
+        "label": "Interrupts",
+        "items": [
+          "Pin notifies the code when something changes",
+          "More efficient for waiting on input",
+          "Code can sleep or do other work until triggered"
+        ]
+      }
+    ]
+  }
+}

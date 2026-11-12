@@ -1,0 +1,114 @@
+{
+  "quiz": [
+    {
+      "question": "What is electric current?",
+      "answers": [
+        {
+          "answer": "Protons moving through a wire",
+          "correct": false
+        },
+        {
+          "answer": "Electrons flowing through a conductor",
+          "correct": true
+        },
+        {
+          "answer": "Neutrons vibrating inside atoms",
+          "correct": false
+        },
+        {
+          "answer": "Photons bouncing between atoms",
+          "correct": false
+        }
+      ],
+      "explanation": "Electric current is the flow of electrons through a conductor. Atoms have electrons that can move between conductors, and that movement is what we call electric current."
+    },
+    {
+      "question": "According to Ohm's Law (V = I × R), what happens to the current if voltage stays the same but resistance doubles?",
+      "answers": [
+        {
+          "answer": "Current doubles",
+          "correct": false
+        },
+        {
+          "answer": "Current stays the same",
+          "correct": false
+        },
+        {
+          "answer": "Current is cut in half",
+          "correct": true
+        },
+        {
+          "answer": "Current drops to zero",
+          "correct": false
+        }
+      ],
+      "explanation": "Ohm's Law states V = I × R. Rearranging for current gives I = V / R. If resistance doubles while voltage stays constant, the current is halved. Resistance opposes the flow of current."
+    },
+    {
+      "question": "What is the key difference between a series circuit and a parallel circuit?",
+      "answers": [
+        {
+          "answer": "Series circuits use AC and parallel circuits use DC",
+          "correct": false
+        },
+        {
+          "answer": "Series circuits have one shared path; parallel circuits offer multiple paths",
+          "correct": true
+        },
+        {
+          "answer": "Parallel circuits can only power one device at a time",
+          "correct": false
+        },
+        {
+          "answer": "Series circuits are only used in digital electronics",
+          "correct": false
+        }
+      ],
+      "explanation": "In a series circuit, all components share a single path for current to flow. In a parallel circuit, current can take multiple independent paths. Most real devices combine both types."
+    },
+    {
+      "question": "What does a capacitor do in a circuit?",
+      "answers": [
+        {
+          "answer": "It converts AC to DC",
+          "correct": false
+        },
+        {
+          "answer": "It enforces current to flow in one direction only",
+          "correct": false
+        },
+        {
+          "answer": "It stores electrical energy",
+          "correct": true
+        },
+        {
+          "answer": "It increases the total resistance",
+          "correct": false
+        }
+      ],
+      "explanation": "Capacitors store electrical energy temporarily. Resistors limit current, diodes enforce current direction, and switches control connections. Each component shapes the flow of electricity in its own way."
+    },
+    {
+      "question": "Why does digital signaling dominate modern electronics over analog?",
+      "answers": [
+        {
+          "answer": "Digital signals carry more voltage than analog signals",
+          "correct": false
+        },
+        {
+          "answer": "Digital signals use only on/off states, making them resistant to noise",
+          "correct": true
+        },
+        {
+          "answer": "Analog signals cannot travel through wires",
+          "correct": false
+        },
+        {
+          "answer": "Digital signals do not require any electricity to work",
+          "correct": false
+        }
+      ],
+      "explanation": "Digital signals use only two states, on and off, which makes them far more resistant to noise and interference than analog signals, which vary smoothly and can be distorted. This reliability is why digital dominates modern electronics."
+    }
+  ]
+}

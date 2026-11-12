@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "A flashlight won't turn on because no "
+      },
+      {
+        "type": "blank",
+        "answer": "voltage"
+      },
+      {
+        "type": "code",
+        "value": " is being applied to push "
+      },
+      {
+        "type": "blank",
+        "answer": "electrons"
+      },
+      {
+        "type": "code",
+        "value": " through the bulb. Increasing the "
+      },
+      {
+        "type": "blank",
+        "answer": "pressure"
+      },
+      {
+        "type": "code",
+        "value": " difference would make them flow again."
+      }
+    ],
+    "options": [
+      "resistance",
+      "watts",
+      "photons"
+    ]
+  }
+}

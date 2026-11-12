@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "You're building an app and need to store the number of items a user has in their shopping cart. The number of items will always be a whole number, like 5, 10, or 27. Which variable type should you use?",
+      "answers": [
+        {
+          "answer": "String",
+          "correct": false
+        },
+        {
+          "answer": "double",
+          "correct": false
+        },
+        {
+          "answer": "int",
+          "correct": true
+        },
+        {
+          "answer": "bool",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "You want to create a variable to hold a user's full name, like 'Alice Smith'. Which is the correct way to declare this variable?",
+      "answers": [
+        {
+          "answer": "String name = 'Alice Smith';",
+          "correct": true
+        },
+        {
+          "answer": "int name = 'Alice Smith';",
+          "correct": false
+        },
+        {
+          "answer": "Text name = 'Alice Smith';",
+          "correct": false
+        },
+        {
+          "answer": "String name = Alice Smith;",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Look at the following code snippet. What will happen when this code is run?\n\n```dart\nString userGreeting = 'Hello';\nuserGreeting = false;\n```",
+      "answers": [
+        {
+          "answer": "The code will run successfully, and userGreeting will now be false.",
+          "correct": false
+        },
+        {
+          "answer": "The code will cause an error because you can't change a String variable to a bool.",
+          "correct": true
+        },
+        {
+          "answer": "The code will run successfully, and userGreeting will be converted to the text 'false'.",
+          "correct": false
+        },
+        {
+          "answer": "The code will cause an error because you cannot change the value of a variable once it's set.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

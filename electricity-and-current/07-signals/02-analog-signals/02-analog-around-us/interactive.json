@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Naturally analog phenomena",
+        "items": [
+          "Temperature changing gradually throughout the day",
+          "Sound waves vibrating smoothly through the air",
+          "Light intensity fading continuously at sunset"
+        ]
+      },
+      {
+        "label": "Analog sensor behavior",
+        "items": [
+          "Thermometer chip outputting a gently rising voltage",
+          "Microphone voltage tracing the shape of a sound wave",
+          "Light sensor producing a smoothly varying signal"
+        ]
+      },
+      {
+        "label": "Key characteristic of analog",
+        "items": [
+          "Changes smoothly without snapping between fixed steps",
+          "Mirrors the continuous nature of the real world"
+        ]
+      }
+    ]
+  }
+}

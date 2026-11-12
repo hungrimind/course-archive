@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What does an electric motor convert?",
+      "answers": [
+        {
+          "answer": "Light energy into sound energy",
+          "correct": false
+        },
+        {
+          "answer": "Electrical energy into spinning motion",
+          "correct": true
+        },
+        {
+          "answer": "Heat energy into electrical energy",
+          "correct": false
+        },
+        {
+          "answer": "Chemical energy into light",
+          "correct": false
+        }
+      ],
+      "explanation": "An electric motor converts electrical energy into mechanical spinning motion, which can then be used to drive fans, wheels, and other mechanisms."
+    },
+    {
+      "question": "What creates the magnetic field that makes a motor's shaft rotate?",
+      "answers": [
+        {
+          "answer": "A battery strapped to the shaft",
+          "correct": false
+        },
+        {
+          "answer": "Friction between moving parts",
+          "correct": false
+        },
+        {
+          "answer": "Current flowing through a coil of wire inside the motor",
+          "correct": true
+        },
+        {
+          "answer": "The permanent magnets spinning on their own",
+          "correct": false
+        }
+      ],
+      "explanation": "When current flows through the coil of wire inside the motor, it creates its own magnetic field. This field pushes against the permanent magnets, forcing the shaft to rotate."
+    }
+  ]
+}

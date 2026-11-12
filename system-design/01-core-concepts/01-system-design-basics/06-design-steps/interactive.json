@@ -1,0 +1,189 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "requirements",
+        "label": "Clarify Requirements",
+        "icon": "monitor",
+        "category": "process"
+      },
+      {
+        "id": "scale_estimate",
+        "label": "Estimate Scale (QPS/Data)",
+        "icon": "layers",
+        "category": "process"
+      },
+      {
+        "id": "high_level_architecture",
+        "label": "Sketch High-Level Architecture",
+        "icon": "network",
+        "category": "process"
+      },
+      {
+        "id": "bottlenecks_risks",
+        "label": "Find Bottlenecks & Risks",
+        "icon": "shield",
+        "category": "process"
+      },
+      {
+        "id": "tradeoffs_iteration",
+        "label": "Iterate on Tradeoffs",
+        "icon": "git-branch",
+        "category": "process"
+      },
+      {
+        "id": "feedback_loop",
+        "label": "Loop Back / Refine",
+        "icon": "zap",
+        "category": "process"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "requirements",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "requirements",
+        "to": "scale_estimate"
+      },
+      {
+        "from": "scale_estimate",
+        "to": "high_level_architecture"
+      },
+      {
+        "from": "high_level_architecture",
+        "to": "bottlenecks_risks"
+      },
+      {
+        "from": "bottlenecks_risks",
+        "to": "tradeoffs_iteration"
+      },
+      {
+        "from": "tradeoffs_iteration",
+        "to": "feedback_loop"
+      },
+      {
+        "from": "feedback_loop",
+        "to": "requirements"
+      },
+      {
+        "from": "feedback_loop",
+        "to": "high_level_architecture"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "scale_estimate",
+        "message": "Include a scale estimate step. Even rough QPS/data numbers shape architecture choices."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "high_level_architecture",
+        "message": "Include a high-level architecture step to translate requirements and scale into components and flows."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "bottlenecks_risks",
+        "message": "Include a bottlenecks/risks step. Designs should anticipate what breaks first and where single points of failure exist."
+      },
+      {
+        "type": "required_edge",
+        "from": "requirements",
+        "to": "scale_estimate",
+        "message": "Connect Requirements → Scale Estimate. You need to understand the ask before estimating traffic and data volume."
+      },
+      {
+        "type": "required_edge",
+        "from": "scale_estimate",
+        "to": "high_level_architecture",
+        "message": "Connect Scale Estimate → High-Level Architecture. Scale assumptions directly influence the initial component sketch."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "requirements",
+        "to": "high_level_architecture",
+        "message": "Avoid jumping straight from Requirements to Architecture. Do a rough scale estimate first to prevent under/over-design."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "requirements",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "scale_estimate",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "high_level_architecture",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "bottlenecks_risks",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_5",
+          "componentId": "tradeoffs_iteration",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_6",
+          "componentId": "feedback_loop",
+          "x": 250,
+          "y": 750
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_4",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_5",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_6",
+          "to": "sol_1"
+        }
+      ]
+    },
+    "assignment": "Build a beginner-friendly system design loop: include steps for estimating scale, sketching a high-level architecture, and identifying bottlenecks/risks. Ensure the flow starts from clarifying requirements and goes next to a scale estimate before any architecture sketch."
+  }
+}

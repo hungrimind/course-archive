@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "An analog signal can only be on or off, just like a digital signal.",
+        "correct": false,
+        "explanation": "Unlike digital signals, an analog signal can be any value in a continuous range -- think of a dimmer switch rather than a light switch."
+      },
+      {
+        "statement": "A microcontroller uses an ADC (analog-to-digital converter) to turn analog voltages into numbers your code can use.",
+        "correct": true,
+        "explanation": "Since microcontrollers work with digital data internally, they need an ADC to convert smoothly varying analog voltages into discrete numeric values."
+      },
+      {
+        "statement": "Every pin on a microcontroller can read analog signals.",
+        "correct": false,
+        "explanation": "Not all pins support analog input. You need specific ADC-capable pins or an external ADC chip to read analog signals."
+      }
+    ]
+  }
+}

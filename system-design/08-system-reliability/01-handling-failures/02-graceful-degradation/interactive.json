@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary goal of a graceful degradation strategy?",
+      "answers": [
+        {
+          "answer": "To improve system performance under normal conditions",
+          "correct": false
+        },
+        {
+          "answer": "To completely disable the system during component failure",
+          "correct": false
+        },
+        {
+          "answer": "To optimize the system's design for future upgrades",
+          "correct": false
+        },
+        {
+          "answer": "To maintain core operations while disabling less critical features during failures",
+          "correct": true
+        }
+      ],
+      "explanation": "The primary goal of a graceful degradation strategy is to ensure the system remains partially functional, focusing on maintaining core operations even when some components fail."
+    },
+    {
+      "question": "How does graceful degradation benefit users?",
+      "answers": [
+        {
+          "answer": "It ensures services are completely halted for safety during failures",
+          "correct": false
+        },
+        {
+          "answer": "It helps maintain user trust by ensuring essential services continue",
+          "correct": true
+        },
+        {
+          "answer": "It guarantees that all features work perfectly at all times",
+          "correct": false
+        },
+        {
+          "answer": "It invalidates any partial service features completely",
+          "correct": false
+        }
+      ],
+      "explanation": "Graceful degradation benefits users by maintaining essential services even during failures, which helps maintain user trust."
+    },
+    {
+      "question": "In the lesson example, what would happen if the video streaming service's recommendation engine fails?",
+      "answers": [
+        {
+          "answer": "Users would be unable to watch videos",
+          "correct": false
+        },
+        {
+          "answer": "The entire platform would shut down",
+          "correct": false
+        },
+        {
+          "answer": "Users could still watch videos, but recommendations wouldn't be displayed",
+          "correct": true
+        },
+        {
+          "answer": "Users would experience an improved recommendation system",
+          "correct": false
+        }
+      ],
+      "explanation": "If the recommendation engine fails, users can still watch videos; however, the recommendation feature would be disabled, illustrating graceful degradation."
+    }
+  ]
+}

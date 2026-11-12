@@ -1,0 +1,109 @@
+{
+  "quiz": [
+    {
+      "question": "What will be the output of: `int difference = 10 - 5; print(difference);`?",
+      "answers": [
+        {
+          "answer": "5",
+          "correct": true
+        },
+        {
+          "answer": "15",
+          "correct": false
+        },
+        {
+          "answer": "50",
+          "correct": false
+        },
+        {
+          "answer": "2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What data type is returned when using the `/` division operator in Dart?",
+      "answers": [
+        {
+          "answer": "double",
+          "correct": true
+        },
+        {
+          "answer": "int",
+          "correct": false
+        },
+        {
+          "answer": "String",
+          "correct": false
+        },
+        {
+          "answer": "num",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which operator should you use to perform integer division in Dart?",
+      "answers": [
+        {
+          "answer": "/",
+          "correct": false
+        },
+        {
+          "answer": "//",
+          "correct": false
+        },
+        {
+          "answer": "~/",
+          "correct": true
+        },
+        {
+          "answer": "%",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the modulo operator (%) return?",
+      "answers": [
+        {
+          "answer": "The quotient of a division operation",
+          "correct": false
+        },
+        {
+          "answer": "The product of two numbers",
+          "correct": false
+        },
+        {
+          "answer": "The percentage of a number",
+          "correct": false
+        },
+        {
+          "answer": "The remainder of a division operation",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What is the result of `10 * 5` in Dart?",
+      "answers": [
+        {
+          "answer": "15",
+          "correct": false
+        },
+        {
+          "answer": "50",
+          "correct": true
+        },
+        {
+          "answer": "5",
+          "correct": false
+        },
+        {
+          "answer": "2",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

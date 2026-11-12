@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main concept behind Flutter's navigation system?",
+      "answers": [
+        {
+          "answer": "A linked list of pages",
+          "correct": false
+        },
+        {
+          "answer": "A stack of pages where you can push and pop",
+          "correct": true
+        },
+        {
+          "answer": "A tree of pages",
+          "correct": false
+        },
+        {
+          "answer": "A queue of pages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When you navigate to a new page in Flutter, what operation is performed?",
+      "answers": [
+        {
+          "answer": "The page is added to a queue",
+          "correct": false
+        },
+        {
+          "answer": "The page is pushed onto the stack",
+          "correct": true
+        },
+        {
+          "answer": "The page replaces the current page",
+          "correct": false
+        },
+        {
+          "answer": "The page is inserted at the bottom",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What happens when you press the back button in Flutter?",
+      "answers": [
+        {
+          "answer": "The current page is pushed",
+          "correct": false
+        },
+        {
+          "answer": "The current page is popped from the stack",
+          "correct": true
+        },
+        {
+          "answer": "The app closes immediately",
+          "correct": false
+        },
+        {
+          "answer": "Nothing happens by default",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which widget is responsible for managing navigation in Flutter?",
+      "answers": [
+        {
+          "answer": "Router",
+          "correct": false
+        },
+        {
+          "answer": "Navigator",
+          "correct": true
+        },
+        {
+          "answer": "PageView",
+          "correct": false
+        },
+        {
+          "answer": "TabBar",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

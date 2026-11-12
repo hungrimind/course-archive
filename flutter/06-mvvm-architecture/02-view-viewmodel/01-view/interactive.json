@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is a View in MVVM architecture?",
+      "answers": [
+        {
+          "answer": "The actual UI that the user sees",
+          "correct": true
+        },
+        {
+          "answer": "The business logic layer",
+          "correct": false
+        },
+        {
+          "answer": "The data model",
+          "correct": false
+        },
+        {
+          "answer": "The state management system",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When should widget state be kept within the widget itself?",
+      "answers": [
+        {
+          "answer": "When the state is fully contained within that widget",
+          "correct": true
+        },
+        {
+          "answer": "Always",
+          "correct": false
+        },
+        {
+          "answer": "Never",
+          "correct": false
+        },
+        {
+          "answer": "Only for StatefulWidgets",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

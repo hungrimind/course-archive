@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "APIs only allow communication between web-based applications.",
+        "correct": false,
+        "explanation": "APIs are not limited to web-based applications. They enable communication between various types of software systems, including desktop applications, mobile apps, and hardware devices."
+      },
+      {
+        "statement": "An API request must always specify the HTTP method to be used, such as GET or POST.",
+        "correct": true,
+        "explanation": "API requests generally specify the HTTP method to indicate the type of action being requested. Common methods include GET for retrieving data, POST for creating resources, PUT for updating resources, and DELETE for removing resources."
+      },
+      {
+        "statement": "APIs define both the format of requests and responses to facilitate communication between software entities.",
+        "correct": true,
+        "explanation": "APIs set rules for both requests and responses, ensuring that data is exchanged in a consistent and understood format between different software entities."
+      },
+      {
+        "statement": "Once defined, the structure of an API cannot be changed without disrupting communication.",
+        "correct": false,
+        "explanation": "API structures can be versioned and updated to improve functionality or correct issues. Proper versioning allows changes without disrupting existing clients by enabling them to continue using older versions of the API."
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "signalmatcher": {
+    "protocol": "spi",
+    "signals": [
+      {
+        "id": "sclk",
+        "label": "SCLK",
+        "data": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "id": "mosi",
+        "label": "MOSI",
+        "data": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "miso",
+        "label": "MISO",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "id": "cs",
+        "label": "CS",
+        "data": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "blanks": [
+      "sclk",
+      "cs"
+    ],
+    "labels": [
+      "SCLK",
+      "CS",
+      "SDA",
+      "RX"
+    ],
+    "assignment": "SPI uses four wires. Two are already labeled (MOSI and MISO). Identify the clock signal and the chip select line. Hint: the clock alternates regularly, and chip select goes LOW during the entire transfer."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Read-Heavy",
+        "items": [
+          "Frequent data retrieval",
+          "Prioritize caching",
+          "Emphasize indexing"
+        ]
+      },
+      {
+        "label": "Write-Heavy",
+        "items": [
+          "Frequent data updates",
+          "Focus on storage solutions",
+          "Optimize write performance"
+        ]
+      },
+      {
+        "label": "Balanced",
+        "items": [
+          "Equal reads and writes",
+          "Versatile database selection"
+        ]
+      }
+    ]
+  }
+}

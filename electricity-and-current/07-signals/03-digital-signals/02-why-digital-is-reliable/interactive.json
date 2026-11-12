@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "Why can digital signals tolerate small amounts of noise?",
+      "answers": [
+        {
+          "answer": "Digital signals are transmitted at higher voltages than analog signals",
+          "correct": false
+        },
+        {
+          "answer": "A slightly wobbly high is still clearly recognized as high",
+          "correct": true
+        },
+        {
+          "answer": "Digital signals use special wires that block all interference",
+          "correct": false
+        },
+        {
+          "answer": "Noise only affects analog signals due to their lower frequency",
+          "correct": false
+        }
+      ],
+      "explanation": "Since a digital signal only needs to be recognized as high or low, small amounts of noise barely matter. A slightly wobbly 'high' is still clearly 'high,' giving digital signals a built-in safety margin that analog signals lack."
+    },
+    {
+      "question": "What happens when noise is added to an analog signal?",
+      "answers": [
+        {
+          "answer": "The signal automatically corrects itself",
+          "correct": false
+        },
+        {
+          "answer": "The noise is filtered out by the receiving device",
+          "correct": false
+        },
+        {
+          "answer": "The noise permanently distorts the information",
+          "correct": true
+        },
+        {
+          "answer": "The signal switches to digital mode for protection",
+          "correct": false
+        }
+      ],
+      "explanation": "An analog signal has no safety net. Any noise added to it permanently distorts the information because you cannot tell the original value from the interference, because the noise becomes part of the signal."
+    },
+    {
+      "question": "In a noisy environment, which type of signal stays more readable?",
+      "answers": [
+        {
+          "answer": "Analog, because it can absorb noise into its smooth curve",
+          "correct": false
+        },
+        {
+          "answer": "Both are equally affected by noise",
+          "correct": false
+        },
+        {
+          "answer": "Digital, because it only needs to distinguish between two states",
+          "correct": true
+        },
+        {
+          "answer": "Neither: all signals fail in noisy environments",
+          "correct": false
+        }
+      ],
+      "explanation": "Digital signals stay readable in noisy environments because they only need to be recognized as one of two states (high or low). Small disturbances do not push the signal past the threshold between states, so the information survives intact."
+    }
+  ]
+}

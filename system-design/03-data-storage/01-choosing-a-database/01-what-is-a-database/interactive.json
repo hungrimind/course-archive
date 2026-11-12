@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A database only stores data temporarily and cannot be used for persistent data storage.",
+        "correct": false,
+        "explanation": "Databases are designed to store data persistently, allowing it to be accessed and updated over time, unlike temporary storage solutions."
+      },
+      {
+        "statement": "The JSON format shown in the example can be part of a database record.",
+        "correct": true,
+        "explanation": "The JSON format is a common way to represent structured data in databases, allowing for easy reading and manipulation of information."
+      },
+      {
+        "statement": "Databases eliminate the need for organizing information because they automatically structure all data.",
+        "correct": false,
+        "explanation": "While databases help organize data, the structure and organization must be defined by database designers to ensure efficient access and management."
+      },
+      {
+        "statement": "A database can help applications retrieve data efficiently.",
+        "correct": true,
+        "explanation": "Databases are optimized for efficient data retrieval, enabling applications to access and manipulate large volumes of data quickly."
+      }
+    ]
+  }
+}

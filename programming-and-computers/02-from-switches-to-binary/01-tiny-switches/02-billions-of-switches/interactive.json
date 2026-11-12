@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A single transistor on its own can add numbers and store information.",
+        "correct": false,
+        "explanation": "A single transistor can only say ON or OFF. It takes billions of transistors wired together to create circuits that can add numbers, compare values, and store information."
+      },
+      {
+        "statement": "Modern computer chips contain billions of transistors, each smaller than a virus.",
+        "correct": true,
+        "explanation": "Transistors have been shrunk to an incredibly small scale. A modern chip packs billions of them together, and each one is smaller than a biological virus."
+      },
+      {
+        "statement": "Computers need billions of transistors because each individual transistor is very slow.",
+        "correct": false,
+        "explanation": "The reason is not speed but capability. A single transistor can only switch ON or OFF. Useful work like adding numbers or running games requires combining enormous numbers of these simple switches into complex circuits."
+      }
+    ]
+  }
+}

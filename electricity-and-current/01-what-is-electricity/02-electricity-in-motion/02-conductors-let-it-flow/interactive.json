@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "A plumber choosing pipe material is like an electrician choosing wire material. The plumber picks smooth, open pipes so water flows easily. Similarly, an electrician picks "
+      },
+      {
+        "type": "blank",
+        "answer": "copper"
+      },
+      {
+        "type": "code",
+        "value": " wire because it is an excellent "
+      },
+      {
+        "type": "blank",
+        "answer": "conductor"
+      },
+      {
+        "type": "code",
+        "value": ", meaning its outer electrons move freely with very little "
+      },
+      {
+        "type": "blank",
+        "answer": "resistance"
+      },
+      {
+        "type": "code",
+        "value": "."
+      }
+    ],
+    "options": [
+      "insulator",
+      "neutron",
+      "static"
+    ]
+  }
+}

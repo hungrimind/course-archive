@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What is a design tradeoff?",
+      "answers": [
+        {
+          "answer": "A compromise between options with benefits and drawbacks.",
+          "correct": true
+        },
+        {
+          "answer": "A decision that only focuses on cost reduction.",
+          "correct": false
+        },
+        {
+          "answer": "A choice that always prioritizes short-term benefits.",
+          "correct": false
+        },
+        {
+          "answer": "An option without any disadvantages in system design.",
+          "correct": false
+        }
+      ],
+      "explanation": "A design tradeoff involves choosing between competing options, each with its own pros and cons, to achieve specific goals."
+    },
+    {
+      "question": "Why should both short-term needs and long-term growth be considered in design tradeoffs?",
+      "answers": [
+        {
+          "answer": "To ensure quick scalability without additional costs.",
+          "correct": false
+        },
+        {
+          "answer": "To balance immediate performance needs with future expansion potential.",
+          "correct": true
+        },
+        {
+          "answer": "To eliminate all future design challenges.",
+          "correct": false
+        },
+        {
+          "answer": "To avoid making any compromises.",
+          "correct": false
+        }
+      ],
+      "explanation": "Considering both short-term needs and long-term growth ensures that a system can meet current demands while being prepared for future requirements."
+    }
+  ]
+}

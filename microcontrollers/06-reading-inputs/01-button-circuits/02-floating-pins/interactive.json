@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A floating pin reliably reads LOW when no button is pressed.",
+        "correct": false,
+        "explanation": "A floating pin is connected to nothing, so it picks up electrical noise and reads random HIGH/LOW values -- it is not reliably LOW."
+      },
+      {
+        "statement": "Phantom button presses can occur because a floating pin picks up electrical noise from the environment.",
+        "correct": true,
+        "explanation": "With no defined voltage, a floating pin reads random values from ambient noise, which your code can misinterpret as real button presses."
+      },
+      {
+        "statement": "A pull resistor is needed to hold a pin at a known voltage when the button is open.",
+        "correct": true,
+        "explanation": "Without a pull resistor, the pin floats when the button is not pressed. A pull resistor ensures the pin stays at a defined HIGH or LOW state."
+      }
+    ]
+  }
+}

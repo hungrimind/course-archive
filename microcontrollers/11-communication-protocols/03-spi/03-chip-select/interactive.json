@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Pulling the chip select (CS) line HIGH activates an SPI peripheral device.",
+        "correct": false,
+        "explanation": "Pulling CS LOW activates the device, not HIGH. Keeping CS HIGH makes the device ignore all traffic on the bus."
+      },
+      {
+        "statement": "Multiple SPI devices share the SCLK, MOSI, and MISO wires but each requires its own separate CS wire.",
+        "correct": true,
+        "explanation": "To connect multiple SPI devices, you share SCLK, MOSI, and MISO across all of them but run a separate CS wire to each one, costing one GPIO pin per device."
+      },
+      {
+        "statement": "Adding more SPI devices to a bus does not require any additional GPIO pins.",
+        "correct": false,
+        "explanation": "Every additional SPI device costs one more GPIO pin for its dedicated CS line. This is the trade-off of connecting multiple devices over SPI."
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "An idempotent operation will yield different outcomes when executed multiple times.",
+        "correct": false,
+        "explanation": "An idempotent operation produces the same outcome no matter how many times it is executed. This is the core principle of idempotency."
+      },
+      {
+        "statement": "POST is an idempotent HTTP verb.",
+        "correct": false,
+        "explanation": "POST is not idempotent because executing it multiple times can create multiple resources or have different outcomes each time the request is processed."
+      },
+      {
+        "statement": "Repeatedly calling a DELETE request on the same resource won't change the outcome after the first successful operation.",
+        "correct": true,
+        "explanation": "Once a resource is deleted with a DELETE request, subsequent DELETE requests on the same resource will have no effect, maintaining the outcome as the resource no longer exists."
+      },
+      {
+        "statement": "GET requests are idempotent because they do not modify any resources.",
+        "correct": true,
+        "explanation": "GET is idempotent because it only retrieves data and does not alter the server state, so repeated GET requests yield the same result without side effects."
+      }
+    ]
+  }
+}

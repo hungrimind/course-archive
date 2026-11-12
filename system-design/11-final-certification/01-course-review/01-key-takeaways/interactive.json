@@ -1,0 +1,92 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary benefit of horizontal scaling in system design?",
+      "answers": [
+        {
+          "answer": "It decreases the physical size of each server.",
+          "correct": false
+        },
+        {
+          "answer": "It increases storage capacity on a single machine.",
+          "correct": false
+        },
+        {
+          "answer": "It allows adding more servers to handle increased load.",
+          "correct": true
+        },
+        {
+          "answer": "It simplifies the software architecture.",
+          "correct": false
+        }
+      ],
+      "explanation": "Horizontal scaling is achieved by adding more servers to distribute the load, making the system more capable of handling increased demand."
+    },
+    {
+      "question": "Why is caching important in system design?",
+      "answers": [
+        {
+          "answer": "It reduces the number of servers needed.",
+          "correct": false
+        },
+        {
+          "answer": "It improves data consistency across the system.",
+          "correct": false
+        },
+        {
+          "answer": "It improves performance by reducing data retrieval time.",
+          "correct": true
+        },
+        {
+          "answer": "It automatically handles input validation.",
+          "correct": false
+        }
+      ],
+      "explanation": "Caching stores frequently accessed data in a fast storage layer, reducing the time it takes to retrieve data and improving system performance."
+    },
+    {
+      "question": "Which technique helps ensure system reliability through redundancy?",
+      "answers": [
+        {
+          "answer": "Sharding",
+          "correct": false
+        },
+        {
+          "answer": "Load balancing",
+          "correct": false
+        },
+        {
+          "answer": "Data replication",
+          "correct": true
+        },
+        {
+          "answer": "Rate limiting",
+          "correct": false
+        }
+      ],
+      "explanation": "Data replication involves storing copies of data on multiple servers, providing redundancy that helps maintain system reliability in case of failures."
+    },
+    {
+      "question": "What is the purpose of rate limiting in terms of security?",
+      "answers": [
+        {
+          "answer": "To ensure high availability by spreading requests evenly.",
+          "correct": false
+        },
+        {
+          "answer": "To prevent overuse of system resources and protect against abuse.",
+          "correct": true
+        },
+        {
+          "answer": "To facilitate faster data processing in message queues.",
+          "correct": false
+        },
+        {
+          "answer": "To enhance data storage capacity through load distribution.",
+          "correct": false
+        }
+      ],
+      "explanation": "Rate limiting controls the number of requests a user can make to a system, helping to protect it from being overwhelmed by excessive demand or malicious attacks."
+    }
+  ]
+}

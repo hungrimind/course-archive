@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of the SOLID principles in software development?",
+      "answers": [
+        {
+          "answer": "To make code execution faster",
+          "correct": false
+        },
+        {
+          "answer": "To provide a framework for creating flexible and maintainable software",
+          "correct": true
+        },
+        {
+          "answer": "To ensure code is written in one programming language",
+          "correct": false
+        },
+        {
+          "answer": "To enforce strict coding standards and styles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does the Single Responsibility Principle help improve code maintainability?",
+      "answers": [
+        {
+          "answer": "By ensuring each class has multiple functions",
+          "correct": false
+        },
+        {
+          "answer": "By ensuring each class has one clear, distinct responsibility",
+          "correct": true
+        },
+        {
+          "answer": "By combining similar classes together",
+          "correct": false
+        },
+        {
+          "answer": "By enforcing a standard naming convention",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why should developers regularly review their code against SOLID principles?",
+      "answers": [
+        {
+          "answer": "To ensure the codebase uses the latest programming language features",
+          "correct": false
+        },
+        {
+          "answer": "To identify and fix performance issues",
+          "correct": false
+        },
+        {
+          "answer": "To spot and correct design flaws early in development",
+          "correct": true
+        },
+        {
+          "answer": "To make the code compatible with older software",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

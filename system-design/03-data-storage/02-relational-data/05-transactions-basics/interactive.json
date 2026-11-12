@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A transaction in a database will automatically roll back if any step fails.",
+        "correct": true,
+        "explanation": "Transactions are designed to ensure data integrity by either committing all changes if all operations succeed or rolling back all changes if any operation fails, which leaves the database unchanged."
+      },
+      {
+        "statement": "The ACID principles only apply to databases with SQL capabilities.",
+        "correct": false,
+        "explanation": "The ACID principles are applicable to any database system that supports transactions, not just those with SQL capabilities. They ensure Atomicity, Consistency, Isolation, and Durability across various types of databases."
+      },
+      {
+        "statement": "In the given transaction, if only the first update statement succeeds, the database will still reflect a $100 deduction.",
+        "correct": false,
+        "explanation": "If only the first update succeeds and the second fails, the transaction will be rolled back, resulting in no change to the database to maintain its consistency and integrity."
+      },
+      {
+        "statement": "A database transaction without a COMMIT command is automatically rolled back if the connection to the database closes.",
+        "correct": true,
+        "explanation": "If a transaction does not explicitly commit and the connection is closed, most databases will consider the transaction as incomplete and will automatically roll back any changes to maintain data consistency."
+      }
+    ]
+  }
+}

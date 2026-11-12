@@ -1,0 +1,112 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "battery-5v",
+        "label": "5V Battery",
+        "type": "battery",
+        "value": 5,
+        "count": 1
+      },
+      {
+        "id": "resistor-150",
+        "label": "150Ω Resistor",
+        "type": "resistor",
+        "value": 150,
+        "count": 1
+      },
+      {
+        "id": "red-led",
+        "label": "Red LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02,
+        "count": 1
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "The circuit must form a complete loop for current to flow."
+      },
+      {
+        "type": "has_component",
+        "componentType": "resistor",
+        "message": "Add the resistor — without it, the LED would burn out from too much current."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Add the LED to the circuit."
+      },
+      {
+        "type": "series_with",
+        "component": "led",
+        "withComponent": "resistor",
+        "message": "The resistor must be in series with the LED to limit the current flowing through it."
+      },
+      {
+        "type": "led_safe",
+        "message": "The LED current must not exceed 20mA. With 150Ω: (5V - 2V) / 150Ω = 20mA — exactly at the limit."
+      }
+    ],
+    "assignment": "Build a circuit with the LED. Without the resistor, the LED would burn out — add one to protect it. The 150Ω resistor limits current to exactly 20mA.",
+    "solution": {
+      "nodes": [
+        {
+          "id": "n1",
+          "componentId": "battery-5v",
+          "x": 100,
+          "y": 200
+        },
+        {
+          "id": "n2",
+          "componentId": "resistor-150",
+          "x": 300,
+          "y": 100
+        },
+        {
+          "id": "n3",
+          "componentId": "red-led",
+          "x": 300,
+          "y": 300
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "n1",
+            "terminal": "+"
+          },
+          "to": {
+            "nodeId": "n2",
+            "terminal": "in"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "n2",
+            "terminal": "out"
+          },
+          "to": {
+            "nodeId": "n3",
+            "terminal": "anode"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "n3",
+            "terminal": "cathode"
+          },
+          "to": {
+            "nodeId": "n1",
+            "terminal": "-"
+          }
+        }
+      ]
+    }
+  }
+}

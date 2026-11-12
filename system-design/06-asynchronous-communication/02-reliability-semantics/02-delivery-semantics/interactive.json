@@ -1,0 +1,28 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "At-most-once Delivery",
+        "items": [
+          "Deliver zero or one time",
+          "No retries on failure"
+        ]
+      },
+      {
+        "label": "At-least-once Delivery",
+        "items": [
+          "Deliver one or more times",
+          "Retries until acknowledged",
+          "sendMessage with retry logic"
+        ]
+      },
+      {
+        "label": "Exactly-once Delivery",
+        "items": [
+          "Deliver exactly one time",
+          "Manage duplicates"
+        ]
+      }
+    ]
+  }
+}

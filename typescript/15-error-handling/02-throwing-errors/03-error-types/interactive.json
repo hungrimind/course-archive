@@ -1,0 +1,33 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "TypeError",
+        "items": [
+          "Calling a method on null",
+          "Using a value as a function when it is not"
+        ]
+      },
+      {
+        "label": "RangeError",
+        "items": [
+          "Array length set to a negative number",
+          "Age value outside 0-150 range"
+        ]
+      },
+      {
+        "label": "SyntaxError",
+        "items": [
+          "Parsing invalid JSON",
+          "Missing closing bracket in code"
+        ]
+      },
+      {
+        "label": "Generic Error",
+        "items": [
+          "Custom application failure message"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Operates at the end of the array",
+        "items": [
+          "push(\"x\")",
+          "pop()",
+          "Returns removed last item"
+        ]
+      },
+      {
+        "label": "Operates at the beginning of the array",
+        "items": [
+          "unshift(\"x\")",
+          "shift()",
+          "Returns removed first item"
+        ]
+      }
+    ]
+  }
+}

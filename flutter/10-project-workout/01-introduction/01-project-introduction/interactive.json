@@ -1,0 +1,17 @@
+{
+  "quiz": [
+    {
+      "question": "Are you ready?",
+      "answers": [
+        {
+          "answer": "Yes",
+          "correct": true
+        },
+        {
+          "answer": "No",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

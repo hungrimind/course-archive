@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "An in-memory cache stores data on disk for long-term persistence.",
+        "correct": false,
+        "explanation": "An in-memory cache stores data in RAM, not on disk, which makes it fast but volatile. Data is lost when the system restarts."
+      },
+      {
+        "statement": "In-memory caches are ideal for storing frequently accessed data to improve application performance.",
+        "correct": true,
+        "explanation": "By storing frequently accessed data in RAM, applications can retrieve it quickly, significantly improving performance compared to accessing data from disk."
+      },
+      {
+        "statement": "Data stored in an in-memory cache is retained even after a system reboot.",
+        "correct": false,
+        "explanation": "In-memory caches are volatile, meaning data is lost when the system is restarted or crashes, unlike persistent storage solutions."
+      },
+      {
+        "statement": "In-memory caches should not be used for critical data that cannot be lost.",
+        "correct": true,
+        "explanation": "Due to their volatile nature, in-memory caches are best suited for transient data that can be regenerated or fetched again, not for storing critical data that needs to be persistent."
+      }
+    ]
+  }
+}

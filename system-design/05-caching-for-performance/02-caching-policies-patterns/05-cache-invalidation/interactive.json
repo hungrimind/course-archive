@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "TTL is a cache invalidation strategy that ensures data is always fresh.",
+        "correct": false,
+        "explanation": "TTL stands for time-to-live and only sets an expiration time on cached data. Although simple, it can lead to stale data until the expiration time is reached."
+      },
+      {
+        "statement": "Explicit invalidation requires that the cache is updated every time the database changes.",
+        "correct": true,
+        "explanation": "Explicit invalidation involves manually removing or updating cache entries when the database is modified. This ensures fresher data but requires careful management to ensure all changes are captured."
+      },
+      {
+        "statement": "TTL cache invalidation is typically more complex to implement than explicit invalidation.",
+        "correct": false,
+        "explanation": "TTL is simpler to implement as it only involves setting an expiration time for cache entries, whereas explicit invalidation requires additional mechanisms to track and update cache changes."
+      },
+      {
+        "statement": "A hybrid strategy that starts with TTL and introduces explicit invalidation where needed can be effective.",
+        "correct": true,
+        "explanation": "Starting with TTL provides a simple foundation, and explicit invalidation can be added for situations where staleness is unacceptable, balancing simplicity and freshness."
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of the `assert` statement in Dart?",
+      "answers": [
+        {
+          "answer": "To handle all types of errors that might occur when the app is used by end-users.",
+          "correct": false
+        },
+        {
+          "answer": "To check for conditions and throw errors exclusively during development.",
+          "correct": true
+        },
+        {
+          "answer": "To print debugging information to the console, similar to the `print()` function.",
+          "correct": false
+        },
+        {
+          "answer": "To replace the need for `try-catch` blocks throughout the code.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Consider the following code snippet. What will be the output when this code is run in development mode?\n```dart\nvoid main() {\n  String? username; // A nullable String\n  username = 'Ada';\n  assert(username != null, 'Username cannot be null');\n  print('Welcome, $username!');\n}\n```",
+      "answers": [
+        {
+          "answer": "The program will throw an `AssertionError`.",
+          "correct": false
+        },
+        {
+          "answer": "The program will print \"Username cannot be null\".",
+          "correct": false
+        },
+        {
+          "answer": "The program will print \"Welcome, Ada!\".",
+          "correct": true
+        },
+        {
+          "answer": "The code will not compile because `username` is nullable.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How would you modify the following `assert` statement to include a custom error message?\n```dart\nassert(password.length > 8);\n```",
+      "answers": [
+        {
+          "answer": "`assert(password.length > 8, 'Password must be longer than 8 characters');`",
+          "correct": true
+        },
+        {
+          "answer": "`assert(password.length > 8: 'Password must be longer than 8 characters');`",
+          "correct": false
+        },
+        {
+          "answer": "`assert(password.length > 8) { 'Password must be longer than 8 characters' };`",
+          "correct": false
+        },
+        {
+          "answer": "`assert('Password must be longer than 8 characters', password.length > 8);`",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

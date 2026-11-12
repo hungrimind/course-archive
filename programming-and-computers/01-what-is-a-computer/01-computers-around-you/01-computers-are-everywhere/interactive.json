@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A microwave contains a computer because it takes in your settings, processes them, and controls the heating.",
+        "correct": true,
+        "explanation": "A microwave has a small computer chip inside. When you press buttons (input), it figures out how long and at what power to heat (process), then runs the heating element (output). It follows the same input-process-output pattern as any computer."
+      },
+      {
+        "statement": "Something can only be called a computer if it has a screen and keyboard.",
+        "correct": false,
+        "explanation": "A computer is any device that takes in information, processes it, and gives a result. Many computers, like those inside cars, washing machines, and traffic lights, have no screen or keyboard at all."
+      },
+      {
+        "statement": "The computers inside everyday devices like washing machines are the same size as a laptop computer.",
+        "correct": false,
+        "explanation": "Computers range enormously in size. The chips inside household appliances can be smaller than your fingernail, while servers in data centers fill entire rooms. Size does not determine whether something is a computer."
+      }
+    ]
+  }
+}

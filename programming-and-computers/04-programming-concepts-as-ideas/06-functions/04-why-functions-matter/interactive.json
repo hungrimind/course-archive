@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What do functions do for a big program?",
+      "answers": [
+        {
+          "answer": "They make the program use less memory automatically",
+          "correct": false
+        },
+        {
+          "answer": "They break it into small, named pieces that each do one job",
+          "correct": true
+        },
+        {
+          "answer": "They make the program colorful and nice to look at",
+          "correct": false
+        },
+        {
+          "answer": "They translate the program into another language",
+          "correct": false
+        }
+      ],
+      "explanation": "Functions split a big program into small, reusable pieces with clear names. Each one does a single job and can be called from anywhere."
+    },
+    {
+      "question": "What does the principle \"don't repeat yourself\" mean in programming?",
+      "answers": [
+        {
+          "answer": "Never use the same variable name twice",
+          "correct": false
+        },
+        {
+          "answer": "Avoid writing the same logic in many places by putting it in one reusable function",
+          "correct": true
+        },
+        {
+          "answer": "Only run the program once to save time",
+          "correct": false
+        },
+        {
+          "answer": "Say every instruction out loud just once",
+          "correct": false
+        }
+      ],
+      "explanation": "\"Don't repeat yourself\" means you should write a piece of logic once, usually as a function, and reuse it. This keeps your code shorter and easier to maintain."
+    },
+    {
+      "question": "Why is fixing a bug easier when the logic lives inside a function?",
+      "answers": [
+        {
+          "answer": "Functions warn you with a sound when something is wrong",
+          "correct": false
+        },
+        {
+          "answer": "You fix it in one place and every call to that function gets the fix",
+          "correct": true
+        },
+        {
+          "answer": "Bugs cannot happen inside a function at all",
+          "correct": false
+        },
+        {
+          "answer": "Functions automatically rewrite themselves",
+          "correct": false
+        }
+      ],
+      "explanation": "When logic lives in one function, a single fix updates every spot that uses it. Without functions, you would have to find and fix the same bug in many places."
+    }
+  ]
+}

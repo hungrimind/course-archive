@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What does it mean that computers are literal?",
+      "answers": [
+        {
+          "answer": "They understand general ideas and fill in the gaps",
+          "correct": false
+        },
+        {
+          "answer": "They have zero common sense and need every detail spelled out",
+          "correct": true
+        },
+        {
+          "answer": "They can guess your intent from context",
+          "correct": false
+        },
+        {
+          "answer": "They only follow written English sentences",
+          "correct": false
+        }
+      ],
+      "explanation": "Computers have zero common sense. What feels obvious to a human is invisible to a machine, so every detail must be spelled out."
+    },
+    {
+      "question": "Why would 'make a sandwich' fail as an instruction to a computer?",
+      "answers": [
+        {
+          "answer": "Sandwiches are too complex to build",
+          "correct": false
+        },
+        {
+          "answer": "The computer would make too many sandwiches",
+          "correct": false
+        },
+        {
+          "answer": "The computer doesn't know what bread, a knife, or 'make' means without details",
+          "correct": true
+        },
+        {
+          "answer": "The computer would refuse the task",
+          "correct": false
+        }
+      ],
+      "explanation": "A computer has no background knowledge, so vague instructions leave it stuck. You have to describe every small action step by step."
+    },
+    {
+      "question": "Which best shows how to instruct a literal computer?",
+      "answers": [
+        {
+          "answer": "'Clean up the kitchen'",
+          "correct": false
+        },
+        {
+          "answer": "'Open the bag, take out two slices, pick up the knife, spread the butter'",
+          "correct": true
+        },
+        {
+          "answer": "'Do what I mean, not what I say'",
+          "correct": false
+        },
+        {
+          "answer": "'Figure out lunch for me'",
+          "correct": false
+        }
+      ],
+      "explanation": "Literal instructions break an action into explicit, ordered steps. That's the level of detail a computer needs to follow along."
+    }
+  ]
+}

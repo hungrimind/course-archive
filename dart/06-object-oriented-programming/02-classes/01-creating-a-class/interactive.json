@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "Following Dart's naming conventions, which of the following is the correct way to name a class that will represent a user's profile?",
+      "answers": [
+        {
+          "answer": "userProfile",
+          "correct": false
+        },
+        {
+          "answer": "UserProfile",
+          "correct": true
+        },
+        {
+          "answer": "user_profile",
+          "correct": false
+        },
+        {
+          "answer": "USER_PROFILE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the code snippet below, what are `name`, `age`, and `course` considered?\n\n```dart\nclass Student {\n  String name;\n  int age;\n  String course;\n}\n```",
+      "answers": [
+        {
+          "answer": "Functions",
+          "correct": false
+        },
+        {
+          "answer": "Global variables",
+          "correct": false
+        },
+        {
+          "answer": "Parameters",
+          "correct": false
+        },
+        {
+          "answer": "Properties",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

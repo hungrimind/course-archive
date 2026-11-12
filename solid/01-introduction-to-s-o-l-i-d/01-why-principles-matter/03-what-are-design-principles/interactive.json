@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of design principles in software development?",
+      "answers": [
+        {
+          "answer": "To make code execution faster",
+          "correct": false
+        },
+        {
+          "answer": "To improve software structure and maintainability",
+          "correct": true
+        },
+        {
+          "answer": "To replace testing processes",
+          "correct": false
+        },
+        {
+          "answer": "To reduce the need for documentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is a key benefit of following the SOLID principles in object-oriented programming?",
+      "answers": [
+        {
+          "answer": "They allow code to be written faster",
+          "correct": false
+        },
+        {
+          "answer": "They ensure code is lightweight",
+          "correct": false
+        },
+        {
+          "answer": "They help create robust and adaptable code",
+          "correct": true
+        },
+        {
+          "answer": "They eliminate the need for debugging",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How do SOLID principles help prevent code issues?",
+      "answers": [
+        {
+          "answer": "By enforcing a complete redesign of the code",
+          "correct": false
+        },
+        {
+          "answer": "By supposing a singleton architecture model",
+          "correct": false
+        },
+        {
+          "answer": "By avoiding common pitfalls like code duplication and tightly coupled components",
+          "correct": true
+        },
+        {
+          "answer": "By mandating the use of specific programming languages",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

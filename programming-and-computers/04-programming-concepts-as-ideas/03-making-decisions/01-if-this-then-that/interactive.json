@@ -1,0 +1,40 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "let temperature = 105;\n\n"
+      },
+      {
+        "type": "blank",
+        "answer": "if"
+      },
+      {
+        "type": "code",
+        "value": " (temperature > "
+      },
+      {
+        "type": "blank",
+        "answer": "100"
+      },
+      {
+        "type": "code",
+        "value": ") {\n  let status = \""
+      },
+      {
+        "type": "blank",
+        "answer": "boiling"
+      },
+      {
+        "type": "code",
+        "value": "\";\n  console.log(status);\n}"
+      }
+    ],
+    "options": [
+      "while",
+      "105",
+      "cold"
+    ]
+  }
+}

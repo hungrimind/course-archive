@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following is a valid boolean literal in Dart?",
+      "answers": [
+        {
+          "answer": "\"true\"",
+          "correct": false
+        },
+        {
+          "answer": "1",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "True",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these should be stored as a boolean variable?",
+      "answers": [
+        {
+          "answer": "The user's age",
+          "correct": false
+        },
+        {
+          "answer": "The price of a product",
+          "correct": false
+        },
+        {
+          "answer": "Is the user logged in?",
+          "correct": true
+        },
+        {
+          "answer": "The user's name",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which line correctly declares a boolean variable set to false in Dart?",
+      "answers": [
+        {
+          "answer": "bool isReady = false;",
+          "correct": true
+        },
+        {
+          "answer": "boolean isReady = false;",
+          "correct": false
+        },
+        {
+          "answer": "Bool isReady = False;",
+          "correct": false
+        },
+        {
+          "answer": "var isReady = \"false\";",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The term \"Boolean\" is named after which person?",
+      "answers": [
+        {
+          "answer": "Alan Turing",
+          "correct": false
+        },
+        {
+          "answer": "George Boole",
+          "correct": true
+        },
+        {
+          "answer": "Ada Lovelace",
+          "correct": false
+        },
+        {
+          "answer": "Grace Hopper",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

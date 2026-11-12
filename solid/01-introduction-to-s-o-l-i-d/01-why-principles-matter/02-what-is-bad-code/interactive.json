@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Why is modularity important in code design?",
+      "answers": [
+        {
+          "answer": "It allows code to run faster.",
+          "correct": false
+        },
+        {
+          "answer": "It makes code easier to manage and modify.",
+          "correct": true
+        },
+        {
+          "answer": "It reduces the need for comments.",
+          "correct": false
+        },
+        {
+          "answer": "It enables code to look more complex.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is a common issue with functions that attempt to do too much?",
+      "answers": [
+        {
+          "answer": "They often require less debugging.",
+          "correct": false
+        },
+        {
+          "answer": "They make it easier to write code.",
+          "correct": false
+        },
+        {
+          "answer": "They complicate debugging and scaling.",
+          "correct": true
+        },
+        {
+          "answer": "They enhance readability.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is a characteristic of bad code?",
+      "answers": [
+        {
+          "answer": "High level of modularity.",
+          "correct": false
+        },
+        {
+          "answer": "Well-documented functions.",
+          "correct": false
+        },
+        {
+          "answer": "Dense and unstructured logic.",
+          "correct": true
+        },
+        {
+          "answer": "Clear separation of concerns.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

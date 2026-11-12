@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A diode allows current to flow in both directions equally.",
+        "correct": false,
+        "explanation": "A diode acts as a one-way valve, allowing current to flow in only one direction and blocking it in the other."
+      },
+      {
+        "statement": "Diodes can be used to convert AC (alternating current) to DC (direct current).",
+        "correct": true,
+        "explanation": "By letting only one direction of alternating current pass through, diodes can convert AC to DC."
+      },
+      {
+        "statement": "Diodes can protect circuits from accidental reverse connections.",
+        "correct": true,
+        "explanation": "Because diodes block current in one direction, they can prevent damage when a power source is accidentally connected backwards."
+      }
+    ]
+  }
+}

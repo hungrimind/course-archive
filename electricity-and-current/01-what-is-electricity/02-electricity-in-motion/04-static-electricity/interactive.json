@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Static electricity flows continuously through a wire like household electricity does.",
+        "correct": false,
+        "explanation": "Static electricity is charge that builds up on a surface and stays put. It does not flow through a wire. It discharges all at once in a sudden spark, unlike the continuous flow of current electricity."
+      },
+      {
+        "statement": "When you shuffle across carpet, electrons transfer from the carpet onto you.",
+        "correct": true,
+        "explanation": "Friction between your feet and the carpet causes electrons to rub off the carpet onto your body, giving you an excess negative charge that discharges when you touch something conductive like a metal doorknob."
+      },
+      {
+        "statement": "A static discharge happens when excess electrons jump across a gap to balance out the charge difference.",
+        "correct": true,
+        "explanation": "The spark you feel when touching a doorknob is electrons rushing from your body (where they built up) across the gap to the metal, evening out the charge imbalance."
+      }
+    ]
+  }
+}

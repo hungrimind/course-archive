@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What does it mean for Dart to be a \"single-threaded\" language?",
+      "answers": [
+        {
+          "answer": "It can execute multiple instructions at the exact same time.",
+          "correct": false
+        },
+        {
+          "answer": "It can only have one `main()` function in a program.",
+          "correct": false
+        },
+        {
+          "answer": "It can only run on computers with a single-core processor.",
+          "correct": false
+        },
+        {
+          "answer": "It can only execute one instruction at a time.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What is the primary role of the Event Loop in Dart?",
+      "answers": [
+        {
+          "answer": "To execute multiple tasks in parallel on different threads.",
+          "correct": false
+        },
+        {
+          "answer": "To manage a queue of tasks so they can be run concurrently without blocking the program.",
+          "correct": true
+        },
+        {
+          "answer": "To check for syntax errors in your code before it runs.",
+          "correct": false
+        },
+        {
+          "answer": "To store variables and function definitions in memory.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Imagine your app needs to download an image from the internet. Why is it beneficial to perform this task asynchronously?",
+      "answers": [
+        {
+          "answer": "It makes the internet connection faster, so the image downloads in less time.",
+          "correct": false
+        },
+        {
+          "answer": "It prevents the user interface from becoming unresponsive while the image is downloading.",
+          "correct": true
+        },
+        {
+          "answer": "It guarantees the downloaded image will not have any errors.",
+          "correct": false
+        },
+        {
+          "answer": "It reduces the memory used by the program during the download.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

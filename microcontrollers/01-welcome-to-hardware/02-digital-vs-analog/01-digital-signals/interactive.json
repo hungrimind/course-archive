@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A digital signal can represent three different voltage levels: low, medium, and high.",
+        "correct": false,
+        "explanation": "A digital signal has exactly two states -- high (on) and low (off). There is no in-between value."
+      },
+      {
+        "statement": "When you press a button connected to a microcontroller, the pin reads either high or low.",
+        "correct": true,
+        "explanation": "A button is a digital input. Pressing it changes the pin between two states (high and low), with nothing in between."
+      },
+      {
+        "statement": "Most microcontroller tasks like reading buttons and blinking LEDs use digital signals.",
+        "correct": true,
+        "explanation": "Digital signals are the foundation of most microcontroller operations, including reading buttons, controlling LEDs, and sending data."
+      }
+    ]
+  }
+}

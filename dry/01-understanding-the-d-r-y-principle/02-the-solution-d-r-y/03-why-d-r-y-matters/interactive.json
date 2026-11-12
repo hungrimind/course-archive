@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of the D.R.Y. principle?",
+      "answers": [
+        {
+          "answer": "To make code more complex",
+          "correct": false
+        },
+        {
+          "answer": "To enhance code maintainability and readability by reducing duplication",
+          "correct": true
+        },
+        {
+          "answer": "To create more functions and variables",
+          "correct": false
+        },
+        {
+          "answer": "To complicate debugging processes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does applying the D.R.Y. principle help in reducing bugs?",
+      "answers": [
+        {
+          "answer": "By increasing the number of code tests",
+          "correct": false
+        },
+        {
+          "answer": "By ensuring consistent logic across the application",
+          "correct": true
+        },
+        {
+          "answer": "By making code independent of logic",
+          "correct": false
+        },
+        {
+          "answer": "By adding more comments to the code",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the given example, why is it beneficial to eliminate the 'addNumbers' function?",
+      "answers": [
+        {
+          "answer": "It reduces the number of lines of code, making it harder to understand",
+          "correct": false
+        },
+        {
+          "answer": "It removes redundant logic, ensuring that changes are made in one place",
+          "correct": true
+        },
+        {
+          "answer": "It renames the function for clarity",
+          "correct": false
+        },
+        {
+          "answer": "It combines multiple operations into one function",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

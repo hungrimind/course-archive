@@ -1,0 +1,38 @@
+{
+  "quiz": [
+    {
+      "question": "You need to store the number of students in a classroom. Which data type is the most appropriate for this?",
+      "answers": [
+        {
+          "answer": "double",
+          "correct": false
+        },
+        {
+          "answer": "int",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following lines of code correctly declares a variable to store the value of Pi (approximately 3.14)?",
+      "answers": [
+        {
+          "answer": "int pi = 3.14;",
+          "correct": false
+        },
+        {
+          "answer": "double pi = \"3.14\";",
+          "correct": false
+        },
+        {
+          "answer": "double pi = 3.14;",
+          "correct": true
+        },
+        {
+          "answer": "int pi = 3;",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

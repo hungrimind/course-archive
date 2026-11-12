@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "An analog signal can only take whole-number voltage values like 1V, 2V, or 3V.",
+        "correct": false,
+        "explanation": "An analog signal varies smoothly and continuously, so it can take any value within a range, including 2.3V, 2.31V, or 2.317V. There are infinite possible values, not just whole numbers."
+      },
+      {
+        "statement": "A dimmer switch is a good analogy for an analog signal because it allows any brightness level, not just on or off.",
+        "correct": true,
+        "explanation": "A dimmer switch lets you set the light to any brightness between fully off and fully on, just like an analog signal can take any voltage value within its range, smoothly and continuously."
+      },
+      {
+        "statement": "An analog signal moves in discrete steps, jumping from one fixed level to the next.",
+        "correct": false,
+        "explanation": "An analog signal flows like a smooth curve, never jumping in steps. It transitions continuously between values with infinite possible positions between any two points."
+      },
+      {
+        "statement": "Between any two points on an analog signal, there are infinite possible values.",
+        "correct": true,
+        "explanation": "Because an analog signal is continuous, you can always find a value between any two measurements. Between 2.3V and 2.4V there is 2.35V, between 2.3V and 2.35V there is 2.325V, and so on, infinitely."
+      }
+    ]
+  }
+}

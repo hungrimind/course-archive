@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "In a Flutter app, you need to access the current theme color in multiple widgets. What's the most efficient way to do this?",
+      "answers": [
+        {
+          "answer": "Pass the theme color as a parameter through every widget",
+          "correct": false
+        },
+        {
+          "answer": "Use Theme.of(context) which uses InheritedWidget under the hood",
+          "correct": true
+        },
+        {
+          "answer": "Store the theme color in a global variable",
+          "correct": false
+        },
+        {
+          "answer": "Create a new Theme instance in each widget",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What happens when data in an InheritedWidget changes?",
+      "answers": [
+        {
+          "answer": "The entire app rebuilds to ensure consistency",
+          "correct": false
+        },
+        {
+          "answer": "Only widgets that specifically depend on the changed data rebuild",
+          "correct": true
+        },
+        {
+          "answer": "Nothing happens until you call setState",
+          "correct": false
+        },
+        {
+          "answer": "All child widgets rebuild regardless of dependency",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

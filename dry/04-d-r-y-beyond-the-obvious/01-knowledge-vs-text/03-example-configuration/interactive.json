@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is a key benefit of centralizing configuration settings in a program?",
+      "answers": [
+        {
+          "answer": "It increases code readability.",
+          "correct": false
+        },
+        {
+          "answer": "It ensures settings are updated consistently across the application.",
+          "correct": true
+        },
+        {
+          "answer": "It makes the program run faster.",
+          "correct": false
+        },
+        {
+          "answer": "It reduces the need for debugging.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is a recommended practice when handling configuration settings in a program?",
+      "answers": [
+        {
+          "answer": "Duplicate settings in each module.",
+          "correct": false
+        },
+        {
+          "answer": "Keep settings in a centralized configuration file or as constants.",
+          "correct": true
+        },
+        {
+          "answer": "Use hard-coded values directly in each function.",
+          "correct": false
+        },
+        {
+          "answer": "Store settings in random locations throughout the code.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the provided code example, what is the role of the 'const' keyword in Dart?",
+      "answers": [
+        {
+          "answer": "It declares a variable that can be changed anytime.",
+          "correct": false
+        },
+        {
+          "answer": "It marks a value as being immutable and used as a constant.",
+          "correct": true
+        },
+        {
+          "answer": "It is used to declare a list.",
+          "correct": false
+        },
+        {
+          "answer": "It temporarily stores data until the program is terminated.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "I2C lines use pull-up resistors to keep SDA and SCL HIGH by default.",
+        "correct": true,
+        "explanation": "Both SDA and SCL use pull-up resistors to keep them HIGH by default. When a device wants to transmit, it pulls the line LOW."
+      },
+      {
+        "statement": "In the open-drain design of I2C, devices can both push a line HIGH and pull it LOW.",
+        "correct": false,
+        "explanation": "In an open-drain design, devices can only pull a line LOW, never push it up. The pull-up resistor handles returning the line to HIGH."
+      },
+      {
+        "statement": "The open-drain design allows multiple I2C devices to safely share the same two wires without electrically conflicting.",
+        "correct": true,
+        "explanation": "Because devices can only pull lines LOW (never push HIGH), multiple devices can share SDA and SCL without electrically fighting each other."
+      }
+    ]
+  }
+}

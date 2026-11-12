@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "undefined means a variable was declared but intentionally set to empty.",
+        "correct": false,
+        "explanation": "undefined means a variable was declared but never assigned a value. null is used for intentionally setting something to empty."
+      },
+      {
+        "statement": "TypeScript treats null and undefined as distinct types.",
+        "correct": true,
+        "explanation": "TypeScript has separate null and undefined types. They are not interchangeable, which helps catch bugs related to missing values."
+      },
+      {
+        "statement": "A function with no return statement returns null.",
+        "correct": false,
+        "explanation": "A function with no return statement returns undefined, not null. null must be explicitly assigned."
+      },
+      {
+        "statement": "null is typically something you assign on purpose to indicate 'no value here'.",
+        "correct": true,
+        "explanation": "null represents an intentional absence of value. You explicitly assign null to indicate that a variable deliberately holds nothing."
+      }
+    ]
+  }
+}

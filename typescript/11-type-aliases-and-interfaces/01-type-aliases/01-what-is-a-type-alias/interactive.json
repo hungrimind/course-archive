@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What keyword do you use to create a type alias in TypeScript?",
+      "answers": [
+        {
+          "answer": "interface",
+          "correct": false
+        },
+        {
+          "answer": "type",
+          "correct": true
+        },
+        {
+          "answer": "alias",
+          "correct": false
+        },
+        {
+          "answer": "define",
+          "correct": false
+        }
+      ],
+      "explanation": "The 'type' keyword is used to create a type alias, e.g. type Person = { name: string; age: number };"
+    },
+    {
+      "question": "What is the main benefit of using a type alias?",
+      "answers": [
+        {
+          "answer": "It makes your code run faster at runtime",
+          "correct": false
+        },
+        {
+          "answer": "It lets you reuse a type definition instead of repeating it everywhere",
+          "correct": true
+        },
+        {
+          "answer": "It automatically validates data from APIs",
+          "correct": false
+        },
+        {
+          "answer": "It converts JavaScript to TypeScript",
+          "correct": false
+        }
+      ],
+      "explanation": "A type alias gives a name to a type so you can reuse it instead of writing the same shape over and over. If the shape changes, you update it in one place."
+    }
+  ]
+}

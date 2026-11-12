@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of \"compiling\" Dart code?",
+      "answers": [
+        {
+          "answer": "A) To make the code more readable for other programmers.",
+          "correct": false
+        },
+        {
+          "answer": "B) To translate the code into machine language that the computer can execute.",
+          "correct": true
+        },
+        {
+          "answer": "C) To automatically add comments and documentation.",
+          "correct": false
+        },
+        {
+          "answer": "D) To run the code directly on the computer without any translation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following represents the highest level of abstraction, making it easiest for humans to write?",
+      "answers": [
+        {
+          "answer": "A) Binary `01010111010`",
+          "correct": false
+        },
+        {
+          "answer": "B) Assembly `mov eax, 5`",
+          "correct": false
+        },
+        {
+          "answer": "C) Dart `var a = 5;`",
+          "correct": true
+        },
+        {
+          "answer": "D) Electromechanical switches",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Based on the lesson, what is a key advantage of using a high-level language like Dart instead of assembly language?",
+      "answers": [
+        {
+          "answer": "A) Dart programs don't need to be converted to binary before running.",
+          "correct": false
+        },
+        {
+          "answer": "B) Dart allows you to perform math, which is impossible in assembly.",
+          "correct": false
+        },
+        {
+          "answer": "C) You can use simple variables instead of managing specific hardware memory locations (registers).",
+          "correct": true
+        },
+        {
+          "answer": "D) Dart programs always run faster than assembly programs.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

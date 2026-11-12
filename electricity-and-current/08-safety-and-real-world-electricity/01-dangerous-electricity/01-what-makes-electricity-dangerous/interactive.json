@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Voltage is what actually damages your body when you get an electrical shock.",
+        "correct": false,
+        "explanation": "It is current (amps) that does the damage, not voltage. Voltage is the push that forces current through your body's resistance, but the current itself causes the harm."
+      },
+      {
+        "statement": "As little as 0.1 amps through the heart can be fatal.",
+        "correct": true,
+        "explanation": "0.1 amps is a tiny amount of current, but it is enough to disrupt the heart's electrical signals and cause death."
+      },
+      {
+        "statement": "Higher voltage can force more current through your body's natural resistance.",
+        "correct": true,
+        "explanation": "Your body has natural resistance. Higher voltage provides a greater push, overcoming that resistance and allowing more current to flow through you."
+      },
+      {
+        "statement": "If the voltage is low enough, no dangerous current can flow through your body regardless of conditions.",
+        "correct": true,
+        "explanation": "At very low voltages, your body's resistance is high enough that virtually no current can be pushed through. This is why low-voltage hobby electronics are safe to touch."
+      }
+    ]
+  }
+}

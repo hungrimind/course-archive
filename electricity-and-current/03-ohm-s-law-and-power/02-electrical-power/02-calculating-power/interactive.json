@@ -1,0 +1,51 @@
+{
+  "ohmscalculator": {
+    "showFormulaTriangle": true,
+    "problems": [
+      {
+        "given": {
+          "voltage": 5,
+          "current": 2
+        },
+        "solveFor": "power",
+        "unit": "W",
+        "hint": "P = V × I",
+        "explanation": "5V × 2A = 10W",
+        "answer": 10
+      },
+      {
+        "given": {
+          "voltage": 12,
+          "current": 0.5
+        },
+        "solveFor": "power",
+        "unit": "W",
+        "hint": "P = V × I",
+        "explanation": "12V × 0.5A = 6W",
+        "answer": 6
+      },
+      {
+        "given": {
+          "voltage": 3.3,
+          "current": 0.02
+        },
+        "solveFor": "power",
+        "unit": "W",
+        "hint": "P = V × I",
+        "explanation": "3.3V × 0.02A = 0.066W (66mW)",
+        "answer": 0.066
+      },
+      {
+        "given": {
+          "voltage": 230,
+          "current": 10
+        },
+        "solveFor": "power",
+        "unit": "W",
+        "hint": "P = V × I",
+        "explanation": "230V × 10A = 2300W",
+        "answer": 2300
+      }
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "pinoutmapper": {
+    "pins": [
+      {
+        "number": 1,
+        "label": "3.3V",
+        "category": "power"
+      },
+      {
+        "number": 2,
+        "label": "5V",
+        "category": "power"
+      },
+      {
+        "number": 3,
+        "label": "GPIO2 (SDA1)",
+        "category": "i2c"
+      },
+      {
+        "number": 4,
+        "label": "5V",
+        "category": "power"
+      },
+      {
+        "number": 5,
+        "label": "GPIO3 (SCL1)",
+        "category": "i2c"
+      },
+      {
+        "number": 6,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 7,
+        "label": "GPIO4",
+        "category": "gpio"
+      },
+      {
+        "number": 8,
+        "label": "GPIO14 (TXD)",
+        "category": "uart"
+      },
+      {
+        "number": 9,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 10,
+        "label": "GPIO15 (RXD)",
+        "category": "uart"
+      },
+      {
+        "number": 11,
+        "label": "GPIO17",
+        "category": "gpio"
+      },
+      {
+        "number": 12,
+        "label": "GPIO18 (PWM0)",
+        "category": "gpio"
+      },
+      {
+        "number": 13,
+        "label": "GPIO27",
+        "category": "gpio"
+      },
+      {
+        "number": 14,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 15,
+        "label": "GPIO22",
+        "category": "gpio"
+      },
+      {
+        "number": 16,
+        "label": "GPIO23",
+        "category": "gpio"
+      },
+      {
+        "number": 17,
+        "label": "3.3V",
+        "category": "power"
+      },
+      {
+        "number": 18,
+        "label": "GPIO24",
+        "category": "gpio"
+      },
+      {
+        "number": 19,
+        "label": "GPIO10 (MOSI)",
+        "category": "spi"
+      },
+      {
+        "number": 20,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 21,
+        "label": "GPIO9 (MISO)",
+        "category": "spi"
+      },
+      {
+        "number": 22,
+        "label": "GPIO25",
+        "category": "gpio"
+      },
+      {
+        "number": 23,
+        "label": "GPIO11 (SCLK)",
+        "category": "spi"
+      },
+      {
+        "number": 24,
+        "label": "GPIO8 (CE0)",
+        "category": "spi"
+      },
+      {
+        "number": 25,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 26,
+        "label": "GPIO7 (CE1)",
+        "category": "spi"
+      },
+      {
+        "number": 27,
+        "label": "ID_SD",
+        "category": "other"
+      },
+      {
+        "number": 28,
+        "label": "ID_SC",
+        "category": "other"
+      },
+      {
+        "number": 29,
+        "label": "GPIO5",
+        "category": "gpio"
+      },
+      {
+        "number": 30,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 31,
+        "label": "GPIO6",
+        "category": "gpio"
+      },
+      {
+        "number": 32,
+        "label": "GPIO12 (PWM0)",
+        "category": "gpio"
+      },
+      {
+        "number": 33,
+        "label": "GPIO13 (PWM1)",
+        "category": "gpio"
+      },
+      {
+        "number": 34,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 35,
+        "label": "GPIO19 (MISO)",
+        "category": "spi"
+      },
+      {
+        "number": 36,
+        "label": "GPIO16",
+        "category": "gpio"
+      },
+      {
+        "number": 37,
+        "label": "GPIO26",
+        "category": "gpio"
+      },
+      {
+        "number": 38,
+        "label": "GPIO20 (MOSI)",
+        "category": "spi"
+      },
+      {
+        "number": 39,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 40,
+        "label": "GPIO21 (SCLK)",
+        "category": "spi"
+      }
+    ],
+    "blanks": [
+      1,
+      2,
+      6,
+      9,
+      14
+    ],
+    "labels": [
+      "3.3V",
+      "5V",
+      "GND",
+      "GPIO4",
+      "GPIO17"
+    ],
+    "assignment": "Identify the power and ground pins on the Raspberry Pi GPIO header. Drag the correct labels onto the blank pins."
+  }
+}

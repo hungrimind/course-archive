@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Where do you define named routes in Flutter?",
+      "answers": [
+        {
+          "answer": "In the MaterialApp widget",
+          "correct": true
+        },
+        {
+          "answer": "In each individual screen",
+          "correct": false
+        },
+        {
+          "answer": "In a separate routes.dart file",
+          "correct": false
+        },
+        {
+          "answer": "In the main.dart file only",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the correct syntax for navigating to a named route?",
+      "answers": [
+        {
+          "answer": "Navigator.push('/second')",
+          "correct": false
+        },
+        {
+          "answer": "Navigator.of(context).push('/second')",
+          "correct": false
+        },
+        {
+          "answer": "Navigator.pushNamed('/second')",
+          "correct": false
+        },
+        {
+          "answer": "Navigator.of(context).pushNamed('/second')",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Why doesn't Flutter recommend using named routes?",
+      "answers": [
+        {
+          "answer": "They are too complex to implement",
+          "correct": false
+        },
+        {
+          "answer": "They use too much memory",
+          "correct": false
+        },
+        {
+          "answer": "Deep links can't be customized and forward button doesn't work",
+          "correct": true
+        },
+        {
+          "answer": "They are being deprecated",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

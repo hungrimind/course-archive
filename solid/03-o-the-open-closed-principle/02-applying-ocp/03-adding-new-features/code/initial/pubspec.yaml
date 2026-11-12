@@ -1,0 +1,7 @@
+name: ocp_adding_new_features
+description: OCP lesson - add a new Shape (Square) without modifying existing abstractions
+version: 1.0.0
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dev_dependencies:
+  test: ^1.25.0

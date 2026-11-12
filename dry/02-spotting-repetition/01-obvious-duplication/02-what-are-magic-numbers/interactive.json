@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Magic Number",
+        "items": [
+          "Literal unexplained number",
+          "Hinders readability",
+          "Example: '50' in code"
+        ]
+      },
+      {
+        "label": "Descriptive Constant",
+        "items": [
+          "Improves understanding",
+          "Facilitates updates",
+          "Example: 'passingScore'"
+        ]
+      }
+    ]
+  }
+}

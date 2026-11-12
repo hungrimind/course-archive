@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "Why is a Todo App a good choice for learning architecture?",
+      "answers": [
+        {
+          "answer": "Because todos are fun",
+          "correct": false
+        },
+        {
+          "answer": "Because it's the fastest to build",
+          "correct": false
+        },
+        {
+          "answer": "It allows you to learn complexity while keeping the app minimal",
+          "correct": true
+        },
+        {
+          "answer": "Because everyone uses todo apps",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

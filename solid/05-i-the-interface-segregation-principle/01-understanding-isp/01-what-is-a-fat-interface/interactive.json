@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Examples of Fat Interfaces",
+        "items": [
+          "Printer interface",
+          "Too many methods"
+        ]
+      },
+      {
+        "label": "Effects of Fat Interfaces",
+        "items": [
+          "Bloated code",
+          "Harder maintenance"
+        ]
+      },
+      {
+        "label": "Interface Segregation Solutions",
+        "items": [
+          "Separate interfaces",
+          "Relevant methods only"
+        ]
+      }
+    ]
+  }
+}

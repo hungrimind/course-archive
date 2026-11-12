@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What does GPIO stand for?",
+      "answers": [
+        {
+          "answer": "General Peripheral Input/Output",
+          "correct": false
+        },
+        {
+          "answer": "General Purpose Input/Output",
+          "correct": true
+        },
+        {
+          "answer": "Global Pin Input/Output",
+          "correct": false
+        },
+        {
+          "answer": "Ground Power Input/Output",
+          "correct": false
+        }
+      ],
+      "explanation": "GPIO stands for General Purpose Input/Output: a set of pins on the Pi that your code can control directly to send or receive electrical signals."
+    },
+    {
+      "question": "What can a GPIO pin do?",
+      "answers": [
+        {
+          "answer": "Only send signals out to components",
+          "correct": false
+        },
+        {
+          "answer": "Only listen for incoming signals",
+          "correct": false
+        },
+        {
+          "answer": "Either send a signal out or listen for one coming in",
+          "correct": true
+        },
+        {
+          "answer": "Process data like a CPU",
+          "correct": false
+        }
+      ],
+      "explanation": "Each GPIO pin can either send a signal out (output) or listen for one coming in (input), acting as the bridge between your code and the physical world."
+    },
+    {
+      "question": "Which of the following best describes the role of GPIO pins?",
+      "answers": [
+        {
+          "answer": "They store data like RAM",
+          "correct": false
+        },
+        {
+          "answer": "They provide network connectivity",
+          "correct": false
+        },
+        {
+          "answer": "They bridge software and the physical world",
+          "correct": true
+        },
+        {
+          "answer": "They regulate the Pi's internal temperature",
+          "correct": false
+        }
+      ],
+      "explanation": "GPIO pins are the bridge between software and the physical world: write Python to send voltage to an LED, or read a pin to detect a button press."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What part of a Flutter App Restaurant is the backend?",
+      "answers": [
+        {
+          "answer": "The kitchen",
+          "correct": true
+        },
+        {
+          "answer": "The dining area",
+          "correct": false
+        },
+        {
+          "answer": "The waiters",
+          "correct": false
+        },
+        {
+          "answer": "The customers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following does not need to be done on a backend?",
+      "answers": [
+        {
+          "answer": "Storing user data",
+          "correct": false
+        },
+        {
+          "answer": "Handling heavy processing like LLMs",
+          "correct": false
+        },
+        {
+          "answer": "Displaying data to the user",
+          "correct": true
+        },
+        {
+          "answer": "Authenticating users",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

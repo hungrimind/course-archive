@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "class Pet {\n  name: string;\n  constructor(name: string) {\n    "
+      },
+      {
+        "type": "blank",
+        "answer": "this.name"
+      },
+      {
+        "type": "code",
+        "value": " = name;\n  }\n  speak(): string {\n    return `${"
+      },
+      {
+        "type": "blank",
+        "answer": "this.name"
+      },
+      {
+        "type": "code",
+        "value": "} says hello`;\n  }\n}"
+      }
+    ],
+    "options": [
+      "name",
+      "Pet.name",
+      "self.name"
+    ]
+  }
+}

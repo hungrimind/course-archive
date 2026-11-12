@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What does the D.R.Y. principle emphasize?",
+      "answers": [
+        {
+          "answer": "Reusing code in different projects",
+          "correct": false
+        },
+        {
+          "answer": "Reducing repetition by centralizing information",
+          "correct": true
+        },
+        {
+          "answer": "Writing code that is easy to read",
+          "correct": false
+        },
+        {
+          "answer": "Avoiding variable declarations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why is centralizing constants like 'pi' beneficial in programming?",
+      "answers": [
+        {
+          "answer": "It makes the code run faster",
+          "correct": false
+        },
+        {
+          "answer": "It allows for easier updates and reduces errors",
+          "correct": true
+        },
+        {
+          "answer": "It highlights the constants visually in the code",
+          "correct": false
+        },
+        {
+          "answer": "It takes less memory",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does the D.R.Y. approach simplify code maintenance?",
+      "answers": [
+        {
+          "answer": "By reducing the lines of code",
+          "correct": false
+        },
+        {
+          "answer": "By making the code more visually appealing",
+          "correct": false
+        },
+        {
+          "answer": "By ensuring changes only need to be made in one location",
+          "correct": true
+        },
+        {
+          "answer": "By increasing code redundancy",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "CPU",
+        "items": [
+          "Processes instructions",
+          "Does calculations"
+        ]
+      },
+      {
+        "label": "RAM",
+        "items": [
+          "Holds active apps",
+          "Fast but temporary"
+        ]
+      },
+      {
+        "label": "Storage",
+        "items": [
+          "Keeps files when off",
+          "Slower but permanent"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Which line correctly creates \"Tadas Petra\" using concatenation?",
+      "answers": [
+        {
+          "answer": "firstName + lastName",
+          "correct": false
+        },
+        {
+          "answer": "firstName + \" \" + lastName",
+          "correct": true
+        },
+        {
+          "answer": "\"$firstName $lastName\"",
+          "correct": false
+        },
+        {
+          "answer": "firstName + \" \" . lastName",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is printed with the following code?\n\n```dart\nString name = \"Tadas\";\nint age = 29;\nprint(name + \" is \" + age + \" years old\");\n```",
+      "answers": [
+        {
+          "answer": "Tadas is 29 years old",
+          "correct": true
+        },
+        {
+          "answer": "Tadas is age years old",
+          "correct": false
+        },
+        {
+          "answer": "A compile-time error occurs because age is an int",
+          "correct": false
+        },
+        {
+          "answer": "Tadas is 29 years old years old",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which interpolation correctly includes the result of age + 1?",
+      "answers": [
+        {
+          "answer": "\"$name is $age + 1 years old\"",
+          "correct": false
+        },
+        {
+          "answer": "\"$name is ${age + 1} years old\"",
+          "correct": true
+        },
+        {
+          "answer": "\"$name is $(age + 1) years old\"",
+          "correct": false
+        },
+        {
+          "answer": "\"$name is {age + 1} years old\"",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const element = document.getElementById(\"app\");\n\nelement"
+      },
+      {
+        "type": "blank",
+        "answer": "!"
+      },
+      {
+        "type": "code",
+        "value": ".style.color = \"red\";"
+      }
+    ],
+    "options": [
+      "?",
+      "as",
+      "!!"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "from RPLCD.i2c import CharLCD\n\nlcd = CharLCD(i2c_expander=\"PCF8574\", address=0x27, cols=16, rows=2)\nlcd."
+      },
+      {
+        "type": "blank",
+        "answer": "cursor_pos"
+      },
+      {
+        "type": "code",
+        "value": " = (0, 0)\nlcd.write_string(\"Hello\")\nlcd.cursor_pos = ("
+      },
+      {
+        "type": "blank",
+        "answer": "1"
+      },
+      {
+        "type": "code",
+        "value": ", 0)\nlcd."
+      },
+      {
+        "type": "blank",
+        "answer": "write_string"
+      },
+      {
+        "type": "code",
+        "value": "(\"World\")"
+      }
+    ],
+    "options": [
+      "set_cursor",
+      "print",
+      "0",
+      "2"
+    ]
+  }
+}

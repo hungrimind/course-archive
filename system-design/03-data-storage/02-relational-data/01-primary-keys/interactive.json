@@ -1,0 +1,31 @@
+{
+  "fillblank": {
+    "language": "sql",
+    "segments": [
+      {
+        "type": "code",
+        "value": "CREATE TABLE orders (\n  order_id INT "
+      },
+      {
+        "type": "blank",
+        "answer": "PRIMARY KEY"
+      },
+      {
+        "type": "code",
+        "value": ",\n  customer_id INT,\n  product_name VARCHAR(100)\n);\n\n-- Ensure that "
+      },
+      {
+        "type": "blank",
+        "answer": "order_id"
+      },
+      {
+        "type": "code",
+        "value": " is unique for each record"
+      }
+    ],
+    "options": [
+      "FOREIGN KEY",
+      "INDEX"
+    ]
+  }
+}

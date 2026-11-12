@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is a wrong abstraction?",
+      "answers": [
+        {
+          "answer": "An abstraction that simplifies code and improves maintenance",
+          "correct": false
+        },
+        {
+          "answer": "An abstraction that complicates code and leads to confusion",
+          "correct": true
+        },
+        {
+          "answer": "An abstraction that correctly aligns with the problem domain",
+          "correct": false
+        },
+        {
+          "answer": "An abstraction that occurs only in complex software systems",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why is the 'operate' function example considered a wrong abstraction?",
+      "answers": [
+        {
+          "answer": "It correctly establishes logical groups for operations",
+          "correct": false
+        },
+        {
+          "answer": "It introduces complexity by grouping unrelated functions",
+          "correct": true
+        },
+        {
+          "answer": "It uses a clearly-defined operation type parameter",
+          "correct": false
+        },
+        {
+          "answer": "It throws an error for invalid operations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What should guide the creation of a proper abstraction?",
+      "answers": [
+        {
+          "answer": "The goal to solve a real, recurring problem",
+          "correct": true
+        },
+        {
+          "answer": "The necessity to display programming skill and complexity",
+          "correct": false
+        },
+        {
+          "answer": "The need to use as many functions as possible",
+          "correct": false
+        },
+        {
+          "answer": "The desire to avoid any changes in the code in the future",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Good programmers never create bugs in their code.",
+        "correct": false,
+        "explanation": "Every programmer creates bugs, and it is completely normal. Even the best programmers in the world introduce bugs regularly. What matters is the ability to find and fix them."
+      },
+      {
+        "statement": "Debugging means tracking down what went wrong in your code and fixing it.",
+        "correct": true,
+        "explanation": "Debugging is the detective work of finding the source of a problem and correcting it. It is a core part of programming, not a sign that something went wrong."
+      },
+      {
+        "statement": "Experienced programmers spend more time debugging than writing new code.",
+        "correct": true,
+        "explanation": "Even the best programmers spend a large portion of their time debugging. Writing new code is only part of the job. Understanding and fixing unexpected behavior is where much of the real work happens."
+      },
+      {
+        "statement": "A bug means the programming language itself is broken.",
+        "correct": false,
+        "explanation": "A bug is when your program does something you did not intend. It is a mistake in your instructions, not a flaw in the language. The language did exactly what you told it to do; the problem is that you told it the wrong thing."
+      }
+    ]
+  }
+}

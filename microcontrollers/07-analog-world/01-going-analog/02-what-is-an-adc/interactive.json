@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What does an ADC do?",
+      "answers": [
+        {
+          "answer": "Converts a digital number into a voltage",
+          "correct": false
+        },
+        {
+          "answer": "Reads a voltage and converts it into a number your code can use",
+          "correct": true
+        },
+        {
+          "answer": "Amplifies an analog signal to make it stronger",
+          "correct": false
+        },
+        {
+          "answer": "Filters noise out of a digital signal",
+          "correct": false
+        }
+      ],
+      "explanation": "An ADC (Analog-to-Digital Converter) samples a smooth analog voltage and maps it to a discrete numerical value that your microcontroller code can work with."
+    },
+    {
+      "question": "How many steps does a 10-bit ADC divide the voltage range into?",
+      "answers": [
+        {
+          "answer": "256",
+          "correct": false
+        },
+        {
+          "answer": "512",
+          "correct": false
+        },
+        {
+          "answer": "1,024",
+          "correct": true
+        },
+        {
+          "answer": "4,096",
+          "correct": false
+        }
+      ],
+      "explanation": "A 10-bit ADC has 2^10 = 1,024 steps. More bits means more steps and finer precision, like a ruler with more tick marks."
+    },
+    {
+      "question": "What does increasing an ADC's resolution (bit count) give you?",
+      "answers": [
+        {
+          "answer": "A wider voltage input range",
+          "correct": false
+        },
+        {
+          "answer": "Faster conversion speed",
+          "correct": false
+        },
+        {
+          "answer": "Finer precision with more discrete steps",
+          "correct": true
+        },
+        {
+          "answer": "Lower power consumption",
+          "correct": false
+        }
+      ],
+      "explanation": "Higher resolution means more bits, which means more discrete steps to represent the analog signal. A 12-bit ADC gives 4,096 steps compared to a 10-bit ADC's 1,024 steps."
+    }
+  ]
+}

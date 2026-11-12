@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Conductor",
+        "items": [
+          "Copper wire",
+          "Aluminum foil",
+          "Steel nail"
+        ]
+      },
+      {
+        "label": "Insulator",
+        "items": [
+          "Rubber glove",
+          "Plastic coating",
+          "Glass bottle"
+        ]
+      }
+    ]
+  }
+}

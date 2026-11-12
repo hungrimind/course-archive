@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A schema flexible database requires downtime to add new fields to existing documents.",
+        "correct": false,
+        "explanation": "One of the main advantages of a schema flexible database is that it does not require downtime to add new fields to existing documents, which allows rapid adaptation to changing data requirements."
+      },
+      {
+        "statement": "Schema flexible databases allow changes in data models without predefined constraints.",
+        "correct": true,
+        "explanation": "Schema flexible databases do not require a predefined structure and therefore allow changes to the data model without being constrained by a rigid schema."
+      },
+      {
+        "statement": "In a schema flexible database, maintaining data validation and integrity is not necessary.",
+        "correct": false,
+        "explanation": "Even though schema flexible databases handle changes well, it is still important to maintain data validation and integrity to ensure data reliability and consistency."
+      },
+      {
+        "statement": "JSON documents in schema flexible databases can only store specific, predefined fields.",
+        "correct": false,
+        "explanation": "JSON documents in schema flexible databases can easily accommodate additional fields without predefined structure, allowing dynamic changes and additions."
+      }
+    ]
+  }
+}

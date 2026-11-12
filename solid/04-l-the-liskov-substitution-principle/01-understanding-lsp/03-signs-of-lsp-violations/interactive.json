@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is a sign of a Liskov Substitution Principle (LSP) violation?",
+      "answers": [
+        {
+          "answer": "When a subclass performs better than its superclass",
+          "correct": false
+        },
+        {
+          "answer": "When a subclass requires type checks to work properly",
+          "correct": true
+        },
+        {
+          "answer": "When a superclass has more methods than its subclass",
+          "correct": false
+        },
+        {
+          "answer": "When a subclass adds new methods that are never used",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the provided Dart example, which behavior indicates an LSP violation?",
+      "answers": [
+        {
+          "answer": "The Penguin class does not implement any new methods",
+          "correct": false
+        },
+        {
+          "answer": "The fly method in Penguin calls the superclass's method",
+          "correct": false
+        },
+        {
+          "answer": "The Penguin class overrides fly and throws an exception not present in Bird",
+          "correct": true
+        },
+        {
+          "answer": "The Bird class has more overridden methods than the Penguin class",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why is substituting 'Penguin' for 'Bird' a violation of LSP in the given example?",
+      "answers": [
+        {
+          "answer": "Because Penguin adds new flying capabilities to Bird",
+          "correct": false
+        },
+        {
+          "answer": "Because Penguin instances exhibit unexpected behavior compared to Bird when flying",
+          "correct": true
+        },
+        {
+          "answer": "Because both Penguin and Bird have the same properties and methods",
+          "correct": false
+        },
+        {
+          "answer": "Because Penguin can live in different climates compared to other Birds",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What will the following Dart code print?\n\n```dart\nprint(15 > 10);\n```",
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "It will cause an error.",
+          "correct": false
+        },
+        {
+          "answer": "15",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the result of this expression?\n\n```dart\n25 < 25\n```",
+      "answers": [
+        {
+          "answer": "false",
+          "correct": true
+        },
+        {
+          "answer": "It will cause an error.",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": false
+        },
+        {
+          "answer": "25",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What boolean value results from this comparison?\n\n```dart\n'hello' != 'world'\n```",
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "It will cause an error.",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "'hello'",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

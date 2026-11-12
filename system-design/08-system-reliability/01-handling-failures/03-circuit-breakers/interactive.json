@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of a circuit breaker in system design?",
+      "answers": [
+        {
+          "answer": "To enhance data encryption",
+          "correct": false
+        },
+        {
+          "answer": "To reduce power consumption",
+          "correct": false
+        },
+        {
+          "answer": "To prevent system overload by stopping operations upon failure",
+          "correct": true
+        },
+        {
+          "answer": "To increase network speed",
+          "correct": false
+        }
+      ],
+      "explanation": "A circuit breaker prevents system overload by stopping operations when failures exceed a certain threshold, allowing the system to recover."
+    },
+    {
+      "question": "What happens when the circuit is 'open' in the circuit breaker pattern?",
+      "answers": [
+        {
+          "answer": "Requests are prioritized",
+          "correct": false
+        },
+        {
+          "answer": "Requests are blocked",
+          "correct": true
+        },
+        {
+          "answer": "Services are shut down permanently",
+          "correct": false
+        },
+        {
+          "answer": "All requests are rerouted",
+          "correct": false
+        }
+      ],
+      "explanation": "When the circuit is 'open,' requests to the failing service are blocked to prevent further strain on the system."
+    },
+    {
+      "question": "Why should you avoid constantly retrying failed services without a circuit breaker?",
+      "answers": [
+        {
+          "answer": "It can accelerate the system's recovery",
+          "correct": false
+        },
+        {
+          "answer": "It risks aggravating the failure situation",
+          "correct": true
+        },
+        {
+          "answer": "It improves system efficiency",
+          "correct": false
+        },
+        {
+          "answer": "It ensures faster service",
+          "correct": false
+        }
+      ],
+      "explanation": "Constantly retrying failed services can worsen system strain, so circuit breakers manage failures by halting requests and allowing recovery."
+    }
+  ]
+}

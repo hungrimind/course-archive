@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a partial failure in a system?",
+      "answers": [
+        {
+          "answer": "A situation where the entire system stops working.",
+          "correct": false
+        },
+        {
+          "answer": "When a component of a system fails but the system remains operational.",
+          "correct": true
+        },
+        {
+          "answer": "A service interruption that requires immediate system shutdown.",
+          "correct": false
+        },
+        {
+          "answer": "Failure that always leads to data loss.",
+          "correct": false
+        }
+      ],
+      "explanation": "A partial failure refers to a situation where some components fail, but the system remains functional by maintaining overall operations."
+    },
+    {
+      "question": "What is meant by 'graceful degradation'?",
+      "answers": [
+        {
+          "answer": "Shutting down all system components when an issue arises.",
+          "correct": false
+        },
+        {
+          "answer": "Maintaining only the essential functions of a system while non-essential parts fail.",
+          "correct": true
+        },
+        {
+          "answer": "Hiding all system errors from the user.",
+          "correct": false
+        },
+        {
+          "answer": "Increasing system resources to handle failures.",
+          "correct": false
+        }
+      ],
+      "explanation": "Graceful degradation is the strategy of allowing a system to continue providing essential services while less important features are temporarily unavailable."
+    },
+    {
+      "question": "What is a benefit of implementing retries and timeouts in a system?",
+      "answers": [
+        {
+          "answer": "Ensuring that all components stop functioning during a failure.",
+          "correct": false
+        },
+        {
+          "answer": "Automatically resolving non-transient issues permanently.",
+          "correct": false
+        },
+        {
+          "answer": "Helping the system recover from transient failures without affecting overall availability.",
+          "correct": true
+        },
+        {
+          "answer": "Eliminating the need for graceful degradation.",
+          "correct": false
+        }
+      ],
+      "explanation": "Retries and timeouts are used to recover from temporary issues, helping maintain system availability and ensuring that failures do not significantly impact user experience."
+    }
+  ]
+}

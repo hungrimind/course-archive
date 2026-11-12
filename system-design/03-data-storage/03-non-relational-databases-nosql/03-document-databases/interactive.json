@@ -1,0 +1,185 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "web_client",
+        "label": "Web Client",
+        "icon": "globe",
+        "category": "client"
+      },
+      {
+        "id": "api_service",
+        "label": "API Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "document_database",
+        "label": "Document Database (JSON/BSON)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "search_index",
+        "label": "Search Index",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "analytics_worker",
+        "label": "Real-time Analytics Worker",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "object_storage",
+        "label": "Object Storage (Media/Files)",
+        "icon": "archive",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "web_client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "web_client",
+        "to": "api_service"
+      },
+      {
+        "from": "api_service",
+        "to": "document_database"
+      },
+      {
+        "from": "api_service",
+        "to": "search_index"
+      },
+      {
+        "from": "api_service",
+        "to": "object_storage"
+      },
+      {
+        "from": "document_database",
+        "to": "analytics_worker"
+      },
+      {
+        "from": "analytics_worker",
+        "to": "document_database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "api_service",
+        "message": "Add an API Service to handle application logic and enable flexible schema changes without coupling clients directly to storage."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "document_database",
+        "message": "Add a Document Database to store semi-structured JSON/BSON documents with evolving fields and nested data."
+      },
+      {
+        "type": "path_exists",
+        "from": "web_client",
+        "to": "document_database",
+        "message": "Ensure requests can flow from the Web Client to the Document Database through the API Service (clients shouldn't depend on the DB directly)."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "web_client",
+        "to": "document_database",
+        "message": "Don't connect the Web Client directly to the Document Database. Use the API Service to enforce validation, access control, and consistent APIs as schemas evolve."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "analytics_worker",
+        "message": "Add a Real-time Analytics Worker to demonstrate how document DBs support evolving event shapes and nested payloads for analytics."
+      },
+      {
+        "type": "required_edge",
+        "from": "document_database",
+        "to": "analytics_worker",
+        "message": "Connect the Document Database to the Analytics Worker so analytics can be driven by stored documents/events."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "web_client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "api_service",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "document_database",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "search_index",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_5",
+          "componentId": "analytics_worker",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_6",
+          "componentId": "object_storage",
+          "x": 400,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_2",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_5",
+          "to": "sol_3"
+        }
+      ]
+    },
+    "assignment": "Build a simple architecture for an app that stores flexible, JSON-like documents and supports real-time analytics. Include an API layer between the client and the database, ensure there is a valid request path from the client to the document database through the API (without a direct client-to-database connection), and add an analytics worker that is connected to the document database."
+  }
+}

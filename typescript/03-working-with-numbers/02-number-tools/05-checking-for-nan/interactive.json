@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "NaN === NaN evaluates to true in TypeScript.",
+        "correct": false,
+        "explanation": "NaN is not equal to anything, including itself. NaN === NaN is always false, which is why you need Number.isNaN() to check for it."
+      },
+      {
+        "statement": "Number.isNaN(Number(\"hello\")) returns true.",
+        "correct": true,
+        "explanation": "Number(\"hello\") produces NaN because \"hello\" is not a valid number. Number.isNaN() correctly detects it."
+      },
+      {
+        "statement": "Number.isNaN(42) returns true.",
+        "correct": false,
+        "explanation": "42 is a valid number, not NaN. Number.isNaN() only returns true when the value is actually NaN."
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "High-level Module",
+        "items": [
+          "Switch"
+        ]
+      },
+      {
+        "label": "Low-level Module",
+        "items": [
+          "Light"
+        ]
+      },
+      {
+        "label": "Solution for DIP Violation",
+        "items": [
+          "Use an interface",
+          "Decouple classes"
+        ]
+      }
+    ]
+  }
+}

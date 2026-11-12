@@ -1,0 +1,24 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const isLoggedIn: boolean = false;\n\nif ("
+      },
+      {
+        "type": "blank",
+        "answer": "!"
+      },
+      {
+        "type": "code",
+        "value": "isLoggedIn) {\n  console.log(\"Please sign in.\");\n}"
+      }
+    ],
+    "options": [
+      "~",
+      "not",
+      "!!"
+    ]
+  }
+}

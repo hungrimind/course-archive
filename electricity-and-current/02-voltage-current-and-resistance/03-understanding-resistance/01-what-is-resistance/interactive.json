@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "Electricians wrap exposed connections with tape made of "
+      },
+      {
+        "type": "blank",
+        "answer": "rubber"
+      },
+      {
+        "type": "code",
+        "value": " because it has high "
+      },
+      {
+        "type": "blank",
+        "answer": "resistance"
+      },
+      {
+        "type": "code",
+        "value": ". The wires inside are made of "
+      },
+      {
+        "type": "blank",
+        "answer": "copper"
+      },
+      {
+        "type": "code",
+        "value": " because it allows electrons to flow easily."
+      }
+    ],
+    "options": [
+      "voltage",
+      "glass",
+      "current"
+    ]
+  }
+}

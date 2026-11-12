@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "Why was the Navigator 2.0 reception not good?",
+      "answers": [
+        {
+          "answer": "It didn't solve any problems",
+          "correct": false
+        },
+        {
+          "answer": "Due to complexity",
+          "correct": true
+        },
+        {
+          "answer": "Haters being haters for no reason",
+          "correct": false
+        },
+        {
+          "answer": "Navigator 1.0 was widely loved",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

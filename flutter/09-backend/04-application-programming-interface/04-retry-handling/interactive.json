@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is exponential backoff?",
+      "answers": [
+        {
+          "answer": "Retrying requests at random intervals",
+          "correct": false
+        },
+        {
+          "answer": "Increasing the wait time between retries exponentially (e.g., 1s, 2s, 4s)",
+          "correct": true
+        },
+        {
+          "answer": "Retrying requests immediately after failure",
+          "correct": false
+        },
+        {
+          "answer": "Decreasing the wait time between retries",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What problem does jitter help solve?",
+      "answers": [
+        {
+          "answer": "Network latency",
+          "correct": false
+        },
+        {
+          "answer": "Server crashes",
+          "correct": false
+        },
+        {
+          "answer": "'Thundering herds' where multiple clients retry simultaneously",
+          "correct": true
+        },
+        {
+          "answer": "Data corruption",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the RetryClient, what does the 'when' parameter control?",
+      "answers": [
+        {
+          "answer": "The number of retries",
+          "correct": false
+        },
+        {
+          "answer": "The delay between retries",
+          "correct": false
+        },
+        {
+          "answer": "Which HTTP status codes should trigger a retry",
+          "correct": true
+        },
+        {
+          "answer": "The jitter amount",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

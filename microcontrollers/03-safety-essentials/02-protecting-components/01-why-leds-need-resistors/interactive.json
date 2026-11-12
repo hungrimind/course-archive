@@ -1,0 +1,109 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "bat1",
+        "label": "GPIO Pin (3.3V)",
+        "type": "battery",
+        "value": 3.3
+      },
+      {
+        "id": "r1",
+        "label": "330Ω Resistor",
+        "type": "resistor",
+        "value": 330
+      },
+      {
+        "id": "led1",
+        "label": "Red LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "Build a complete loop from the GPIO pin through the components and back."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Place the LED in the circuit."
+      },
+      {
+        "type": "has_component",
+        "componentType": "resistor",
+        "message": "Without a resistor, the LED draws too much current and burns out. Add one!"
+      },
+      {
+        "type": "series_with",
+        "component": "led",
+        "withComponent": "resistor",
+        "message": "The resistor must be in series with the LED so it can limit the current flowing through it."
+      },
+      {
+        "type": "led_safe",
+        "message": "The LED is receiving too much current and would burn out! Make sure the resistor is protecting it."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "s1",
+          "componentId": "bat1",
+          "x": 50,
+          "y": 120
+        },
+        {
+          "id": "s2",
+          "componentId": "r1",
+          "x": 220,
+          "y": 60
+        },
+        {
+          "id": "s3",
+          "componentId": "led1",
+          "x": 400,
+          "y": 120
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "s1",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s2",
+            "terminal": "left"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "s2",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s3",
+            "terminal": "left"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "s3",
+            "terminal": "right"
+          },
+          "to": {
+            "nodeId": "s1",
+            "terminal": "left"
+          }
+        }
+      ]
+    },
+    "assignment": "Build a safe LED circuit. If you skip the resistor, the validation will show you why it's needed."
+  }
+}

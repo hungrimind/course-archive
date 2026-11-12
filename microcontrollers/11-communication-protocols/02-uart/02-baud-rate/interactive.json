@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Both UART devices can use different baud rates and still communicate correctly.",
+        "correct": false,
+        "explanation": "Both devices must use the same baud rate. If one sends at 9600 and the other listens at 115200, the receiver samples bits at the wrong moments and gets garbage data."
+      },
+      {
+        "statement": "Each UART byte is wrapped in a frame that includes a start bit (LOW) and a stop bit (HIGH).",
+        "correct": true,
+        "explanation": "The start bit (LOW) tells the receiver data is coming, then 8 data bits follow, and a stop bit (HIGH) marks the end. This framing keeps two devices in sync without a clock wire."
+      },
+      {
+        "statement": "Baud rate is measured in bytes per second.",
+        "correct": false,
+        "explanation": "Baud rate is measured in bits per second, not bytes per second. Common values are 9600 and 115200 bits per second."
+      }
+    ]
+  }
+}

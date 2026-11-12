@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of an API in mobile development?",
+      "answers": [
+        {
+          "answer": "To make the app look better",
+          "correct": false
+        },
+        {
+          "answer": "To provide a standardized way for different systems to communicate",
+          "correct": true
+        },
+        {
+          "answer": "To store data locally",
+          "correct": false
+        },
+        {
+          "answer": "To create user interfaces",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of these is NOT typically handled through an API?",
+      "answers": [
+        {
+          "answer": "User authentication",
+          "correct": false
+        },
+        {
+          "answer": "Database operations",
+          "correct": false
+        },
+        {
+          "answer": "Local UI state management",
+          "correct": true
+        },
+        {
+          "answer": "Weather data retrieval",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

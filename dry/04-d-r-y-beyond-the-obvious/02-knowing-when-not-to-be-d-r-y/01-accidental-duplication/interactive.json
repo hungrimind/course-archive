@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Causes of Duplication",
+        "items": [
+          "Copy-pasting code",
+          "Hardcoded values"
+        ]
+      },
+      {
+        "label": "Identifying Duplication",
+        "items": [
+          "Code reviews",
+          "Reviewing similar logic"
+        ]
+      },
+      {
+        "label": "Preventing Duplication",
+        "items": [
+          "Refactoring common logic",
+          "Consistent naming conventions"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary advantage of cloud storage over local storage?",
+      "answers": [
+        {
+          "answer": "It speeds up data retrieval by avoiding network latency.",
+          "correct": false
+        },
+        {
+          "answer": "It eliminates the need for device storage entirely.",
+          "correct": false
+        },
+        {
+          "answer": "It automatically backs up data with no additional configuration.",
+          "correct": false
+        },
+        {
+          "answer": "It allows data to be shared among multiple users and enables interactive applications.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What is one major drawback of using cloud storage?",
+      "answers": [
+        {
+          "answer": "It eliminates offline access for users.",
+          "correct": false
+        },
+        {
+          "answer": "It can be slower as data must travel to a remote server and back.",
+          "correct": true
+        },
+        {
+          "answer": "It limits the application’s ability to operate across multiple devices.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the primary purpose of implementing caching in cloud storage applications?",
+      "answers": [
+        {
+          "answer": "To permanently store data only on the cloud.",
+          "correct": false
+        },
+        {
+          "answer": "To enable offline access by temporarily storing data locally and syncing once the network is available.",
+          "correct": true
+        },
+        {
+          "answer": "To negate the need for a remote server entirely.",
+          "correct": false
+        },
+        {
+          "answer": "To ensure data security through encryption.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of \"scope\" in Dart?",
+      "answers": [
+        {
+          "answer": "A) To define the data type of a variable, like `String` or `int`.",
+          "correct": false
+        },
+        {
+          "answer": "B) To determine where a variable or function is accessible in the code.",
+          "correct": true
+        },
+        {
+          "answer": "C) To assign an initial value to a variable when it is declared.",
+          "correct": false
+        },
+        {
+          "answer": "D) To control the flow of the program using `if` and `else` statements.",
+          "correct": false
+        }
+      ],
+      "explanation": "Scope is the concept that defines the visibility or accessibility of a variable or function. A variable's scope determines from which parts of the code you can see and use it."
+    },
+    {
+      "question": "Consider the following code snippet:\n\n```dart\nString gameTitle = 'The Legend of Zelda';\n\nclass Player {\n  int health = 100;\n\n  void displayStatus() {\n    // Which variables are accessible here?\n  }\n}\n```\n\nInside the `displayStatus` method, which variables are directly accessible?",
+      "answers": [
+        {
+          "answer": "A) Only the `health` variable.",
+          "correct": false
+        },
+        {
+          "answer": "B) Only the `gameTitle` variable.",
+          "correct": false
+        },
+        {
+          "answer": "C) Both `gameTitle` and `health`.",
+          "correct": true
+        },
+        {
+          "answer": "D) Neither `gameTitle` nor `health`.",
+          "correct": false
+        }
+      ],
+      "explanation": "The `gameTitle` variable is a global variable, so it's accessible everywhere, including inside the `displayStatus` method. The `health` variable is a member variable (property) of the `Player` class, so it is also accessible from within a method of that same class."
+    },
+    {
+      "question": "Why will the following code result in an error?\n\n```dart\nclass Car {\n  String model = 'Mustang';\n}\n\nvoid main() {\n  print(model); // Error on this line\n}\n```",
+      "answers": [
+        {
+          "answer": "A) The `print` function cannot be called inside the `main` function.",
+          "correct": false
+        },
+        {
+          "answer": "B) The `model` variable is out of scope; it's only accessible inside the `Car` class.",
+          "correct": true
+        },
+        {
+          "answer": "C) All variables inside a class must be declared with the `final` keyword.",
+          "correct": false
+        },
+        {
+          "answer": "D) The `Car` class needs a method before its properties can be used.",
+          "correct": false
+        }
+      ],
+      "explanation": "The `model` variable is defined within the scope of the `Car` class. This means it can only be accessed from within that class. The `main` function is in the global scope and cannot directly access a variable defined inside a class's scope."
+    }
+  ]
+}

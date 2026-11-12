@@ -1,0 +1,92 @@
+{
+  "quiz": [
+    {
+      "question": "What is the purpose of a shard key in a database?",
+      "answers": [
+        {
+          "answer": "To encrypt data before storage",
+          "correct": false
+        },
+        {
+          "answer": "To determine how data is distributed across different shards",
+          "correct": true
+        },
+        {
+          "answer": "To index all the data in the database",
+          "correct": false
+        },
+        {
+          "answer": "To provide backup for the database",
+          "correct": false
+        }
+      ],
+      "explanation": "A shard key is used to distribute data across various shards in a database system, which helps manage the data's load and access effectively."
+    },
+    {
+      "question": "Why is high cardinality important for a shard key?",
+      "answers": [
+        {
+          "answer": "It ensures more unique keys, avoiding hotspots and ensuring even distribution.",
+          "correct": true
+        },
+        {
+          "answer": "It allows for easier encryption of data.",
+          "correct": false
+        },
+        {
+          "answer": "It reduces the memory needed to store the keys.",
+          "correct": false
+        },
+        {
+          "answer": "It simplifies the database schema.",
+          "correct": false
+        }
+      ],
+      "explanation": "High cardinality means having a wide range of unique values, which helps distribute data evenly across shards, preventing hotspots."
+    },
+    {
+      "question": "What can result from a poor choice of shard key?",
+      "answers": [
+        {
+          "answer": "Efficient data encryption",
+          "correct": false
+        },
+        {
+          "answer": "Centralized data tracking",
+          "correct": false
+        },
+        {
+          "answer": "Bottlenecks and degraded performance",
+          "correct": true
+        },
+        {
+          "answer": "Simplified query optimization",
+          "correct": false
+        }
+      ],
+      "explanation": "A poor shard key choice can lead to bottlenecks and degraded performance due to uneven server load and slower query processing."
+    },
+    {
+      "question": "Which factor should be considered when aligning shard key selection?",
+      "answers": [
+        {
+          "answer": "Database server manufacturer",
+          "correct": false
+        },
+        {
+          "answer": "Query patterns for efficient access",
+          "correct": true
+        },
+        {
+          "answer": "Color of the database interface",
+          "correct": false
+        },
+        {
+          "answer": "Frequency of database updates",
+          "correct": false
+        }
+      ],
+      "explanation": "Selecting a shard key that aligns with common query patterns ensures efficient data retrieval and overall database performance."
+    }
+  ]
+}

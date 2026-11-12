@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "In a computer, what do the binary digits `1` and `0` fundamentally represent?",
+      "answers": [
+        {
+          "answer": "`1` represents 'True' and `0` represents 'False'.",
+          "correct": false
+        },
+        {
+          "answer": "`1` represents an 'ON' state (electricity flows) and `0` represents an 'OFF' state.",
+          "correct": true
+        },
+        {
+          "answer": "`1` represents a 'hole' in a punch card and `0` represents 'no hole'.",
+          "correct": false
+        },
+        {
+          "answer": "`1` represents 'Yes' and `0` represents 'No'",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The lesson mentioned that early \"programs\" used punch cards. If a hole represents `1` (ON) and no hole represents `0` (OFF), what binary sequence does the following punch card row represent?\n\n`[ ● ○ ● ● ○ ● ○ ]`\n*(Where `●` is a hole and `○` is no hole)*",
+      "answers": [
+        {
+          "answer": "`0100101`",
+          "correct": false
+        },
+        {
+          "answer": "`0110101`",
+          "correct": false
+        },
+        {
+          "answer": "`1011010`",
+          "correct": true
+        },
+        {
+          "answer": "`1101011`",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A single pixel on your screen uses Red, Green, and Blue lights (RGB). To create the color **Magenta**, you need to turn the Red and Blue lights **ON** (`1`), and the Green light **OFF** (`0`).\n\nWhat binary sequence (in R, G, B order) represents the color Magenta?",
+      "answers": [
+        {
+          "answer": "`110`",
+          "correct": false
+        },
+        {
+          "answer": "`011`",
+          "correct": false
+        },
+        {
+          "answer": "`111`",
+          "correct": false
+        },
+        {
+          "answer": "`101`",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

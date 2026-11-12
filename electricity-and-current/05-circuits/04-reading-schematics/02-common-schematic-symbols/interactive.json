@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Resistor",
+        "items": [
+          "Zigzag line",
+          "Limits current flow"
+        ]
+      },
+      {
+        "label": "Capacitor",
+        "items": [
+          "Two parallel lines",
+          "Stores electrical charge"
+        ]
+      },
+      {
+        "label": "Diode",
+        "items": [
+          "Triangle symbol",
+          "Allows current in one direction"
+        ]
+      }
+    ]
+  }
+}

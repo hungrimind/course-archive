@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A schematic shows the exact physical layout of components on a circuit board.",
+        "correct": false,
+        "explanation": "A schematic shows how components are electrically connected, not where they physically sit. It is like a subway map -- it shows connections, not real geography."
+      },
+      {
+        "statement": "Schematics use standardized symbols to represent circuit components.",
+        "correct": true,
+        "explanation": "Every component has a standard symbol so that anyone can read a schematic regardless of who drew it."
+      },
+      {
+        "statement": "A schematic is comparable to a subway map because both show connections rather than physical positions.",
+        "correct": true,
+        "explanation": "Just like a subway map shows which stations connect without matching the real geography, a schematic shows electrical connections without matching the physical board layout."
+      }
+    ]
+  }
+}

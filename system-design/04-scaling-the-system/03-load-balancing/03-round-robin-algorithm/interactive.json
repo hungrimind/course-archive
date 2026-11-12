@@ -1,0 +1,182 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer (Round Robin)",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "app_server",
+        "label": "Application Server",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "health_check",
+        "label": "Health Check Monitor",
+        "icon": "zap",
+        "category": "reliability"
+      },
+      {
+        "id": "shared_cache",
+        "label": "Shared Cache",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "database",
+        "label": "Database",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "load_balancer"
+      },
+      {
+        "from": "load_balancer",
+        "to": "app_server"
+      },
+      {
+        "from": "health_check",
+        "to": "load_balancer"
+      },
+      {
+        "from": "app_server",
+        "to": "shared_cache"
+      },
+      {
+        "from": "app_server",
+        "to": "database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "load_balancer",
+        "message": "Add a load balancer so requests can be distributed using Round Robin."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "app_server",
+        "count": 3,
+        "message": "Round Robin needs multiple backends to rotate through, so add at least 3 application servers."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "app_server",
+        "message": "Client traffic must flow through the system to reach the application servers."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "app_server",
+        "message": "Clients should not connect directly to individual servers. Route traffic through the load balancer for even distribution."
+      },
+      {
+        "type": "required_edge",
+        "from": "load_balancer",
+        "to": "app_server",
+        "message": "Connect the load balancer to the application servers so it can send requests to them in rotation."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "app_server",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "app_server",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "app_server",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_6",
+          "componentId": "database",
+          "x": 250,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_2",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_3",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_4",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_5",
+          "to": "sol_6"
+        }
+      ]
+    },
+    "assignment": "Build a simple Round Robin load balancing setup. Add a load balancer between the client and a pool of application servers (at least three). Ensure client traffic reaches the servers through the load balancer, and do not allow the client to connect directly to any individual server."
+  }
+}

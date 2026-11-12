@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A database index is primarily used to speed up data retrieval operations.",
+        "correct": true,
+        "explanation": "An index functions like a roadmap, allowing a database engine to quickly locate and access the requested data without scanning every row."
+      },
+      {
+        "statement": "Creating too many indexes on a table will always improve database performance without any drawbacks.",
+        "correct": false,
+        "explanation": "While indexes speed up read operations, they can slow down write operations (such as INSERT, UPDATE, DELETE) and use additional storage. Too many indexes can outweigh the read access speed benefits."
+      },
+      {
+        "statement": "An index on a column can improve the performance of search operations that use that column in the WHERE clause.",
+        "correct": true,
+        "explanation": "When a column with an index is used in the WHERE clause of a query, the database engine can quickly locate the rows that match the condition, leading to faster search operations."
+      },
+      {
+        "statement": "Indexes in a database are always created automatically and cannot be controlled by the database administrator.",
+        "correct": false,
+        "explanation": "Database administrators can manually create indexes to optimize database performance according to specific query patterns. Some databases may create certain indexes automatically, but manual control is essential for optimization."
+      }
+    ]
+  }
+}

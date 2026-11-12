@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What makes microcontroller programming different from typical desktop programming?",
+      "answers": [
+        {
+          "answer": "Microcontrollers use a completely different programming language",
+          "correct": false
+        },
+        {
+          "answer": "Your code controls physical things through electrical signals",
+          "correct": true
+        },
+        {
+          "answer": "Microcontrollers cannot use loops or if-statements",
+          "correct": false
+        },
+        {
+          "answer": "Desktop programs are always faster than microcontroller programs",
+          "correct": false
+        }
+      ],
+      "explanation": "The key difference is that microcontroller code reaches into the real world -- instead of updating a screen, it sends electrical signals to control physical devices like LEDs, motors, and sensors."
+    },
+    {
+      "question": "You write a Python script that turns on a fan when a room gets too warm. Where does this code most likely run?",
+      "answers": [
+        {
+          "answer": "A web server",
+          "correct": false
+        },
+        {
+          "answer": "A desktop operating system",
+          "correct": false
+        },
+        {
+          "answer": "A microcontroller",
+          "correct": true
+        },
+        {
+          "answer": "A smartphone app",
+          "correct": false
+        }
+      ],
+      "explanation": "Directly reading a temperature sensor and controlling a fan requires a physical connection to hardware. A microcontroller connects to sensors and motors through its pins, making it the right platform for this task."
+    },
+    {
+      "question": "Which of the following is NOT something a microcontroller typically connects to directly?",
+      "answers": [
+        {
+          "answer": "An LED",
+          "correct": false
+        },
+        {
+          "answer": "A button",
+          "correct": false
+        },
+        {
+          "answer": "A web browser's DOM",
+          "correct": true
+        },
+        {
+          "answer": "A motor",
+          "correct": false
+        }
+      ],
+      "explanation": "A microcontroller connects to physical components like LEDs, buttons, and motors. A web browser's DOM is a software abstraction on a desktop or mobile device, not a physical thing a microcontroller wires to."
+    }
+  ]
+}

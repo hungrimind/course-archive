@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "Is it fine to just use try-catch",
+      "answers": [
+        {
+          "answer": "You should opt to using return values instead of try-catch",
+          "correct": false
+        },
+        {
+          "answer": "You should always combine both try-catch and result-based error handling",
+          "correct": true
+        },
+        {
+          "answer": "Yes, it's fine to just use try-catch",
+          "correct": true
+        },
+        {
+          "answer": "None of the options are correct",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

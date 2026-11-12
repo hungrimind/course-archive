@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Alkaline",
+        "items": [
+          "AA, AAA, and 9V sizes",
+          "Disposable once drained",
+          "Cheap and widely available"
+        ]
+      },
+      {
+        "label": "Lithium-ion",
+        "items": [
+          "Rechargeable many times",
+          "Powers phones and laptops",
+          "High energy density"
+        ]
+      },
+      {
+        "label": "Coin Cell",
+        "items": [
+          "Tiny flat shape",
+          "Used in watches and remotes"
+        ]
+      }
+    ]
+  }
+}

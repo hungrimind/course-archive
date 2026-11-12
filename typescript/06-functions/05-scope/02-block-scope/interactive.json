@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A variable declared with let inside an if block can be accessed outside that if block.",
+        "correct": false,
+        "explanation": "Variables declared with let or const inside curly braces only exist within those braces. Once the block ends, the variable is no longer accessible."
+      },
+      {
+        "statement": "Every pair of curly braces {} creates a new scope for variables declared with let or const.",
+        "correct": true,
+        "explanation": "Block scope applies to any set of curly braces, whether they belong to an if statement, a loop, or a function."
+      },
+      {
+        "statement": "Block scope applies to if blocks and loops, but not to functions.",
+        "correct": false,
+        "explanation": "Block scope applies to all curly braces equally, including if blocks, loops, and functions."
+      },
+      {
+        "statement": "A variable declared with const inside a for loop is not accessible after the loop ends.",
+        "correct": true,
+        "explanation": "Since const follows block scope rules, a variable declared inside a loop's curly braces is destroyed when the loop block ends."
+      }
+    ]
+  }
+}

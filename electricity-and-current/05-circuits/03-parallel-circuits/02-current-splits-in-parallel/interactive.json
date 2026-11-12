@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "In a parallel circuit, which branch draws the most current?",
+      "answers": [
+        {
+          "answer": "The branch closest to the power source",
+          "correct": false
+        },
+        {
+          "answer": "The branch with the highest resistance",
+          "correct": false
+        },
+        {
+          "answer": "The branch with the lowest resistance",
+          "correct": true
+        },
+        {
+          "answer": "All branches always draw equal current",
+          "correct": false
+        }
+      ],
+      "explanation": "Each branch draws current according to its resistance. A low-resistance branch allows more current to flow, while a high-resistance branch restricts it."
+    },
+    {
+      "question": "Why can plugging too many appliances into one outlet trip a circuit breaker?",
+      "answers": [
+        {
+          "answer": "Each new appliance reduces the total voltage",
+          "correct": false
+        },
+        {
+          "answer": "Each new parallel branch demands more current from the source, eventually exceeding the breaker's limit",
+          "correct": true
+        },
+        {
+          "answer": "The appliances create a short circuit",
+          "correct": false
+        },
+        {
+          "answer": "The outlet runs out of electrons to supply",
+          "correct": false
+        }
+      ],
+      "explanation": "Each new appliance adds another parallel branch, increasing the total current drawn from the source. When that total exceeds the breaker's rated limit, it trips to protect the wiring."
+    }
+  ]
+}

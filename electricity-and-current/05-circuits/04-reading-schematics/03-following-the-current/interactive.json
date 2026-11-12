@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "When reading a schematic, where do you start tracing the current?",
+      "answers": [
+        {
+          "answer": "At the ground symbol",
+          "correct": false
+        },
+        {
+          "answer": "At the first resistor",
+          "correct": false
+        },
+        {
+          "answer": "At the positive terminal of the power source",
+          "correct": true
+        },
+        {
+          "answer": "At any component in the middle of the circuit",
+          "correct": false
+        }
+      ],
+      "explanation": "You trace current starting from the positive terminal of the power source, following the lines through each component, and ending at the negative terminal."
+    },
+    {
+      "question": "What happens to the current at a junction in a schematic?",
+      "answers": [
+        {
+          "answer": "It stops and reverses direction",
+          "correct": false
+        },
+        {
+          "answer": "It splits or merges, like a fork in the road",
+          "correct": true
+        },
+        {
+          "answer": "It always doubles in strength",
+          "correct": false
+        },
+        {
+          "answer": "It bypasses the junction entirely",
+          "correct": false
+        }
+      ],
+      "explanation": "Where lines meet at a junction, the current either splits into multiple paths or merges back together, just like traffic at a fork in the road."
+    }
+  ]
+}

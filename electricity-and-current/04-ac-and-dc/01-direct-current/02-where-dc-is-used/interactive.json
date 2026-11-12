@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Runs on DC",
+        "items": [
+          "Smartphone",
+          "Laptop computer",
+          "LED flashlight",
+          "USB-powered webcam"
+        ]
+      },
+      {
+        "label": "Delivers DC directly",
+        "items": [
+          "AA battery",
+          "USB port",
+          "Car battery"
+        ]
+      },
+      {
+        "label": "Delivers AC",
+        "items": [
+          "Wall outlet",
+          "Power line from utility pole"
+        ]
+      }
+    ]
+  }
+}

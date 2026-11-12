@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Atomicity guarantees that if a transaction is partially completed, the changes will persist in the database.",
+        "correct": false,
+        "explanation": "Atomicity ensures that a transaction is all-or-nothing, meaning if it fails, it rolls back entirely, so no partial changes persist."
+      },
+      {
+        "statement": "Consistency ensures that any transaction brings the database from one valid state to another, adhering to all predefined rules.",
+        "correct": true,
+        "explanation": "Consistency checks that transactions leave the database in a valid state, maintaining rules like data types, constraints, and triggers."
+      },
+      {
+        "statement": "Isolation in database transactions means that transactions are dependent on one another and may see intermediate states of other transactions.",
+        "correct": false,
+        "explanation": "Isolation ensures that transactions do not affect each other, creating the effect of sequential processing, thus avoiding seeing intermediate states of other concurrent transactions."
+      },
+      {
+        "statement": "Once a transaction is committed, Durability ensures that its changes are not lost even if a system crash occurs after the commit.",
+        "correct": true,
+        "explanation": "Durability guarantees that committed changes are permanently applied and stored safely, surviving crashes or power outages."
+      }
+    ]
+  }
+}

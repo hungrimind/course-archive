@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What does CPU stand for, and what is its role in a computer?",
+      "answers": [
+        {
+          "answer": "Computer Power Unit: it supplies electricity to the computer",
+          "correct": false
+        },
+        {
+          "answer": "Central Processing Unit: it is the brain that handles the 'process' step",
+          "correct": true
+        },
+        {
+          "answer": "Core Peripheral Unit: it connects devices like keyboards and mice",
+          "correct": false
+        },
+        {
+          "answer": "Central Program Utility: it stores all the programs on the computer",
+          "correct": false
+        }
+      ],
+      "explanation": "CPU stands for Central Processing Unit, and it is the part of the computer that actually performs the 'process' step in input-process-output. It is often called the brain of the computer because it carries out instructions."
+    },
+    {
+      "question": "Which of the following best describes the kinds of operations a CPU can perform directly?",
+      "answers": [
+        {
+          "answer": "Complex tasks like editing a photo or playing a video in a single step",
+          "correct": false
+        },
+        {
+          "answer": "Only operations related to displaying things on the screen",
+          "correct": false
+        },
+        {
+          "answer": "A handful of very simple operations like adding numbers, comparing values, and moving data",
+          "correct": true
+        },
+        {
+          "answer": "Any task a human can describe, using plain English instructions",
+          "correct": false
+        }
+      ],
+      "explanation": "A CPU only understands a handful of very simple operations such as adding numbers, comparing values, and moving data between places. Complex tasks are built by chaining millions of these tiny steps together."
+    },
+    {
+      "question": "How does a CPU manage to do complex things like opening an app if it only knows simple operations?",
+      "answers": [
+        {
+          "answer": "It secretly uses a second, more powerful chip for complex work",
+          "correct": false
+        },
+        {
+          "answer": "It runs millions of those simple operations extremely fast, one after another",
+          "correct": true
+        },
+        {
+          "answer": "It asks the user to break the task down into smaller steps first",
+          "correct": false
+        },
+        {
+          "answer": "It learns new operations automatically as you use the computer",
+          "correct": false
+        }
+      ],
+      "explanation": "The CPU's power comes from speed: it performs millions of simple instructions per second. Every complex action is really just a long chain of those dead-simple steps executed incredibly quickly."
+    }
+  ]
+}

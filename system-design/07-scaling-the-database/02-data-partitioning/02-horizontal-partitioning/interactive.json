@@ -1,0 +1,195 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client_app",
+        "label": "Client App",
+        "icon": "monitor",
+        "category": "client"
+      },
+      {
+        "id": "api_service",
+        "label": "API Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "shard_router",
+        "label": "Shard Router",
+        "icon": "git-branch",
+        "category": "compute"
+      },
+      {
+        "id": "shard_1_db",
+        "label": "Shard 1 DB (Users 1–1000)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "shard_2_db",
+        "label": "Shard 2 DB (Users 1001–2000)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "shard_key_map",
+        "label": "Shard Key Map / Config",
+        "icon": "archive",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client_app",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client_app",
+        "to": "api_service"
+      },
+      {
+        "from": "api_service",
+        "to": "shard_router"
+      },
+      {
+        "from": "shard_router",
+        "to": "shard_1_db"
+      },
+      {
+        "from": "shard_router",
+        "to": "shard_2_db"
+      },
+      {
+        "from": "shard_router",
+        "to": "shard_key_map"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "shard_router",
+        "message": "Include a shard router so requests can be routed to the correct shard based on the sharding key (e.g., user_id)."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "api_service",
+        "count": 1,
+        "message": "Add an API Service between the client and the sharding layer to represent the application issuing queries."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "shard_key_map",
+        "message": "Add a shard key map/config component to represent how the system knows which user_id range/hash goes to which shard."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "shard_1_db",
+        "count": 1,
+        "message": "Add at least one shard database (Shard 1) to demonstrate horizontal partitioning across servers."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "shard_2_db",
+        "count": 1,
+        "message": "Add at least a second shard database (Shard 2) to show the table is split by rows across multiple servers."
+      },
+      {
+        "type": "path_exists",
+        "from": "client_app",
+        "to": "shard_1_db",
+        "message": "Ensure the client can reach Shard 1 via the API and shard router; clients should not talk to shards directly."
+      },
+      {
+        "type": "path_exists",
+        "from": "client_app",
+        "to": "shard_2_db",
+        "message": "Ensure the client can reach Shard 2 via the API and shard router; sharding enables scaling by adding more shard servers."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "api_service",
+        "to": "shard_1_db",
+        "message": "Avoid connecting the API directly to a shard DB; route through the shard router to keep shard selection logic centralized."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "api_service",
+        "to": "shard_2_db",
+        "message": "Avoid connecting the API directly to a shard DB; the shard router should decide the correct shard based on user_id."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client_app",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_api",
+          "componentId": "api_service",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_router",
+          "componentId": "shard_router",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_map",
+          "componentId": "shard_key_map",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_shard1",
+          "componentId": "shard_1_db",
+          "x": 100,
+          "y": 600
+        },
+        {
+          "id": "sol_shard2",
+          "componentId": "shard_2_db",
+          "x": 400,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_api"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_api",
+          "to": "sol_router"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_router",
+          "to": "sol_map"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_router",
+          "to": "sol_shard1"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_router",
+          "to": "sol_shard2"
+        }
+      ]
+    },
+    "assignment": "Build a horizontally partitioned (sharded) database access flow. Your diagram must include an API layer, a shard router that uses a shard key map/config, and at least two shard databases representing different user_id ranges. Ensure the client can reach each shard through the API and router, and avoid connecting the API directly to any shard database."
+  }
+}

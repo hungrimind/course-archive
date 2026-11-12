@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a Service Level Objective (SLO)?",
+      "answers": [
+        {
+          "answer": "A formal contract defining the expected service level",
+          "correct": false
+        },
+        {
+          "answer": "A measurable target for system performance or reliability",
+          "correct": true
+        },
+        {
+          "answer": "A guideline for financial penalties",
+          "correct": false
+        },
+        {
+          "answer": "A contract ensuring customer service satisfaction",
+          "correct": false
+        }
+      ],
+      "explanation": "A Service Level Objective (SLO) is a measurable target, often expressed as a percentage, that sets a benchmark for acceptable levels of system performance or reliability."
+    },
+    {
+      "question": "How does a Service Level Agreement (SLA) usually differ from an SLO?",
+      "answers": [
+        {
+          "answer": "SLA measures internal performance only.",
+          "correct": false
+        },
+        {
+          "answer": "SLA sets objectives without penalties.",
+          "correct": false
+        },
+        {
+          "answer": "SLA is a formal contract that may involve penalties.",
+          "correct": true
+        },
+        {
+          "answer": "SLA and SLO are essentially the same.",
+          "correct": false
+        }
+      ],
+      "explanation": "A Service Level Agreement (SLA) is a formal contract between a provider and a customer, often including financial penalties if the agreed-upon service levels are not met."
+    },
+    {
+      "question": "Why are both SLOs and SLAs important for service management?",
+      "answers": [
+        {
+          "answer": "They are only useful for financial audits.",
+          "correct": false
+        },
+        {
+          "answer": "They provide benchmarks for internal guidance and enforce commitments, respectively.",
+          "correct": true
+        },
+        {
+          "answer": "They are used interchangeably for setting service standards.",
+          "correct": false
+        },
+        {
+          "answer": "They ensure that system updates are reached monthly.",
+          "correct": false
+        }
+      ],
+      "explanation": "SLOs guide internal goals by setting measurable targets, while SLAs enforce external commitments, often including penalties, thus maintaining trust between providers and customers."
+    }
+  ]
+}

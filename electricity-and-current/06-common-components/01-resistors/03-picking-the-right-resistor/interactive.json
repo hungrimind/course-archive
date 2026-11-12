@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "You need to limit current to 20 mA with a 5V supply. Using Ohm's Law (R = V / I), what resistance do you need?",
+      "answers": [
+        {
+          "answer": "100 ohms",
+          "correct": false
+        },
+        {
+          "answer": "220 ohms",
+          "correct": false
+        },
+        {
+          "answer": "250 ohms",
+          "correct": true
+        },
+        {
+          "answer": "470 ohms",
+          "correct": false
+        }
+      ],
+      "explanation": "R = V / I = 5 / 0.02 = 250 ohms. In practice, you would pick the nearest standard value at or above 250 ohms, such as 270 ohms."
+    },
+    {
+      "question": "If your calculated resistance is 180 ohms, which standard resistor value should you pick?",
+      "answers": [
+        {
+          "answer": "100 ohms",
+          "correct": false
+        },
+        {
+          "answer": "150 ohms",
+          "correct": false
+        },
+        {
+          "answer": "220 ohms",
+          "correct": true
+        },
+        {
+          "answer": "47 ohms",
+          "correct": false
+        }
+      ],
+      "explanation": "You should pick the closest standard value that is equal to or slightly above your calculated value. 220 ohms is the nearest standard value above 180 ohms, ensuring adequate current limiting."
+    },
+    {
+      "question": "What is the typical power rating of most small resistors used in low-power circuits?",
+      "answers": [
+        {
+          "answer": "1 watt",
+          "correct": false
+        },
+        {
+          "answer": "1/4 watt",
+          "correct": true
+        },
+        {
+          "answer": "5 watts",
+          "correct": false
+        },
+        {
+          "answer": "1/10 watt",
+          "correct": false
+        }
+      ],
+      "explanation": "Most small resistors handle 1/4 watt (0.25 W), which is sufficient for typical low-power circuits."
+    }
+  ]
+}

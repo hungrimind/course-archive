@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Denormalization always improves the performance of write operations in a database.",
+        "correct": false,
+        "explanation": "Denormalization primarily improves read performance by reducing the need for complex joins, but it can make write operations more complicated and slower due to the need to update duplicate data in multiple places."
+      },
+      {
+        "statement": "One of the risks of denormalization is potential data inconsistency.",
+        "correct": true,
+        "explanation": "Denormalization involves duplicating data across different tables. If updates to data are not carefully managed, this can lead to inconsistencies, where the data is not the same in all instances."
+      },
+      {
+        "statement": "The primary trade-off of denormalization is between storage space and query complexity.",
+        "correct": true,
+        "explanation": "Denormalization can reduce query complexity by avoiding joins, but it often requires more storage space due to data duplication."
+      },
+      {
+        "statement": "In denormalization, the same level of data integrity is maintained as in normalized databases.",
+        "correct": false,
+        "explanation": "Denormalization sacrifices some level of data integrity for performance benefits, as duplicated data can become inconsistent if not managed correctly."
+      }
+    ]
+  }
+}

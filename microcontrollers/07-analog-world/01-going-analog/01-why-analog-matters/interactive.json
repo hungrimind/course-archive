@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A digital pin can tell you the exact brightness level of a room.",
+        "correct": false,
+        "explanation": "Digital pins only see HIGH or LOW. They can detect whether something is on or off, but cannot measure in-between values like brightness levels. You need analog signals for that."
+      },
+      {
+        "statement": "Analog signals can be any voltage value within a range, not just two extremes.",
+        "correct": true,
+        "explanation": "Unlike digital signals that snap between HIGH and LOW, analog signals vary smoothly and can represent any value within their range, such as temperature or light intensity."
+      },
+      {
+        "statement": "Temperature and sound pressure are examples of signals that vary smoothly across a range.",
+        "correct": true,
+        "explanation": "The real world is full of continuously varying quantities like temperature, light intensity, and sound pressure -- these are inherently analog, not binary."
+      }
+    ]
+  }
+}

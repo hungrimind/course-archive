@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A single misplaced punch card could require the programmer to start the entire job over.",
+        "correct": true,
+        "explanation": "Punch cards had to be in the correct order with the correct hole patterns. A misplaced or incorrect card meant the whole stack had to be corrected and re-fed into the machine."
+      },
+      {
+        "statement": "Punch card programmers could see their results instantly on a screen.",
+        "correct": false,
+        "explanation": "There were no screens in the punch card era. Programmers fed stacks of cards into room-sized machines and waited hours for results."
+      },
+      {
+        "statement": "Each hole pattern on a punch card represented one instruction for the computer.",
+        "correct": true,
+        "explanation": "Programmers encoded instructions by punching specific patterns of holes into cards. Each pattern corresponded to a particular instruction the machine could execute."
+      }
+    ]
+  }
+}

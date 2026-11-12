@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What does the middle pin (wiper) of a potentiometer output?",
+      "answers": [
+        {
+          "answer": "A fixed 3.3V reference voltage",
+          "correct": false
+        },
+        {
+          "answer": "A voltage proportional to the knob's position",
+          "correct": true
+        },
+        {
+          "answer": "A digital HIGH or LOW signal",
+          "correct": false
+        },
+        {
+          "answer": "A current proportional to temperature",
+          "correct": false
+        }
+      ],
+      "explanation": "The wiper pin outputs a voltage that changes proportionally as you turn the knob. All the way to one side reads near 0, and all the way to the other reads near the maximum value."
+    },
+    {
+      "question": "How many pins does a potentiometer have?",
+      "answers": [
+        {
+          "answer": "Two",
+          "correct": false
+        },
+        {
+          "answer": "Three",
+          "correct": true
+        },
+        {
+          "answer": "Four",
+          "correct": false
+        },
+        {
+          "answer": "One",
+          "correct": false
+        }
+      ],
+      "explanation": "A potentiometer has three pins: one for power, one for ground, and a middle wiper pin that outputs the variable voltage."
+    },
+    {
+      "question": "When the potentiometer knob is turned all the way to one extreme, the raw 16-bit value reads near:",
+      "answers": [
+        {
+          "answer": "1,024",
+          "correct": false
+        },
+        {
+          "answer": "4,096",
+          "correct": false
+        },
+        {
+          "answer": "65,535",
+          "correct": true
+        },
+        {
+          "answer": "255",
+          "correct": false
+        }
+      ],
+      "explanation": "The Adafruit library returns a raw 16-bit value, so the maximum reading is near 65,535 (2^16 - 1) when the knob is turned all the way to one side."
+    }
+  ]
+}

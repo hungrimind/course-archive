@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A message queue ensures that messages are processed in the order they are received.",
+        "correct": true,
+        "explanation": "Message queues typically process messages in a first-in, first-out (FIFO) order, meaning they are handled in the sequence they arrive."
+      },
+      {
+        "statement": "Message queues are only useful when services are running on different machines.",
+        "correct": false,
+        "explanation": "Message queues can be used for communication between components of a single application on the same machine, as well as services on different machines. They are not limited to distributed systems."
+      },
+      {
+        "statement": "Using a message queue allows parts of a system to handle tasks asynchronously.",
+        "correct": true,
+        "explanation": "Message queues enable asynchronous processing because the sender can continue executing without waiting for the receiver to handle the message. This decouples system components and allows them to work independently."
+      },
+      {
+        "statement": "If a message queue is full, new messages are automatically discarded.",
+        "correct": false,
+        "explanation": "Typically, if a message queue reaches its limit, new messages may be rejected or the queue may employ back-pressure mechanisms, but automated discarding is not a default behavior because it could lead to data loss."
+      }
+    ]
+  }
+}

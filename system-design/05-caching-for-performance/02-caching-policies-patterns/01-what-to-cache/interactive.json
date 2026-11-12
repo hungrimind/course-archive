@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Data that changes frequently should be prioritized for caching.",
+        "correct": false,
+        "explanation": "Frequently changing data can become stale quickly if cached, reducing efficiency. It's better to cache data that changes infrequently to maintain cache validity."
+      },
+      {
+        "statement": "Caching improves retrieval speed by storing frequently accessed data in memory.",
+        "correct": true,
+        "explanation": "Caching stores data in a way that allows for quicker retrieval compared to fetching it from a slower, original data source."
+      },
+      {
+        "statement": "Data that is expensive to compute should not be cached, as it is often unique to each request.",
+        "correct": false,
+        "explanation": "Expensive-to-compute data should be cached if it is reused frequently, to avoid repeated computation costs."
+      },
+      {
+        "statement": "To minimize staleness, it is recommended to cache data with high read frequency and low change frequency.",
+        "correct": true,
+        "explanation": "Data with high read frequency and low change frequency is ideal for caching because it maximizes efficiency while reducing the risk of serving outdated information."
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of a metric in system management?",
+      "answers": [
+        {
+          "answer": "To increase system hardware",
+          "correct": false
+        },
+        {
+          "answer": "To gauge system performance and behavior",
+          "correct": true
+        },
+        {
+          "answer": "To create data backups",
+          "correct": false
+        },
+        {
+          "answer": "To reduce operational costs",
+          "correct": false
+        }
+      ],
+      "explanation": "Metrics are primarily used to measure and understand how well a system is functioning by quantifying performance and behavior."
+    },
+    {
+      "question": "Which of the following is an example of a metric?",
+      "answers": [
+        {
+          "answer": "System design",
+          "correct": false
+        },
+        {
+          "answer": "User interface",
+          "correct": false
+        },
+        {
+          "answer": "Response times",
+          "correct": true
+        },
+        {
+          "answer": "Software updates",
+          "correct": false
+        }
+      ],
+      "explanation": "Response times are a quantifiable measure of how quickly a system responds to inputs, making it a metric."
+    },
+    {
+      "question": "Why is it important to monitor metrics regularly?",
+      "answers": [
+        {
+          "answer": "To increase team productivity",
+          "correct": false
+        },
+        {
+          "answer": "To gain customer satisfaction",
+          "correct": false
+        },
+        {
+          "answer": "To detect anomalies and prevent system failures",
+          "correct": true
+        },
+        {
+          "answer": "To develop new software features",
+          "correct": false
+        }
+      ],
+      "explanation": "Regularly monitoring metrics helps identify deviations from expected performance, thus allowing for early intervention to prevent failures."
+    }
+  ]
+}

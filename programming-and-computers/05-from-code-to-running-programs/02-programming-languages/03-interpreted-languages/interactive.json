@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "An interpreted language translates code line by line as the program runs.",
+        "correct": true,
+        "explanation": "Interpreted languages are translated on the fly, each line is read, translated, and executed one at a time, like a live translator working through a speech sentence by sentence."
+      },
+      {
+        "statement": "Interpreted languages generally run faster than compiled languages.",
+        "correct": false,
+        "explanation": "Interpreted languages are generally slower at execution because the translation happens during runtime. Compiled languages translate everything up front, so the resulting program runs faster."
+      },
+      {
+        "statement": "Python and JavaScript are examples of interpreted languages.",
+        "correct": true,
+        "explanation": "Python and JavaScript are commonly used interpreted languages. They do not require a separate compile step before running."
+      },
+      {
+        "statement": "Interpreted languages require a separate compile step before you can run your code.",
+        "correct": false,
+        "explanation": "One key advantage of interpreted languages is that there is no compile step. You can write code and run it immediately, which speeds up development."
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Consistency",
+        "items": [
+          "Data uniformity across nodes",
+          "All nodes show the latest data"
+        ]
+      },
+      {
+        "label": "Availability",
+        "items": [
+          "Every request gets a response",
+          "System remains responsive"
+        ]
+      },
+      {
+        "label": "Partition Tolerance",
+        "items": [
+          "Operation despite network failures",
+          "Handles network splits"
+        ]
+      }
+    ]
+  }
+}

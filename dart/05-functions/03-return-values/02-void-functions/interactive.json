@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "When is it most appropriate to declare a function with a `void` return type?",
+      "answers": [
+        {
+          "answer": "When the function needs to return a `null` value.",
+          "correct": false
+        },
+        {
+          "answer": "When the function performs an action but does not need to return any data.",
+          "correct": true
+        },
+        {
+          "answer": "When the function has no parameters.",
+          "correct": false
+        },
+        {
+          "answer": "When the function needs to return an empty string (`\"\"`).",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Consider the following Dart code. What will be printed to the console when this code is executed?\n\n\n```dart\nvoid showMessage() {\n  print('Step 1');\n  return;\n  print('Step 2');\n}\n\nvoid main() {\n  showMessage();\n}\n```",
+      "answers": [
+        {
+          "answer": "`Step 1`",
+          "correct": true
+        },
+        {
+          "answer": "`Step 2`",
+          "correct": false
+        },
+        {
+          "answer": "`Step 1` followed by `Step 2`",
+          "correct": false
+        },
+        {
+          "answer": "The code will produce an error.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following function definitions is a valid `void` function in Dart?",
+      "answers": [
+        {
+          "answer": "`void calculate() { return 0; }`",
+          "correct": false
+        },
+        {
+          "answer": "`function calculate() { print('done'); }`",
+          "correct": false
+        },
+        {
+          "answer": "`void calculate() { print('done'); }`",
+          "correct": true
+        },
+        {
+          "answer": "`void calculate() => 'done';`",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

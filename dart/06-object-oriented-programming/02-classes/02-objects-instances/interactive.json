@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary relationship between a class and an object in Dart?",
+      "answers": [
+        {
+          "answer": "An object is a blueprint used to create a class.",
+          "correct": false
+        },
+        {
+          "answer": "A class is a blueprint used to create objects.",
+          "correct": true
+        },
+        {
+          "answer": "A class and an object are two different terms for the exact same thing.",
+          "correct": false
+        },
+        {
+          "answer": "A class is a special type of function, and an object is the value it returns.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Given a class named `Bicycle`, which line of code correctly creates an instance of this class and assigns it to a variable named `myBike`?",
+      "answers": [
+        {
+          "answer": "Bicycle myBike = Bicycle;",
+          "correct": false
+        },
+        {
+          "answer": "create Bicycle() -> myBike;",
+          "correct": false
+        },
+        {
+          "answer": "Bicycle myBike = Bicycle();",
+          "correct": true
+        },
+        {
+          "answer": "myBike Bicycle = Bicycle();",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

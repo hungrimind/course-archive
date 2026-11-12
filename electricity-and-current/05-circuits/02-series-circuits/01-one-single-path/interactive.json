@@ -1,0 +1,137 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "battery-9v",
+        "label": "9V Battery",
+        "type": "battery",
+        "value": 9,
+        "count": 1
+      },
+      {
+        "id": "resistor-270",
+        "label": "270Ω Resistor",
+        "type": "resistor",
+        "value": 270,
+        "count": 1
+      },
+      {
+        "id": "red-led-1",
+        "label": "Red LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02,
+        "count": 1
+      },
+      {
+        "id": "red-led-2",
+        "label": "Red LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02,
+        "count": 1
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "The circuit must form a complete loop — all components end-to-end in one path."
+      },
+      {
+        "type": "has_component",
+        "componentType": "battery",
+        "message": "You need a battery to power the series circuit."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Add both LEDs to the circuit. A series circuit puts them all in one single path."
+      },
+      {
+        "type": "series_with",
+        "component": "led",
+        "withComponent": "resistor",
+        "message": "The LEDs must be in series with a resistor to limit current."
+      },
+      {
+        "type": "led_safe",
+        "message": "The LED current must not exceed 20mA. With 270Ω: (9V - 2V - 2V) / 270Ω = 18.5mA — safe."
+      }
+    ],
+    "assignment": "Wire two red LEDs in series with the resistor and battery — all in one single loop. Each LED drops 2V, and the 270Ω resistor keeps current at a safe 18.5mA.",
+    "solution": {
+      "nodes": [
+        {
+          "id": "n1",
+          "componentId": "battery-9v",
+          "x": 100,
+          "y": 200
+        },
+        {
+          "id": "n2",
+          "componentId": "resistor-270",
+          "x": 300,
+          "y": 80
+        },
+        {
+          "id": "n3",
+          "componentId": "red-led-1",
+          "x": 500,
+          "y": 200
+        },
+        {
+          "id": "n4",
+          "componentId": "red-led-2",
+          "x": 300,
+          "y": 320
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "n1",
+            "terminal": "+"
+          },
+          "to": {
+            "nodeId": "n2",
+            "terminal": "in"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "n2",
+            "terminal": "out"
+          },
+          "to": {
+            "nodeId": "n3",
+            "terminal": "anode"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "n3",
+            "terminal": "cathode"
+          },
+          "to": {
+            "nodeId": "n4",
+            "terminal": "anode"
+          }
+        },
+        {
+          "id": "w4",
+          "from": {
+            "nodeId": "n4",
+            "terminal": "cathode"
+          },
+          "to": {
+            "nodeId": "n1",
+            "terminal": "-"
+          }
+        }
+      ]
+    }
+  }
+}

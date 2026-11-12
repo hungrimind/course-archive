@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "Which language dominates data science and artificial intelligence?",
+      "answers": [
+        {
+          "answer": "Assembly",
+          "correct": false
+        },
+        {
+          "answer": "Python",
+          "correct": true
+        },
+        {
+          "answer": "HTML",
+          "correct": false
+        },
+        {
+          "answer": "C++",
+          "correct": false
+        }
+      ],
+      "explanation": "Python is the go-to language for data science and AI thanks to its simple syntax and enormous ecosystem of ready-made libraries."
+    },
+    {
+      "question": "Why is Python so popular for working with data?",
+      "answers": [
+        {
+          "answer": "It is the only language the CPU can understand",
+          "correct": false
+        },
+        {
+          "answer": "It has simple syntax and a huge collection of pre-built tools",
+          "correct": true
+        },
+        {
+          "answer": "It runs faster than every other language",
+          "correct": false
+        },
+        {
+          "answer": "It was designed exclusively for spreadsheets",
+          "correct": false
+        }
+      ],
+      "explanation": "Python's approachable syntax lowers the barrier to entry, and its massive library ecosystem means you rarely have to build things from scratch."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Input",
+        "items": [
+          "Scanning a barcode at checkout",
+          "Speaking to a voice assistant",
+          "Pressing the temperature button on a thermostat"
+        ]
+      },
+      {
+        "label": "Process",
+        "items": [
+          "A GPS app calculating the fastest route",
+          "A thermostat comparing the current temperature to your setting",
+          "A checkout system looking up a product's price"
+        ]
+      },
+      {
+        "label": "Output",
+        "items": [
+          "A smartwatch vibrating for a notification",
+          "A traffic light turning green",
+          "A receipt printing at the register"
+        ]
+      }
+    ]
+  }
+}

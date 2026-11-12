@@ -1,0 +1,247 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "producer_service",
+        "label": "Producer Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "message_queue",
+        "label": "Message Queue",
+        "icon": "layers",
+        "category": "messaging"
+      },
+      {
+        "id": "consumer_group",
+        "label": "Consumer Group",
+        "icon": "network",
+        "category": "compute"
+      },
+      {
+        "id": "worker_consumer",
+        "label": "Worker Consumer",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "monitoring",
+        "label": "Monitoring (Lag/CPU)",
+        "icon": "monitor",
+        "category": "observability"
+      },
+      {
+        "id": "autoscaler",
+        "label": "Autoscaler",
+        "icon": "zap",
+        "category": "orchestration"
+      },
+      {
+        "id": "results_store",
+        "label": "Results Store",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "producer_service",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "producer_service",
+        "to": "message_queue"
+      },
+      {
+        "from": "message_queue",
+        "to": "consumer_group"
+      },
+      {
+        "from": "consumer_group",
+        "to": "worker_consumer"
+      },
+      {
+        "from": "worker_consumer",
+        "to": "results_store"
+      },
+      {
+        "from": "message_queue",
+        "to": "monitoring"
+      },
+      {
+        "from": "worker_consumer",
+        "to": "monitoring"
+      },
+      {
+        "from": "monitoring",
+        "to": "autoscaler"
+      },
+      {
+        "from": "autoscaler",
+        "to": "consumer_group"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "message_queue",
+        "message": "Include a message queue so producers can buffer load and consumers can process asynchronously."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "consumer_group",
+        "message": "Include a consumer group to represent the scalable pool of consumers."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "worker_consumer",
+        "count": 2,
+        "message": "Add at least 2 worker consumers to demonstrate consumer scaling (increasing parallel processors)."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "monitoring",
+        "message": "Add monitoring to observe backlog/lag and resource usage, which drives scaling decisions."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "autoscaler",
+        "message": "Add an autoscaler to dynamically change the number of consumers based on monitoring signals."
+      },
+      {
+        "type": "path_exists",
+        "from": "producer_service",
+        "to": "results_store",
+        "message": "Ensure there is an end-to-end flow from producer to results store through the queue and consumers."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "producer_service",
+        "to": "worker_consumer",
+        "message": "Avoid connecting producers directly to consumers; the queue should decouple them and absorb bursts."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "message_queue",
+        "to": "worker_consumer",
+        "message": "Workers should be managed via a consumer group (coordination/partition assignment) rather than directly attached to the queue."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "producer_service",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "message_queue",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "consumer_group",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "worker_consumer",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_5",
+          "componentId": "worker_consumer",
+          "x": 400,
+          "y": 450
+        },
+        {
+          "id": "sol_6",
+          "componentId": "monitoring",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_7",
+          "componentId": "autoscaler",
+          "x": 250,
+          "y": 750
+        },
+        {
+          "id": "sol_8",
+          "componentId": "results_store",
+          "x": 250,
+          "y": 900
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_4",
+          "to": "sol_8"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_5",
+          "to": "sol_8"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_2",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_8",
+          "from": "sol_4",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_9",
+          "from": "sol_5",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_10",
+          "from": "sol_6",
+          "to": "sol_7"
+        },
+        {
+          "id": "se_11",
+          "from": "sol_7",
+          "to": "sol_3"
+        }
+      ]
+    },
+    "assignment": "Build a message-queue consumer-scaling architecture: include a queue between the producer and processing, represent a scalable consumer group with multiple worker consumers, and add monitoring plus an autoscaler driven by monitoring signals. Ensure there is an end-to-end path from the producer to a results store, and avoid directly wiring producers to workers (or the queue directly to workers) without the consumer group."
+  }
+}

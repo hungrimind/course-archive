@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of a programming language?",
+      "answers": [
+        {
+          "answer": "To let you write instructions in a human-friendly way that get translated into machine code",
+          "correct": true
+        },
+        {
+          "answer": "To replace the CPU with software",
+          "correct": false
+        },
+        {
+          "answer": "To store files on a hard drive",
+          "correct": false
+        },
+        {
+          "answer": "To let CPUs read English sentences directly",
+          "correct": false
+        }
+      ],
+      "explanation": "A programming language bridges human thinking and CPU instructions by letting you write readable code that a translator converts into machine code."
+    },
+    {
+      "question": "When you write x = 97 in a programming language, what happens behind the scenes?",
+      "answers": [
+        {
+          "answer": "The CPU directly understands the English text",
+          "correct": false
+        },
+        {
+          "answer": "The language translates it into the machine code the CPU needs",
+          "correct": true
+        },
+        {
+          "answer": "Nothing, the CPU ignores it",
+          "correct": false
+        },
+        {
+          "answer": "It is stored as plain text and never executed",
+          "correct": false
+        }
+      ],
+      "explanation": "You describe what you want, and the language automatically translates it into the binary instructions the CPU actually runs."
+    }
+  ]
+}

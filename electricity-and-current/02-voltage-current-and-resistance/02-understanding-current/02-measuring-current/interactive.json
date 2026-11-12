@@ -1,0 +1,28 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Milliamp range (mA)",
+        "items": [
+          "LED light (20mA)",
+          "Small sensor (5mA)"
+        ]
+      },
+      {
+        "label": "Low amp range (1-2A)",
+        "items": [
+          "Phone charger",
+          "USB device"
+        ]
+      },
+      {
+        "label": "High amp range (5A+)",
+        "items": [
+          "Toaster",
+          "Electric kettle",
+          "Hair dryer"
+        ]
+      }
+    ]
+  }
+}

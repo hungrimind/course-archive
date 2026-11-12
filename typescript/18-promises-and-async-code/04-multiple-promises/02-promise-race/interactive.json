@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Promise.race() resolves or rejects as soon as the first promise in the array settles.",
+        "correct": true,
+        "explanation": "Promise.race() returns a promise that settles with the same result (fulfilled or rejected) as the first promise in the array to settle."
+      },
+      {
+        "statement": "When Promise.race() settles, all remaining promises in the array are automatically cancelled.",
+        "correct": false,
+        "explanation": "The remaining promises are NOT cancelled. They keep running in the background, but their results are simply ignored by Promise.race()."
+      },
+      {
+        "statement": "A common use case for Promise.race() is implementing timeouts for async operations.",
+        "correct": true,
+        "explanation": "You can race your actual request against a timer promise. Whichever settles first wins, so if the timer resolves before the fetch, you know the request took too long."
+      },
+      {
+        "statement": "Promise.race() always resolves successfully with the fastest promise's value.",
+        "correct": false,
+        "explanation": "Promise.race() settles with whatever the first promise does. If the first promise to settle is a rejection, then Promise.race() also rejects."
+      }
+    ]
+  }
+}

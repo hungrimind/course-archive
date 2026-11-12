@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main role of the RouterDelegate?",
+      "answers": [
+        {
+          "answer": "It does nothing",
+          "correct": false
+        },
+        {
+          "answer": "Convert URLs to Flutter classes",
+          "correct": false
+        },
+        {
+          "answer": "Delegate the creation of the pages",
+          "correct": false
+        },
+        {
+          "answer": "To control the page list, and receive notifications about events in the system",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What is the main role of the RouteInformationParser?",
+      "answers": [
+        {
+          "answer": "It does nothing",
+          "correct": false
+        },
+        {
+          "answer": "Convert URLs to Flutter classes",
+          "correct": true
+        },
+        {
+          "answer": "Delegate the creation of the pages",
+          "correct": false
+        },
+        {
+          "answer": "To control the page list, and receive notifications about events in the system",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

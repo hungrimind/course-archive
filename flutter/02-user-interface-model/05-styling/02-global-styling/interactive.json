@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What widget is used to provide global styling in Flutter?",
+      "answers": [
+        {
+          "answer": "Style",
+          "correct": false
+        },
+        {
+          "answer": "GlobalStyle",
+          "correct": false
+        },
+        {
+          "answer": "AppStyle",
+          "correct": false
+        },
+        {
+          "answer": "Theme",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of InheritedWidget in Flutter?",
+      "answers": [
+        {
+          "answer": "To handle user interactions",
+          "correct": false
+        },
+        {
+          "answer": "To provide data down the widget tree without passing it directly",
+          "correct": true
+        },
+        {
+          "answer": "To create animations",
+          "correct": false
+        },
+        {
+          "answer": "To manage local state",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does MaterialApp provide theming capabilities?",
+      "answers": [
+        {
+          "answer": "It directly styles each widget",
+          "correct": false
+        },
+        {
+          "answer": "It creates a Theme widget that wraps an InheritedTheme",
+          "correct": true
+        },
+        {
+          "answer": "It uses CSS-like styling",
+          "correct": false
+        },
+        {
+          "answer": "It only provides colors",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

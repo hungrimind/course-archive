@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Session storage is always persistent and retains data across browser restarts.",
+        "correct": false,
+        "explanation": "Session storage is designed to be temporary and typically clears data when the session ends, such as when the browser is closed."
+      },
+      {
+        "statement": "Session storage is essential for maintaining state in the stateless HTTP protocol.",
+        "correct": true,
+        "explanation": "HTTP is a stateless protocol, meaning each request is independent. Session storage helps track data across multiple requests to maintain continuity in user sessions."
+      },
+      {
+        "statement": "Session storage can be used for storing long-term data such as user preferences that should persist between sessions.",
+        "correct": false,
+        "explanation": "Session storage is meant for short-term data and is cleared when the session ends. Long-term data should be stored using other methods like cookies or local storage."
+      },
+      {
+        "statement": "Session storage is usually used for data like user authentication status.",
+        "correct": true,
+        "explanation": "Session storage is ideal for storing temporary data such as user authentication status, which needs to be maintained only for the duration of a session."
+      }
+    ]
+  }
+}

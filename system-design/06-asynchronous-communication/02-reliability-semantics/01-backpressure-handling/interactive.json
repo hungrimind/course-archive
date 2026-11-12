@@ -1,0 +1,198 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "producer_service",
+        "label": "Producer Service",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "ingestion_api",
+        "label": "Ingestion API",
+        "icon": "globe",
+        "category": "network"
+      },
+      {
+        "id": "message_queue",
+        "label": "Message Queue",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "consumer_workers",
+        "label": "Consumer Workers",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "rate_limiter",
+        "label": "Rate Limiter / Throttler",
+        "icon": "shield",
+        "category": "security"
+      },
+      {
+        "id": "dead_letter_queue",
+        "label": "Dead Letter Queue (DLQ)",
+        "icon": "archive",
+        "category": "storage"
+      },
+      {
+        "id": "database",
+        "label": "Database",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "producer_service",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "producer_service",
+        "to": "ingestion_api"
+      },
+      {
+        "from": "ingestion_api",
+        "to": "rate_limiter"
+      },
+      {
+        "from": "rate_limiter",
+        "to": "message_queue"
+      },
+      {
+        "from": "message_queue",
+        "to": "consumer_workers"
+      },
+      {
+        "from": "consumer_workers",
+        "to": "database"
+      },
+      {
+        "from": "message_queue",
+        "to": "dead_letter_queue"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "rate_limiter",
+        "message": "Add a throttling/backpressure control point so the system can slow intake when downstream is overloaded."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "message_queue",
+        "message": "Add a buffer (queue) between producers and consumers to absorb bursts and prevent consumers from being overwhelmed."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "consumer_workers",
+        "count": 1,
+        "message": "Add at least one consumer worker to process queued messages."
+      },
+      {
+        "type": "path_exists",
+        "from": "producer_service",
+        "to": "database",
+        "message": "Ensure there is an end-to-end flow from producer to storage (producer → ingestion/throttle → queue → consumer → database)."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "producer_service",
+        "to": "message_queue",
+        "message": "Do not connect the producer directly to the queue in this exercise. Route through the ingestion API and throttling point so backpressure can be enforced consistently."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "message_queue",
+        "to": "database",
+        "message": "A queue should not write directly to the database; consumers must control processing rate and apply backpressure."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_producer",
+          "componentId": "producer_service",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_api",
+          "componentId": "ingestion_api",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_throttle",
+          "componentId": "rate_limiter",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_queue",
+          "componentId": "message_queue",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_consumer",
+          "componentId": "consumer_workers",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_db",
+          "componentId": "database",
+          "x": 250,
+          "y": 750
+        },
+        {
+          "id": "sol_dlq",
+          "componentId": "dead_letter_queue",
+          "x": 400,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_producer",
+          "to": "sol_api"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_api",
+          "to": "sol_throttle"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_throttle",
+          "to": "sol_queue"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_queue",
+          "to": "sol_consumer"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_consumer",
+          "to": "sol_db"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_queue",
+          "to": "sol_dlq"
+        }
+      ]
+    },
+    "assignment": "Design a data-ingestion pipeline that handles overload using backpressure. Include a throttling control point, a queue to buffer bursts, and at least one consumer that processes messages before writing to the database. Ensure there is an end-to-end path from the producer to the database, and avoid architectures where the producer bypasses the intake/throttling layer or where the queue writes directly to the database."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Why use a List instead of multiple individual variables like user1, user2, user3?",
+      "answers": [
+        {
+          "answer": "It automatically makes the app run faster.",
+          "correct": false
+        },
+        {
+          "answer": "It converts all values to strings.",
+          "correct": false
+        },
+        {
+          "answer": "It prevents null values everywhere in your program.",
+          "correct": false
+        },
+        {
+          "answer": "It keeps related values together in one variable, making code cleaner and easier to manage.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which declaration ensures the List can only contain String values?",
+      "answers": [
+        {
+          "answer": "List<String> users = ['user1', 'user2', 'user3'];",
+          "correct": true
+        },
+        {
+          "answer": "List users = ['user1', 'user2', 'user3'];",
+          "correct": false
+        },
+        {
+          "answer": "var users = ['user1', 'user2', 'user3'];",
+          "correct": false
+        },
+        {
+          "answer": "String users = ['user1', 'user2', 'user3'];",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When declaring a collection in Dart, what two things can you define?",
+      "answers": [
+        {
+          "answer": "The variable name and the amount of memory it uses",
+          "correct": false
+        },
+        {
+          "answer": "The file path and the import alias",
+          "correct": false
+        },
+        {
+          "answer": "The type of collection (e.g., List) and the type of each entry (e.g., String)",
+          "correct": true
+        },
+        {
+          "answer": "The print format and the debug level",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

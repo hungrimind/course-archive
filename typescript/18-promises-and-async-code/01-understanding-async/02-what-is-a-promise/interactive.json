@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What are the three possible states of a Promise?",
+      "answers": [
+        {
+          "answer": "waiting, done, error",
+          "correct": false
+        },
+        {
+          "answer": "pending, fulfilled, rejected",
+          "correct": true
+        },
+        {
+          "answer": "open, closed, failed",
+          "correct": false
+        },
+        {
+          "answer": "started, finished, cancelled",
+          "correct": false
+        }
+      ],
+      "explanation": "A Promise starts as pending (still waiting), then settles to either fulfilled (succeeded with a value) or rejected (failed with an error)."
+    },
+    {
+      "question": "What happens once a Promise settles to fulfilled or rejected?",
+      "answers": [
+        {
+          "answer": "It can be reset back to pending",
+          "correct": false
+        },
+        {
+          "answer": "It automatically retries if it was rejected",
+          "correct": false
+        },
+        {
+          "answer": "It stays in that state forever",
+          "correct": true
+        },
+        {
+          "answer": "It is deleted from memory immediately",
+          "correct": false
+        }
+      ],
+      "explanation": "Once a Promise settles to fulfilled or rejected, its state is locked. It cannot change again. This is a core guarantee of the Promise design."
+    }
+  ]
+}

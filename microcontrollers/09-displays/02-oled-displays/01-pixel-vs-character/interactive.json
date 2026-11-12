@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Character LCD",
+        "items": [
+          "Fixed built-in font",
+          "Send a character code to display text",
+          "Grid of cells, not individual pixels"
+        ]
+      },
+      {
+        "label": "OLED Display",
+        "items": [
+          "Control every individual pixel",
+          "Requires a font file to render text",
+          "Can draw shapes, icons, and animations"
+        ]
+      }
+    ]
+  }
+}

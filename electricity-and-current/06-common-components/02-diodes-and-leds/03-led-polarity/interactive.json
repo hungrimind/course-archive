@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "The longer leg of an LED is the cathode (negative side).",
+        "correct": false,
+        "explanation": "The longer leg is the anode (positive side). The shorter leg is the cathode (negative side)."
+      },
+      {
+        "statement": "If you connect an LED backwards, it will be damaged permanently.",
+        "correct": false,
+        "explanation": "Connecting an LED backwards simply means it won't light up. No harm is done -- just flip it around to fix it."
+      },
+      {
+        "statement": "The flat edge on an LED's plastic casing marks the cathode (negative side).",
+        "correct": true,
+        "explanation": "The flat edge on the LED casing is a visual indicator for the cathode, which is helpful when the legs have been trimmed to equal length."
+      },
+      {
+        "statement": "LEDs work regardless of which direction they are connected.",
+        "correct": false,
+        "explanation": "LEDs only work when connected the correct way around, with the anode to positive and cathode to negative. They are directional like all diodes."
+      }
+    ]
+  }
+}

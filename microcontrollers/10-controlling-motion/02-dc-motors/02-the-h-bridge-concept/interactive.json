@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "How is an H-bridge arranged?",
+      "answers": [
+        {
+          "answer": "Two switches in a straight line with the motor at one end",
+          "correct": false
+        },
+        {
+          "answer": "Four switches in an H shape with the motor in the middle crossbar",
+          "correct": true
+        },
+        {
+          "answer": "Six switches in a circle around the motor",
+          "correct": false
+        },
+        {
+          "answer": "One switch connected to each motor terminal",
+          "correct": false
+        }
+      ],
+      "explanation": "An H-bridge uses four switches arranged in an H shape, with the motor placed in the middle crossbar connecting the two sides."
+    },
+    {
+      "question": "How do you reverse the direction of a motor using an H-bridge?",
+      "answers": [
+        {
+          "answer": "Increase the voltage to the motor",
+          "correct": false
+        },
+        {
+          "answer": "Swap which pair of diagonal switches are closed",
+          "correct": true
+        },
+        {
+          "answer": "Turn all four switches on at once",
+          "correct": false
+        },
+        {
+          "answer": "Disconnect and reconnect the motor wires",
+          "correct": false
+        }
+      ],
+      "explanation": "Closing the top-left and bottom-right switches spins the motor one way. Closing the top-right and bottom-left switches reverses the current, spinning it the other way."
+    },
+    {
+      "question": "What do the IN1 and IN2 GPIO pins on a motor driver chip control?",
+      "answers": [
+        {
+          "answer": "The motor's speed",
+          "correct": false
+        },
+        {
+          "answer": "The motor's voltage",
+          "correct": false
+        },
+        {
+          "answer": "The motor's direction",
+          "correct": true
+        },
+        {
+          "answer": "The motor's braking force",
+          "correct": false
+        }
+      ],
+      "explanation": "The IN1 and IN2 pins are set to HIGH or LOW to pick which direction current flows through the H-bridge, determining the motor's rotation direction."
+    }
+  ]
+}

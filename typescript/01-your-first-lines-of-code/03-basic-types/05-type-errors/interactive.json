@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "TypeScript catches type errors before your code runs.",
+        "correct": true,
+        "explanation": "TypeScript performs type checking at compile time, flagging type mismatches before the code is executed. This prevents bugs from reaching runtime."
+      },
+      {
+        "statement": "After declaring `let name = \"Alice\"`, you can later assign `name = 100` without errors.",
+        "correct": false,
+        "explanation": "TypeScript infers that name is a string from the initial assignment. Trying to assign a number to it causes a type error: 'Type number is not assignable to type string'."
+      },
+      {
+        "statement": "Type errors in TypeScript only appear when you run the program.",
+        "correct": false,
+        "explanation": "Type errors are caught at compile time, before the code runs. This is one of TypeScript's biggest advantages over plain JavaScript."
+      }
+    ]
+  }
+}

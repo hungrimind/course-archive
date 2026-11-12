@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Valid variable name",
+        "items": [
+          "player1",
+          "userName",
+          "itemCount"
+        ]
+      },
+      {
+        "label": "Invalid variable name",
+        "items": [
+          "1player",
+          "item-count",
+          "let"
+        ]
+      },
+      {
+        "label": "Valid but poorly named",
+        "items": [
+          "a",
+          "x",
+          "d2"
+        ]
+      }
+    ]
+  }
+}

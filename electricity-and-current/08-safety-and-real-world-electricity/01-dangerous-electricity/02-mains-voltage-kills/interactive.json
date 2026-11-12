@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What type of power do standard wall outlets deliver?",
+      "answers": [
+        {
+          "answer": "DC power at low voltage",
+          "correct": false
+        },
+        {
+          "answer": "AC power at 120V or 230V",
+          "correct": true
+        },
+        {
+          "answer": "AC power at 12V",
+          "correct": false
+        },
+        {
+          "answer": "DC power at 230V",
+          "correct": false
+        }
+      ],
+      "explanation": "Wall outlets deliver AC (alternating current) power at either 120V (North America) or 230V (most of the world), both of which are far above safe levels."
+    },
+    {
+      "question": "Why should beginners never work on mains-powered circuits?",
+      "answers": [
+        {
+          "answer": "The components are too expensive to replace",
+          "correct": false
+        },
+        {
+          "answer": "Mains voltage is more than enough to push lethal current through your body",
+          "correct": true
+        },
+        {
+          "answer": "Mains circuits are too complicated to understand",
+          "correct": false
+        },
+        {
+          "answer": "It voids your home insurance automatically",
+          "correct": false
+        }
+      ],
+      "explanation": "Mains voltage (120V or 230V) can easily push enough current through a human body to kill. This work requires trained electricians, not beginners."
+    },
+    {
+      "question": "Which of the following activities should you NEVER do as a beginner?",
+      "answers": [
+        {
+          "answer": "Build a circuit on a breadboard with a 5V USB supply",
+          "correct": false
+        },
+        {
+          "answer": "Connect an LED to a battery with a resistor",
+          "correct": false
+        },
+        {
+          "answer": "Open electrical panels or modify wall outlets",
+          "correct": true
+        },
+        {
+          "answer": "Program an Arduino board",
+          "correct": false
+        }
+      ],
+      "explanation": "Opening electrical panels and modifying wall outlets involves mains voltage, which is extremely dangerous. These tasks require trained electricians."
+    }
+  ]
+}

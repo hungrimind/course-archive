@@ -1,0 +1,26 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "The LoggingService class handles writing logs and sending alerts. To adhere to SRP, you should separate it into "
+      },
+      {
+        "type": "blank",
+        "answer": "two"
+      },
+      {
+        "type": "code",
+        "value": " distinct classes: one focusing on logging and another on "
+      },
+      {
+        "type": "blank",
+        "answer": "alerts"
+      },
+      {
+        "type": "code",
+        "value": "."
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary tradeoff when enforcing strict message order in asynchronous systems?",
+      "answers": [
+        {
+          "answer": "Increased complexity in code",
+          "correct": false
+        },
+        {
+          "answer": "Higher likelihood of errors",
+          "correct": false
+        },
+        {
+          "answer": "Decreased scalability",
+          "correct": true
+        },
+        {
+          "answer": "Improved security",
+          "correct": false
+        }
+      ],
+      "explanation": "Enforcing strict message order can lead to decreased scalability because messages must be processed sequentially, limiting the system's ability to handle large volumes of data efficiently."
+    },
+    {
+      "question": "In what scenario should you prioritize strict ordering over speed in message processing?",
+      "answers": [
+        {
+          "answer": "When handling non-critical notifications",
+          "correct": false
+        },
+        {
+          "answer": "When processing tasks with no dependencies",
+          "correct": false
+        },
+        {
+          "answer": "When dealing with financial transactions",
+          "correct": true
+        },
+        {
+          "answer": "When updating non-time-sensitive logs",
+          "correct": false
+        }
+      ],
+      "explanation": "Strict ordering should be prioritized in scenarios like financial transactions, where the sequence of operations is crucial for correctness and consistency."
+    }
+  ]
+}

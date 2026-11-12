@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "The three main parts of a microcontroller are a "
+      },
+      {
+        "type": "blank",
+        "answer": "processor"
+      },
+      {
+        "type": "code",
+        "value": " that runs your code, "
+      },
+      {
+        "type": "blank",
+        "answer": "memory"
+      },
+      {
+        "type": "code",
+        "value": " that stores your program, and "
+      },
+      {
+        "type": "blank",
+        "answer": "I/O pins"
+      },
+      {
+        "type": "code",
+        "value": " that connect to the outside world."
+      }
+    ],
+    "options": [
+      "compiler",
+      "GPU",
+      "display"
+    ]
+  }
+}

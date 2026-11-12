@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is structural repetition in programming?",
+      "answers": [
+        {
+          "answer": "Identical lines of code repeating within a function",
+          "correct": false
+        },
+        {
+          "answer": "Similar code patterns or structures appearing across different parts of a program",
+          "correct": true
+        },
+        {
+          "answer": "Reusing variables within a loop",
+          "correct": false
+        },
+        {
+          "answer": "Copy-pasting code from external sources",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does using a single `calculateArea` function help with structural repetition?",
+      "answers": [
+        {
+          "answer": "By ensuring consistent logic for different tasks",
+          "correct": false
+        },
+        {
+          "answer": "By eliminating the need for any parameters",
+          "correct": false
+        },
+        {
+          "answer": "By consolidating related functionality into one place, reducing duplication",
+          "correct": true
+        },
+        {
+          "answer": "By allowing only one shape type to be calculated",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of the `formatAreaLabel` function in the example?",
+      "answers": [
+        {
+          "answer": "To calculate the area of a shape based on its type",
+          "correct": false
+        },
+        {
+          "answer": "To format and print the area of a shape in a readable string",
+          "correct": true
+        },
+        {
+          "answer": "To log the shape's dimension to a file",
+          "correct": false
+        },
+        {
+          "answer": "To convert the area value to integer format",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

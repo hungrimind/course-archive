@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What makes a file a \"module\" in TypeScript?",
+      "answers": [
+        {
+          "answer": "It must be inside a special modules folder",
+          "correct": false
+        },
+        {
+          "answer": "It contains at least one export or import statement",
+          "correct": true
+        },
+        {
+          "answer": "It must have the .module.ts file extension",
+          "correct": false
+        },
+        {
+          "answer": "It must be registered in a configuration file",
+          "correct": false
+        }
+      ],
+      "explanation": "A file becomes a module when it contains an export or import statement. This is what distinguishes a module from a plain script file."
+    },
+    {
+      "question": "What happens to variables declared inside a module?",
+      "answers": [
+        {
+          "answer": "They are automatically available to all other files",
+          "correct": false
+        },
+        {
+          "answer": "They are only accessible within that module unless explicitly exported",
+          "correct": true
+        },
+        {
+          "answer": "They are shared globally across the entire project",
+          "correct": false
+        },
+        {
+          "answer": "They must be declared with a special keyword to stay private",
+          "correct": false
+        }
+      ],
+      "explanation": "Each module has its own scope. Variables stay private to the module by default and are only visible to other files when explicitly exported. This prevents accidental name collisions."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "ASCII Encoding",
+        "items": [
+          "Covers English letters and basic symbols",
+          "A = 65, B = 66",
+          "Uses 7 or 8 bits per character"
+        ]
+      },
+      {
+        "label": "Unicode",
+        "items": [
+          "Supports all world languages and emoji",
+          "Extends ASCII to handle millions of characters",
+          "Required for Chinese, Arabic, or Japanese text"
+        ]
+      },
+      {
+        "label": "Both Systems",
+        "items": [
+          "Store text as sequences of numbers",
+          "Assign a unique number to each character"
+        ]
+      }
+    ]
+  }
+}

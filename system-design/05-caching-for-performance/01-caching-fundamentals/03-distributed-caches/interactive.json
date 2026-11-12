@@ -1,0 +1,189 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "globe",
+        "category": "entry"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "app_servers",
+        "label": "App Server Fleet",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "cache_client",
+        "label": "Cache Client Library / Proxy",
+        "icon": "layers",
+        "category": "cache"
+      },
+      {
+        "id": "cache_node",
+        "label": "Cache Node",
+        "icon": "hard-drive",
+        "category": "cache"
+      },
+      {
+        "id": "database",
+        "label": "Primary Database",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "load_balancer"
+      },
+      {
+        "from": "load_balancer",
+        "to": "app_servers"
+      },
+      {
+        "from": "app_servers",
+        "to": "cache_client"
+      },
+      {
+        "from": "cache_client",
+        "to": "cache_node"
+      },
+      {
+        "from": "app_servers",
+        "to": "database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "cache_client",
+        "message": "Add a cache-aware client/proxy layer so the app can route keys to the right cache node(s) (common in distributed caches)."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "cache_node",
+        "count": 2,
+        "message": "A distributed cache must run on multiple machines, so add at least two cache nodes."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "app_servers",
+        "message": "Requests must reach the app tier (e.g., Client → Load Balancer → App Servers)."
+      },
+      {
+        "type": "path_exists",
+        "from": "app_servers",
+        "to": "cache_node",
+        "message": "The app tier must be able to reach cache nodes through the cache client/proxy layer."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "app_servers",
+        "to": "cache_node",
+        "message": "Avoid connecting app servers directly to cache nodes here. Use the cache client/proxy layer to handle sharding/replication routing."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "cache_node",
+        "to": "database",
+        "message": "Cache nodes should not query the database directly; the application owns cache-miss reads and populates the cache."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_lb",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_app",
+          "componentId": "app_servers",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_cache_client",
+          "componentId": "cache_client",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_cache_node_a",
+          "componentId": "cache_node",
+          "x": 100,
+          "y": 600
+        },
+        {
+          "id": "sol_cache_node_b",
+          "componentId": "cache_node",
+          "x": 400,
+          "y": 600
+        },
+        {
+          "id": "sol_db",
+          "componentId": "database",
+          "x": 250,
+          "y": 750
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_lb"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_lb",
+          "to": "sol_app"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_app",
+          "to": "sol_cache_client"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_cache_client",
+          "to": "sol_cache_node_a"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_cache_client",
+          "to": "sol_cache_node_b"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_app",
+          "to": "sol_db"
+        }
+      ]
+    },
+    "assignment": "Build a distributed-cache architecture where client requests reach the application tier, the application uses a cache client/proxy layer (not direct cache-node connections), and the cache is distributed across multiple cache nodes. Ensure the application can still read from the primary database, and avoid cache nodes talking directly to the database."
+  }
+}

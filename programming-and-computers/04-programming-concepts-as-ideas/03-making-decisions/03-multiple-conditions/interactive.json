@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Simple If/Else (Two Paths)",
+        "items": [
+          "Is the user logged in or not?",
+          "Is the light on or off?",
+          "Did the payment succeed or fail?"
+        ]
+      },
+      {
+        "label": "Chained Conditions (Many Paths)",
+        "items": [
+          "Grade the score as A, B, C, D, or F",
+          "Show different shipping options by region",
+          "Set the ticket price by age group"
+        ]
+      }
+    ]
+  }
+}

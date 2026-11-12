@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "According to the lesson, what is the most effective way to learn the material presented in this course?",
+      "answers": [
+        {
+          "answer": "By watching all the supplementary video content first.",
+          "correct": false
+        },
+        {
+          "answer": "By reading the official Dart documentation from start to finish.",
+          "correct": false
+        },
+        {
+          "answer": "By actively engaging with the interactive coding and quiz challenges.",
+          "correct": true
+        },
+        {
+          "answer": "By immediately asking for help on Discord when you start a lesson.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

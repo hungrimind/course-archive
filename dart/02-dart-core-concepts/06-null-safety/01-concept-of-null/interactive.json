@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "Why is using a special value like -1 to mean \"not entered\" a bad idea?",
+      "answers": [
+        {
+          "answer": "It makes the program run slower",
+          "correct": false
+        },
+        {
+          "answer": "You must manually check for -1 everywhere and it doesn't work for all data types",
+          "correct": true
+        },
+        {
+          "answer": "It increases memory usage",
+          "correct": false
+        },
+        {
+          "answer": "It automatically converts to null later",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the context of this lesson, what does null represent?",
+      "answers": [
+        {
+          "answer": "Zero",
+          "correct": false
+        },
+        {
+          "answer": "An empty string",
+          "correct": false
+        },
+        {
+          "answer": "A special value meaning \"no value\" or \"not set\"",
+          "correct": true
+        },
+        {
+          "answer": "The default value for every variable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A date of birth field is optional. If the user doesn't enter anything, what's the best way to represent that?",
+      "answers": [
+        {
+          "answer": "year = 0; month = 0; day = 0;",
+          "correct": false
+        },
+        {
+          "answer": "year = -1; month = -1; day = -1;",
+          "correct": false
+        },
+        {
+          "answer": "year = null; month = null; day = null;",
+          "correct": true
+        },
+        {
+          "answer": "Leave the previous values unchanged",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A user doesn't enter their name (an optional field). What should your program store to represent \"not entered\"?",
+      "answers": [
+        {
+          "answer": "null",
+          "correct": true
+        },
+        {
+          "answer": "\"\"",
+          "correct": false
+        },
+        {
+          "answer": "\"unknown\"",
+          "correct": false
+        },
+        {
+          "answer": "-1",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

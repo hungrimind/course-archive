@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary role of a compiler?",
+      "answers": [
+        {
+          "answer": "To run code line by line, translating it just in time for the computer to execute.",
+          "correct": false
+        },
+        {
+          "answer": "To translate the entire program from a high-level language into binary code before the program is run.",
+          "correct": true
+        },
+        {
+          "answer": "To check for spelling and grammar mistakes in your code comments.",
+          "correct": false
+        },
+        {
+          "answer": "To automatically format your code to make it more readable.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "You've written a Dart program named `my_app.dart`. You want to create a standalone executable file that you can share with a friend. Which command should you use?",
+      "answers": [
+        {
+          "answer": "dart run my_app.dart",
+          "correct": false
+        },
+        {
+          "answer": "xxd -b my_app.dart",
+          "correct": false
+        },
+        {
+          "answer": "dart compile exe my_app.dart",
+          "correct": true
+        },
+        {
+          "answer": "dart create my_app.dart",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The `.exe` file produced by the Dart compiler is ultimately made up of what?",
+      "answers": [
+        {
+          "answer": "The original Dart source code, just packaged differently.",
+          "correct": false
+        },
+        {
+          "answer": "A list of instructions for an interpreter.",
+          "correct": false
+        },
+        {
+          "answer": "ASCII text representing the program's logic.",
+          "correct": false
+        },
+        {
+          "answer": "Binary code (1s and 0s) that the computer's processor can execute directly.",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

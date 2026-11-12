@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "In Object-Oriented Programming (OOP) with Dart, what is the primary purpose of inheritance?",
+      "answers": [
+        {
+          "answer": "To define a new type of variable that can store multiple data types.",
+          "correct": false
+        },
+        {
+          "answer": "To allow a new class to reuse properties and methods from an existing class.",
+          "correct": true
+        },
+        {
+          "answer": "To create a loop that executes a block of code a specified number of times.",
+          "correct": false
+        },
+        {
+          "answer": "To combine multiple strings into a single string.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which keyword is used in Dart to indicate that a class is inheriting from another class?",
+      "answers": [
+        {
+          "answer": "implements",
+          "correct": false
+        },
+        {
+          "answer": "uses",
+          "correct": false
+        },
+        {
+          "answer": "inherits",
+          "correct": false
+        },
+        {
+          "answer": "extends",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Consider the following Dart code:\n```dart\nclass Animal {\n  void eat() {\n    print('Eating');\n  }\n}\n\nclass Dog extends Animal {\n  void bark() {\n    print('Woof!');\n  }\n}\n\nvoid main() {\n  Dog myDog = Dog();\n  myDog.eat(); // Line A\n  myDog.bark(); // Line B\n}\n```\nWhich statement best describes why `myDog.eat();` (Line A) works?",
+      "answers": [
+        {
+          "answer": "The Dog class implicitly creates an eat() method because it is an Animal.",
+          "correct": false
+        },
+        {
+          "answer": "The Dog class directly defines its own eat() method.",
+          "correct": false
+        },
+        {
+          "answer": "The Dog class inherits the eat() method from its Animal parent class.",
+          "correct": true
+        },
+        {
+          "answer": "eat() is a global function that can be called by any object.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Public Members",
+        "items": [
+          "Accessible from anywhere",
+          "Default access level",
+          "Can be read by external code"
+        ]
+      },
+      {
+        "label": "Private Members",
+        "items": [
+          "Only accessible inside the class",
+          "Must use a method to expose the value",
+          "Hides implementation details"
+        ]
+      }
+    ]
+  }
+}

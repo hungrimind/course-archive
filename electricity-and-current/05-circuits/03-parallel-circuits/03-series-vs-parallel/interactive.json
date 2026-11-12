@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Series Circuit",
+        "items": [
+          "One single path for current",
+          "Same current through every component",
+          "Voltage is shared across components"
+        ]
+      },
+      {
+        "label": "Parallel Circuit",
+        "items": [
+          "Multiple paths for current",
+          "Full voltage on each branch",
+          "Current is shared across branches"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "api_service",
+        "label": "API Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "query_router",
+        "label": "Query Router",
+        "icon": "network",
+        "category": "compute"
+      },
+      {
+        "id": "shard_1",
+        "label": "Shard 1 DB",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "shard_2",
+        "label": "Shard 2 DB",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "scatter_gather_worker",
+        "label": "Scatter-Gather / Merge",
+        "icon": "layers",
+        "category": "compute"
+      },
+      {
+        "id": "shard_key_directory",
+        "label": "Shard Key Directory",
+        "icon": "archive",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "api_service"
+      },
+      {
+        "from": "api_service",
+        "to": "query_router"
+      },
+      {
+        "from": "query_router",
+        "to": "shard_key_directory"
+      },
+      {
+        "from": "query_router",
+        "to": "shard_1"
+      },
+      {
+        "from": "query_router",
+        "to": "shard_2"
+      },
+      {
+        "from": "query_router",
+        "to": "scatter_gather_worker"
+      },
+      {
+        "from": "scatter_gather_worker",
+        "to": "shard_1"
+      },
+      {
+        "from": "scatter_gather_worker",
+        "to": "shard_2"
+      },
+      {
+        "from": "scatter_gather_worker",
+        "to": "api_service"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "api_service",
+        "message": "Add an API Service so the client doesn't talk to the sharded data layer directly."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "query_router",
+        "message": "Add a Query Router to route single-shard requests and coordinate cross-shard queries."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "database",
+        "count": 2,
+        "message": "Use at least two database shards to demonstrate why cross-shard queries require multiple shard calls."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "scatter_gather_worker",
+        "message": "Include a scatter-gather/merge component to represent fan-out to multiple shards and merging results for cross-shard queries."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "api_service",
+        "to": "shard_1",
+        "message": "Don't connect the API Service directly to shards. Go through the Query Router to avoid embedding shard topology in application logic."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "api_service",
+        "to": "shard_2",
+        "message": "Don't connect the API Service directly to shards. Use the Query Router so shard selection stays centralized."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_api",
+          "componentId": "api_service",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_router",
+          "componentId": "query_router",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_directory",
+          "componentId": "shard_key_directory",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_merge",
+          "componentId": "scatter_gather_worker",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_shard1",
+          "componentId": "shard_1",
+          "x": 100,
+          "y": 750
+        },
+        {
+          "id": "sol_shard2",
+          "componentId": "shard_2",
+          "x": 400,
+          "y": 750
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_api"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_api",
+          "to": "sol_router"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_router",
+          "to": "sol_directory"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_router",
+          "to": "sol_merge"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_merge",
+          "to": "sol_shard1"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_merge",
+          "to": "sol_shard2"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_merge",
+          "to": "sol_api"
+        }
+      ]
+    },
+    "assignment": "Build a sharded query path that highlights why cross-shard queries are expensive. Include an API Service and a Query Router, and model cross-shard reads by using at least two database shards plus a scatter-gather/merge component. Ensure the API Service does not connect directly to any shard."
+  }
+}

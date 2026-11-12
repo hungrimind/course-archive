@@ -1,0 +1,40 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "A European appliance operates at "
+      },
+      {
+        "type": "blank",
+        "answer": "50"
+      },
+      {
+        "type": "code",
+        "value": " Hz. Each cycle has two direction changes, so the current reverses "
+      },
+      {
+        "type": "blank",
+        "answer": "100"
+      },
+      {
+        "type": "code",
+        "value": " times per second. The unit used to measure this frequency is called "
+      },
+      {
+        "type": "blank",
+        "answer": "hertz"
+      },
+      {
+        "type": "code",
+        "value": "."
+      }
+    ],
+    "options": [
+      "60",
+      "watts",
+      "120",
+      "amperes"
+    ]
+  }
+}

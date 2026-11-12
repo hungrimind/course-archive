@@ -1,0 +1,40 @@
+{
+  "ohmscalculator": {
+    "showFormulaTriangle": true,
+    "problems": [
+      {
+        "given": {
+          "voltage": 5,
+          "current": 0.02
+        },
+        "solveFor": "resistance",
+        "unit": "Ω",
+        "hint": "R = V ÷ I",
+        "explanation": "5V ÷ 0.02A = 250Ω",
+        "answer": 250
+      },
+      {
+        "given": {
+          "voltage": 9,
+          "current": 0.03
+        },
+        "solveFor": "resistance",
+        "unit": "Ω",
+        "hint": "R = V ÷ I",
+        "explanation": "9V ÷ 0.03A = 300Ω",
+        "answer": 300
+      },
+      {
+        "given": {
+          "voltage": 3.3,
+          "current": 0.015
+        },
+        "solveFor": "resistance",
+        "unit": "Ω",
+        "hint": "R = V ÷ I",
+        "explanation": "3.3V ÷ 0.015A = 220Ω",
+        "answer": 220
+      }
+    ]
+  }
+}

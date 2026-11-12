@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Dead-letter queues are used to store successfully processed messages for future reference.",
+        "correct": false,
+        "explanation": "Dead-letter queues are specifically used to store messages that cannot be processed successfully, not those that have been successfully processed."
+      },
+      {
+        "statement": "Messages sent to a dead-letter queue may require manual handling to resolve processing issues.",
+        "correct": true,
+        "explanation": "Messages in a dead-letter queue indicate that they could not be processed due to errors or retry limits being exceeded, and often require manual intervention to address the underlying issues."
+      },
+      {
+        "statement": "Once a message is sent to a dead-letter queue, it indicates permanent failure and cannot be retried.",
+        "correct": false,
+        "explanation": "Messages in a dead-letter queue are not necessarily indicative of permanent failure. They can often be analyzed, corrected, and retried after addressing the issue that caused the failure."
+      },
+      {
+        "statement": "Monitoring and analyzing dead-letter queues can help improve the resilience of a system.",
+        "correct": true,
+        "explanation": "Regularly monitoring a dead-letter queue helps in identifying patterns in message failures, which can provide insightful data to improve system handling and prevent future errors."
+      }
+    ]
+  }
+}

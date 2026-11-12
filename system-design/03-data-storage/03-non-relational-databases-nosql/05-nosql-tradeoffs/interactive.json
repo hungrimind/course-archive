@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "NoSQL databases are always more consistent than relational databases.",
+        "correct": false,
+        "explanation": "NoSQL databases often sacrifice consistency for scalability and flexibility, unlike relational databases that prioritize strict consistency."
+      },
+      {
+        "statement": "One of the main benefits of NoSQL databases is their ability to scale horizontally.",
+        "correct": true,
+        "explanation": "NoSQL databases are designed to scale horizontally across many servers, which allows them to efficiently manage large volumes of unstructured data."
+      },
+      {
+        "statement": "NoSQL databases are best suited for applications that require strict transactional consistency.",
+        "correct": false,
+        "explanation": "NoSQL databases are not ideal for applications needing strict transactional consistency because they often prioritize scalability and flexibility over consistency."
+      },
+      {
+        "statement": "Managing data in NoSQL databases can become complex due to their flexibility.",
+        "correct": true,
+        "explanation": "The flexibility of NoSQL databases can lead to complex data management, as the lack of a fixed schema may result in potential inconsistencies and complex queries."
+      }
+    ]
+  }
+}

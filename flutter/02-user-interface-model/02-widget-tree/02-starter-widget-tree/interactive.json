@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the entry point for a Flutter application?",
+      "answers": [
+        {
+          "answer": "MaterialApp",
+          "correct": false
+        },
+        {
+          "answer": "MyApp",
+          "correct": false
+        },
+        {
+          "answer": "main",
+          "correct": true
+        },
+        {
+          "answer": "runApp",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of the Scaffold widget?",
+      "answers": [
+        {
+          "answer": "To provide theming for the app",
+          "correct": false
+        },
+        {
+          "answer": "To hold all UI elements on the screen",
+          "correct": true
+        },
+        {
+          "answer": "To manage state",
+          "correct": false
+        },
+        {
+          "answer": "To create animations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does MaterialApp provide to your application?",
+      "answers": [
+        {
+          "answer": "Only Android styling",
+          "correct": false
+        },
+        {
+          "answer": "Only navigation capabilities",
+          "correct": false
+        },
+        {
+          "answer": "Baseline functions including theming, navigation, and localization",
+          "correct": true
+        },
+        {
+          "answer": "Only state management",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

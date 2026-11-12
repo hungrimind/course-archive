@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main focus of functional requirements?",
+      "answers": [
+        {
+          "answer": "How the system operates internally",
+          "correct": false
+        },
+        {
+          "answer": "What the system should do",
+          "correct": true
+        },
+        {
+          "answer": "The design aesthetics of the system",
+          "correct": false
+        },
+        {
+          "answer": "The financial cost of system development",
+          "correct": false
+        }
+      ],
+      "explanation": "Functional requirements focus on 'what' the system must do to meet user needs, not 'how' it is implemented."
+    },
+    {
+      "question": "Which of the following is an example of a functional requirement?",
+      "answers": [
+        {
+          "answer": "The system must be secure against data breaches",
+          "correct": false
+        },
+        {
+          "answer": "Users must be able to reset their passwords",
+          "correct": true
+        },
+        {
+          "answer": "The interface should be user-friendly",
+          "correct": false
+        },
+        {
+          "answer": "Data processing should use less than 2GB of RAM",
+          "correct": false
+        }
+      ],
+      "explanation": "A requirement that specifies an action the system must perform, such as password reset capability, is a functional requirement."
+    },
+    {
+      "question": "Why must functional requirements be clear and testable?",
+      "answers": [
+        {
+          "answer": "To enhance system security",
+          "correct": false
+        },
+        {
+          "answer": "To ensure they are implemented correctly",
+          "correct": true
+        },
+        {
+          "answer": "To reduce the cost of system development",
+          "correct": false
+        },
+        {
+          "answer": "To increase the speed of system operation",
+          "correct": false
+        }
+      ],
+      "explanation": "Clear and testable functional requirements facilitate correct implementation by providing specific criteria for what the system must do."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "System design should focus solely on fulfilling user needs, without considering constraints like cost and performance.",
+        "correct": false,
+        "explanation": "While meeting user needs is crucial, system design must also balance constraints such as performance, scalability, and cost to be truly effective."
+      },
+      {
+        "statement": "Flexibility is an important goal in system design because it allows the system to adapt to changing requirements.",
+        "correct": true,
+        "explanation": "Flexibility is crucial in system design as it enables the system to incorporate changes and adapt over time, which is essential for long-term success."
+      },
+      {
+        "statement": "Achieving high performance in a system design is more important than maintainability and reliability.",
+        "correct": false,
+        "explanation": "Performance is important, but maintainability and reliability are equally crucial, as they ensure the system can perform well and evolve over time without excessive costs or breakdowns."
+      },
+      {
+        "statement": "Scalability in system design refers to the ability of a system to maintain or improve performance as it is expanded to accommodate growth.",
+        "correct": true,
+        "explanation": "Scalability ensures a system can handle increasing loads or expanded scope without a decline in performance, making it vital for systems expected to grow."
+      }
+    ]
+  }
+}

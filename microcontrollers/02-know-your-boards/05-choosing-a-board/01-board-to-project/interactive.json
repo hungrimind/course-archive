@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Raspberry Pi",
+        "items": [
+          "Needs a desktop or display",
+          "Camera-based project"
+        ]
+      },
+      {
+        "label": "ESP32",
+        "items": [
+          "Posting sensor data to the cloud",
+          "Controlling a device via Bluetooth"
+        ]
+      },
+      {
+        "label": "Pico",
+        "items": [
+          "Cheap and Python-friendly",
+          "Simple project with no internet needed"
+        ]
+      }
+    ]
+  }
+}

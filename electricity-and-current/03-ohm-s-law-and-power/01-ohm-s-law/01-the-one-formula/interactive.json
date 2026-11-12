@@ -1,0 +1,40 @@
+{
+  "ohmscalculator": {
+    "showFormulaTriangle": true,
+    "problems": [
+      {
+        "given": {
+          "voltage": 6,
+          "resistance": 300
+        },
+        "solveFor": "current",
+        "unit": "A",
+        "hint": "I = V ÷ R",
+        "explanation": "6V ÷ 300Ω = 0.02A (20mA)",
+        "answer": 0.02
+      },
+      {
+        "given": {
+          "current": 0.05,
+          "resistance": 100
+        },
+        "solveFor": "voltage",
+        "unit": "V",
+        "hint": "V = I × R",
+        "explanation": "0.05A × 100Ω = 5V",
+        "answer": 5
+      },
+      {
+        "given": {
+          "voltage": 12,
+          "current": 0.003
+        },
+        "solveFor": "resistance",
+        "unit": "Ω",
+        "hint": "R = V ÷ I",
+        "explanation": "12V ÷ 0.003A = 4000Ω (4kΩ)",
+        "answer": 4000
+      }
+    ]
+  }
+}

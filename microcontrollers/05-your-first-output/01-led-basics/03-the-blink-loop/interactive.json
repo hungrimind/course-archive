@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "from gpiozero import LED\nfrom time import sleep\n\nled = LED(17)\nwhile True:\n    led."
+      },
+      {
+        "type": "blank",
+        "answer": "toggle"
+      },
+      {
+        "type": "code",
+        "value": "()\n    "
+      },
+      {
+        "type": "blank",
+        "answer": "sleep"
+      },
+      {
+        "type": "code",
+        "value": "(0.5)"
+      }
+    ],
+    "options": [
+      "on",
+      "blink",
+      "wait"
+    ]
+  }
+}

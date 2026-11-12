@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of separating state into different ChangeNotifiers?",
+      "answers": [
+        {
+          "answer": "To make the code run faster",
+          "correct": false
+        },
+        {
+          "answer": "To separate business logic from UI code",
+          "correct": true
+        },
+        {
+          "answer": "To use less memory",
+          "correct": false
+        },
+        {
+          "answer": "To write more code",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

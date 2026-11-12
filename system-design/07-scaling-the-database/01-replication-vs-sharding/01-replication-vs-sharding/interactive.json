@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Replication",
+        "items": [
+          "Increases data availability",
+          "Enhances read performance",
+          "Copies data to multiple replicas"
+        ]
+      },
+      {
+        "label": "Sharding",
+        "items": [
+          "Improves scalability",
+          "Distributes large datasets",
+          "Divides database into shards"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following correctly declares a variable named `middleName` that can hold either a `String` or a `null` value?",
+      "answers": [
+        {
+          "answer": "`String middleName?;`",
+          "correct": false
+        },
+        {
+          "answer": "`nullable String middleName;`",
+          "correct": false
+        },
+        {
+          "answer": "`String? middleName;`",
+          "correct": true
+        },
+        {
+          "answer": "`String middleName = null;`",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Review the code below. Why will it cause an error?\n\n```dart\nvoid main() {\n  String greeting = 'Hello';\n  greeting = null;\n}\n```",
+      "answers": [
+        {
+          "answer": "Because `null` is not a valid value in Dart.",
+          "correct": false
+        },
+        {
+          "answer": "Because the `greeting` variable was declared using `String` instead of `var`.",
+          "correct": false
+        },
+        {
+          "answer": "Because variables of type `String` are non-nullable by default and cannot be assigned `null`.",
+          "correct": true
+        },
+        {
+          "answer": "Because the `greeting` variable was already assigned a value ('Hello').",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the problem with the following code?\n\n```dart\nvoid main() {\n  String name;\n  print(name);\n}\n```",
+      "answers": [
+        {
+          "answer": "The `print` function cannot be used with a `String`.",
+          "correct": false
+        },
+        {
+          "answer": "The non-nullable variable `name` must be assigned a value before it can be used.",
+          "correct": true
+        },
+        {
+          "answer": "The variable `name` is nullable and cannot be printed directly.",
+          "correct": false
+        },
+        {
+          "answer": "The variable `name` should have been declared with the `final` keyword.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

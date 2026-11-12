@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a communication protocol in the context of microcontrollers?",
+      "answers": [
+        {
+          "answer": "A type of wire that connects two chips together",
+          "correct": false
+        },
+        {
+          "answer": "A set of rules two devices agree on before exchanging data",
+          "correct": true
+        },
+        {
+          "answer": "A programming language used to write firmware",
+          "correct": false
+        },
+        {
+          "answer": "A specific voltage level used for data transmission",
+          "correct": false
+        }
+      ],
+      "explanation": "A protocol defines the rules for communication -- which wire carries what, how fast bits travel, and how to mark the beginning and end of a message."
+    },
+    {
+      "question": "What happens when two devices try to communicate without agreeing on a protocol?",
+      "answers": [
+        {
+          "answer": "The faster device automatically slows down to match",
+          "correct": false
+        },
+        {
+          "answer": "Data is transmitted correctly but with a slight delay",
+          "correct": false
+        },
+        {
+          "answer": "The receiving chip sees random voltage flickering with no way to interpret it",
+          "correct": true
+        },
+        {
+          "answer": "The devices negotiate a speed automatically",
+          "correct": false
+        }
+      ],
+      "explanation": "Without agreed-upon rules, one chip might send data at a different speed than the other expects, resulting in random voltage flickering with no way to tell where one byte ends and another begins."
+    },
+    {
+      "question": "Which of the following is NOT a core question that every communication protocol answers?",
+      "answers": [
+        {
+          "answer": "How many wires are used",
+          "correct": false
+        },
+        {
+          "answer": "How fast data travels",
+          "correct": false
+        },
+        {
+          "answer": "What color the wires should be",
+          "correct": true
+        },
+        {
+          "answer": "Who talks when",
+          "correct": false
+        }
+      ],
+      "explanation": "Every protocol answers three core questions: how many wires, how fast, and who talks when. Wire color is not part of the protocol specification."
+    }
+  ]
+}

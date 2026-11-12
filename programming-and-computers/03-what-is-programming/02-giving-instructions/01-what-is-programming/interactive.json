@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What is programming?",
+      "answers": [
+        {
+          "answer": "Guessing what a computer should do next",
+          "correct": false
+        },
+        {
+          "answer": "Writing a precise set of instructions for a computer to follow",
+          "correct": true
+        },
+        {
+          "answer": "Designing the physical parts of a computer",
+          "correct": false
+        },
+        {
+          "answer": "Teaching a computer to think on its own",
+          "correct": false
+        }
+      ],
+      "explanation": "Programming is writing a precise set of instructions for a computer to follow. The computer does exactly what you say, nothing more, nothing less."
+    },
+    {
+      "question": "Why must a programmer describe every step clearly?",
+      "answers": [
+        {
+          "answer": "Because computers get bored with long instructions",
+          "correct": false
+        },
+        {
+          "answer": "Because computers choose the fastest path on their own",
+          "correct": false
+        },
+        {
+          "answer": "Because a machine has zero intuition and only does what it's told",
+          "correct": true
+        },
+        {
+          "answer": "Because computers rewrite instructions to fit their needs",
+          "correct": false
+        }
+      ],
+      "explanation": "A computer has no intuition, so the programmer must spell out every step clearly enough for the machine to carry it out perfectly."
+    }
+  ]
+}

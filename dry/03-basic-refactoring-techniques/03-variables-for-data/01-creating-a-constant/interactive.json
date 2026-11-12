@@ -1,0 +1,27 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "To declare a constant in TypeScript, use the "
+      },
+      {
+        "type": "blank",
+        "answer": "const"
+      },
+      {
+        "type": "code",
+        "value": " keyword. For example:\n\nconst MAX_USERS = 100;\n\nMAX_USERS ensures a "
+      },
+      {
+        "type": "blank",
+        "answer": "consistent"
+      },
+      {
+        "type": "code",
+        "value": " maximum allowed users across your application."
+      }
+    ]
+  }
+}

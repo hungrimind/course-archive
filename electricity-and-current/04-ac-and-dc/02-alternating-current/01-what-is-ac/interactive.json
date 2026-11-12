@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "How do electrons behave in an AC circuit?",
+      "answers": [
+        {
+          "answer": "They travel in one direction from negative to positive terminal",
+          "correct": false
+        },
+        {
+          "answer": "They wiggle back and forth in place, not traveling far down the wire",
+          "correct": true
+        },
+        {
+          "answer": "They spin in circles inside the wire",
+          "correct": false
+        },
+        {
+          "answer": "They stop moving entirely between cycles",
+          "correct": false
+        }
+      ],
+      "explanation": "In AC, electrons oscillate back and forth rather than traveling in one direction. The energy moves down the line, but the electrons themselves stay roughly in place."
+    },
+    {
+      "question": "What shape does AC voltage follow over time?",
+      "answers": [
+        {
+          "answer": "A flat, constant line",
+          "correct": false
+        },
+        {
+          "answer": "A jagged zigzag pattern",
+          "correct": false
+        },
+        {
+          "answer": "A smooth wave pattern swinging between positive and negative",
+          "correct": true
+        },
+        {
+          "answer": "A series of sudden spikes",
+          "correct": false
+        }
+      ],
+      "explanation": "AC voltage swings smoothly from positive to negative and back again in a continuous wave pattern, unlike DC's flat constant line."
+    }
+  ]
+}

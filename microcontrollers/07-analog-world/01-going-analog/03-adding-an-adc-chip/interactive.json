@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "import busio, digitalio, board\nfrom adafruit_mcp3xxx.mcp3008 import MCP3008\nfrom adafruit_mcp3xxx.analog_in import AnalogIn\n\nspi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)\ncs = digitalio.DigitalInOut(board.D5)\nmcp = "
+      },
+      {
+        "type": "blank",
+        "answer": "MCP3008(spi, cs)"
+      },
+      {
+        "type": "code",
+        "value": "\nchan = "
+      },
+      {
+        "type": "blank",
+        "answer": "AnalogIn(mcp, MCP3008.P0)"
+      },
+      {
+        "type": "code",
+        "value": "\nprint(chan.value, chan.voltage)"
+      }
+    ],
+    "options": [
+      "MCP3008(cs, spi)",
+      "AnalogIn(MCP3008.P0, mcp)",
+      "DigitalIn(mcp, MCP3008.P0)"
+    ]
+  }
+}

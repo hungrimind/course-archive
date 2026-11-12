@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "High-Level Module",
+        "items": [
+          "Switch",
+          "Switch With DIP"
+        ]
+      },
+      {
+        "label": "Abstraction",
+        "items": [
+          "Switchable",
+          "DIP Interface"
+        ]
+      },
+      {
+        "label": "Low-Level Module",
+        "items": [
+          "Light",
+          "Light With Interface"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "You send a 10 microsecond HIGH pulse to the trigger pin to fire the ultrasonic burst.",
+        "correct": true,
+        "explanation": "The trigger pin requires a short 10 microsecond HIGH pulse to initiate the ultrasonic sound burst."
+      },
+      {
+        "statement": "The echo pin outputs 3.3V, so it can connect directly to the Pi's GPIO without any extra components.",
+        "correct": false,
+        "explanation": "The echo pin outputs 5V, not 3.3V. You need a voltage divider (two resistors) to drop it to a safe 3.3V level for the Pi's GPIO."
+      },
+      {
+        "statement": "The echo pin stays HIGH for exactly as long as the sound takes to bounce back to the sensor.",
+        "correct": true,
+        "explanation": "The duration that the echo pin remains HIGH corresponds to the round-trip time of the ultrasonic sound, which you then use in the distance formula."
+      },
+      {
+        "statement": "The trigger pin must be held HIGH continuously while waiting for the echo.",
+        "correct": false,
+        "explanation": "The trigger pin only needs a brief 10 microsecond HIGH pulse. After that, it is set back to LOW and the code monitors the echo pin."
+      }
+    ]
+  }
+}

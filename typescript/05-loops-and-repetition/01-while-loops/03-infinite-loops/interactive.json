@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A while loop that never updates its counter variable will run forever.",
+        "correct": true,
+        "explanation": "If the counter never changes, the condition never becomes false, so the loop never stops. This is the most common cause of infinite loops."
+      },
+      {
+        "statement": "while (true) { } will eventually stop on its own once it has run enough times.",
+        "correct": false,
+        "explanation": "while (true) never stops on its own because the condition true can never become false. You must manually kill the program with Ctrl + C."
+      },
+      {
+        "statement": "An infinite loop is always caused by using while (true).",
+        "correct": false,
+        "explanation": "Infinite loops can also happen when you forget to update a counter, or when the condition is written in a way that can never become false. while (true) is just one example."
+      },
+      {
+        "statement": "If your program freezes and stops responding, a runaway loop is a likely cause.",
+        "correct": true,
+        "explanation": "An infinite loop consumes all available processing time, making the program appear frozen. It is one of the first things to check when a program hangs."
+      }
+    ]
+  }
+}

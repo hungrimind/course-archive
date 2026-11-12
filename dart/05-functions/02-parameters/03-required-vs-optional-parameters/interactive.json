@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Consider the following function definition:\n\n\n```dart\nvoid printUserDetails({String? name, int? age}) {\n  print('Name: $name, Age: $age');\n}\n```\n\nBy default, what is the status of the `name` and `age` parameters?",
+      "answers": [
+        {
+          "answer": "Both are required.",
+          "correct": false
+        },
+        {
+          "answer": "`name` is required, but `age` is optional.",
+          "correct": false
+        },
+        {
+          "answer": "Both are optional.",
+          "correct": true
+        },
+        {
+          "answer": "The code will cause an error because they are not given a default value.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "You are writing a function to create a user profile, where the `username` must always be provided, but the `bio` can be omitted. Which function signature correctly enforces this?",
+      "answers": [
+        {
+          "answer": "`void createProfile(required String username, String? bio)`",
+          "correct": false
+        },
+        {
+          "answer": "`void createProfile({required String username, String? bio})`",
+          "correct": true
+        },
+        {
+          "answer": "`void createProfile(String username, {required String? bio})`",
+          "correct": false
+        },
+        {
+          "answer": "`void createProfile({String username, String? bio})`",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Given this function that uses a positional parameter:\n\n\n```dart\nvoid greet(String name) {\n  print('Hello, $name!');\n}\n```\n\nWhich of the following statements is true?",
+      "answers": [
+        {
+          "answer": "You can call the function like `greet()` without any arguments.",
+          "correct": false
+        },
+        {
+          "answer": "The `name` parameter is optional by default.",
+          "correct": false
+        },
+        {
+          "answer": "Calling the function without the `name` argument will result in a compile-time error.",
+          "correct": true
+        },
+        {
+          "answer": "You can make the `name` parameter optional by changing its type to `String?`.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A short circuit occurs when current flows from power to ground with no load in between.",
+        "correct": true,
+        "explanation": "A short circuit is exactly this: current takes a direct path from power to ground with nothing to limit it, causing a dangerous surge."
+      },
+      {
+        "statement": "Short circuits on a breadboard are always caused by faulty components.",
+        "correct": false,
+        "explanation": "Short circuits on a breadboard are usually caused by stray wires connecting power directly to ground or bare wires accidentally touching, not faulty components."
+      },
+      {
+        "statement": "To prevent short circuits, you should always make sure current passes through a load like a resistor, LED, or sensor before reaching ground.",
+        "correct": true,
+        "explanation": "A load in the circuit limits current flow. No load means current rushes through uncontrolled, which is the definition of a short circuit."
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "language": "",
+    "segments": [
+      {
+        "type": "code",
+        "value": "A key-value store is similar to a dictionary, where each "
+      },
+      {
+        "type": "blank",
+        "answer": "key"
+      },
+      {
+        "type": "code",
+        "value": " maps directly to a "
+      },
+      {
+        "type": "blank",
+        "answer": "value"
+      },
+      {
+        "type": "code",
+        "value": ". It is ideal for tasks like caching or "
+      },
+      {
+        "type": "blank",
+        "answer": "session"
+      },
+      {
+        "type": "code",
+        "value": " management due to its fast access patterns."
+      }
+    ],
+    "options": [
+      "sorting",
+      "index"
+    ]
+  }
+}

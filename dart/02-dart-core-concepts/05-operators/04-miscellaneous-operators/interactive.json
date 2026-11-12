@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What does this print?\n```dart\nString name = 'Kumar';\nprint(name[0]);\n```",
+      "answers": [
+        {
+          "answer": "K",
+          "correct": true
+        },
+        {
+          "answer": "u",
+          "correct": false
+        },
+        {
+          "answer": "Kumar",
+          "correct": false
+        },
+        {
+          "answer": "It causes an error",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does this print?\n```dart\nList<int> numbers = [1, 2, 3];\nprint(numbers[1]);\n```",
+      "answers": [
+        {
+          "answer": "1",
+          "correct": false
+        },
+        {
+          "answer": "2",
+          "correct": true
+        },
+        {
+          "answer": "3",
+          "correct": false
+        },
+        {
+          "answer": "It causes an error",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which snippet uses the dot operator to call a method?",
+      "answers": [
+        {
+          "answer": "name.toUpperCase()",
+          "correct": true
+        },
+        {
+          "answer": "numbers[0]",
+          "correct": false
+        },
+        {
+          "answer": "(2 + 3) * 5",
+          "correct": false
+        },
+        {
+          "answer": "print('Hi')",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

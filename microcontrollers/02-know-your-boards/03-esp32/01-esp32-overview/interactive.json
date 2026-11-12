@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What makes the ESP32 especially suited for IoT projects?",
+      "answers": [
+        {
+          "answer": "It runs a full desktop operating system",
+          "correct": false
+        },
+        {
+          "answer": "It has Wi-Fi and Bluetooth built directly into the chip",
+          "correct": true
+        },
+        {
+          "answer": "It is the most expensive microcontroller available",
+          "correct": false
+        },
+        {
+          "answer": "It can only be programmed in C++",
+          "correct": false
+        }
+      ],
+      "explanation": "The ESP32 has Wi-Fi and Bluetooth built into the chip itself, with no extra modules or shields needed, making it ideal for projects that need wireless connectivity."
+    },
+    {
+      "question": "Which programming language can the ESP32 run for hardware projects?",
+      "answers": [
+        {
+          "answer": "Java",
+          "correct": false
+        },
+        {
+          "answer": "Swift",
+          "correct": false
+        },
+        {
+          "answer": "MicroPython",
+          "correct": true
+        },
+        {
+          "answer": "Ruby",
+          "correct": false
+        }
+      ],
+      "explanation": "The ESP32 runs MicroPython, which lets you write Python code to control hardware. It also has enough GPIO pins for most projects and costs around $5."
+    },
+    {
+      "question": "Which scenario is the BEST fit for choosing an ESP32?",
+      "answers": [
+        {
+          "answer": "You need a board with a full desktop environment and display",
+          "correct": false
+        },
+        {
+          "answer": "You want to read sensor data and send it to a cloud server over Wi-Fi",
+          "correct": true
+        },
+        {
+          "answer": "You need the largest possible library and community ecosystem",
+          "correct": false
+        },
+        {
+          "answer": "You need a board that runs traditional Arduino C++ only",
+          "correct": false
+        }
+      ],
+      "explanation": "The ESP32's built-in Wi-Fi makes it the go-to choice for projects that need internet connectivity, such as reading sensors and posting data to the cloud."
+    }
+  ]
+}

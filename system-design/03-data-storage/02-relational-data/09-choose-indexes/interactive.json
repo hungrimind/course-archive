@@ -1,0 +1,162 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "app_queries",
+        "label": "App Query Workload",
+        "icon": "monitor",
+        "category": "compute"
+      },
+      {
+        "id": "query_patterns",
+        "label": "WHERE / JOIN / ORDER BY Patterns",
+        "icon": "git-branch",
+        "category": "compute"
+      },
+      {
+        "id": "orders_table",
+        "label": "orders Table",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "order_date_index",
+        "label": "Index: orders(order_date)",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "write_path",
+        "label": "Write Path (INSERT/UPDATE)",
+        "icon": "zap",
+        "category": "compute"
+      },
+      {
+        "id": "too_many_indexes",
+        "label": "Over-Indexing (Too Many Indexes)",
+        "icon": "archive",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "app_queries",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "app_queries",
+        "to": "query_patterns"
+      },
+      {
+        "from": "query_patterns",
+        "to": "order_date_index"
+      },
+      {
+        "from": "order_date_index",
+        "to": "orders_table"
+      },
+      {
+        "from": "app_queries",
+        "to": "orders_table"
+      },
+      {
+        "from": "write_path",
+        "to": "orders_table"
+      },
+      {
+        "from": "write_path",
+        "to": "order_date_index"
+      },
+      {
+        "from": "too_many_indexes",
+        "to": "write_path"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "query_patterns",
+        "message": "You need to identify the query patterns (WHERE/JOIN/ORDER BY) before deciding what to index."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "orders_table",
+        "message": "Include the target table (orders) so the index has a real data source to optimize."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "order_date_index",
+        "message": "Add the orders(order_date) index to represent optimizing filters/sorts by order_date."
+      },
+      {
+        "type": "path_exists",
+        "from": "app_queries",
+        "to": "order_date_index",
+        "message": "Show the decision flow from the app workload to the index choice (queries drive index selection)."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "app_queries",
+        "to": "order_date_index",
+        "message": "Avoid skipping analysis: don’t connect workload directly to the index; route through query patterns (WHERE/JOIN/ORDER BY)."
+      },
+      {
+        "type": "path_exists",
+        "from": "order_date_index",
+        "to": "orders_table",
+        "message": "An index must be attached to a table/columns it indexes, so connect the order_date index to the orders table."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "app_queries",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "query_patterns",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "order_date_index",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "orders_table",
+          "x": 250,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_4"
+        }
+      ]
+    },
+    "assignment": "Build a small diagram showing how index selection should be driven by your application’s query workload. Include the query patterns (WHERE/JOIN/ORDER BY), the orders table, and an index on orders(order_date). Ensure there is a decision flow from the app workload to the index choice, and connect the index to the table it indexes. Do not connect the workload directly to the index without going through query patterns."
+  }
+}

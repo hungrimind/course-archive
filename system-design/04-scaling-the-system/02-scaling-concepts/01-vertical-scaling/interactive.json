@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Vertical scaling involves adding more machines to a system to enhance performance.",
+        "correct": false,
+        "explanation": "Vertical scaling focuses on upgrading a single machine's resources, while adding more machines is known as horizontal scaling."
+      },
+      {
+        "statement": "Vertical scaling can be limited by the maximum capacity of a single machine.",
+        "correct": true,
+        "explanation": "Vertical scaling can only increase a machine's resources up to its maximum capacity, after which no further enhancements can be made."
+      },
+      {
+        "statement": "Vertical scaling requires significant changes to the application architecture.",
+        "correct": false,
+        "explanation": "One of the benefits of vertical scaling is that it improves performance without necessitating changes to the application architecture."
+      },
+      {
+        "statement": "Upgrading CPU and RAM are examples of vertical scaling.",
+        "correct": true,
+        "explanation": "Vertical scaling involves increasing a machine's resources, such as its CPU and RAM, to improve its performance."
+      }
+    ]
+  }
+}

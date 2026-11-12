@@ -1,0 +1,84 @@
+{
+  "quiz": [
+    {
+      "question": "What does MVVM stand for in Flutter architecture?",
+      "answers": [
+        {
+          "answer": "Model-View-Virtual Machine",
+          "correct": false
+        },
+        {
+          "answer": "Model-View-ViewModel",
+          "correct": true
+        },
+        {
+          "answer": "Mobile-View-ViewModel",
+          "correct": false
+        },
+        {
+          "answer": "Model-Virtual-View Manager",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which component in MVVM is responsible for handling business logic and state?",
+      "answers": [
+        {
+          "answer": "Model",
+          "correct": false
+        },
+        {
+          "answer": "View",
+          "correct": false
+        },
+        {
+          "answer": "ViewModel",
+          "correct": true
+        },
+        {
+          "answer": "Service",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the primary purpose of a Service in MVVM?",
+      "answers": [
+        {
+          "answer": "To render the UI",
+          "correct": false
+        },
+        {
+          "answer": "To define data structures",
+          "correct": false
+        },
+        {
+          "answer": "To raise business logic and state up a level for sharing between view models",
+          "correct": true
+        },
+        {
+          "answer": "To handle user input directly",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How should navigation be handled in MVVM according to the lesson?",
+      "answers": [
+        {
+          "answer": "Directly in the ViewModel using BuildContext",
+          "correct": false
+        },
+        {
+          "answer": "By the View, based on values returned from the ViewModel",
+          "correct": true
+        },
+        {
+          "answer": "Only through the Model layer",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

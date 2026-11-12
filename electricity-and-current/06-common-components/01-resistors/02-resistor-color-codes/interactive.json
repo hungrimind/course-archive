@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Digits 0-2",
+        "items": [
+          "Black = 0",
+          "Brown = 1",
+          "Red = 2"
+        ]
+      },
+      {
+        "label": "Digits 3-5",
+        "items": [
+          "Orange = 3",
+          "Yellow = 4",
+          "Green = 5"
+        ]
+      },
+      {
+        "label": "Digits 6-9",
+        "items": [
+          "Blue = 6",
+          "Violet = 7",
+          "Grey = 8"
+        ]
+      }
+    ]
+  }
+}

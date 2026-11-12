@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "How do power rails differ from the short rows in the middle of a breadboard?",
+      "answers": [
+        {
+          "answer": "Power rails only connect 5 holes like the short rows",
+          "correct": false
+        },
+        {
+          "answer": "Power rails connect all the way down the board's length",
+          "correct": true
+        },
+        {
+          "answer": "Power rails are not electrically connected at all",
+          "correct": false
+        },
+        {
+          "answer": "Power rails only work with 5V, not 3.3V",
+          "correct": false
+        }
+      ],
+      "explanation": "Unlike the short rows in the middle that connect only 5 holes, each power rail connects all the way down the board's length, making it easy for any component to tap into power or ground."
+    },
+    {
+      "question": "Which Pi pin should you connect to the red-marked power rail?",
+      "answers": [
+        {
+          "answer": "A GPIO output pin",
+          "correct": false
+        },
+        {
+          "answer": "A GND pin",
+          "correct": false
+        },
+        {
+          "answer": "The 3.3V pin",
+          "correct": true
+        },
+        {
+          "answer": "The SDA pin",
+          "correct": false
+        }
+      ],
+      "explanation": "The red-marked rail is for voltage, so connect it to the Pi's 3.3V pin. The blue-marked rail is for ground and connects to a GND pin."
+    },
+    {
+      "question": "What should you check on some larger breadboards?",
+      "answers": [
+        {
+          "answer": "Whether the short rows have more than 5 holes",
+          "correct": false
+        },
+        {
+          "answer": "Whether the power rail is split in the middle",
+          "correct": true
+        },
+        {
+          "answer": "Whether the breadboard requires soldering",
+          "correct": false
+        },
+        {
+          "answer": "Whether the breadboard supports 5V only",
+          "correct": false
+        }
+      ],
+      "explanation": "Some larger breadboards split the power rail in the middle. You should check continuity or bridge the gap with a jumper wire to ensure the full rail is connected."
+    }
+  ]
+}

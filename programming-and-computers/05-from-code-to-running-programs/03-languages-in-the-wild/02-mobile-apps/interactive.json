@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "iPhone / iOS",
+        "items": [
+          "Swift",
+          "Xcode is the main IDE",
+          "Apps distributed through the App Store"
+        ]
+      },
+      {
+        "label": "Android",
+        "items": [
+          "Kotlin",
+          "Android Studio is the main IDE",
+          "Apps distributed through Google Play"
+        ]
+      },
+      {
+        "label": "Cross-Platform",
+        "items": [
+          "Flutter uses the Dart language",
+          "React Native uses JavaScript",
+          "One codebase for both iOS and Android"
+        ]
+      }
+    ]
+  }
+}

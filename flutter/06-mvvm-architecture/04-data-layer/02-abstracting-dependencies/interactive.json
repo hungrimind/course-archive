@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of the Abstraction Layer?",
+      "answers": [
+        {
+          "answer": "To manage application state",
+          "correct": false
+        },
+        {
+          "answer": "To handle UI rendering",
+          "correct": false
+        },
+        {
+          "answer": "To store data locally",
+          "correct": false
+        },
+        {
+          "answer": "To wrap external dependencies and control their interface",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Why is abstracting dependencies beneficial for testing?",
+      "answers": [
+        {
+          "answer": "It makes tests run faster",
+          "correct": false
+        },
+        {
+          "answer": "It reduces the number of tests needed",
+          "correct": false
+        },
+        {
+          "answer": "It makes it easier to fake or mock out dependencies",
+          "correct": true
+        },
+        {
+          "answer": "It automatically generates tests",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

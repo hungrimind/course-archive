@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What creates the 'breathing' effect in a smooth fading LED?",
+      "answers": [
+        {
+          "answer": "Switching between two fixed brightness levels",
+          "correct": false
+        },
+        {
+          "answer": "Gradually ramping the duty cycle up and then back down",
+          "correct": true
+        },
+        {
+          "answer": "Using a special analog GPIO pin",
+          "correct": false
+        },
+        {
+          "answer": "Connecting multiple LEDs in series",
+          "correct": false
+        }
+      ],
+      "explanation": "The breathing effect comes from gradually increasing the duty cycle from 0% to 100% and then decreasing it back to 0%, creating a smooth pulse of light."
+    },
+    {
+      "question": "In the fading code, why is `b / 100` used when setting `led.value`?",
+      "answers": [
+        {
+          "answer": "To convert from a 0-100 range to the 0-1 range that PWMLED expects",
+          "correct": true
+        },
+        {
+          "answer": "To slow down the animation speed",
+          "correct": false
+        },
+        {
+          "answer": "To reduce the maximum voltage to the LED",
+          "correct": false
+        },
+        {
+          "answer": "To account for the resistor in the circuit",
+          "correct": false
+        }
+      ],
+      "explanation": "PWMLED's value property accepts a float between 0 and 1. Since the loop variable b goes from 0 to 100, dividing by 100 converts it to the expected 0-1 range."
+    },
+    {
+      "question": "What does `sleep(0.02)` do in the fading loop?",
+      "answers": [
+        {
+          "answer": "It sets the PWM frequency to 50 Hz",
+          "correct": false
+        },
+        {
+          "answer": "It resets the pin between brightness changes",
+          "correct": false
+        },
+        {
+          "answer": "It pauses briefly between steps so the fade looks smooth",
+          "correct": true
+        },
+        {
+          "answer": "It waits for the LED to fully turn off",
+          "correct": false
+        }
+      ],
+      "explanation": "The short sleep between each brightness step creates a visible but smooth transition. Without it, the loop would run so fast the fade would be instantaneous."
+    }
+  ]
+}

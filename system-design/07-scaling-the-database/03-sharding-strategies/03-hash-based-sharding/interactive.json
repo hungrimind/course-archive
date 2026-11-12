@@ -1,0 +1,207 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client_app",
+        "label": "Client App",
+        "icon": "monitor",
+        "category": "client"
+      },
+      {
+        "id": "api_gateway",
+        "label": "API Gateway",
+        "icon": "globe",
+        "category": "network"
+      },
+      {
+        "id": "shard_router",
+        "label": "Shard Router",
+        "icon": "network",
+        "category": "compute"
+      },
+      {
+        "id": "hash_function",
+        "label": "Hash Function",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "shard_1",
+        "label": "Shard 1 (DB)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "shard_2",
+        "label": "Shard 2 (DB)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "shard_3",
+        "label": "Shard 3 (DB)",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client_app",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client_app",
+        "to": "api_gateway"
+      },
+      {
+        "from": "api_gateway",
+        "to": "shard_router"
+      },
+      {
+        "from": "shard_router",
+        "to": "hash_function"
+      },
+      {
+        "from": "hash_function",
+        "to": "shard_router"
+      },
+      {
+        "from": "shard_router",
+        "to": "shard_1"
+      },
+      {
+        "from": "shard_router",
+        "to": "shard_2"
+      },
+      {
+        "from": "shard_router",
+        "to": "shard_3"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "shard_router",
+        "message": "Include a Shard Router to centralize routing decisions (clients should not pick shards directly)."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "hash_function",
+        "message": "Add a Hash Function component to represent Hash(userId) % N used to map keys evenly to shards."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "database",
+        "count": 3,
+        "message": "Use at least 3 shard databases to demonstrate distribution across multiple shards."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "api_gateway",
+        "to": "database",
+        "message": "Do not connect the API Gateway directly to a shard database; routing should go through the Shard Router."
+      },
+      {
+        "type": "path_exists",
+        "from": "client_app",
+        "to": "database",
+        "message": "Ensure client requests can reach a shard database via the gateway/router (a full request path must exist)."
+      },
+      {
+        "type": "required_edge",
+        "from": "shard_router",
+        "to": "hash_function",
+        "message": "The Shard Router must invoke the Hash Function to compute the shard index from the shard key."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client_app",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "api_gateway",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "shard_router",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "hash_function",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_5",
+          "componentId": "shard_1",
+          "x": 100,
+          "y": 600
+        },
+        {
+          "id": "sol_6",
+          "componentId": "shard_2",
+          "x": 250,
+          "y": 600
+        },
+        {
+          "id": "sol_7",
+          "componentId": "shard_3",
+          "x": 400,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_4",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_3",
+          "to": "sol_6"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_3",
+          "to": "sol_7"
+        }
+      ]
+    },
+    "assignment": "Build an architecture that routes requests to one of multiple database shards using a hash-based sharding strategy. Your diagram must include a shard router that uses a hash function to compute the shard index, and at least three shard databases. Ensure requests can flow from the client to a shard database through the routing layer, and avoid connecting the gateway directly to any database shard."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "circuitbuilder": {
+    "availableComponents": [
+      {
+        "id": "battery-5v",
+        "label": "5V Battery",
+        "type": "battery",
+        "value": 5,
+        "count": 1
+      },
+      {
+        "id": "resistor-220",
+        "label": "220Ω Resistor",
+        "type": "resistor",
+        "value": 220,
+        "count": 1
+      },
+      {
+        "id": "red-led",
+        "label": "Red LED",
+        "type": "led",
+        "value": 2,
+        "maxCurrent": 0.02,
+        "count": 1
+      },
+      {
+        "id": "switch-1",
+        "label": "Switch",
+        "type": "switch",
+        "count": 1
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "complete_circuit",
+        "message": "The circuit must form a complete loop for current to flow when the switch is closed."
+      },
+      {
+        "type": "has_component",
+        "componentType": "switch",
+        "message": "Add a switch to control the circuit."
+      },
+      {
+        "type": "has_component",
+        "componentType": "led",
+        "message": "Add an LED to the circuit."
+      },
+      {
+        "type": "series_with",
+        "component": "led",
+        "withComponent": "resistor",
+        "message": "The LED must be in series with a resistor for protection."
+      },
+      {
+        "type": "led_safe",
+        "message": "The LED current must not exceed 20mA. With a 220Ω resistor the current is 13.6mA — safe."
+      }
+    ],
+    "assignment": "Build a circuit with a switch that opens and closes the path. When the switch is closed the LED lights up; when open, current stops. The 220Ω resistor keeps the LED safe at 13.6mA.",
+    "solution": {
+      "nodes": [
+        {
+          "id": "n1",
+          "componentId": "battery-5v",
+          "x": 100,
+          "y": 200
+        },
+        {
+          "id": "n2",
+          "componentId": "switch-1",
+          "x": 300,
+          "y": 80
+        },
+        {
+          "id": "n3",
+          "componentId": "resistor-220",
+          "x": 500,
+          "y": 200
+        },
+        {
+          "id": "n4",
+          "componentId": "red-led",
+          "x": 300,
+          "y": 320
+        }
+      ],
+      "wires": [
+        {
+          "id": "w1",
+          "from": {
+            "nodeId": "n1",
+            "terminal": "+"
+          },
+          "to": {
+            "nodeId": "n2",
+            "terminal": "in"
+          }
+        },
+        {
+          "id": "w2",
+          "from": {
+            "nodeId": "n2",
+            "terminal": "out"
+          },
+          "to": {
+            "nodeId": "n3",
+            "terminal": "in"
+          }
+        },
+        {
+          "id": "w3",
+          "from": {
+            "nodeId": "n3",
+            "terminal": "out"
+          },
+          "to": {
+            "nodeId": "n4",
+            "terminal": "anode"
+          }
+        },
+        {
+          "id": "w4",
+          "from": {
+            "nodeId": "n4",
+            "terminal": "cathode"
+          },
+          "to": {
+            "nodeId": "n1",
+            "terminal": "-"
+          }
+        }
+      ]
+    }
+  }
+}

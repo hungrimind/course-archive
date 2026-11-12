@@ -1,0 +1,34 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "The SOLID principles improve software design by making the code more "
+      },
+      {
+        "type": "blank",
+        "answer": "flexible"
+      },
+      {
+        "type": "code",
+        "value": " and reducing the risk of "
+      },
+      {
+        "type": "blank",
+        "answer": "bugs"
+      },
+      {
+        "type": "code",
+        "value": ". This encourages better "
+      },
+      {
+        "type": "blank",
+        "answer": "collaboration"
+      },
+      {
+        "type": "code",
+        "value": " among developers."
+      }
+    ]
+  }
+}

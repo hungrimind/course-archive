@@ -1,0 +1,196 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "application_service",
+        "label": "Application Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "log_collector",
+        "label": "Log Collector",
+        "icon": "archive",
+        "category": "observability"
+      },
+      {
+        "id": "metrics_collector",
+        "label": "Metrics Collector",
+        "icon": "layers",
+        "category": "observability"
+      },
+      {
+        "id": "trace_collector",
+        "label": "Trace Collector",
+        "icon": "git-branch",
+        "category": "observability"
+      },
+      {
+        "id": "telemetry_storage",
+        "label": "Telemetry Storage",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "dashboards_alerting",
+        "label": "Dashboards & Alerting",
+        "icon": "monitor",
+        "category": "observability"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "application_service",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "application_service",
+        "to": "log_collector"
+      },
+      {
+        "from": "application_service",
+        "to": "metrics_collector"
+      },
+      {
+        "from": "application_service",
+        "to": "trace_collector"
+      },
+      {
+        "from": "log_collector",
+        "to": "telemetry_storage"
+      },
+      {
+        "from": "metrics_collector",
+        "to": "telemetry_storage"
+      },
+      {
+        "from": "trace_collector",
+        "to": "telemetry_storage"
+      },
+      {
+        "from": "telemetry_storage",
+        "to": "dashboards_alerting"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "telemetry_storage",
+        "message": "Add a telemetry storage layer so logs/metrics/traces can be retained and queried for insights."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "log_collector",
+        "count": 1,
+        "message": "Include a log collector to ingest logs as a core observability signal."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "metrics_collector",
+        "count": 1,
+        "message": "Include a metrics collector to capture time-series health/performance signals."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "trace_collector",
+        "count": 1,
+        "message": "Include a trace collector to support request-level diagnosis and distributed tracing."
+      },
+      {
+        "type": "path_exists",
+        "from": "application_service",
+        "to": "dashboards_alerting",
+        "message": "Ensure telemetry flows from the application through collectors/storage to dashboards & alerting (Insights)."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "application_service",
+        "to": "dashboards_alerting",
+        "message": "Avoid sending data directly from the app to dashboards/alerts; route through collectors and storage to enable processing, retention, and querying."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "application_service",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "log_collector",
+          "x": 100,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "metrics_collector",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_4",
+          "componentId": "trace_collector",
+          "x": 400,
+          "y": 150
+        },
+        {
+          "id": "sol_5",
+          "componentId": "telemetry_storage",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_6",
+          "componentId": "dashboards_alerting",
+          "x": 250,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_1",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_1",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_2",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_3",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_4",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_5",
+          "to": "sol_6"
+        }
+      ]
+    },
+    "assignment": "Build an observability pipeline where an application emits the three core signals (logs, metrics, traces) into dedicated collectors, the signals are stored centrally, and insights are produced via dashboards & alerting. Ensure there is a valid end-to-end path from the application to dashboards/alerting, and do not connect the application directly to dashboards/alerting."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A conditional loop always knows exactly how many times it will repeat before starting.",
+        "correct": false,
+        "explanation": "A conditional loop keeps running until a condition changes, so the number of repetitions is unknown in advance."
+      },
+      {
+        "statement": "If the exit condition of a conditional loop is never met, the loop runs forever.",
+        "correct": true,
+        "explanation": "This is called an infinite loop. The program gets stuck repeating endlessly because nothing tells it to stop."
+      },
+      {
+        "statement": "A game that keeps asking 'play again?' until the player says no is an example of a conditional loop.",
+        "correct": true,
+        "explanation": "The loop continues based on the player's answer, not a preset count. It stops only when the condition changes."
+      }
+    ]
+  }
+}

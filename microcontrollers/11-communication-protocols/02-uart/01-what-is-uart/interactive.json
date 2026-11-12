@@ -1,0 +1,72 @@
+{
+  "signalmatcher": {
+    "protocol": "uart",
+    "signals": [
+      {
+        "id": "tx",
+        "label": "TX",
+        "data": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "rx",
+        "label": "RX",
+        "data": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "blanks": [
+      "tx",
+      "rx"
+    ],
+    "labels": [
+      "TX",
+      "RX",
+      "SCLK",
+      "SDA"
+    ],
+    "assignment": "UART uses just two wires for communication. Identify which signal is TX (transmit) and which is RX (receive). Hint: TX sends data first in this exchange."
+  }
+}

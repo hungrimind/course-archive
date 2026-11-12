@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What happens when you try to access a variable outside the function where it was created?",
+      "answers": [
+        {
+          "answer": "It returns undefined silently",
+          "correct": false
+        },
+        {
+          "answer": "It returns an empty string",
+          "correct": false
+        },
+        {
+          "answer": "You get an error because the variable is not defined outside that function",
+          "correct": true
+        },
+        {
+          "answer": "It works fine because all variables are global",
+          "correct": false
+        }
+      ],
+      "explanation": "Variables created inside a function only exist within that function's scope. Trying to access them outside causes a 'not defined' error."
+    },
+    {
+      "question": "Why is scope considered a good thing in programming?",
+      "answers": [
+        {
+          "answer": "It makes code run faster",
+          "correct": false
+        },
+        {
+          "answer": "It keeps variables contained so different parts of your program don't accidentally interfere with each other",
+          "correct": true
+        },
+        {
+          "answer": "It automatically names your variables",
+          "correct": false
+        },
+        {
+          "answer": "It allows you to skip writing function definitions",
+          "correct": false
+        }
+      ],
+      "explanation": "Scope prevents accidental conflicts between variables in different parts of your program by keeping them contained to where they were created."
+    }
+  ]
+}

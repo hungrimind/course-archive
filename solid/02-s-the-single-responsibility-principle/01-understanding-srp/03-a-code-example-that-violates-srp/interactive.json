@@ -1,0 +1,26 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "SRP Violations",
+        "items": [
+          "Report class with two methods"
+        ]
+      },
+      {
+        "label": "Correct Classes",
+        "items": [
+          "ReportGenerator class",
+          "ReportPrinter class"
+        ]
+      },
+      {
+        "label": "Tasks for Implementation",
+        "items": [
+          "generate method",
+          "printReport method"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Algorithm (Step-by-Step Procedure)",
+        "items": [
+          "Following a recipe to bake a cake",
+          "Turn-by-turn driving directions",
+          "Instructions for tying your shoes"
+        ]
+      },
+      {
+        "label": "Not an Algorithm",
+        "items": [
+          "A photograph of a finished cake",
+          "A map with no route marked",
+          "A single shoelace with no instructions"
+        ]
+      }
+    ]
+  }
+}

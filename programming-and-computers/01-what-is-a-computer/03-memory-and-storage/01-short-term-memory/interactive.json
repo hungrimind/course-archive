@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "If your laptop loses power while you are typing a document you never saved, that document is gone because it only existed in RAM.",
+        "correct": true,
+        "explanation": "RAM is volatile, it only holds data while the power is on. Anything in RAM that hasn't been saved to permanent storage is lost when the power goes out. This is why saving your work matters."
+      },
+      {
+        "statement": "RAM keeps all your data safe even after you shut down your computer.",
+        "correct": false,
+        "explanation": "RAM is short-term memory that gets wiped when the power turns off. It is fast but temporary. Long-term storage (like a hard drive or SSD) is what keeps data after shutdown."
+      },
+      {
+        "statement": "RAM holds the apps and data your computer is actively working on right now.",
+        "correct": true,
+        "explanation": "When you open an app or a file, it gets loaded into RAM so the CPU can access it quickly. RAM acts as a workspace for everything your computer is currently doing."
+      },
+      {
+        "statement": "RAM is slower than long-term storage but can hold more data.",
+        "correct": false,
+        "explanation": "It's actually the opposite. RAM is much faster than long-term storage, which is why active work gets loaded there. However, RAM is more expensive and typically has less capacity than a hard drive or SSD."
+      }
+    ]
+  }
+}

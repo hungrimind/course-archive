@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What do electrons do when there is no external push applied to them?",
+      "answers": [
+        {
+          "answer": "They flow steadily in one direction",
+          "correct": false
+        },
+        {
+          "answer": "They vibrate randomly in place without useful movement",
+          "correct": true
+        },
+        {
+          "answer": "They stop moving entirely and become still",
+          "correct": false
+        },
+        {
+          "answer": "They escape from the atom and float freely",
+          "correct": false
+        }
+      ],
+      "explanation": "Without a push, electrons just vibrate randomly in place. They don't produce any useful flow. A push is needed to get them moving in a consistent direction."
+    },
+    {
+      "question": "Which of the following is NOT mentioned as a source that can push electrons to flow?",
+      "answers": [
+        {
+          "answer": "A battery",
+          "correct": false
+        },
+        {
+          "answer": "A generator with spinning magnets",
+          "correct": false
+        },
+        {
+          "answer": "A solar panel absorbing sunlight",
+          "correct": true
+        },
+        {
+          "answer": "Friction from rubbing a balloon on hair",
+          "correct": false
+        }
+      ],
+      "explanation": "The lesson mentions three sources that push electrons: batteries (chemical energy), generators (spinning magnets), and friction (like rubbing a balloon on hair). Solar panels were not discussed in this lesson."
+    }
+  ]
+}

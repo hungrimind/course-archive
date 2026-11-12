@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "A banking app calculates fees in many places. Instead of copying the same steps each time, the developer writes a "
+      },
+      {
+        "type": "blank",
+        "answer": "function"
+      },
+      {
+        "type": "code",
+        "value": " once and then "
+      },
+      {
+        "type": "blank",
+        "answer": "calls"
+      },
+      {
+        "type": "code",
+        "value": " it by "
+      },
+      {
+        "type": "blank",
+        "answer": "name"
+      },
+      {
+        "type": "code",
+        "value": " wherever the fee is needed."
+      }
+    ],
+    "options": [
+      "variable",
+      "deletes",
+      "type"
+    ]
+  }
+}

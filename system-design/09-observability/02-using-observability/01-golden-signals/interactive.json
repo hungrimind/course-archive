@@ -1,0 +1,34 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Latency",
+        "items": [
+          "Time taken to process a request",
+          "High response time"
+        ]
+      },
+      {
+        "label": "Traffic",
+        "items": [
+          "Requests per second",
+          "System demand measurement"
+        ]
+      },
+      {
+        "label": "Errors",
+        "items": [
+          "Rate of failing requests",
+          "HTTP 500 occurrence"
+        ]
+      },
+      {
+        "label": "Saturation",
+        "items": [
+          "Resource utilization",
+          "Capacity limits reached"
+        ]
+      }
+    ]
+  }
+}

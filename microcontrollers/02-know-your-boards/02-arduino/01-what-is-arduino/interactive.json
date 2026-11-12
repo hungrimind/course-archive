@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "An Arduino runs a full operating system like Linux.",
+        "correct": false,
+        "explanation": "Arduino has no operating system. It runs a single program in a loop from the moment it's powered on."
+      },
+      {
+        "statement": "Arduino runs a single program in a loop as soon as it is powered on.",
+        "correct": true,
+        "explanation": "That simplicity is one of Arduino's key strengths: no boot time, no updates, and no crashes from background processes."
+      },
+      {
+        "statement": "Arduino's large community means most sensors and components come with libraries and wiring tutorials.",
+        "correct": true,
+        "explanation": "Arduino's massive community is a major advantage, providing ready-made libraries and tutorials for almost every sensor or component you can buy."
+      },
+      {
+        "statement": "Arduino traditionally uses Python as its primary programming language.",
+        "correct": false,
+        "explanation": "Arduino traditionally uses C/C++. While the concepts like GPIO and signals transfer to Python-based boards, Arduino itself is C/C++ based."
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a signal in the context of electricity?",
+      "answers": [
+        {
+          "answer": "A burst of maximum voltage to power a device",
+          "correct": false
+        },
+        {
+          "answer": "Information encoded by varying voltage over time",
+          "correct": true
+        },
+        {
+          "answer": "A constant voltage used to charge a battery",
+          "correct": false
+        },
+        {
+          "answer": "The physical wire that connects two components",
+          "correct": false
+        }
+      ],
+      "explanation": "A signal is not just raw power. It is information riding on electricity. By varying the voltage over time, the electrical pattern encodes a meaningful message that one component can send to another."
+    },
+    {
+      "question": "How does a microphone create an electrical signal?",
+      "answers": [
+        {
+          "answer": "It generates a fixed voltage whenever sound is present",
+          "correct": false
+        },
+        {
+          "answer": "It stores sound waves in a capacitor for later playback",
+          "correct": false
+        },
+        {
+          "answer": "It converts sound waves into a changing voltage pattern",
+          "correct": true
+        },
+        {
+          "answer": "It amplifies the electricity already flowing through the wire",
+          "correct": false
+        }
+      ],
+      "explanation": "A microphone picks up sound waves and converts them into a continuously changing voltage pattern. That voltage pattern mirrors the shape of the sound, carrying real-world information as an electrical signal."
+    },
+    {
+      "question": "A temperature sensor outputs a voltage that rises with heat. What does this voltage represent?",
+      "answers": [
+        {
+          "answer": "The amount of current the sensor draws",
+          "correct": false
+        },
+        {
+          "answer": "The resistance of the wire connecting the sensor",
+          "correct": false
+        },
+        {
+          "answer": "Encoded information about the current temperature",
+          "correct": true
+        },
+        {
+          "answer": "A random fluctuation caused by electrical noise",
+          "correct": false
+        }
+      ],
+      "explanation": "The changing voltage from a temperature sensor carries real-world information, specifically the temperature. The voltage pattern means something: as the temperature rises, the voltage rises in a corresponding way."
+    }
+  ]
+}

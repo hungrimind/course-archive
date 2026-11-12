@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "In the context of eventual consistency, what is prioritized over immediate consistency?",
+      "answers": [
+        {
+          "answer": "Data redundancy and efficiency",
+          "correct": false
+        },
+        {
+          "answer": "High availability and partition tolerance",
+          "correct": true
+        },
+        {
+          "answer": "Cost-effectiveness and simplicity",
+          "correct": false
+        },
+        {
+          "answer": "Data integrity and quality",
+          "correct": false
+        }
+      ],
+      "explanation": "Eventual consistency sacrifices immediate consistency in order to prioritize high availability and partition tolerance, particularly in distributed systems."
+    },
+    {
+      "question": "Why might a system use eventual consistency?",
+      "answers": [
+        {
+          "answer": "To ensure that all data reads are always up-to-date",
+          "correct": false
+        },
+        {
+          "answer": "To allow for flexible data schemas and fewer constraints",
+          "correct": false
+        },
+        {
+          "answer": "To handle large volumes of data while keeping the system available even if some nodes are down",
+          "correct": true
+        },
+        {
+          "answer": "To support immediate transaction completion and strict data validation",
+          "correct": false
+        }
+      ],
+      "explanation": "Eventual consistency is used in systems where the ability to handle large amounts of data and remain available during partitioned network conditions is more critical than having immediate consistency."
+    },
+    {
+      "question": "Which type of databases often implement eventual consistency?",
+      "answers": [
+        {
+          "answer": "Relational Databases",
+          "correct": false
+        },
+        {
+          "answer": "NoSQL Databases",
+          "correct": true
+        },
+        {
+          "answer": "In-memory Databases",
+          "correct": false
+        },
+        {
+          "answer": "Graph Databases",
+          "correct": false
+        }
+      ],
+      "explanation": "NoSQL databases frequently implement eventual consistency as they focus on scalability and availability which align with the characteristics of the model."
+    }
+  ]
+}

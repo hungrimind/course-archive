@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of following the Rule of Three in code refactoring?",
+      "answers": [
+        {
+          "answer": "To optimize code performance by using fewer lines of code.",
+          "correct": false
+        },
+        {
+          "answer": "To avoid premature abstraction, which can unnecessarily complicate the code.",
+          "correct": true
+        },
+        {
+          "answer": "To ensure all variables are declared globally for easier access.",
+          "correct": false
+        },
+        {
+          "answer": "To make code abstract right after the first instance of repetition.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When should you consider refactoring according to the Rule of Three?",
+      "answers": [
+        {
+          "answer": "After identifying the same pattern twice in the code.",
+          "correct": false
+        },
+        {
+          "answer": "As soon as you notice any repetition in the code.",
+          "correct": false
+        },
+        {
+          "answer": "After encountering the same pattern for the third time.",
+          "correct": true
+        },
+        {
+          "answer": "Only during major codebase overhauls mandated by management.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What can happen if you refactor your code too early, according to the Rule of Three?",
+      "answers": [
+        {
+          "answer": "The code will only become slightly more complex.",
+          "correct": false
+        },
+        {
+          "answer": "There is a risk of unnecessary complications and over-engineering.",
+          "correct": true
+        },
+        {
+          "answer": "All bugs in the code will be automatically resolved.",
+          "correct": false
+        },
+        {
+          "answer": "The code will become non-functional and will not compile.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

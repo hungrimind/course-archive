@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "try {\n  const data = JSON.parse(userInput);\n  console.log(data);\n} catch (error) {\n  console.log(\"Parse error\");\n} "
+      },
+      {
+        "type": "blank",
+        "answer": "finally"
+      },
+      {
+        "type": "code",
+        "value": " {\n  "
+      },
+      {
+        "type": "blank",
+        "answer": "console.log"
+      },
+      {
+        "type": "code",
+        "value": "(\"Cleanup complete\");\n}"
+      }
+    ],
+    "options": [
+      "catch",
+      "then",
+      "await"
+    ]
+  }
+}

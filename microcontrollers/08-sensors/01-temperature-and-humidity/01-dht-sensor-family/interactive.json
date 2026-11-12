@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "DHT11",
+        "items": [
+          "0-50 °C temperature range",
+          "~2 °C accuracy",
+          "Good enough when 'roughly warm' is fine"
+        ]
+      },
+      {
+        "label": "DHT22",
+        "items": [
+          "-40 to 80 °C temperature range",
+          "~0.5 °C accuracy",
+          "Better choice when you need trustworthy readings"
+        ]
+      },
+      {
+        "label": "Both DHT11 and DHT22",
+        "items": [
+          "Measure temperature and humidity",
+          "Use a single data pin",
+          "Same code and libraries"
+        ]
+      }
+    ]
+  }
+}

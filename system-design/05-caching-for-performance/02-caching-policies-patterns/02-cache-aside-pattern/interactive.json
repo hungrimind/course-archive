@@ -1,0 +1,167 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "globe",
+        "category": "entry"
+      },
+      {
+        "id": "app_service",
+        "label": "Application Service",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "cache",
+        "label": "Cache (Redis/Memcached)",
+        "icon": "zap",
+        "category": "storage"
+      },
+      {
+        "id": "database",
+        "label": "Database",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "observability",
+        "label": "Metrics/Logging",
+        "icon": "monitor",
+        "category": "ops"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "app_service"
+      },
+      {
+        "from": "app_service",
+        "to": "cache"
+      },
+      {
+        "from": "app_service",
+        "to": "database"
+      },
+      {
+        "from": "app_service",
+        "to": "observability"
+      },
+      {
+        "from": "cache",
+        "to": "app_service"
+      },
+      {
+        "from": "database",
+        "to": "app_service"
+      },
+      {
+        "from": "observability",
+        "to": "app_service"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "app_service",
+        "message": "Add an Application Service. The cache-aside pattern requires the application to orchestrate reads from cache and fallback to the database."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "cache",
+        "message": "Add a Cache component, since the application must check it first for a cache hit/miss."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "database",
+        "message": "Add a Database. The cache-aside pattern needs an authoritative data source on cache misses."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "app_service",
+        "message": "Ensure the client can reach the Application Service (requests should enter the system through the app)."
+      },
+      {
+        "type": "required_edge",
+        "from": "app_service",
+        "to": "cache",
+        "message": "Connect Application Service → Cache so the app can check the cache and populate it after a miss."
+      },
+      {
+        "type": "required_edge",
+        "from": "app_service",
+        "to": "database",
+        "message": "Connect Application Service → Database so the app can fetch from the source of truth on a cache miss."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "app_service",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "cache",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "database",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "observability",
+          "x": 250,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_2",
+          "to": "sol_5"
+        }
+      ]
+    },
+    "assignment": "Build a cache-aside read path: add an Application Service that the Client can reach, and connect the app to both a Cache and a Database so the app can check the cache first and fall back to the database on a miss."
+  }
+}

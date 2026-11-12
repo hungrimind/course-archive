@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "An API contract is solely a guideline and not a formal agreement between a client and a server.",
+        "correct": false,
+        "explanation": "An API contract is indeed a formal agreement between a client and a server, detailing how they communicate, including requests, responses, data types, and error handling."
+      },
+      {
+        "statement": "API contracts help improve system reliability by ensuring that both parties are aware of the expected interactions.",
+        "correct": true,
+        "explanation": "By clearly defining the communication expectations between a client and a server, API contracts reduce the risk of miscommunication and errors, thus improving system reliability."
+      },
+      {
+        "statement": "The example 'Request - GET /users/123' in an API contract specifies the response should be '500 Internal Server Error' if the user does not exist.",
+        "correct": false,
+        "explanation": "The response '500 Internal Server Error' indicates a server error, not a non-existent user. A '404 Not Found' response would be more fitting for a non-existent user scenario."
+      },
+      {
+        "statement": "API contracts can simplify integration testing by keeping development teams aligned on expected interactions.",
+        "correct": true,
+        "explanation": "By clearly defining the expected interactions in API contracts, development teams can focus on creating tests that verify these interactions, simplifying the integration testing process."
+      }
+    ]
+  }
+}

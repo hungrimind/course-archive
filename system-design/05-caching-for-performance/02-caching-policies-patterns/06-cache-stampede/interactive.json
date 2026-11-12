@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A cache stampede commonly occurs when multiple clients attempt to refresh a cached item simultaneously after it expires.",
+        "correct": true,
+        "explanation": "When a popular cached item expires, many clients may attempt to access it at the same time, leading to simultaneous requests to refresh the cache, which can overload the data source."
+      },
+      {
+        "statement": "Implementing a cache lock completely eliminates the possibility of a cache stampede.",
+        "correct": false,
+        "explanation": "While implementing a cache lock can significantly reduce the chances of a cache stampede by ensuring only one request at a time can refresh the cache, it may not completely eliminate the issue without careful implementation and handling of edge cases."
+      },
+      {
+        "statement": "Using the 'stale-while-revalidate' approach allows clients to receive a stale cached item while a background refresh updates the cache.",
+        "correct": true,
+        "explanation": "The 'stale-while-revalidate' approach serves stale data to clients while a background process updates the cache, mitigating the load on the data source and reducing the chance of a cache stampede."
+      },
+      {
+        "statement": "Cache locking relies solely on locking the entire cache system, making it an inefficient method to prevent cache stampedes.",
+        "correct": false,
+        "explanation": "Cache locking typically targets specific items or keys rather than the entire system, focusing locks on resources that need refreshing and allowing other cache operations to continue, which increases efficiency in preventing stampedes."
+      }
+    ]
+  }
+}

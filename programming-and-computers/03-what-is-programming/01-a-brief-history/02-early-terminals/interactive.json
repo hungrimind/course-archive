@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "With a terminal, programmers could type a command and see the response right away.",
+        "correct": true,
+        "explanation": "Terminals introduced real-time interaction. You typed a command, pressed enter, and saw the response immediately, turning programming into a conversation with the machine."
+      },
+      {
+        "statement": "Punch cards gave instant feedback, just like modern terminals do.",
+        "correct": false,
+        "explanation": "Punch cards were a batch process: you prepared an entire stack, submitted it, and waited for the results. There was no instant feedback. Terminals changed this by allowing immediate, interactive responses."
+      },
+      {
+        "statement": "A terminal was a screen with a keyboard connected to the computer.",
+        "correct": true,
+        "explanation": "A terminal consisted of a display screen and a keyboard, giving the programmer a direct connection to the computer for interactive, real-time use."
+      }
+    ]
+  }
+}

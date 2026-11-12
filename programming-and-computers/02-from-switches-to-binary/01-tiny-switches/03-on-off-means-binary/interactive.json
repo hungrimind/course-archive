@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Computers use binary because transistors can only be ON or OFF.",
+        "correct": true,
+        "explanation": "Binary (1s and 0s) maps directly to the two physical states of a transistor: ON and OFF. The hardware forces the number system."
+      },
+      {
+        "statement": "Programmers chose binary because it's the easiest number system for humans to read.",
+        "correct": false,
+        "explanation": "Binary is actually hard for humans to read. Computers use it because it matches the physical ON/OFF states of transistors, not because it's convenient for people."
+      },
+      {
+        "statement": "The number 1 in binary means a transistor is OFF.",
+        "correct": false,
+        "explanation": "It's the opposite: 1 means ON and 0 means OFF. This convention maps directly to electricity flowing (ON/1) or not flowing (OFF/0)."
+      }
+    ]
+  }
+}

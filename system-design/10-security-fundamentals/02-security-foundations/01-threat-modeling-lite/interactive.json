@@ -1,0 +1,177 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "assets_inventory",
+        "label": "Identify Assets",
+        "icon": "archive",
+        "category": "process"
+      },
+      {
+        "id": "threats_analysis",
+        "label": "Identify Threats",
+        "icon": "git-branch",
+        "category": "process"
+      },
+      {
+        "id": "risk_assessment",
+        "label": "Prioritize Risks",
+        "icon": "layers",
+        "category": "process"
+      },
+      {
+        "id": "mitigations_plan",
+        "label": "Mitigate Risks",
+        "icon": "shield",
+        "category": "process"
+      },
+      {
+        "id": "security_controls",
+        "label": "Security Controls",
+        "icon": "lock",
+        "category": "security"
+      },
+      {
+        "id": "monitoring_logging",
+        "label": "Monitoring & Logging",
+        "icon": "monitor",
+        "category": "security"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "assets_inventory",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "assets_inventory",
+        "to": "threats_analysis"
+      },
+      {
+        "from": "threats_analysis",
+        "to": "risk_assessment"
+      },
+      {
+        "from": "risk_assessment",
+        "to": "mitigations_plan"
+      },
+      {
+        "from": "mitigations_plan",
+        "to": "security_controls"
+      },
+      {
+        "from": "mitigations_plan",
+        "to": "monitoring_logging"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "threats_analysis",
+        "message": "Add an 'Identify Threats' step so you explicitly consider who/what could harm your assets and how."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "mitigations_plan",
+        "message": "Add a 'Mitigate Risks' step. Threat modeling must result in concrete defenses, not just a list of threats."
+      },
+      {
+        "type": "path_exists",
+        "from": "assets_inventory",
+        "to": "mitigations_plan",
+        "message": "Ensure the flow goes from 'Identify Assets' to 'Mitigate Risks', since mitigations should be driven by what you’re protecting."
+      },
+      {
+        "type": "required_edge",
+        "from": "threats_analysis",
+        "to": "risk_assessment",
+        "message": "Connect 'Identify Threats' to 'Prioritize Risks'. You need to rank threats by impact/likelihood before choosing defenses."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "assets_inventory",
+        "to": "mitigations_plan",
+        "message": "Avoid jumping straight from assets to mitigations. Identify threats (and prioritize risks) first to prevent missing key attack paths."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "security_controls",
+        "count": 1,
+        "message": "Include at least one 'Security Controls' node, since mitigation should translate into concrete protective measures."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "assets_inventory",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "threats_analysis",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "risk_assessment",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "mitigations_plan",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_5",
+          "componentId": "security_controls",
+          "x": 100,
+          "y": 600
+        },
+        {
+          "id": "sol_6",
+          "componentId": "monitoring_logging",
+          "x": 400,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_3",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_4",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_4",
+          "to": "sol_6"
+        }
+      ]
+    },
+    "assignment": "Build a simple threat modeling workflow: start from identifying assets, include a step to identify threats, ensure threats feed into prioritizing risks, and ensure the process leads to mitigating risks. Your mitigation should result in at least one concrete security controls output, and the flow should not skip directly from assets to mitigations."
+  }
+}

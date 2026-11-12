@@ -1,0 +1,112 @@
+{
+  "signalmatcher": {
+    "protocol": "spi",
+    "signals": [
+      {
+        "id": "sclk",
+        "label": "SCLK",
+        "data": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "id": "mosi",
+        "label": "MOSI",
+        "data": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "id": "miso",
+        "label": "MISO",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "cs",
+        "label": "CS",
+        "data": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "blanks": [
+      "mosi",
+      "miso",
+      "cs"
+    ],
+    "labels": [
+      "MOSI",
+      "MISO",
+      "CS",
+      "SDA",
+      "TX"
+    ],
+    "assignment": "This is an SPI communication. Identify the three unlabeled signal lines by examining their timing patterns. The clock (SCLK) is already labeled."
+  }
+}

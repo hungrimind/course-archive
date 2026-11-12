@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What numeric value does TypeScript assign to the first member of a default enum?",
+      "answers": [
+        {
+          "answer": "1",
+          "correct": false
+        },
+        {
+          "answer": "0",
+          "correct": true
+        },
+        {
+          "answer": "-1",
+          "correct": false
+        },
+        {
+          "answer": "It does not assign a number unless you specify one",
+          "correct": false
+        }
+      ],
+      "explanation": "By default, TypeScript assigns numeric values starting at 0. So the first member gets 0, the second gets 1, and so on."
+    },
+    {
+      "question": "What is the main benefit of using an enum instead of raw numbers?",
+      "answers": [
+        {
+          "answer": "Enums make your code run faster",
+          "correct": false
+        },
+        {
+          "answer": "Enums use less memory than numbers",
+          "correct": false
+        },
+        {
+          "answer": "Enums give friendly, readable names to a fixed set of values",
+          "correct": true
+        },
+        {
+          "answer": "Enums allow you to use decimal numbers",
+          "correct": false
+        }
+      ],
+      "explanation": "The primary benefit of enums is readability. Direction.Left tells you far more than the number 2. Enums replace magic numbers and strings with meaningful names."
+    }
+  ]
+}

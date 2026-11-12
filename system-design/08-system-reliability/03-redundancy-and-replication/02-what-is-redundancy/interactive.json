@@ -1,0 +1,192 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "app_server",
+        "label": "App Server",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "primary_database",
+        "label": "Primary Database",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "replica_database",
+        "label": "Replica Database",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "backup_storage",
+        "label": "Backup Storage",
+        "icon": "archive",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "load_balancer"
+      },
+      {
+        "from": "load_balancer",
+        "to": "app_server"
+      },
+      {
+        "from": "app_server",
+        "to": "primary_database"
+      },
+      {
+        "from": "primary_database",
+        "to": "replica_database"
+      },
+      {
+        "from": "primary_database",
+        "to": "backup_storage"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "load_balancer",
+        "message": "Add a load balancer so traffic can be routed even if one app server fails (avoid a single entry-point server)."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "app_server",
+        "count": 2,
+        "message": "Use at least two app servers to provide compute redundancy; one server alone is a single point of failure."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "replica_database",
+        "message": "Add a replica database so the system can keep serving data if the primary database becomes unavailable."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "backup_storage",
+        "message": "Add backup storage to enable recovery if data is corrupted or both databases are impacted."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "app_server",
+        "message": "Clients should not connect directly to app servers. Route through the load balancer so failures can be handled transparently."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "replica_database",
+        "message": "Ensure there is a complete flow from the client through the system to the replica database (the replica should be part of the architecture, not isolated)."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_lb",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_app1",
+          "componentId": "app_server",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_app2",
+          "componentId": "app_server",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_primary_db",
+          "componentId": "primary_database",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_replica_db",
+          "componentId": "replica_database",
+          "x": 100,
+          "y": 600
+        },
+        {
+          "id": "sol_backup",
+          "componentId": "backup_storage",
+          "x": 400,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_lb"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_lb",
+          "to": "sol_app1"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_lb",
+          "to": "sol_app2"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_app1",
+          "to": "sol_primary_db"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_app2",
+          "to": "sol_primary_db"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_primary_db",
+          "to": "sol_replica_db"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_primary_db",
+          "to": "sol_backup"
+        }
+      ]
+    },
+    "assignment": "Build a redundant architecture that avoids single points of failure: route client traffic through a load balancer to multiple app servers, and include both a database replica and a backup destination. Also ensure clients do not connect directly to app servers, and that the replica is connected into the end-to-end system flow."
+  }
+}

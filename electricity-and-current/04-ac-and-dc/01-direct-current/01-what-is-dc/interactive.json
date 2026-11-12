@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "In a DC circuit, electrons periodically reverse direction to balance the flow.",
+        "correct": false,
+        "explanation": "DC stands for direct current, meaning electrons flow in one direction only and never reverse."
+      },
+      {
+        "statement": "A 9V battery provides a constant voltage that does not fluctuate up and down.",
+        "correct": true,
+        "explanation": "DC delivers a fixed, steady voltage level. A 9V battery consistently pushes at 9 volts."
+      },
+      {
+        "statement": "In DC, electrons travel from the positive terminal through the circuit to the negative terminal.",
+        "correct": false,
+        "explanation": "Electrons flow from the negative terminal through the circuit and return to the positive terminal."
+      },
+      {
+        "statement": "The flow of DC electricity can be compared to water flowing steadily down a river.",
+        "correct": true,
+        "explanation": "Like water in a river that moves in one consistent direction, DC electricity flows one way without reversing."
+      }
+    ]
+  }
+}

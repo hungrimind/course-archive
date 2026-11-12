@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is decomposition in programming?",
+      "answers": [
+        {
+          "answer": "Deleting old code that no longer works",
+          "correct": false
+        },
+        {
+          "answer": "Splitting a big problem into smaller, manageable pieces",
+          "correct": true
+        },
+        {
+          "answer": "Combining many features into one big function",
+          "correct": false
+        },
+        {
+          "answer": "Throwing away a failed project and starting over",
+          "correct": false
+        }
+      ],
+      "explanation": "Decomposition means breaking a large problem into smaller parts you can handle one at a time, which together solve the whole problem."
+    },
+    {
+      "question": "How do experienced programmers tackle huge problems?",
+      "answers": [
+        {
+          "answer": "They solve the whole thing in one big step",
+          "correct": false
+        },
+        {
+          "answer": "They wait until they know the full solution before writing anything",
+          "correct": false
+        },
+        {
+          "answer": "They solve small pieces one at a time that add up to the big solution",
+          "correct": true
+        },
+        {
+          "answer": "They copy another program that already exists",
+          "correct": false
+        }
+      ],
+      "explanation": "No programmer solves a huge problem all at once. The skill is breaking it into small problems and solving them one by one."
+    },
+    {
+      "question": "Which is an example of decomposing 'build an app'?",
+      "answers": [
+        {
+          "answer": "Launch the app store listing",
+          "correct": false
+        },
+        {
+          "answer": "Show a screen, handle a tap, save the data",
+          "correct": true
+        },
+        {
+          "answer": "Hire a team of developers",
+          "correct": false
+        },
+        {
+          "answer": "Write the entire app in one file",
+          "correct": false
+        }
+      ],
+      "explanation": "Breaking 'build an app' into concrete steps like showing a screen, handling a tap, and saving data is exactly what decomposition looks like."
+    }
+  ]
+}

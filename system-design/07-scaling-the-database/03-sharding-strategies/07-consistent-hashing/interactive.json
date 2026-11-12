@@ -1,0 +1,188 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "entry"
+      },
+      {
+        "id": "hash_function",
+        "label": "Hash Function",
+        "icon": "cpu",
+        "category": "compute"
+      },
+      {
+        "id": "consistent_hash_ring",
+        "label": "Consistent Hash Ring",
+        "icon": "network",
+        "category": "routing"
+      },
+      {
+        "id": "storage_node",
+        "label": "Storage Node",
+        "icon": "server",
+        "category": "storage"
+      },
+      {
+        "id": "replica_node",
+        "label": "Replica Node",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "data_item",
+        "label": "Data Item (Key)",
+        "icon": "box",
+        "category": "data"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "hash_function"
+      },
+      {
+        "from": "data_item",
+        "to": "hash_function"
+      },
+      {
+        "from": "hash_function",
+        "to": "consistent_hash_ring"
+      },
+      {
+        "from": "consistent_hash_ring",
+        "to": "storage_node"
+      },
+      {
+        "from": "storage_node",
+        "to": "replica_node"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "hash_function",
+        "message": "Include a hash function so keys and nodes can be mapped into the same hash space before routing."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "consistent_hash_ring",
+        "message": "Include a consistent hash ring to model the circular hash space used for clockwise key-to-node assignment."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "storage_node",
+        "count": 2,
+        "message": "Use at least two storage nodes to demonstrate distribution and how scaling changes only a subset of key mappings."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "storage_node",
+        "message": "There must be a routing path from the client to a storage node through hashing and the ring (client → hash → ring → node)."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "storage_node",
+        "message": "Avoid sending clients directly to a specific storage node; consistent hashing requires routing via hashing/ring to pick the clockwise node."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "hash_function",
+        "to": "storage_node",
+        "message": "Do not route directly from the hash function to a node; the ring is the component that resolves the 'next clockwise node' mapping."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_data_item",
+          "componentId": "data_item",
+          "x": 100,
+          "y": 150
+        },
+        {
+          "id": "sol_hash",
+          "componentId": "hash_function",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_ring",
+          "componentId": "consistent_hash_ring",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_node_a",
+          "componentId": "storage_node",
+          "x": 100,
+          "y": 450
+        },
+        {
+          "id": "sol_node_b",
+          "componentId": "storage_node",
+          "x": 400,
+          "y": 450
+        },
+        {
+          "id": "sol_replica",
+          "componentId": "replica_node",
+          "x": 250,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_hash"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_data_item",
+          "to": "sol_hash"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_hash",
+          "to": "sol_ring"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_ring",
+          "to": "sol_node_a"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_ring",
+          "to": "sol_node_b"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_node_a",
+          "to": "sol_replica"
+        }
+      ]
+    },
+    "assignment": "Build a consistent-hashing-based routing flow: include a hash function and a consistent hash ring, ensure there are at least two storage nodes reachable from the client via the hashing/ring path, and avoid directly connecting the client (or the hash function) straight to a specific storage node."
+  }
+}

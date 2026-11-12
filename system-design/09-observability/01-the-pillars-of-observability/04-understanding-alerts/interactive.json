@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of an alert in a monitoring system?",
+      "answers": [
+        {
+          "answer": "To maintain a detailed log history.",
+          "correct": false
+        },
+        {
+          "answer": "To notify when specific conditions are met.",
+          "correct": true
+        },
+        {
+          "answer": "To regularly update system software.",
+          "correct": false
+        },
+        {
+          "answer": "To automate system backup processes.",
+          "correct": false
+        }
+      ],
+      "explanation": "An alert is designed to notify system administrators or support teams when predefined conditions are met, allowing them to promptly address potential issues."
+    },
+    {
+      "question": "Why is it important to set thresholds carefully for alerts?",
+      "answers": [
+        {
+          "answer": "To increase the number of notifications for all events.",
+          "correct": false
+        },
+        {
+          "answer": "To reduce the necessity for system monitoring.",
+          "correct": false
+        },
+        {
+          "answer": "To prevent alert fatigue by avoiding unnecessary notifications.",
+          "correct": true
+        },
+        {
+          "answer": "To ensure all system data is permanently stored.",
+          "correct": false
+        }
+      ],
+      "explanation": "Carefully set thresholds help prevent alert fatigue, where too many notifications can lead to critical alerts being overlooked."
+    },
+    {
+      "question": "What could be a practical example of a condition that triggers an alert?",
+      "answers": [
+        {
+          "answer": "The system backup occurs successfully.",
+          "correct": false
+        },
+        {
+          "answer": "File creation by any user.",
+          "correct": false
+        },
+        {
+          "answer": "CPU usage exceeds 80% for 5 minutes.",
+          "correct": true
+        },
+        {
+          "answer": "A user logs in at any time of the day.",
+          "correct": false
+        }
+      ],
+      "explanation": "A practical example of a condition that triggers an alert is CPU usage exceeding 80% for a continual duration, indicating potential system strain."
+    }
+  ]
+}

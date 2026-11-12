@@ -1,0 +1,68 @@
+{
+  "signalmatcher": {
+    "protocol": "i2c",
+    "signals": [
+      {
+        "id": "scl",
+        "label": "SCL",
+        "data": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "sda",
+        "label": "SDA",
+        "data": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "blanks": [
+      "scl",
+      "sda"
+    ],
+    "labels": [
+      "SCL",
+      "SDA",
+      "TX",
+      "MOSI"
+    ],
+    "assignment": "I2C uses just two wires. Identify the clock line (SCL) and the data line (SDA). Hint: the clock signal has a regular, repeating pattern."
+  }
+}

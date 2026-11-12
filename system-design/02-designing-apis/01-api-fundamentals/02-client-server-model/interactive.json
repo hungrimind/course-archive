@@ -1,0 +1,138 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client_app",
+        "label": "Client App",
+        "icon": "monitor",
+        "category": "client"
+      },
+      {
+        "id": "internet",
+        "label": "Network / Internet",
+        "icon": "globe",
+        "category": "network"
+      },
+      {
+        "id": "api_server",
+        "label": "Server (API)",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "auth",
+        "label": "Auth / Access Control",
+        "icon": "lock",
+        "category": "security"
+      },
+      {
+        "id": "database",
+        "label": "Database",
+        "icon": "database",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client_app",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client_app",
+        "to": "internet"
+      },
+      {
+        "from": "internet",
+        "to": "api_server"
+      },
+      {
+        "from": "api_server",
+        "to": "database"
+      },
+      {
+        "from": "api_server",
+        "to": "auth"
+      },
+      {
+        "from": "auth",
+        "to": "database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "api_server",
+        "message": "Add a server component, since client-server requires a server to handle requests and produce responses."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "internet",
+        "message": "Add a network layer between client and server to represent the request/response communication path."
+      },
+      {
+        "type": "required_edge",
+        "from": "client_app",
+        "to": "internet",
+        "message": "Connect the client to the network so requests can leave the client."
+      },
+      {
+        "type": "required_edge",
+        "from": "internet",
+        "to": "api_server",
+        "message": "Connect the network to the server so the server can receive client requests."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client_app",
+        "to": "api_server",
+        "message": "Avoid connecting the client directly to the server in this exercise. Route communication through the network to model client ↔ server over a link."
+      },
+      {
+        "type": "path_exists",
+        "from": "client_app",
+        "to": "api_server",
+        "message": "There must be a complete communication path from the client to the server to represent request/response flow."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "client_app",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "internet",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "api_server",
+          "x": 250,
+          "y": 300
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        }
+      ]
+    },
+    "assignment": "Build a basic client-server architecture where a client communicates with a server over a network. Include a network layer, connect client → network → server to represent request/response flow, and avoid directly connecting the client to the server."
+  }
+}

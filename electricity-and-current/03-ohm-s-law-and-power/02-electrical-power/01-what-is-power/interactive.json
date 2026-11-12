@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A 100W lightbulb uses more total energy than a 10W lightbulb no matter what.",
+        "correct": false,
+        "explanation": "Power measures the rate of energy use, not total energy. A 10W bulb left on for 100 hours uses more total energy than a 100W bulb on for 5 minutes. Total energy depends on both power and time."
+      },
+      {
+        "statement": "One watt equals one joule of energy consumed per second.",
+        "correct": true,
+        "explanation": "By definition, 1 watt = 1 joule/second. Watts measure how quickly energy is being used."
+      },
+      {
+        "statement": "A device with a higher wattage rating consumes energy at a faster rate.",
+        "correct": true,
+        "explanation": "Higher watts means more joules used per second, so yes, energy is consumed more quickly."
+      },
+      {
+        "statement": "Power is measured in volts.",
+        "correct": false,
+        "explanation": "Power is measured in watts (W). Volts measure voltage, which is electrical pressure -- a different quantity entirely."
+      }
+    ]
+  }
+}

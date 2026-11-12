@@ -1,0 +1,20 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Stateless System",
+        "items": [
+          "No session data is retained",
+          "Easy to scale"
+        ]
+      },
+      {
+        "label": "Stateful System",
+        "items": [
+          "Session data is maintained",
+          "Conversation builds on context"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Dashboard",
+        "items": [
+          "Live CPU usage",
+          "Memory usage statistics",
+          "System overview graphs"
+        ]
+      },
+      {
+        "label": "Alerts",
+        "items": [
+          "CPU usage exceeds 80%",
+          "Low memory notification",
+          "High network latency alert"
+        ]
+      }
+    ]
+  }
+}

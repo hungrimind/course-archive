@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Kilobyte (KB)",
+        "items": [
+          "A short text message",
+          "A small plain-text email",
+          "About 1,000 bytes"
+        ]
+      },
+      {
+        "label": "Megabyte (MB)",
+        "items": [
+          "A smartphone photo",
+          "A 3-minute MP3 song",
+          "About 1 million bytes"
+        ]
+      },
+      {
+        "label": "Gigabyte (GB)",
+        "items": [
+          "A full-length HD movie",
+          "About 1 billion bytes",
+          "A large video game install"
+        ]
+      }
+    ]
+  }
+}

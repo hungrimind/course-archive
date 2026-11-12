@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main problem with using `any` as a function parameter and return type?",
+      "answers": [
+        {
+          "answer": "It makes the code run slower at runtime",
+          "correct": false
+        },
+        {
+          "answer": "TypeScript loses all type information, so you get no autocomplete or error checking",
+          "correct": true
+        },
+        {
+          "answer": "It prevents the function from accepting multiple types",
+          "correct": false
+        },
+        {
+          "answer": "It causes the function to throw runtime errors",
+          "correct": false
+        }
+      ],
+      "explanation": "When you use `any`, TypeScript treats the value as having no specific type, so it cannot provide autocomplete, catch type errors, or track what type flows through the function."
+    },
+    {
+      "question": "What do generics allow you to do that `any` does not?",
+      "answers": [
+        {
+          "answer": "Accept only string types as arguments",
+          "correct": false
+        },
+        {
+          "answer": "Write functions that reject all input types",
+          "correct": false
+        },
+        {
+          "answer": "Write flexible functions that still track the actual type flowing through them",
+          "correct": true
+        },
+        {
+          "answer": "Automatically convert types at runtime",
+          "correct": false
+        }
+      ],
+      "explanation": "Generics let you write functions that work with multiple types while preserving type information. The type is decided when the function is called, not when it is written, so TypeScript can still provide full type safety."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is 'sampling' in the context of digital audio?",
+      "answers": [
+        {
+          "answer": "Compressing an audio file to save space",
+          "correct": false
+        },
+        {
+          "answer": "Measuring the wave's position many times per second",
+          "correct": true
+        },
+        {
+          "answer": "Adding sound effects to a recording",
+          "correct": false
+        },
+        {
+          "answer": "Playing back a recorded sound",
+          "correct": false
+        }
+      ],
+      "explanation": "Sampling is the process of measuring a sound wave's position thousands of times per second. Each measurement becomes a number the computer can store."
+    },
+    {
+      "question": "How many samples per second does CD-quality audio use?",
+      "answers": [
+        {
+          "answer": "1,000",
+          "correct": false
+        },
+        {
+          "answer": "10,000",
+          "correct": false
+        },
+        {
+          "answer": "44,100",
+          "correct": true
+        },
+        {
+          "answer": "1,000,000",
+          "correct": false
+        }
+      ],
+      "explanation": "CD-quality audio takes 44,100 samples per second. That high rate is enough to accurately capture sounds across the range of human hearing."
+    },
+    {
+      "question": "What does a computer actually store to represent a sound?",
+      "answers": [
+        {
+          "answer": "A picture of the sound wave",
+          "correct": false
+        },
+        {
+          "answer": "A long list of numbers representing wave positions",
+          "correct": true
+        },
+        {
+          "answer": "The name of the instrument that made the sound",
+          "correct": false
+        },
+        {
+          "answer": "A single average volume value",
+          "correct": false
+        }
+      ],
+      "explanation": "Digital audio is simply a long sequence of numbers, each one a measurement of the wave's position at a moment in time. Playing them back in order reconstructs the original sound."
+    }
+  ]
+}

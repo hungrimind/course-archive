@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary difference between a `Future` and a `Stream` in Dart?",
+      "answers": [
+        {
+          "answer": "A `Future` is for asynchronous operations, while a `Stream` is for synchronous operations.",
+          "correct": false
+        },
+        {
+          "answer": "A `Future` can only hold `String` data, while a `Stream` can hold any type of data.",
+          "correct": false
+        },
+        {
+          "answer": "There is no difference; `Stream` is just another name for a `Future`.",
+          "correct": false
+        },
+        {
+          "answer": "A `Future` represents a single value in the future, while a `Stream` represents a sequence of values over time.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "You are building an application that needs to display live weather updates every few minutes. Which asynchronous tool would be the most appropriate choice for this task?",
+      "answers": [
+        {
+          "answer": "A `Future`, because the weather data is fetched from a server.",
+          "correct": false
+        },
+        {
+          "answer": "A `List`, because you are handling a collection of data.",
+          "correct": false
+        },
+        {
+          "answer": "A `Stream`, because you need a continuous sequence of data over time.",
+          "correct": true
+        },
+        {
+          "answer": "A `Function`, to define the logic for fetching the weather.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does the following line of code create?\n\n`Future.delayed(const Duration(seconds: 1));`",
+      "answers": [
+        {
+          "answer": "A `Future` that will complete after a one-second delay.",
+          "correct": true
+        },
+        {
+          "answer": "A stream that emits an incrementing number every second, indefinitely.",
+          "correct": false
+        },
+        {
+          "answer": "A stream that emits only one value and then immediately closes.",
+          "correct": false
+        },
+        {
+          "answer": "A function that pauses the entire program for one second.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

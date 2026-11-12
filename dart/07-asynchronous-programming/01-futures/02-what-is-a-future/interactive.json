@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "In Dart, what does a `Future` object represent?",
+      "answers": [
+        {
+          "answer": "A value that may not be available yet, but will be at some point in the future.",
+          "correct": true
+        },
+        {
+          "answer": "A value that is immediately available for use.",
+          "correct": false
+        },
+        {
+          "answer": "A special type of `Function` that can only be called once.",
+          "correct": false
+        },
+        {
+          "answer": "A collection of values, similar to a `List`.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the key difference between how synchronous and asynchronous code executes?",
+      "answers": [
+        {
+          "answer": "Asynchronous code always runs faster than synchronous code.",
+          "correct": false
+        },
+        {
+          "answer": "Only synchronous code can use `try-catch` blocks to handle errors.",
+          "correct": false
+        },
+        {
+          "answer": "Asynchronous code must be written in a separate file from synchronous code.",
+          "correct": false
+        },
+        {
+          "answer": "Synchronous code is executed line by line, blocking further execution, while asynchronous code runs in the background without blocking.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is **NOT** a valid state for a `Future`?",
+      "answers": [
+        {
+          "answer": "Paused",
+          "correct": true
+        },
+        {
+          "answer": "Uncompleted",
+          "correct": false
+        },
+        {
+          "answer": "Completed with Data",
+          "correct": false
+        },
+        {
+          "answer": "Completed with Error",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

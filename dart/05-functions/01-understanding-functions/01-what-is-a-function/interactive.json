@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "According to the \"magic box\" analogy in the lesson, what is the best description of a function?",
+      "answers": [
+        {
+          "answer": "A container for storing a single piece of data, like a number or text.",
+          "correct": false
+        },
+        {
+          "answer": "A statement that allows a program to make a decision, like an `if` statement.",
+          "correct": false
+        },
+        {
+          "answer": "A reusable piece of code that can take inputs, perform a task, and return an output.",
+          "correct": true
+        },
+        {
+          "answer": "A way to repeat a block of code multiple times, like a `for` loop.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The lesson mentions that the built-in `print()` function is a `void` function. What does this mean?",
+      "answers": [
+        {
+          "answer": "The function performs an action but does not return an output value.",
+          "correct": true
+        },
+        {
+          "answer": "The function does not accept any inputs.",
+          "correct": false
+        },
+        {
+          "answer": "The function is empty and does not perform any action.",
+          "correct": false
+        },
+        {
+          "answer": "The function has an error and cannot be used.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Consider the following line of code from the lesson: `int number = int.parse('1');`. What is the **input** to the `int.parse()` function?",
+      "answers": [
+        {
+          "answer": "The variable `number`.",
+          "correct": false
+        },
+        {
+          "answer": "The integer `1`.",
+          "correct": false
+        },
+        {
+          "answer": "The `int` data type.",
+          "correct": false
+        },
+        {
+          "answer": "The string `'1'`.",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

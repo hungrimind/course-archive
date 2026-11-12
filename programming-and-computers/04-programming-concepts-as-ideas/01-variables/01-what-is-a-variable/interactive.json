@@ -1,0 +1,40 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "let playerName = \"Alice\";\nlet playerScore = "
+      },
+      {
+        "type": "blank",
+        "answer": "100"
+      },
+      {
+        "type": "code",
+        "value": ";\n\nconsole.log("
+      },
+      {
+        "type": "blank",
+        "answer": "playerName"
+      },
+      {
+        "type": "code",
+        "value": ", \"has score\", "
+      },
+      {
+        "type": "blank",
+        "answer": "playerScore"
+      },
+      {
+        "type": "code",
+        "value": ");"
+      }
+    ],
+    "options": [
+      "\"score\"",
+      "console",
+      "Alice"
+    ]
+  }
+}

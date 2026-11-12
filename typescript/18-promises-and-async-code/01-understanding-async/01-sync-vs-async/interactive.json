@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What happens when synchronous code encounters a long-running task like a network request?",
+      "answers": [
+        {
+          "answer": "It skips the task and moves to the next line",
+          "correct": false
+        },
+        {
+          "answer": "It blocks and waits for the task to finish before continuing",
+          "correct": true
+        },
+        {
+          "answer": "It runs the task in the background automatically",
+          "correct": false
+        },
+        {
+          "answer": "It throws an error because synchronous code cannot do network requests",
+          "correct": false
+        }
+      ],
+      "explanation": "Synchronous code runs line by line. Each line must finish before the next one starts, so a long-running task blocks everything after it until it completes."
+    },
+    {
+      "question": "Why is asynchronous code important for I/O operations like fetching data?",
+      "answers": [
+        {
+          "answer": "It makes the data arrive faster from the server",
+          "correct": false
+        },
+        {
+          "answer": "It prevents your program from freezing while waiting for a response",
+          "correct": true
+        },
+        {
+          "answer": "It guarantees the data will always be available",
+          "correct": false
+        },
+        {
+          "answer": "It automatically retries failed requests",
+          "correct": false
+        }
+      ],
+      "explanation": "Asynchronous code lets your program kick off a task like a network request and keep running other code while waiting for the result, preventing the program from freezing."
+    }
+  ]
+}

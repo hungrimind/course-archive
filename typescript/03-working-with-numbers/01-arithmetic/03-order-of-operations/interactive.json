@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What does `2 + 3 * 4` evaluate to in TypeScript?",
+      "answers": [
+        {
+          "answer": "20",
+          "correct": false
+        },
+        {
+          "answer": "14",
+          "correct": true
+        },
+        {
+          "answer": "24",
+          "correct": false
+        },
+        {
+          "answer": "9",
+          "correct": false
+        }
+      ],
+      "explanation": "Multiplication happens before addition. 3 * 4 is 12, then 2 + 12 is 14."
+    },
+    {
+      "question": "How do you force addition to happen before multiplication?",
+      "answers": [
+        {
+          "answer": "Use curly braces: {2 + 3} * 4",
+          "correct": false
+        },
+        {
+          "answer": "Use parentheses: (2 + 3) * 4",
+          "correct": true
+        },
+        {
+          "answer": "Use square brackets: [2 + 3] * 4",
+          "correct": false
+        },
+        {
+          "answer": "Put addition first on the line",
+          "correct": false
+        }
+      ],
+      "explanation": "Parentheses override the default order of operations, forcing the enclosed expression to be evaluated first."
+    },
+    {
+      "question": "What does `10 - 2 * 3` evaluate to?",
+      "answers": [
+        {
+          "answer": "24",
+          "correct": false
+        },
+        {
+          "answer": "4",
+          "correct": true
+        },
+        {
+          "answer": "8",
+          "correct": false
+        },
+        {
+          "answer": "16",
+          "correct": false
+        }
+      ],
+      "explanation": "Multiplication happens first: 2 * 3 is 6. Then 10 - 6 is 4."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Where should test files be located in relation to the source files?",
+      "answers": [
+        {
+          "answer": "In a mirrored structure under the test directory",
+          "correct": true
+        },
+        {
+          "answer": "In the same directory as the source files",
+          "correct": false
+        },
+        {
+          "answer": "Anywhere in the test directory",
+          "correct": false
+        },
+        {
+          "answer": "In a separate tests project",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is the best test description?",
+      "answers": [
+        {
+          "answer": "should validate empty password field",
+          "correct": false
+        },
+        {
+          "answer": "test password validation on login screen",
+          "correct": false
+        },
+        {
+          "answer": "should handle empty password case",
+          "correct": false
+        },
+        {
+          "answer": "should display error message when password input is empty and login button is pressed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What makes a good test description?",
+      "answers": [
+        {
+          "answer": "It's as short as possible",
+          "correct": false
+        },
+        {
+          "answer": "It includes the function name being tested",
+          "correct": false
+        },
+        {
+          "answer": "By only seeing the test description, you can rewrite the test if it was removed",
+          "correct": true
+        },
+        {
+          "answer": "It starts with 'test'",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

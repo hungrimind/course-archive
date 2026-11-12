@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What problem does the Interface Segregation Principle (ISP) aim to solve?",
+      "answers": [
+        {
+          "answer": "The duplication of code across different classes.",
+          "correct": false
+        },
+        {
+          "answer": "The need for classes to implement only methods that are essential to their roles.",
+          "correct": true
+        },
+        {
+          "answer": "The integration of too many classes in a single application.",
+          "correct": false
+        },
+        {
+          "answer": "The redundancy of interface definitions in programming languages.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why is the implementation of 'faxDocument' in 'BasicPrinter' considered a violation of ISP?",
+      "answers": [
+        {
+          "answer": "Because 'BasicPrinter' should not perform any document-related tasks.",
+          "correct": false
+        },
+        {
+          "answer": "Because 'BasicPrinter' doesn't support faxing, and thus shouldn't implement a method it doesn't use.",
+          "correct": true
+        },
+        {
+          "answer": "Because the 'faxDocument' method lacks a corresponding method for printing.",
+          "correct": false
+        },
+        {
+          "answer": "Because 'BasicPrinter' also needs to implement scanning alongside faxing.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Given the lesson, which programming adjustment best aligns with ISP?",
+      "answers": [
+        {
+          "answer": "Create separate interfaces for each function such as IPrinter, IScanner, and IFaxer.",
+          "correct": true
+        },
+        {
+          "answer": "Implement all functions inside a single, comprehensive interface.",
+          "correct": false
+        },
+        {
+          "answer": "Remove the 'faxDocument' method from the interface altogether.",
+          "correct": false
+        },
+        {
+          "answer": "Merge all classes into a single class to simplify the code structure.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

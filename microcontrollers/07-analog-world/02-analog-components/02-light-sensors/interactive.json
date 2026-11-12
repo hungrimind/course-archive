@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A photoresistor outputs a voltage on its own, just like a potentiometer's wiper pin.",
+        "correct": false,
+        "explanation": "A photoresistor is just a two-pin resistor -- it doesn't output a voltage on its own. Unlike a potentiometer with a built-in wiper voltage, you need to pair a photoresistor with a fixed resistor in a voltage divider circuit to produce a readable voltage."
+      },
+      {
+        "statement": "Bright light causes a photoresistor's resistance to drop.",
+        "correct": true,
+        "explanation": "A photoresistor (LDR) has an inverse relationship between light and resistance. More light hitting it makes the resistance decrease, while darkness causes the resistance to increase."
+      },
+      {
+        "statement": "Higher ADC readings from a photoresistor circuit always mean brighter light.",
+        "correct": false,
+        "explanation": "Whether higher readings mean brighter or darker depends on how you wire the voltage divider. The photoresistor can be placed as either R1 or R2 in the divider, which reverses the relationship. Always check your wiring if values seem backwards."
+      }
+    ]
+  }
+}

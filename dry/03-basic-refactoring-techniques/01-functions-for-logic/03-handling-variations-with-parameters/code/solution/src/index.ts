@@ -1,0 +1,6 @@
+export function greet(name: string): void {
+  console.log(`Hello, ${name}!`);
+}
+
+greet("Alice");
+greet("Bob");

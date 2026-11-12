@@ -1,0 +1,195 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "app_client",
+        "label": "Client / App",
+        "icon": "monitor",
+        "category": "compute"
+      },
+      {
+        "id": "query_router",
+        "label": "Query Router (Range Mapper)",
+        "icon": "network",
+        "category": "compute"
+      },
+      {
+        "id": "config_service",
+        "label": "Shard Map / Config",
+        "icon": "layers",
+        "category": "compute"
+      },
+      {
+        "id": "shard_1",
+        "label": "Shard 1 (IDs 1–1000)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "shard_2",
+        "label": "Shard 2 (IDs 1001–2000)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "rebalance_job",
+        "label": "Rebalance / Split Job",
+        "icon": "git-branch",
+        "category": "compute"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "app_client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "app_client",
+        "to": "query_router"
+      },
+      {
+        "from": "query_router",
+        "to": "shard_1"
+      },
+      {
+        "from": "query_router",
+        "to": "shard_2"
+      },
+      {
+        "from": "query_router",
+        "to": "config_service"
+      },
+      {
+        "from": "rebalance_job",
+        "to": "config_service"
+      },
+      {
+        "from": "rebalance_job",
+        "to": "shard_1"
+      },
+      {
+        "from": "rebalance_job",
+        "to": "shard_2"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "query_router",
+        "message": "Add a Query Router that routes requests to shards based on ID ranges; clients shouldn't need to know shard boundaries."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "database",
+        "count": 2,
+        "message": "Use at least two database shards to demonstrate range-based sharding across multiple ranges."
+      },
+      {
+        "type": "path_exists",
+        "from": "app_client",
+        "to": "database",
+        "message": "Ensure the client can reach the shards (via a router) so reads/writes can be served."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "app_client",
+        "to": "database",
+        "message": "Clients should not connect directly to shards; put a Query Router in front to hide shard ranges and simplify routing."
+      },
+      {
+        "type": "required_edge",
+        "from": "query_router",
+        "to": "config_service",
+        "message": "Connect the Query Router to the Shard Map/Config so it can map ID ranges to the correct shard."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "rebalance_job",
+        "message": "Add a Rebalance/Split Job to reflect that range-based sharding can become uneven and may need re-splitting as data grows."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "app_client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "query_router",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "config_service",
+          "x": 450,
+          "y": 150
+        },
+        {
+          "id": "sol_4",
+          "componentId": "shard_1",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_5",
+          "componentId": "shard_2",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_6",
+          "componentId": "rebalance_job",
+          "x": 250,
+          "y": 450
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_5"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_6",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_6",
+          "to": "sol_4"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_6",
+          "to": "sol_5"
+        }
+      ]
+    },
+    "assignment": "Build a range-based sharding architecture for user data. Include a routing component that maps user ID ranges to the correct shard, use at least two shards, ensure the client reaches shards through the router (not directly), connect the router to a shard map/config, and include a rebalancing/splitting job to handle uneven growth."
+  }
+}

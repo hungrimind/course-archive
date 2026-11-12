@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const taxRate = 0.25; "
+      },
+      {
+        "type": "blank",
+        "answer": "//"
+      },
+      {
+        "type": "code",
+        "value": " 25% sales tax\nconst maxRetries = 3; "
+      },
+      {
+        "type": "blank",
+        "answer": "//"
+      },
+      {
+        "type": "code",
+        "value": " limit to avoid infinite loops"
+      }
+    ],
+    "options": [
+      "#",
+      "/*",
+      "--"
+    ]
+  }
+}

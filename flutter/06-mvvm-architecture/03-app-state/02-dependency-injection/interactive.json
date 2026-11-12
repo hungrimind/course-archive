@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "How should dependencies be injected according to the lesson?",
+      "answers": [
+        {
+          "answer": "Through the constructor",
+          "correct": true
+        },
+        {
+          "answer": "Through global variables",
+          "correct": false
+        },
+        {
+          "answer": "Through method parameters",
+          "correct": false
+        },
+        {
+          "answer": "Through static fields",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is GetIt in Flutter?",
+      "answers": [
+        {
+          "answer": "A state management solution",
+          "correct": false
+        },
+        {
+          "answer": "A widget builder",
+          "correct": false
+        },
+        {
+          "answer": "A routing package",
+          "correct": false
+        },
+        {
+          "answer": "A service locator package",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What is the main goal of dependency injection in this context?",
+      "answers": [
+        {
+          "answer": "To make code more complex",
+          "correct": false
+        },
+        {
+          "answer": "To increase app performance",
+          "correct": false
+        },
+        {
+          "answer": "To avoid creating multiple instances of services",
+          "correct": true
+        },
+        {
+          "answer": "To reduce code size",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

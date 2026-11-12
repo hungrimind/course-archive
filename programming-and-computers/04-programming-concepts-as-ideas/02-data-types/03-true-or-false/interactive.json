@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "let isLoggedIn = "
+      },
+      {
+        "type": "blank",
+        "answer": "true"
+      },
+      {
+        "type": "code",
+        "value": ";\nlet isGameOver = "
+      },
+      {
+        "type": "blank",
+        "answer": "false"
+      },
+      {
+        "type": "code",
+        "value": ";\n\nif (isLoggedIn) {\n  console.log(\"Welcome back!\");\n}"
+      }
+    ],
+    "options": [
+      "\"yes\"",
+      "1",
+      "null"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "According to the lesson, what are the three main benefits of using Object-Oriented Programming (OOP)?",
+      "answers": [
+        {
+          "answer": "It makes your code run faster, use less memory, and require fewer variables.",
+          "correct": false
+        },
+        {
+          "answer": "It automatically fixes bugs, writes comments for you, and chooses the best variable types.",
+          "correct": false
+        },
+        {
+          "answer": "It helps make your code more organized, reusable, and maintainable.",
+          "correct": true
+        },
+        {
+          "answer": "It's the only way to use loops, functions, and conditional statements in Dart.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Imagine you are building an application to manage a library. How would OOP help you organize your code?",
+      "answers": [
+        {
+          "answer": "By creating one very long `main` function that handles everything related to the library.",
+          "correct": false
+        },
+        {
+          "answer": "By creating classes like `Book`, `Author`, and `LibraryMember` to group related properties and functions.",
+          "correct": true
+        },
+        {
+          "answer": "By storing all the library data in a single `List` of `String`s.",
+          "correct": false
+        },
+        {
+          "answer": "By using `if/else` statements to separate the logic for books and authors.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "You have created a `Car` class in your program. If you need to represent 50 different cars, what is the most significant advantage of using this class?",
+      "answers": [
+        {
+          "answer": "You can create 50 different `Car` objects from the single `Car` class without rewriting the code for each one.",
+          "correct": true
+        },
+        {
+          "answer": "The program will automatically prevent you from creating more than one car.",
+          "correct": false
+        },
+        {
+          "answer": "You must create 50 separate functions, one for each car.",
+          "correct": false
+        },
+        {
+          "answer": "The `Car` class will make your program run exactly 50 times faster.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

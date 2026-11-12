@@ -1,0 +1,28 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "SQL Join Types",
+        "items": [
+          "INNER JOIN",
+          "LEFT JOIN",
+          "RIGHT JOIN"
+        ]
+      },
+      {
+        "label": "Normalization Concepts",
+        "items": [
+          "Reduce redundancy",
+          "Improve integrity"
+        ]
+      },
+      {
+        "label": "SQL Query Example",
+        "items": [
+          "SELECT orders.id, customers.name",
+          "JOIN customers ON orders.customer_id = customers.id"
+        ]
+      }
+    ]
+  }
+}

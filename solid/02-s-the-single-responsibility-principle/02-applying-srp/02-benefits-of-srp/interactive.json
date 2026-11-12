@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is one advantage of applying the Single Responsibility Principle (SRP) to your code?",
+      "answers": [
+        {
+          "answer": "It makes your code execute faster.",
+          "correct": false
+        },
+        {
+          "answer": "It enhances maintainability by localizing changes.",
+          "correct": true
+        },
+        {
+          "answer": "It makes your code more visually appealing.",
+          "correct": false
+        },
+        {
+          "answer": "It reduces the need for documentation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does SRP improve testability?",
+      "answers": [
+        {
+          "answer": "By making the classes larger and more complex.",
+          "correct": false
+        },
+        {
+          "answer": "By removing the need for tests completely.",
+          "correct": false
+        },
+        {
+          "answer": "By making smaller, single-purpose classes that are easier to unit test.",
+          "correct": true
+        },
+        {
+          "answer": "By integrating multiple functionalities into one class.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the given code example, why are there two separate classes for generating and printing reports?",
+      "answers": [
+        {
+          "answer": "To increase the number of lines of code.",
+          "correct": false
+        },
+        {
+          "answer": "To keep the actions of generating and printing reports separated, each with a single responsibility.",
+          "correct": true
+        },
+        {
+          "answer": "To confuse the developers and maintainers.",
+          "correct": false
+        },
+        {
+          "answer": "Because Dart requires different classes for each action.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What does a tuple enforce that a regular array does not?",
+      "answers": [
+        {
+          "answer": "A tuple only allows string elements",
+          "correct": false
+        },
+        {
+          "answer": "A tuple has a fixed length and a specific type at each position",
+          "correct": true
+        },
+        {
+          "answer": "A tuple automatically sorts its elements",
+          "correct": false
+        },
+        {
+          "answer": "A tuple prevents you from reading its elements",
+          "correct": false
+        }
+      ],
+      "explanation": "A tuple locks down both the number of elements and the type at every index. A regular array can hold any number of items of a single type, but a tuple says exactly how many elements there are and what type each one must be."
+    },
+    {
+      "question": "Given `const item: [string, number] = [\"Widget\", 9.99];`, what would happen if you wrote `const item: [string, number] = [9.99, \"Widget\"];`?",
+      "answers": [
+        {
+          "answer": "It would work because tuples ignore element order",
+          "correct": false
+        },
+        {
+          "answer": "It would silently swap the values at runtime",
+          "correct": false
+        },
+        {
+          "answer": "TypeScript would report a type error because the types are in the wrong positions",
+          "correct": true
+        },
+        {
+          "answer": "It would work but the types of item[0] and item[1] would be `any`",
+          "correct": false
+        }
+      ],
+      "explanation": "Tuple types are positional. The type [string, number] requires a string at index 0 and a number at index 1. Swapping them causes a compile-time type error because 9.99 is not a string and \"Widget\" is not a number."
+    }
+  ]
+}

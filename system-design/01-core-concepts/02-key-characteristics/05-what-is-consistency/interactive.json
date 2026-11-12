@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Strong consistency ensures that once a write completes, all subsequent reads will see the new value immediately.",
+        "correct": true,
+        "explanation": "Strong consistency guarantees that after a write operation, any following read operations will reflect the most recent write. This is the hallmark of strong consistency, providing immediate visibility of the latest changes."
+      },
+      {
+        "statement": "Eventual consistency guarantees that all read operations will immediately reflect the latest write.",
+        "correct": false,
+        "explanation": "Eventual consistency allows for temporary discrepancies between writes and reads. After a write, subsequent reads might return older values until the system converges to the latest state over time."
+      },
+      {
+        "statement": "In distributed systems, opting for strong consistency often results in increased latency or reduced availability during failures.",
+        "correct": true,
+        "explanation": "Strong consistency can require more coordination between distributed nodes, which may increase latency or reduce availability, especially if network partitions or failures occur. This trade-off is often compared in the context of the CAP theorem."
+      },
+      {
+        "statement": "In eventual consistency models, all nodes in the system will immediately reflect changes made by a write operation.",
+        "correct": false,
+        "explanation": "In eventual consistency models, there is no guarantee of immediate consistency across nodes after a write. Nodes may take time to converge on the latest data, during which reads might return outdated values."
+      }
+    ]
+  }
+}

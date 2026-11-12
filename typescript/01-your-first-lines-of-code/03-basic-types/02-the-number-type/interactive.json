@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "const wholeNumber: "
+      },
+      {
+        "type": "blank",
+        "answer": "number"
+      },
+      {
+        "type": "code",
+        "value": " = 42;\nconst decimal: "
+      },
+      {
+        "type": "blank",
+        "answer": "number"
+      },
+      {
+        "type": "code",
+        "value": " = 9.99;"
+      }
+    ],
+    "options": [
+      "string",
+      "float",
+      "integer"
+    ]
+  }
+}

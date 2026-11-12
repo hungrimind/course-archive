@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A transistor can be halfway between ON and OFF, like a dimmer switch.",
+        "correct": false,
+        "explanation": "A transistor acts as a strict ON/OFF switch with no in-between state. It is either fully ON or fully OFF."
+      },
+      {
+        "statement": "A transistor is controlled by electrical signals rather than by a person physically flipping it.",
+        "correct": true,
+        "explanation": "Unlike a wall light switch that you flip by hand, a transistor is switched ON or OFF by electrical signals, which is what allows computers to operate so fast."
+      },
+      {
+        "statement": "A transistor is a tiny mechanical switch with moving parts inside the computer.",
+        "correct": false,
+        "explanation": "A transistor is an electronic switch, not a mechanical one. It has no moving parts, it uses electrical signals to switch between ON and OFF."
+      }
+    ]
+  }
+}

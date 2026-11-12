@@ -1,0 +1,43 @@
+{
+  "fillblank": {
+    "language": "dart",
+    "segments": [
+      {
+        "type": "code",
+        "value": "void "
+      },
+      {
+        "type": "blank",
+        "answer": "greet"
+      },
+      {
+        "type": "code",
+        "value": "(String name) {\n  print('Hello, $"
+      },
+      {
+        "type": "blank",
+        "answer": "name"
+      },
+      {
+        "type": "code",
+        "value": "! Welcome to the platform!');\n}\n\n"
+      },
+      {
+        "type": "blank",
+        "answer": "greet"
+      },
+      {
+        "type": "code",
+        "value": "('Alice');\n"
+      },
+      {
+        "type": "blank",
+        "answer": "greet"
+      },
+      {
+        "type": "code",
+        "value": "('Bob');"
+      }
+    ]
+  }
+}

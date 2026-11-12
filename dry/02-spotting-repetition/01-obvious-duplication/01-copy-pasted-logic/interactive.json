@@ -1,0 +1,28 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Problems with Copy-Pasting",
+        "items": [
+          "Increased maintenance effort",
+          "Risk of bugs",
+          "Inconsistent updates"
+        ]
+      },
+      {
+        "label": "Example of Redundant Code",
+        "items": [
+          "addTen function",
+          "addTenAgain function"
+        ]
+      },
+      {
+        "label": "Best Practices",
+        "items": [
+          "Avoid logic duplication",
+          "Use helper functions"
+        ]
+      }
+    ]
+  }
+}

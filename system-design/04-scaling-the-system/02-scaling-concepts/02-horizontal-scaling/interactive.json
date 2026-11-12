@@ -1,0 +1,202 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "client",
+        "label": "Client",
+        "icon": "monitor",
+        "category": "edge"
+      },
+      {
+        "id": "load_balancer",
+        "label": "Load Balancer",
+        "icon": "network",
+        "category": "network"
+      },
+      {
+        "id": "app_server",
+        "label": "App Server Instance",
+        "icon": "server",
+        "category": "compute"
+      },
+      {
+        "id": "cache",
+        "label": "Cache",
+        "icon": "layers",
+        "category": "storage"
+      },
+      {
+        "id": "database",
+        "label": "Database",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "autoscaler",
+        "label": "Auto Scaling Group",
+        "icon": "git-branch",
+        "category": "compute"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "client",
+        "to": "load_balancer"
+      },
+      {
+        "from": "load_balancer",
+        "to": "app_server"
+      },
+      {
+        "from": "autoscaler",
+        "to": "app_server"
+      },
+      {
+        "from": "app_server",
+        "to": "cache"
+      },
+      {
+        "from": "app_server",
+        "to": "database"
+      },
+      {
+        "from": "cache",
+        "to": "database"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "load_balancer",
+        "message": "Add a load balancer to distribute traffic across multiple machines. This is key to horizontal scaling."
+      },
+      {
+        "type": "min_count",
+        "nodeType": "app_server",
+        "count": 2,
+        "message": "Use at least 2 app server instances to demonstrate horizontal scaling (adding machines rather than upgrading one)."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "autoscaler",
+        "message": "Include an auto scaling group to show how capacity can be increased by adding more instances."
+      },
+      {
+        "type": "path_exists",
+        "from": "client",
+        "to": "database",
+        "message": "Ensure there is a complete request path from the client to the database through the scaled application tier."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "load_balancer",
+        "to": "database",
+        "message": "Avoid connecting the load balancer directly to the database. Traffic should go through app servers so scaling and business logic stay in the compute tier."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "client",
+        "to": "app_server",
+        "message": "Clients should not connect directly to app servers in a horizontally scaled setup. Use the load balancer as the single entry point."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_client",
+          "componentId": "client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_lb",
+          "componentId": "load_balancer",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_asg",
+          "componentId": "autoscaler",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_app1",
+          "componentId": "app_server",
+          "x": 250,
+          "y": 300
+        },
+        {
+          "id": "sol_app2",
+          "componentId": "app_server",
+          "x": 400,
+          "y": 300
+        },
+        {
+          "id": "sol_cache",
+          "componentId": "cache",
+          "x": 250,
+          "y": 450
+        },
+        {
+          "id": "sol_db",
+          "componentId": "database",
+          "x": 250,
+          "y": 600
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_client",
+          "to": "sol_lb"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_lb",
+          "to": "sol_app1"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_lb",
+          "to": "sol_app2"
+        },
+        {
+          "id": "se_4",
+          "from": "sol_asg",
+          "to": "sol_app1"
+        },
+        {
+          "id": "se_5",
+          "from": "sol_asg",
+          "to": "sol_app2"
+        },
+        {
+          "id": "se_6",
+          "from": "sol_app1",
+          "to": "sol_cache"
+        },
+        {
+          "id": "se_7",
+          "from": "sol_app2",
+          "to": "sol_cache"
+        },
+        {
+          "id": "se_8",
+          "from": "sol_cache",
+          "to": "sol_db"
+        }
+      ]
+    },
+    "assignment": "Build a horizontally scaled architecture where a load balancer fronts multiple app server instances. Include an auto scaling group that can add instances, and ensure there is an end-to-end path for requests from the client to the database through the application tier. Avoid direct client-to-app connections and avoid connecting the load balancer directly to the database."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main difference between using the `implements` keyword and the `extends` keyword in Dart?",
+      "answers": [
+        {
+          "answer": "`implements` allows a class to inherit from multiple classes, while `extends` only allows one.",
+          "correct": false
+        },
+        {
+          "answer": "`extends` is for inheriting from classes, while `implements` is for inheriting from functions.",
+          "correct": false
+        },
+        {
+          "answer": "A class using `implements` must provide its own implementation for *all* methods and properties of the parent class.",
+          "correct": true
+        },
+        {
+          "answer": "There is no difference; `implements` and `extends` can be used interchangeably.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Review the code snippet below. Why will this code fail to compile?\n\n```dart\nclass Speaker {\n  String name;\n\n  Speaker(this.name);\n\n  void announce() {\n    print('Hello, I am $name');\n  }\n}\n\nclass Student implements Speaker {\n  @override\n  void announce() {\n    print('I am a student.');\n  }\n}\n```",
+      "answers": [
+        {
+          "answer": "The `Student` class is missing a constructor.",
+          "correct": false
+        },
+        {
+          "answer": "The `Student` class must also override the `name` property from the `Speaker` class.",
+          "correct": true
+        },
+        {
+          "answer": "The `@override` annotation should not be used with `implements`.",
+          "correct": false
+        },
+        {
+          "answer": "The `Student` class should use `extends` instead of `implements`.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following class definitions demonstrates a capability that is unique to the `implements` keyword compared to the `extends` keyword?",
+      "answers": [
+        {
+          "answer": "`class Car extends Vehicle {}`",
+          "correct": false
+        },
+        {
+          "answer": "`class Bicycle implements Vehicle {}`",
+          "correct": false
+        },
+        {
+          "answer": "`class AmphibiousVehicle implements Vehicle, Boat {}`",
+          "correct": true
+        },
+        {
+          "answer": "`class Motorcycle extends Vehicle implements TwoWheeler {}`",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

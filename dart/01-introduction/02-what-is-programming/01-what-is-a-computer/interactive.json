@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "According to the lesson, what is the fundamental definition of programming?",
+      "answers": [
+        {
+          "answer": "The process of building the physical parts of a computer.",
+          "correct": false
+        },
+        {
+          "answer": "The study of how electricity can be turned into games and apps.",
+          "correct": false
+        },
+        {
+          "answer": "The act of making computers faster and more efficient.",
+          "correct": false
+        },
+        {
+          "answer": "Providing a computer with instructions to perform a task.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Based on the definition of programming, what is the relationship between a program you write and the computer?",
+      "answers": [
+        {
+          "answer": "The program is a set of instructions that the computer follows.",
+          "correct": true
+        },
+        {
+          "answer": "The computer is a set of instructions that the program follows.",
+          "correct": false
+        },
+        {
+          "answer": "The program is a physical component that you add to the computer.",
+          "correct": false
+        },
+        {
+          "answer": "The computer and the program collaborate to decide what to do.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

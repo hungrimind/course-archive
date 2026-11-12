@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Functional requirements describe how well a system should perform.",
+        "correct": false,
+        "explanation": "Functional requirements describe what the system must do, including its features and behaviors. Non-functional requirements describe how well it should perform."
+      },
+      {
+        "statement": "Scalability refers to a system's ability to handle increased load by adding more resources.",
+        "correct": true,
+        "explanation": "Scalability is about the system's capability to manage additional load efficiently by increasing resources, such as servers or data storage."
+      },
+      {
+        "statement": "In the design loop, the first step is to find bottlenecks and risks.",
+        "correct": false,
+        "explanation": "The first step in the design loop is to clarify requirements, which is crucial for understanding what the system is supposed to achieve."
+      },
+      {
+        "statement": "Improving latency will always lead to an increase in throughput.",
+        "correct": false,
+        "explanation": "Improving latency (speed per request) does not necessarily increase throughput (amount of work done per second), as they can have different constraints and tradeoffs."
+      }
+    ]
+  }
+}

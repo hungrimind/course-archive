@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Why shouldn't we use print statements in production?",
+      "answers": [
+        {
+          "answer": "They make the app faster",
+          "correct": false
+        },
+        {
+          "answer": "They use too much memory",
+          "correct": false
+        },
+        {
+          "answer": "Anyone with the app on their device can access them",
+          "correct": true
+        },
+        {
+          "answer": "They are too colorful",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "what's the benefit of using a logging service in production?",
+      "answers": [
+        {
+          "answer": "Centralized error tracking and debugging across all users",
+          "correct": true
+        },
+        {
+          "answer": "It makes the app faster",
+          "correct": false
+        },
+        {
+          "answer": "It reduces app size",
+          "correct": false
+        },
+        {
+          "answer": "It improves UI performance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which logging level would you use for critical errors?",
+      "answers": [
+        {
+          "answer": "Level.INFO",
+          "correct": false
+        },
+        {
+          "answer": "Level.FINE",
+          "correct": false
+        },
+        {
+          "answer": "Level.SEVERE",
+          "correct": true
+        },
+        {
+          "answer": "Level.WARNING",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

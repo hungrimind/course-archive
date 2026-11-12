@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Output Mode",
+        "items": [
+          "Pushes voltage out of the pin",
+          "Used to light an LED",
+          "Used to drive a motor"
+        ]
+      },
+      {
+        "label": "Input Mode",
+        "items": [
+          "Reads voltage coming in",
+          "Detects a button press",
+          "Returns 1 (HIGH) or 0 (LOW)"
+        ]
+      }
+    ]
+  }
+}

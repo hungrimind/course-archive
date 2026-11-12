@@ -1,0 +1,31 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "// Print \"Hello\" 3 times\n"
+      },
+      {
+        "type": "blank",
+        "answer": "for"
+      },
+      {
+        "type": "code",
+        "value": " (let i = 0; i < "
+      },
+      {
+        "type": "blank",
+        "answer": "3"
+      },
+      {
+        "type": "code",
+        "value": "; i++) {\n  console.log(\"Hello\");\n}"
+      }
+    ],
+    "options": [
+      "while",
+      "5"
+    ]
+  }
+}

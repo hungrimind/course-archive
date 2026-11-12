@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "Which of these is NOT a common type of local styling in Flutter?",
+      "answers": [
+        {
+          "answer": "Text Styling",
+          "correct": false
+        },
+        {
+          "answer": "Global Theme Configuration",
+          "correct": true
+        },
+        {
+          "answer": "Border and Decoration",
+          "correct": false
+        },
+        {
+          "answer": "Size and Spacing",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

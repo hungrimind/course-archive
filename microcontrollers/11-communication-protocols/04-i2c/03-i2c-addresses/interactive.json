@@ -1,0 +1,39 @@
+{
+  "fillblank": {
+    "segments": [
+      {
+        "type": "code",
+        "value": "Every I2C device has a "
+      },
+      {
+        "type": "blank",
+        "answer": "7-bit"
+      },
+      {
+        "type": "code",
+        "value": " address, usually written in hex like 0x48. The "
+      },
+      {
+        "type": "blank",
+        "answer": "manufacturer"
+      },
+      {
+        "type": "code",
+        "value": " picks the address for each device. An I2C "
+      },
+      {
+        "type": "blank",
+        "answer": "scan"
+      },
+      {
+        "type": "code",
+        "value": " tries every possible address and reports which ones respond."
+      }
+    ],
+    "options": [
+      "8-bit",
+      "user",
+      "reset"
+    ]
+  }
+}

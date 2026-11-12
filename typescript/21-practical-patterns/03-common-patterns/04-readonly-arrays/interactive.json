@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A function parameter typed as `readonly number[]` prevents the function from calling `.push()` on that array.",
+        "correct": true,
+        "explanation": "The `readonly` modifier removes mutating methods like `push`, `pop`, and index assignment from the type, so TypeScript will report a compile-time error if you try to use them."
+      },
+      {
+        "statement": "`readonly number[]` and `ReadonlyArray<number>` mean different things in TypeScript.",
+        "correct": false,
+        "explanation": "They are exactly the same type. `readonly number[]` is shorthand syntax for `ReadonlyArray<number>`."
+      },
+      {
+        "statement": "You cannot pass a regular `number[]` to a function that expects `readonly number[]`.",
+        "correct": false,
+        "explanation": "You can pass a regular mutable array to a parameter typed as `readonly number[]`. TypeScript just prevents the function from modifying the array; the caller's original array is still mutable on their side."
+      },
+      {
+        "statement": "The `readonly` modifier on arrays is enforced at runtime and will throw an error if you attempt to mutate the array.",
+        "correct": false,
+        "explanation": "The `readonly` modifier is a compile-time-only constraint. It has no effect at runtime, because TypeScript's type annotations are erased when the code is compiled to JavaScript."
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Single Responsibility Principle",
+        "items": [
+          "Class has one reason to change",
+          "Reduces complexity"
+        ]
+      },
+      {
+        "label": "Open/Closed Principle",
+        "items": [
+          "Extend without modifying",
+          "Promotes flexibility"
+        ]
+      },
+      {
+        "label": "Liskov Substitution Principle",
+        "items": [
+          "Derived replace base without altering",
+          "Maintains integrity"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Design Patterns",
+        "items": [
+          "Singleton",
+          "Factory",
+          "Observer"
+        ]
+      },
+      {
+        "label": "Continuous Learning",
+        "items": [
+          "Read blogs",
+          "Join forums",
+          "Books on design"
+        ]
+      },
+      {
+        "label": "Applying SOLID Principles",
+        "items": [
+          "Refactor code",
+          "Real-world projects"
+        ]
+      }
+    ]
+  }
+}

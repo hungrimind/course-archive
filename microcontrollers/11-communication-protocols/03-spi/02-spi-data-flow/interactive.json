@@ -1,0 +1,87 @@
+{
+  "signalmatcher": {
+    "protocol": "spi",
+    "signals": [
+      {
+        "id": "sclk",
+        "label": "SCLK",
+        "data": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "id": "mosi",
+        "label": "MOSI",
+        "data": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "miso",
+        "label": "MISO",
+        "data": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    ],
+    "blanks": [
+      "mosi",
+      "miso"
+    ],
+    "labels": [
+      "MOSI",
+      "MISO",
+      "TX",
+      "SCL"
+    ],
+    "assignment": "Both data lines are unlabeled. MOSI carries data FROM the controller TO the peripheral. MISO carries data back. In this exchange, the controller sends first. Identify which line is which."
+  }
+}

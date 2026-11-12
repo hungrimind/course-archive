@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Systems programming languages like C and Rust give programmers fine control over memory and CPU resources.",
+        "correct": true,
+        "explanation": "Systems languages are designed for software that runs close to the hardware. They let the programmer control memory and CPU resources directly, which is what makes them suitable for operating systems and game engines."
+      },
+      {
+        "statement": "Systems programming languages are easier to use than higher-level languages.",
+        "correct": false,
+        "explanation": "The tradeoff of systems languages is more complexity. They give you more control over the hardware, but that control comes with additional difficulty. Higher-level languages deliberately hide this complexity to be easier to use."
+      },
+      {
+        "statement": "Operating systems and game engines need systems languages because performance matters most for that kind of software.",
+        "correct": true,
+        "explanation": "Operating systems, game engines, and performance-critical software must run as fast as the hardware allows. Systems languages like C, Rust, and Go are built for exactly this purpose."
+      }
+    ]
+  }
+}

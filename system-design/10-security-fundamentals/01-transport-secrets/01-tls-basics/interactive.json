@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of the TLS protocol?",
+      "answers": [
+        {
+          "answer": "To compress data for faster transmission",
+          "correct": false
+        },
+        {
+          "answer": "To encrypt data for secure communication",
+          "correct": true
+        },
+        {
+          "answer": "To convert data into XML format",
+          "correct": false
+        },
+        {
+          "answer": "To visualize data traffic",
+          "correct": false
+        }
+      ],
+      "explanation": "TLS encrypts data to ensure secure communication between a client and server, preventing eavesdropping and tampering."
+    },
+    {
+      "question": "Why is TLS important for transmitting sensitive information such as passwords?",
+      "answers": [
+        {
+          "answer": "It increases data transmission speed",
+          "correct": false
+        },
+        {
+          "answer": "It guarantees data integrity",
+          "correct": false
+        },
+        {
+          "answer": "It secures data from unauthorized access",
+          "correct": true
+        },
+        {
+          "answer": "It decreases server load",
+          "correct": false
+        }
+      ],
+      "explanation": "TLS is important because it encrypts data, securing sensitive information from unauthorized access during transmission."
+    },
+    {
+      "question": "Which statement best describes the relationship between HTTPS and TLS?",
+      "answers": [
+        {
+          "answer": "HTTPS is a protocol that does not involve TLS at all",
+          "correct": false
+        },
+        {
+          "answer": "TLS is used by HTTPS to secure web traffic",
+          "correct": true
+        },
+        {
+          "answer": "TLS replaces the need for HTTPS",
+          "correct": false
+        },
+        {
+          "answer": "HTTPS is used to encrypt emails, while TLS is not",
+          "correct": false
+        }
+      ],
+      "explanation": "HTTPS incorporates TLS to ensure that web traffic is securely encrypted and protected from unauthorized access."
+    }
+  ]
+}

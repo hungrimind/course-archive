@@ -1,0 +1,28 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Hot Wire",
+        "items": [
+          "Carries AC voltage into your device",
+          "Provides the active electrical supply"
+        ]
+      },
+      {
+        "label": "Neutral Wire",
+        "items": [
+          "Completes the circuit back to the grid",
+          "Provides the return path for current"
+        ]
+      },
+      {
+        "label": "Ground Wire",
+        "items": [
+          "Pure safety: does nothing during normal operation",
+          "Routes stray current to earth if something goes wrong",
+          "Prevents you from becoming the path for fault current"
+        ]
+      }
+    ]
+  }
+}

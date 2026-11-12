@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What does the term 'Single Point of Failure' (SPOF) refer to in a system?",
+      "answers": [
+        {
+          "answer": "A component that improves system speed",
+          "correct": false
+        },
+        {
+          "answer": "A redundant system component",
+          "correct": false
+        },
+        {
+          "answer": "A part of the system that causes the entire system to fail if it fails",
+          "correct": true
+        },
+        {
+          "answer": "A backup plan for system failures",
+          "correct": false
+        }
+      ],
+      "explanation": "A Single Point of Failure is a part of the system that causes the entire system to fail if it fails. This term emphasizes the importance of identifying such points to ensure system reliability."
+    },
+    {
+      "question": "Why is relying on a single server considered a common Single Point of Failure (SPOF)?",
+      "answers": [
+        {
+          "answer": "It can help distribute the load more evenly",
+          "correct": false
+        },
+        {
+          "answer": "If the server fails, critical services could be disrupted",
+          "correct": true
+        },
+        {
+          "answer": "It ensures data integrity across the system",
+          "correct": false
+        },
+        {
+          "answer": "Single servers enhance system security",
+          "correct": false
+        }
+      ],
+      "explanation": "Relying on a single server is considered a SPOF because if it fails, any critical services running on it can be disrupted, potentially causing system downtime."
+    },
+    {
+      "question": "What is a primary strategy to mitigate Single Points of Failure?",
+      "answers": [
+        {
+          "answer": "Eliminate all system redundancies",
+          "correct": false
+        },
+        {
+          "answer": "Implement redundancy and failover systems",
+          "correct": true
+        },
+        {
+          "answer": "Increase the speed of system components",
+          "correct": false
+        },
+        {
+          "answer": "Consolidate all critical services on one server",
+          "correct": false
+        }
+      ],
+      "explanation": "Implementing redundancy and failover systems is crucial to mitigate SPOFs, as they provide alternatives in case one component fails, ensuring continuous operation."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What happens inside a fuse when too much current flows through it?",
+      "answers": [
+        {
+          "answer": "It redirects the current to ground",
+          "correct": false
+        },
+        {
+          "answer": "A thin wire inside melts and breaks the connection",
+          "correct": true
+        },
+        {
+          "answer": "It increases resistance to slow the current down",
+          "correct": false
+        },
+        {
+          "answer": "It stores the excess energy for later use",
+          "correct": false
+        }
+      ],
+      "explanation": "A fuse contains a thin wire designed to melt when excessive current flows, breaking the circuit to protect other components."
+    },
+    {
+      "question": "Why is a fuse described as a 'deliberate weak point' in a circuit?",
+      "answers": [
+        {
+          "answer": "Because it is the cheapest component",
+          "correct": false
+        },
+        {
+          "answer": "Because it is designed to fail first so everything else survives",
+          "correct": true
+        },
+        {
+          "answer": "Because it is always the smallest component",
+          "correct": false
+        },
+        {
+          "answer": "Because it is optional and not really needed",
+          "correct": false
+        }
+      ],
+      "explanation": "A fuse is intentionally the weakest link in the circuit. It sacrifices itself by breaking when current is too high, protecting all the other more valuable components."
+    }
+  ]
+}

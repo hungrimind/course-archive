@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the voltage divider formula?",
+      "answers": [
+        {
+          "answer": "Vout = Vin x (R1 / R2)",
+          "correct": false
+        },
+        {
+          "answer": "Vout = Vin x (R2 / (R1 + R2))",
+          "correct": true
+        },
+        {
+          "answer": "Vout = Vin x (R1 + R2) / R2",
+          "correct": false
+        },
+        {
+          "answer": "Vout = Vin x (R1 - R2)",
+          "correct": false
+        }
+      ],
+      "explanation": "The voltage divider formula is Vout = Vin x (R2 / (R1 + R2)). The output voltage is a fraction of the input determined by the ratio of the two resistors."
+    },
+    {
+      "question": "In a voltage divider used with a sensor, what happens when the sensor's resistance changes?",
+      "answers": [
+        {
+          "answer": "The input voltage changes",
+          "correct": false
+        },
+        {
+          "answer": "The output voltage changes, giving the ADC something meaningful to read",
+          "correct": true
+        },
+        {
+          "answer": "The circuit breaks and stops working",
+          "correct": false
+        },
+        {
+          "answer": "The fixed resistor's value adjusts automatically",
+          "correct": false
+        }
+      ],
+      "explanation": "When one of the two resistors in a voltage divider is a sensor whose resistance changes, the ratio R2/(R1+R2) changes, which changes the output voltage. This is how the ADC gets a varying signal to read."
+    },
+    {
+      "question": "How are the two resistors arranged in a voltage divider?",
+      "answers": [
+        {
+          "answer": "In parallel between power and ground",
+          "correct": false
+        },
+        {
+          "answer": "In series between power and ground",
+          "correct": true
+        },
+        {
+          "answer": "Both connected only to power",
+          "correct": false
+        },
+        {
+          "answer": "One in series and one in parallel",
+          "correct": false
+        }
+      ],
+      "explanation": "A voltage divider consists of two resistors connected in series between power and ground. The output voltage is tapped from the wire between the two resistors."
+    }
+  ]
+}

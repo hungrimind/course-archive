@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Function Name",
+        "items": [
+          "makeGreeting",
+          "calculateTax",
+          "sendEmail"
+        ]
+      },
+      {
+        "label": "Parameter (Input)",
+        "items": [
+          "A person's name",
+          "The purchase amount",
+          "The recipient's address"
+        ]
+      },
+      {
+        "label": "Result (Output)",
+        "items": [
+          "\"Hello, Alice!\"",
+          "The tax amount in dollars",
+          "A delivery confirmation"
+        ]
+      }
+    ]
+  }
+}

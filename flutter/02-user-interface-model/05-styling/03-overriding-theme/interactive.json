@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the purpose of ThemeData in Flutter?",
+      "answers": [
+        {
+          "answer": "To provide a default theme for the app",
+          "correct": false
+        },
+        {
+          "answer": "To create a custom theme for the app",
+          "correct": true
+        },
+        {
+          "answer": "To handle user interactions",
+          "correct": false
+        },
+        {
+          "answer": "To manage local state",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How can you specify different themes for light and dark modes in Flutter?",
+      "answers": [
+        {
+          "answer": "By using separate MaterialApp widgets for each theme",
+          "correct": false
+        },
+        {
+          "answer": "By using a ThemeMode enum only",
+          "correct": false
+        },
+        {
+          "answer": "By using the theme and darkTheme properties in MaterialApp",
+          "correct": true
+        },
+        {
+          "answer": "By creating separate apps for light and dark modes",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

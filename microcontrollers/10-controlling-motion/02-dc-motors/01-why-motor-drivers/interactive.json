@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A GPIO pin can supply enough current to run a small DC motor directly.",
+        "correct": false,
+        "explanation": "A GPIO pin supplies around 16mA, but a small DC motor needs 200mA or more. Connecting directly would stall the motor or damage the board."
+      },
+      {
+        "statement": "A motor driver acts as a power amplifier, using a small GPIO signal to switch a separate, higher-current power supply.",
+        "correct": true,
+        "explanation": "The motor driver takes the tiny control signal from the GPIO and uses it to switch a beefier power supply that actually powers the motor."
+      },
+      {
+        "statement": "It is safe to connect a DC motor directly to a GPIO pin as long as you use PWM.",
+        "correct": false,
+        "explanation": "PWM does not solve the current problem. The GPIO pin still cannot supply enough current regardless of whether you use PWM or a steady signal. You must always use a motor driver."
+      }
+    ]
+  }
+}

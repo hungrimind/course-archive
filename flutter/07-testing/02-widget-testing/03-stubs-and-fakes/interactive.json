@@ -1,0 +1,88 @@
+{
+  "quiz": [
+    {
+      "question": "Which function would you use for asynchronous stub responses?",
+      "answers": [
+        {
+          "answer": "thenReturn",
+          "correct": false
+        },
+        {
+          "answer": "thenThrow",
+          "correct": false
+        },
+        {
+          "answer": "thenAnswer",
+          "correct": true
+        },
+        {
+          "answer": "when",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the main difference between a Fake and a Mock?",
+      "answers": [
+        {
+          "answer": "Fakes are only for testing",
+          "correct": false
+        },
+        {
+          "answer": "Fakes provide a lightweight implementation of functionality",
+          "correct": true
+        },
+        {
+          "answer": "Fakes must implement all methods",
+          "correct": false
+        },
+        {
+          "answer": "Fakes can only be used with databases",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When implementing a Fake class, which class must you extend?",
+      "answers": [
+        {
+          "answer": "Mock",
+          "correct": false
+        },
+        {
+          "answer": "Test",
+          "correct": false
+        },
+        {
+          "answer": "Stub",
+          "correct": false
+        },
+        {
+          "answer": "Fake",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What's the correct way to create a stub?",
+      "answers": [
+        {
+          "answer": "stub(() => mockObject.method())",
+          "correct": false
+        },
+        {
+          "answer": "when(() => mockObject.method())",
+          "correct": true
+        },
+        {
+          "answer": "fake(() => mockObject.method())",
+          "correct": false
+        },
+        {
+          "answer": "mock(() => mockObject.method())",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Real-Time Analytics",
+        "items": [
+          "Social media feeds",
+          "High-velocity data streams"
+        ]
+      },
+      {
+        "label": "Content Management",
+        "items": [
+          "Blogs and articles",
+          "Unstructured data management"
+        ]
+      },
+      {
+        "label": "IoT Applications",
+        "items": [
+          "Data from multiple devices",
+          "Device data processing"
+        ]
+      }
+    ]
+  }
+}

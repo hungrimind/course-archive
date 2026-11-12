@@ -1,0 +1,35 @@
+{
+  "fillblank": {
+    "language": "dart",
+    "segments": [
+      {
+        "type": "code",
+        "value": "abstract class Shape {\n  double "
+      },
+      {
+        "type": "blank",
+        "answer": "area"
+      },
+      {
+        "type": "code",
+        "value": "();\n}\n\nclass Circle "
+      },
+      {
+        "type": "blank",
+        "answer": "extends"
+      },
+      {
+        "type": "code",
+        "value": " Shape {\n  final double radius;\n  Circle(this.radius);\n  @override\n  double area() => 3.14 * radius * radius;\n}\n\nclass Square extends Shape {\n  final double side;\n  Square(this.side);\n  @override\n  double area() => side * side;\n}\n\nclass Rectangle extends Shape {\n  final double width, height;\n  Rectangle(this.width, this.height);\n  @override\n  double area() => width * height;\n}\n\nclass AreaCalculator {\n  double "
+      },
+      {
+        "type": "blank",
+        "answer": "totalArea"
+      },
+      {
+        "type": "code",
+        "value": "(List<Shape> shapes) {\n    double total = 0;\n    for (var shape in shapes) {\n      total += shape.area();\n    }\n    return total;\n  }\n}"
+      }
+    ]
+  }
+}

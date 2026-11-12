@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What does this print in Dart?\n\nCode: print(6 > 5 && 6 < 10);",
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "6",
+          "correct": false
+        },
+        {
+          "answer": "It causes an error",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which statement about the not operator (!) is correct?",
+      "answers": [
+        {
+          "answer": "! flips a boolean value: !true is false, !false is true",
+          "correct": true
+        },
+        {
+          "answer": "! checks if two values are not equal",
+          "correct": false
+        },
+        {
+          "answer": "! only works with numbers",
+          "correct": false
+        },
+        {
+          "answer": "! makes both sides of && become true",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A cache hit ratio of 0.8 means that 80% of requests are served from the cache.",
+        "correct": true,
+        "explanation": "The cache hit ratio is calculated by dividing the number of cache hits by the total number of requests. A ratio of 0.8 indicates that 80% of the requests are served from the cache."
+      },
+      {
+        "statement": "A high cache hit ratio automatically ensures that the user experience improves.",
+        "correct": false,
+        "explanation": "While a high cache hit ratio often leads to lower latency and reduced backend load, it does not guarantee improved user experience if the cached data does not align well with user needs."
+      },
+      {
+        "statement": "If the total number of requests is 200 and cache hits are 100, the hit ratio is 0.5.",
+        "correct": true,
+        "explanation": "The hit ratio is calculated by dividing the number of cache hits (100) by the total number of requests (200), which gives a hit ratio of 0.5 or 50%."
+      },
+      {
+        "statement": "The primary goal of caching is to maximize the cache hit ratio.",
+        "correct": false,
+        "explanation": "While maximizing the cache hit ratio can be beneficial, the primary goal of caching should be to enhance performance and user experience by caching the right data, not just increasing the hit ratio."
+      }
+    ]
+  }
+}

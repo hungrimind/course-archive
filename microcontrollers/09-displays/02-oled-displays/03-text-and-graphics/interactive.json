@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "How does the luma library handle drawing on an OLED display?",
+      "answers": [
+        {
+          "answer": "It sends each drawing command directly to the display one at a time",
+          "correct": false
+        },
+        {
+          "answer": "It composes the full frame in an in-memory image, then flushes it to the screen",
+          "correct": true
+        },
+        {
+          "answer": "It writes pixels to the display as soon as each draw call is made",
+          "correct": false
+        },
+        {
+          "answer": "It stores the frame on an SD card and loads it to the display",
+          "correct": false
+        }
+      ],
+      "explanation": "The luma library uses a framebuffer approach: everything is drawn to an in-memory image first, then the complete frame is sent to the display when the 'with canvas(device)' block ends."
+    },
+    {
+      "question": "What happens when the 'with canvas(device)' block ends?",
+      "answers": [
+        {
+          "answer": "The display is cleared and powered off",
+          "correct": false
+        },
+        {
+          "answer": "The cursor resets to position (0, 0)",
+          "correct": false
+        },
+        {
+          "answer": "The composed image is flushed to the screen",
+          "correct": true
+        },
+        {
+          "answer": "The program pauses until the next frame is requested",
+          "correct": false
+        }
+      ],
+      "explanation": "The 'with canvas(device)' block acts as a framebuffer boundary. When it ends, the fully composed in-memory image gets pushed to the display in one batch."
+    },
+    {
+      "question": "Which of the following can you draw on a pixel-based OLED display?",
+      "answers": [
+        {
+          "answer": "Only text characters from the built-in font",
+          "correct": false
+        },
+        {
+          "answer": "Only geometric shapes like lines and rectangles",
+          "correct": false
+        },
+        {
+          "answer": "Text at any size, shapes, lines, and rectangles",
+          "correct": true
+        },
+        {
+          "answer": "Only bitmap images loaded from files",
+          "correct": false
+        }
+      ],
+      "explanation": "On a pixel display, you control every dot. You can render text at any size using a chosen font, and draw shapes like lines, rectangles, and circles using the same drawing library."
+    }
+  ]
+}

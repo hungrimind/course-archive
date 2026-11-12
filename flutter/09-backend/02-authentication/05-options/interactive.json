@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the most popular authentication service for Flutter?",
+      "answers": [
+        {
+          "answer": "Supabase",
+          "correct": false
+        },
+        {
+          "answer": "Firebase Authentication",
+          "correct": true
+        },
+        {
+          "answer": "Appwrite",
+          "correct": false
+        },
+        {
+          "answer": "Rolling your own auth",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the name of the Firebase Authentication package?",
+      "answers": [
+        {
+          "answer": "firebase_authentication",
+          "correct": false
+        },
+        {
+          "answer": "firebase_auth",
+          "correct": true
+        },
+        {
+          "answer": "firebase_core",
+          "correct": false
+        },
+        {
+          "answer": "auth_firebase",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

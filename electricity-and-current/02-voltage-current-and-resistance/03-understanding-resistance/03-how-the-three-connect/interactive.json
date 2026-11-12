@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Increases current flow",
+        "items": [
+          "Raising the voltage",
+          "Lowering resistance",
+          "Using thicker wire"
+        ]
+      },
+      {
+        "label": "Decreases current flow",
+        "items": [
+          "Lowering the voltage",
+          "Adding more resistance",
+          "Using a thinner wire"
+        ]
+      }
+    ]
+  }
+}

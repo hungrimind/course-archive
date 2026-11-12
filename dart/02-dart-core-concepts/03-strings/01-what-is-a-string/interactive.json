@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of the `String` data type in Dart?",
+      "answers": [
+        {
+          "answer": "To perform mathematical calculations.",
+          "correct": false
+        },
+        {
+          "answer": "To store a single true or false value.",
+          "correct": false
+        },
+        {
+          "answer": "To represent a sequence of characters, like text.",
+          "correct": true
+        },
+        {
+          "answer": "To create a list of other variables.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following lines of code correctly declares a string variable in Dart?",
+      "answers": [
+        {
+          "answer": "String message = 'Hello, Dart!\";",
+          "correct": false
+        },
+        {
+          "answer": "message = \"Hello, Dart!\";",
+          "correct": false
+        },
+        {
+          "answer": "String greeting = 'Hello, Dart!';",
+          "correct": true
+        },
+        {
+          "answer": "String message = Hello, Dart!;",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "According to Dart syntax, which type of quotes can you use to define a string?",
+      "answers": [
+        {
+          "answer": "Only double quotes (\").",
+          "correct": false
+        },
+        {
+          "answer": "Only single quotes (').",
+          "correct": false
+        },
+        {
+          "answer": "Either single (') or double (\") quotes, as long as they match.",
+          "correct": true
+        },
+        {
+          "answer": "No quotes are needed.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

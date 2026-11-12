@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What do objects use to organize their data, unlike arrays?",
+      "answers": [
+        {
+          "answer": "Numbered indices starting from 0",
+          "correct": false
+        },
+        {
+          "answer": "Named key-value pairs",
+          "correct": true
+        },
+        {
+          "answer": "Semicolons to separate values",
+          "correct": false
+        },
+        {
+          "answer": "Square brackets around each value",
+          "correct": false
+        }
+      ],
+      "explanation": "Objects use named key-value pairs (properties) to organize data, while arrays use numbered positions (indices)."
+    },
+    {
+      "question": "Which of the following is a valid TypeScript object?",
+      "answers": [
+        {
+          "answer": "const item = [name: \"Book\", price: 10];",
+          "correct": false
+        },
+        {
+          "answer": "const item = {name: \"Book\", price: 10};",
+          "correct": true
+        },
+        {
+          "answer": "const item = (name: \"Book\", price: 10);",
+          "correct": false
+        },
+        {
+          "answer": "const item = <name: \"Book\", price: 10>;",
+          "correct": false
+        }
+      ],
+      "explanation": "Objects are defined with curly braces {} containing key-value pairs separated by commas."
+    },
+    {
+      "question": "What types of values can properties in a single object hold?",
+      "answers": [
+        {
+          "answer": "Only strings",
+          "correct": false
+        },
+        {
+          "answer": "Only numbers and strings",
+          "correct": false
+        },
+        {
+          "answer": "Different types can be mixed in one object",
+          "correct": true
+        },
+        {
+          "answer": "All properties must be the same type",
+          "correct": false
+        }
+      ],
+      "explanation": "An object can mix different types in one value. In the lesson example, the person object has a string (name), a number (age), and a boolean (active)."
+    }
+  ]
+}

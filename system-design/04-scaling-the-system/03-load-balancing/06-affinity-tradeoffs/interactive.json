@@ -1,0 +1,26 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Server affinity guarantees that a user's session will continue seamlessly if the bound server fails.",
+        "correct": false,
+        "explanation": "Server affinity does not provide fault tolerance if a server fails. It ties a session to a single server, so if that server fails, the session could be disrupted."
+      },
+      {
+        "statement": "One downside of server affinity is that it can lead to uneven server loads.",
+        "correct": true,
+        "explanation": "Because all requests from a user's session are directed to the same server, some servers may become overloaded while others are underutilized."
+      },
+      {
+        "statement": "Server affinity can simplify session management by ensuring that all requests from a user's session reach the same server.",
+        "correct": true,
+        "explanation": "By binding a session to a specific server, session management becomes simpler, as the server has context and state for that specific session."
+      },
+      {
+        "statement": "Sticky sessions ensure improved fault tolerance because they distribute the load evenly across all servers.",
+        "correct": false,
+        "explanation": "Sticky sessions do not inherently improve fault tolerance or ensure even load distribution; they bind sessions to specific servers, which can lead to uneven load and does not protect against server failures."
+      }
+    ]
+  }
+}

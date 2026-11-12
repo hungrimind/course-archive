@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Advantages of Joins",
+        "items": [
+          "Maintains data integrity",
+          "Keeps data normalized"
+        ]
+      },
+      {
+        "label": "Advantages of Duplication",
+        "items": [
+          "Simplifies queries",
+          "Benefits read-heavy access"
+        ]
+      },
+      {
+        "label": "Disadvantages of Duplication",
+        "items": [
+          "Increases storage",
+          "Risks inconsistencies"
+        ]
+      }
+    ]
+  }
+}

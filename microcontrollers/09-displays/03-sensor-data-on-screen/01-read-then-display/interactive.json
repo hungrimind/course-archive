@@ -1,0 +1,41 @@
+{
+  "fillblank": {
+    "language": "python",
+    "segments": [
+      {
+        "type": "code",
+        "value": "while True:\n    temp = "
+      },
+      {
+        "type": "blank",
+        "answer": "sensor.temperature"
+      },
+      {
+        "type": "code",
+        "value": "\n    with canvas(device) as draw:\n        draw."
+      },
+      {
+        "type": "blank",
+        "answer": "text"
+      },
+      {
+        "type": "code",
+        "value": "((0, 0), f\"Temp: {temp:.1f}C\", fill=\"white\")\n    time.sleep("
+      },
+      {
+        "type": "blank",
+        "answer": "1"
+      },
+      {
+        "type": "code",
+        "value": ")"
+      }
+    ],
+    "options": [
+      "sensor.read()",
+      "print",
+      "display",
+      "0.001"
+    ]
+  }
+}

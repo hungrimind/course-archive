@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is machine code?",
+      "answers": [
+        {
+          "answer": "English-like commands the CPU reads directly",
+          "correct": false
+        },
+        {
+          "answer": "Raw binary instructions (1s and 0s) that the CPU understands",
+          "correct": true
+        },
+        {
+          "answer": "A type of programming language similar to Python",
+          "correct": false
+        },
+        {
+          "answer": "A file format used to store source code",
+          "correct": false
+        }
+      ],
+      "explanation": "Machine code is the raw binary (1s and 0s) that a CPU actually executes. Every program eventually becomes machine code before it runs."
+    },
+    {
+      "question": "Why do humans almost never write machine code directly?",
+      "answers": [
+        {
+          "answer": "It runs too slowly on modern CPUs",
+          "correct": false
+        },
+        {
+          "answer": "It is illegal to distribute machine code",
+          "correct": false
+        },
+        {
+          "answer": "It is too error-prone and nearly impossible to read at scale",
+          "correct": true
+        },
+        {
+          "answer": "CPUs no longer support it",
+          "correct": false
+        }
+      ],
+      "explanation": "Writing raw binary is extremely tedious and error-prone, which is why higher-level tools like assembly and programming languages exist."
+    },
+    {
+      "question": "What does a single machine code instruction typically do?",
+      "answers": [
+        {
+          "answer": "Runs an entire application at once",
+          "correct": false
+        },
+        {
+          "answer": "One tiny operation, like adding numbers or moving data",
+          "correct": true
+        },
+        {
+          "answer": "Compiles source code into an executable",
+          "correct": false
+        },
+        {
+          "answer": "Translates English into binary",
+          "correct": false
+        }
+      ],
+      "explanation": "Each machine code instruction performs just one very small operation. Programs are built from millions of these tiny steps running in sequence."
+    }
+  ]
+}

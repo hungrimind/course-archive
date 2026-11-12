@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What does the Column widget do?",
+      "answers": [
+        {
+          "answer": "To display children widgets horizontally",
+          "correct": false
+        },
+        {
+          "answer": "To create a grid layout",
+          "correct": false
+        },
+        {
+          "answer": "To display children widgets vertically",
+          "correct": true
+        },
+        {
+          "answer": "To build a navigation menu",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

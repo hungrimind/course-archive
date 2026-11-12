@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What are the benefits of using LoadingStateMixin?",
+      "answers": [
+        {
+          "answer": "Only shows loading indicators",
+          "correct": false
+        },
+        {
+          "answer": "Only handles UI animations",
+          "correct": false
+        },
+        {
+          "answer": "Prevents multiple simultaneous API calls in a single place",
+          "correct": true
+        },
+        {
+          "answer": "Only manages widget disposal",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

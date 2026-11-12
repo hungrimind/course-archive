@@ -1,0 +1,30 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Prioritizes Speed",
+        "items": [
+          "Used for game engines and OS kernels",
+          "Gives fine control over memory",
+          "Trades ease of use for performance"
+        ]
+      },
+      {
+        "label": "Prioritizes Ease of Learning",
+        "items": [
+          "Great for beginners and prototyping",
+          "Readable syntax close to English",
+          "Trades raw speed for simplicity"
+        ]
+      },
+      {
+        "label": "Built for a Specific Domain",
+        "items": [
+          "SQL is designed just for databases",
+          "R is focused on statistics",
+          "HTML is made for web page structure"
+        ]
+      }
+    ]
+  }
+}

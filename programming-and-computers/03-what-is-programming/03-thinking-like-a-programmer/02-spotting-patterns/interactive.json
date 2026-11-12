@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Pattern (Repeated Task)",
+        "items": [
+          "Sending a welcome email to every new user",
+          "Resizing each photo in a gallery",
+          "Checking every order for fraud"
+        ]
+      },
+      {
+        "label": "One-Off Task",
+        "items": [
+          "Setting up the company logo once",
+          "Choosing the app's name",
+          "Writing the about page text"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "let score = 10;\nscore "
+      },
+      {
+        "type": "blank",
+        "answer": "+="
+      },
+      {
+        "type": "code",
+        "value": " 5;\nscore "
+      },
+      {
+        "type": "blank",
+        "answer": "-="
+      },
+      {
+        "type": "code",
+        "value": " 3;\nscore "
+      },
+      {
+        "type": "blank",
+        "answer": "*="
+      },
+      {
+        "type": "code",
+        "value": " 2;"
+      }
+    ],
+    "options": [
+      "==",
+      "++",
+      "/"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What is not a backend in mobile development?",
+      "answers": [
+        {
+          "answer": "A database stored in the cloud.",
+          "correct": false
+        },
+        {
+          "answer": "Data stored on the device.",
+          "correct": false
+        },
+        {
+          "answer": "App wide state that is used in a service.",
+          "correct": true
+        },
+        {
+          "answer": "An API used to retrieve the current weather.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

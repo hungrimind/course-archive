@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Imagine you have written code to calculate sales tax, and you use it in 10 different places in your e-commerce application. If the tax rate changes, what is the primary advantage of having this calculation inside a function?",
+      "answers": [
+        {
+          "answer": "You only need to update the tax rate in the single function, and the change will apply everywhere.",
+          "correct": true
+        },
+        {
+          "answer": "You have to create a new function for the new tax rate.",
+          "correct": false
+        },
+        {
+          "answer": "The program will run significantly faster with the calculation in a function.",
+          "correct": false
+        },
+        {
+          "answer": "The function will automatically detect that the tax rate has changed.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How do functions help make a large program easier to understand, similar to how a book is structured?",
+      "answers": [
+        {
+          "answer": "They automatically add comments to explain complex logic.",
+          "correct": false
+        },
+        {
+          "answer": "They break down code into smaller, named chunks, making the program's overall purpose easier to follow.",
+          "correct": true
+        },
+        {
+          "answer": "They convert all your code into simple `if/else` statements.",
+          "correct": false
+        },
+        {
+          "answer": "They highlight the most important variables in your code.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following are the three main reasons for using functions as discussed in the lesson?",
+      "answers": [
+        {
+          "answer": "Speed, Simplicity, and Security",
+          "correct": false
+        },
+        {
+          "answer": "Variables, Operators, and Control Flow",
+          "correct": false
+        },
+        {
+          "answer": "Reusability, Readability, and Maintainability",
+          "correct": true
+        },
+        {
+          "answer": "Input, Output, and Debugging",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

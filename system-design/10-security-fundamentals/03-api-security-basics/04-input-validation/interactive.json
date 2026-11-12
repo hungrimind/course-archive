@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary purpose of input validation?",
+      "answers": [
+        {
+          "answer": "To improve system performance",
+          "correct": false
+        },
+        {
+          "answer": "To ensure user input is accurate and safe",
+          "correct": true
+        },
+        {
+          "answer": "To enhance user interface aesthetics",
+          "correct": false
+        },
+        {
+          "answer": "To store user preferences",
+          "correct": false
+        }
+      ],
+      "explanation": "Input validation ensures that the user input is accurate and safe, preventing malicious data from causing harm or unexpected behavior."
+    },
+    {
+      "question": "Why should input validation be performed on both the client and server sides?",
+      "answers": [
+        {
+          "answer": "To increase the speed of data processing",
+          "correct": false
+        },
+        {
+          "answer": "To reduce the need for server resources",
+          "correct": false
+        },
+        {
+          "answer": "To ensure full protection against harmful data",
+          "correct": true
+        },
+        {
+          "answer": "To simplify code maintenance",
+          "correct": false
+        }
+      ],
+      "explanation": "Validating input on both client and server sides ensures comprehensive protection against harmful data breaches, as client-side checks can be bypassed."
+    },
+    {
+      "question": "What does the regular expression /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/ check for in the validateEmail function?",
+      "answers": [
+        {
+          "answer": "That an email string contains uppercase letters",
+          "correct": false
+        },
+        {
+          "answer": "That an email string matches a standard email format",
+          "correct": true
+        },
+        {
+          "answer": "That an email string contains only numbers",
+          "correct": false
+        },
+        {
+          "answer": "That an email string is empty",
+          "correct": false
+        }
+      ],
+      "explanation": "The regular expression checks if the email string adheres to a standard email format, ensuring it's valid before entering the system."
+    }
+  ]
+}

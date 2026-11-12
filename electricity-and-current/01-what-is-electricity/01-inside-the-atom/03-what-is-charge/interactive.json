@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Two electrons placed near each other will attract each other.",
+        "correct": false,
+        "explanation": "Like charges repel. Since both electrons carry a negative charge, they push each other away. Only opposite charges (positive and negative) attract."
+      },
+      {
+        "statement": "Neutrons carry no electrical charge.",
+        "correct": true,
+        "explanation": "Of the three main subatomic particles, only protons (positive) and electrons (negative) carry charge. Neutrons are electrically neutral, which is where their name comes from."
+      },
+      {
+        "statement": "The push and pull between positive and negative charges is what makes electrons move.",
+        "correct": true,
+        "explanation": "The attractive force between opposite charges and the repulsive force between like charges are what drive electron movement, which is the foundation of electricity."
+      }
+    ]
+  }
+}

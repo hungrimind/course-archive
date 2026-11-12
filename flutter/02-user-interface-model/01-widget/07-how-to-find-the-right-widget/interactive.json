@@ -1,0 +1,46 @@
+{
+  "quiz": [
+    {
+      "question": "What is the recommended first step when looking for a Flutter widget?",
+      "answers": [
+        {
+          "answer": "Use IDE IntelliSense and start typing",
+          "correct": true
+        },
+        {
+          "answer": "Search pub.dev for packages",
+          "correct": false
+        },
+        {
+          "answer": "Check the Flutter Widget Catalog",
+          "correct": false
+        },
+        {
+          "answer": "Ask on Stack Overflow",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When should you consider creating a custom widget?",
+      "answers": [
+        {
+          "answer": "Immediately when you can't find an existing widget",
+          "correct": false
+        },
+        {
+          "answer": "Only after exhausting all search options and finding no suitable package",
+          "correct": true
+        },
+        {
+          "answer": "Never, there's always an existing widget",
+          "correct": false
+        },
+        {
+          "answer": "Only for simple UI elements",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Key-Value Stores",
+        "items": [
+          "Fast lookups with unique key",
+          "Simple, direct access"
+        ]
+      },
+      {
+        "label": "Document Databases",
+        "items": [
+          "Flexible, hierarchical data",
+          "Stores data like JSON"
+        ]
+      },
+      {
+        "label": "Graph Databases",
+        "items": [
+          "Interconnected data",
+          "Uses social network data"
+        ]
+      }
+    ]
+  }
+}

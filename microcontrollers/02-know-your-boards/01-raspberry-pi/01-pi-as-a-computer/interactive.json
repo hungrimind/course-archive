@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What distinguishes a Raspberry Pi from a typical microcontroller?",
+      "answers": [
+        {
+          "answer": "It can only run one program at a time in a loop",
+          "correct": false
+        },
+        {
+          "answer": "It runs a full Linux operating system with a desktop environment",
+          "correct": true
+        },
+        {
+          "answer": "It has no USB or HDMI ports",
+          "correct": false
+        },
+        {
+          "answer": "It requires a separate Wi-Fi adapter to connect to the internet",
+          "correct": false
+        }
+      ],
+      "explanation": "A Raspberry Pi is a full Linux computer the size of a credit card, with USB ports, HDMI output, Wi-Fi, and a desktop OS, unlike a basic microcontroller that runs a single program without an operating system."
+    },
+    {
+      "question": "What feature allows a Raspberry Pi to interact with physical hardware like LEDs and sensors?",
+      "answers": [
+        {
+          "answer": "Its HDMI output port",
+          "correct": false
+        },
+        {
+          "answer": "A special hardware expansion card",
+          "correct": false
+        },
+        {
+          "answer": "Its row of GPIO pins",
+          "correct": true
+        },
+        {
+          "answer": "Its USB ports",
+          "correct": false
+        }
+      ],
+      "explanation": "The GPIO (General Purpose Input/Output) pins along one edge of the Pi let your code talk directly to LEDs, sensors, and motors, while you still have the full OS for debugging and networking."
+    },
+    {
+      "question": "Why is having a full operating system useful when doing hardware projects on a Raspberry Pi?",
+      "answers": [
+        {
+          "answer": "It makes the Pi cheaper to manufacture",
+          "correct": false
+        },
+        {
+          "answer": "It provides debugging, networking, and file management alongside hardware control",
+          "correct": true
+        },
+        {
+          "answer": "It eliminates the need for GPIO pins",
+          "correct": false
+        },
+        {
+          "answer": "It ensures the board has no boot time",
+          "correct": false
+        }
+      ],
+      "explanation": "A full OS gives you access to debugging tools, networking capabilities, and file management, all of which are helpful when building and troubleshooting hardware projects."
+    }
+  ]
+}

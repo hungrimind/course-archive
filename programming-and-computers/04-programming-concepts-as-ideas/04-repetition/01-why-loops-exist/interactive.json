@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What does a loop let you do?",
+      "answers": [
+        {
+          "answer": "Store a single value that never changes",
+          "correct": false
+        },
+        {
+          "answer": "Write an instruction once and repeat it many times",
+          "correct": true
+        },
+        {
+          "answer": "Give a name to a block of code you can call later",
+          "correct": false
+        },
+        {
+          "answer": "Compare two values to see which is bigger",
+          "correct": false
+        }
+      ],
+      "explanation": "A loop lets you write one instruction and tell the computer to repeat it. This saves you from typing the same line over and over again."
+    },
+    {
+      "question": "Why would a loop be a better choice than writing the same line 1,000 times?",
+      "answers": [
+        {
+          "answer": "The loop lets the computer skip some lines to save time",
+          "correct": false
+        },
+        {
+          "answer": "It prevents typos and never gets bored or skips any repetition",
+          "correct": true
+        },
+        {
+          "answer": "Loops are the only way to use numbers in a program",
+          "correct": false
+        },
+        {
+          "answer": "Loops automatically make your code prettier on screen",
+          "correct": false
+        }
+      ],
+      "explanation": "Computers running loops never get tired, never skip, and never make typos even on the 847th repetition. That reliability is why loops beat copy-pasting instructions."
+    }
+  ]
+}

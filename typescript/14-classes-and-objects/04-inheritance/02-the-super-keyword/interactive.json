@@ -1,0 +1,32 @@
+{
+  "fillblank": {
+    "language": "typescript",
+    "segments": [
+      {
+        "type": "code",
+        "value": "class Animal {\n  constructor(public name: string) {}\n}\n\nclass Dog extends Animal {\n  constructor(name: string, public breed: string) {\n    "
+      },
+      {
+        "type": "blank",
+        "answer": "super"
+      },
+      {
+        "type": "code",
+        "value": "("
+      },
+      {
+        "type": "blank",
+        "answer": "name"
+      },
+      {
+        "type": "code",
+        "value": ");\n  }\n}"
+      }
+    ],
+    "options": [
+      "this",
+      "parent",
+      "Animal"
+    ]
+  }
+}

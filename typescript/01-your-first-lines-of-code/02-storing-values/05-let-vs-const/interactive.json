@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "Which keyword should you use by default when declaring a variable?",
+      "answers": [
+        {
+          "answer": "let, because it's more flexible",
+          "correct": false
+        },
+        {
+          "answer": "const, because most values don't need to change",
+          "correct": true
+        },
+        {
+          "answer": "var, because it works everywhere",
+          "correct": false
+        },
+        {
+          "answer": "It doesn't matter, they're interchangeable",
+          "correct": false
+        }
+      ],
+      "explanation": "const is the recommended default because most variables never need to be reassigned. Using const signals to readers that the value won't change, making code easier to reason about."
+    },
+    {
+      "question": "What does seeing `let` in someone's code tell you?",
+      "answers": [
+        {
+          "answer": "The variable was declared inside a function",
+          "correct": false
+        },
+        {
+          "answer": "The variable's value will be updated later in the code",
+          "correct": true
+        },
+        {
+          "answer": "The variable holds a string value",
+          "correct": false
+        },
+        {
+          "answer": "The variable is temporary and will be deleted",
+          "correct": false
+        }
+      ],
+      "explanation": "let is a signal that the variable's value will change somewhere in the code. It tells readers to watch out for reassignments, while const means the value stays the same."
+    }
+  ]
+}

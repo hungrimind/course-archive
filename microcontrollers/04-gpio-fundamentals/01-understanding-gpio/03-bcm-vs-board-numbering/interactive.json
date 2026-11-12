@@ -1,0 +1,123 @@
+{
+  "pinoutmapper": {
+    "pins": [
+      {
+        "number": 1,
+        "label": "3.3V",
+        "category": "power"
+      },
+      {
+        "number": 2,
+        "label": "5V",
+        "category": "power"
+      },
+      {
+        "number": 3,
+        "label": "GPIO2",
+        "category": "gpio"
+      },
+      {
+        "number": 4,
+        "label": "5V",
+        "category": "power"
+      },
+      {
+        "number": 5,
+        "label": "GPIO3",
+        "category": "gpio"
+      },
+      {
+        "number": 6,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 7,
+        "label": "GPIO4",
+        "category": "gpio"
+      },
+      {
+        "number": 8,
+        "label": "GPIO14",
+        "category": "gpio"
+      },
+      {
+        "number": 9,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 10,
+        "label": "GPIO15",
+        "category": "gpio"
+      },
+      {
+        "number": 11,
+        "label": "GPIO17",
+        "category": "gpio"
+      },
+      {
+        "number": 12,
+        "label": "GPIO18",
+        "category": "gpio"
+      },
+      {
+        "number": 13,
+        "label": "GPIO27",
+        "category": "gpio"
+      },
+      {
+        "number": 14,
+        "label": "GND",
+        "category": "ground"
+      },
+      {
+        "number": 15,
+        "label": "GPIO22",
+        "category": "gpio"
+      },
+      {
+        "number": 16,
+        "label": "GPIO23",
+        "category": "gpio"
+      },
+      {
+        "number": 17,
+        "label": "3.3V",
+        "category": "power"
+      },
+      {
+        "number": 18,
+        "label": "GPIO24",
+        "category": "gpio"
+      },
+      {
+        "number": 19,
+        "label": "GPIO10",
+        "category": "gpio"
+      },
+      {
+        "number": 20,
+        "label": "GND",
+        "category": "ground"
+      }
+    ],
+    "blanks": [
+      7,
+      8,
+      11,
+      13,
+      15
+    ],
+    "labels": [
+      "GPIO4",
+      "GPIO14",
+      "GPIO17",
+      "GPIO27",
+      "GPIO22",
+      "GPIO18",
+      "GPIO10"
+    ],
+    "assignment": "Physical pin 11 is BCM GPIO17, not GPIO11. Drag the correct BCM numbers onto the blank pins, and notice how they don't match the physical positions."
+  }
+}

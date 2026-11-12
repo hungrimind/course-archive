@@ -1,0 +1,176 @@
+{
+  "visualbuilder": {
+    "components": [
+      {
+        "id": "app_client",
+        "label": "Application / Client",
+        "icon": "monitor",
+        "category": "compute"
+      },
+      {
+        "id": "query_router",
+        "label": "Query Router",
+        "icon": "network",
+        "category": "compute"
+      },
+      {
+        "id": "user_core_table",
+        "label": "User Core Partition (id, name)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "user_address_table",
+        "label": "User Address Partition (id, address)",
+        "icon": "database",
+        "category": "storage"
+      },
+      {
+        "id": "join_aggregator",
+        "label": "Join / Aggregator",
+        "icon": "layers",
+        "category": "compute"
+      },
+      {
+        "id": "monolithic_user_table",
+        "label": "Monolithic Users Table (anti-pattern)",
+        "icon": "archive",
+        "category": "storage"
+      }
+    ],
+    "initialNodes": [
+      {
+        "id": "start_1",
+        "componentId": "app_client",
+        "x": 250,
+        "y": 0
+      }
+    ],
+    "initialEdges": [],
+    "connectionRules": [
+      {
+        "from": "app_client",
+        "to": "query_router"
+      },
+      {
+        "from": "query_router",
+        "to": "user_core_table"
+      },
+      {
+        "from": "query_router",
+        "to": "user_address_table"
+      },
+      {
+        "from": "query_router",
+        "to": "join_aggregator"
+      },
+      {
+        "from": "join_aggregator",
+        "to": "user_core_table"
+      },
+      {
+        "from": "join_aggregator",
+        "to": "user_address_table"
+      }
+    ],
+    "validationRules": [
+      {
+        "type": "required_node",
+        "nodeType": "query_router",
+        "message": "Add a Query Router to direct requests to the correct vertical partition (core vs address)."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "user_core_table",
+        "message": "Add the core vertical partition table containing user id and name."
+      },
+      {
+        "type": "required_node",
+        "nodeType": "user_address_table",
+        "message": "Add the address vertical partition table containing user id and address."
+      },
+      {
+        "type": "path_exists",
+        "from": "app_client",
+        "to": "user_core_table",
+        "message": "There must be a request path from the Application/Client to the core partition so name-only queries can avoid reading address data."
+      },
+      {
+        "type": "path_exists",
+        "from": "app_client",
+        "to": "user_address_table",
+        "message": "There must be a request path from the Application/Client to the address partition so address-only queries can avoid reading name data."
+      },
+      {
+        "type": "required_edge",
+        "from": "app_client",
+        "to": "query_router",
+        "message": "Route client requests through the Query Router before hitting partitions."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "app_client",
+        "to": "user_core_table",
+        "message": "Avoid having the client connect directly to a partition; use the Query Router so the system can choose the minimal set of columns to read."
+      },
+      {
+        "type": "no_direct_edge",
+        "from": "app_client",
+        "to": "user_address_table",
+        "message": "Avoid having the client connect directly to a partition; use the Query Router so the system can choose the minimal set of columns to read."
+      },
+      {
+        "type": "max_count",
+        "nodeType": "monolithic_user_table",
+        "count": 0,
+        "message": "Do not use a single monolithic Users table here; this exercise is about vertical partitioning into separate column groups."
+      }
+    ],
+    "solution": {
+      "nodes": [
+        {
+          "id": "sol_1",
+          "componentId": "app_client",
+          "x": 250,
+          "y": 0
+        },
+        {
+          "id": "sol_2",
+          "componentId": "query_router",
+          "x": 250,
+          "y": 150
+        },
+        {
+          "id": "sol_3",
+          "componentId": "user_core_table",
+          "x": 100,
+          "y": 300
+        },
+        {
+          "id": "sol_4",
+          "componentId": "user_address_table",
+          "x": 400,
+          "y": 300
+        }
+      ],
+      "edges": [
+        {
+          "id": "se_1",
+          "from": "sol_1",
+          "to": "sol_2"
+        },
+        {
+          "id": "se_2",
+          "from": "sol_2",
+          "to": "sol_3"
+        },
+        {
+          "id": "se_3",
+          "from": "sol_2",
+          "to": "sol_4"
+        }
+      ]
+    },
+    "assignment": "Build a vertically partitioned user data design where the application sends requests through a router and can reach two separate partitions: one holding (user id, name) and another holding (user id, address). Ensure requests flow from the client through the router (not directly to partitions), and do not include a single monolithic users table."
+  }
+}

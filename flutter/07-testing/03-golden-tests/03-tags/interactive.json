@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main purpose of using tags in golden tests?",
+      "answers": [
+        {
+          "answer": "To make tests run faster",
+          "correct": false
+        },
+        {
+          "answer": "To organize and selectively run specific types of tests",
+          "correct": true
+        },
+        {
+          "answer": "To add metadata to test files",
+          "correct": false
+        },
+        {
+          "answer": "To mark tests as completed",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Where should tags be configured in a Flutter project?",
+      "answers": [
+        {
+          "answer": "In pubspec.yaml",
+          "correct": false
+        },
+        {
+          "answer": "In the test file",
+          "correct": false
+        },
+        {
+          "answer": "In dart_test.yaml",
+          "correct": true
+        },
+        {
+          "answer": "In README.md",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which command would you use to update only golden tests?",
+      "answers": [
+        {
+          "answer": "flutter test --golden",
+          "correct": false
+        },
+        {
+          "answer": "flutter test --update",
+          "correct": false
+        },
+        {
+          "answer": "flutter test --tags golden --update-goldens",
+          "correct": true
+        },
+        {
+          "answer": "flutter golden --update",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

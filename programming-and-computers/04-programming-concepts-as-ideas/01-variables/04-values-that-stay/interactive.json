@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a constant?",
+      "answers": [
+        {
+          "answer": "A variable whose value changes often as the program runs",
+          "correct": false
+        },
+        {
+          "answer": "A variable you set once and never change",
+          "correct": true
+        },
+        {
+          "answer": "A type of number that can only be whole",
+          "correct": false
+        },
+        {
+          "answer": "A placeholder that stores nothing",
+          "correct": false
+        }
+      ],
+      "explanation": "A constant is a variable you set once and never change, like a box sealed shut after being filled. This keeps values that shouldn't shift, such as pi, safely locked in place."
+    },
+    {
+      "question": "Which of these is the best candidate to store as a constant?",
+      "answers": [
+        {
+          "answer": "A player's current score in a game",
+          "correct": false
+        },
+        {
+          "answer": "The text the user just typed into a chat box",
+          "correct": false
+        },
+        {
+          "answer": "The value of pi used in math calculations",
+          "correct": true
+        },
+        {
+          "answer": "The current time of day",
+          "correct": false
+        }
+      ],
+      "explanation": "Pi never changes, so it is a perfect constant. Scores, user input, and the current time all change while the program runs, so they should be regular variables."
+    },
+    {
+      "question": "Why mark a value as a constant instead of a regular variable?",
+      "answers": [
+        {
+          "answer": "It makes the program run on more devices",
+          "correct": false
+        },
+        {
+          "answer": "It signals the value is meant to stay put and protects it from being changed",
+          "correct": true
+        },
+        {
+          "answer": "It automatically makes the value a number",
+          "correct": false
+        },
+        {
+          "answer": "It hides the value from other parts of the program",
+          "correct": false
+        }
+      ],
+      "explanation": "Marking a value as constant tells the computer and other readers that this value should not change, which prevents accidental edits and makes the code easier to understand."
+    }
+  ]
+}

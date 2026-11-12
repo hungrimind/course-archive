@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "A variable typed as 'any' can hold a string, a number, or any other value without causing a type error.",
+        "correct": true,
+        "explanation": "The 'any' type turns off type checking entirely, so the variable accepts any value with no errors."
+      },
+      {
+        "statement": "Using 'any' is the recommended way to type variables in TypeScript.",
+        "correct": false,
+        "explanation": "Using 'any' defeats the purpose of TypeScript. It is an escape hatch for rare situations, not a go-to solution."
+      },
+      {
+        "statement": "TypeScript will report an error if you call a method that does not exist on an 'any' variable.",
+        "correct": false,
+        "explanation": "Because 'any' disables type checking, TypeScript will not flag invalid method calls. The error would only appear at runtime."
+      }
+    ]
+  }
+}

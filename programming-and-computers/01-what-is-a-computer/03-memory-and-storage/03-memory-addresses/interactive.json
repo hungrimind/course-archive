@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is a memory address?",
+      "answers": [
+        {
+          "answer": "The physical location of your computer on a network",
+          "correct": false
+        },
+        {
+          "answer": "A unique number that identifies a specific spot in RAM",
+          "correct": true
+        },
+        {
+          "answer": "The name of a file stored on your hard drive",
+          "correct": false
+        },
+        {
+          "answer": "A password used to unlock protected memory",
+          "correct": false
+        }
+      ],
+      "explanation": "A memory address is a unique number that labels each spot in RAM, similar to the way each mailbox in a row has its own number. This lets the CPU refer to any specific location in memory."
+    },
+    {
+      "question": "When the CPU needs a piece of data from RAM, how does it find it?",
+      "answers": [
+        {
+          "answer": "It scans every location in RAM one by one until it finds the data",
+          "correct": false
+        },
+        {
+          "answer": "It asks for the data by its exact memory address",
+          "correct": true
+        },
+        {
+          "answer": "It guesses the location based on what the user is doing",
+          "correct": false
+        },
+        {
+          "answer": "It waits for RAM to send all the data automatically",
+          "correct": false
+        }
+      ],
+      "explanation": "The CPU doesn't search through RAM. It asks for the exact address, like saying 'give me what's in mailbox 4072.' This direct lookup is what makes RAM so fast."
+    },
+    {
+      "question": "Why is the numbered-address system one of the reasons RAM is so fast?",
+      "answers": [
+        {
+          "answer": "Because numbers are easier for humans to read than letters",
+          "correct": false
+        },
+        {
+          "answer": "Because it lets RAM compress data to take up less space",
+          "correct": false
+        },
+        {
+          "answer": "Because every location can be accessed directly by its address, with no searching needed",
+          "correct": true
+        },
+        {
+          "answer": "Because it prevents the CPU from making mistakes with data",
+          "correct": false
+        }
+      ],
+      "explanation": "Because each RAM location has a unique address, the CPU can jump straight to any spot without searching. This direct access is a key reason RAM is extremely fast."
+    }
+  ]
+}

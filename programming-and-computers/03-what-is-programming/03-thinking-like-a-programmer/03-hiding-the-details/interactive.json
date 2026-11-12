@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Abstraction means you must understand every internal detail before you can use something.",
+        "correct": false,
+        "explanation": "Abstraction is the opposite, it means hiding details you don't need. You can drive a car without understanding how the pistons work, just as programmers use tools without knowing every internal mechanism."
+      },
+      {
+        "statement": "When a programmer names a complex piece of logic 'send_email,' they are using abstraction.",
+        "correct": true,
+        "explanation": "By tucking the complicated steps of sending an email behind a simple name, the programmer hides the details. Anyone using 'send_email' doesn't need to know how it works internally."
+      },
+      {
+        "statement": "Abstraction makes programs harder to understand because it removes information.",
+        "correct": false,
+        "explanation": "Abstraction actually makes programs easier to understand. By hiding unnecessary details behind simple names, programmers can focus on the big picture without getting lost in complexity."
+      }
+    ]
+  }
+}

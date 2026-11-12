@@ -1,0 +1,48 @@
+{
+  "quiz": [
+    {
+      "question": "What does a union type in TypeScript allow you to do?",
+      "answers": [
+        {
+          "answer": "Combine two objects into one merged object",
+          "correct": false
+        },
+        {
+          "answer": "Allow a value to be one of several specified types",
+          "correct": true
+        },
+        {
+          "answer": "Create a new type that has all properties of multiple types",
+          "correct": false
+        },
+        {
+          "answer": "Convert a value from one type to another at runtime",
+          "correct": false
+        }
+      ],
+      "explanation": "A union type, written with the pipe | symbol, lets a variable hold a value of any one of the listed types. It does not merge objects or convert types."
+    },
+    {
+      "question": "What happens if you assign a boolean to a variable typed as string | number?",
+      "answers": [
+        {
+          "answer": "TypeScript silently converts it to a string",
+          "correct": false
+        },
+        {
+          "answer": "The value is stored as undefined",
+          "correct": false
+        },
+        {
+          "answer": "TypeScript reports a type error at compile time",
+          "correct": true
+        },
+        {
+          "answer": "It works fine because boolean is compatible with number",
+          "correct": false
+        }
+      ],
+      "explanation": "TypeScript enforces that only the types listed in the union can be assigned. Since boolean is not part of string | number, it produces a compile-time error."
+    }
+  ]
+}

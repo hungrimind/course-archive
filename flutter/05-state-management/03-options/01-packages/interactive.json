@@ -1,0 +1,25 @@
+{
+  "quiz": [
+    {
+      "question": "What is Provider primarily designed as?",
+      "answers": [
+        {
+          "answer": "A complete replacement for Flutter's state management",
+          "correct": false
+        },
+        {
+          "answer": "A wrapper around InheritedWidget to make it easier to use",
+          "correct": true
+        },
+        {
+          "answer": "A database management solution",
+          "correct": false
+        },
+        {
+          "answer": "A UI component library",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main job of a type in programming?",
+      "answers": [
+        {
+          "answer": "To make the code run faster",
+          "correct": false
+        },
+        {
+          "answer": "To tell the computer what kind of value it is and what operations are allowed",
+          "correct": true
+        },
+        {
+          "answer": "To give every value a unique name",
+          "correct": false
+        },
+        {
+          "answer": "To hide values from other parts of the program",
+          "correct": false
+        }
+      ],
+      "explanation": "Types describe what kind of value something is so the computer knows which operations make sense. Numbers can be added, strings can be joined, and booleans can be checked."
+    },
+    {
+      "question": "Why does 5 + \"banana\" usually cause a problem?",
+      "answers": [
+        {
+          "answer": "Because the word banana is too long",
+          "correct": false
+        },
+        {
+          "answer": "Because you cannot have letters in a program",
+          "correct": false
+        },
+        {
+          "answer": "Because you are mixing a number and a string without converting first",
+          "correct": true
+        },
+        {
+          "answer": "Because 5 is too small of a number",
+          "correct": false
+        }
+      ],
+      "explanation": "A number and a string are different types, and adding them together mixes operations that do not fit. You have to convert one to match the other before combining them."
+    },
+    {
+      "question": "Which pairing of type and operation makes sense?",
+      "answers": [
+        {
+          "answer": "Joining two booleans into one long word",
+          "correct": false
+        },
+        {
+          "answer": "Adding two numbers together to get a total",
+          "correct": true
+        },
+        {
+          "answer": "Subtracting one string from another",
+          "correct": false
+        },
+        {
+          "answer": "Multiplying a true/false value by a word",
+          "correct": false
+        }
+      ],
+      "explanation": "Adding numbers is a natural operation because both values share the same numeric type. The other options mix types in ways that do not have a sensible meaning."
+    }
+  ]
+}

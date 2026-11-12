@@ -1,0 +1,21 @@
+{
+  "truefalse": {
+    "statements": [
+      {
+        "statement": "Each short row on a breadboard typically has 5 holes connected internally.",
+        "correct": true,
+        "explanation": "Underneath the breadboard, metal strips connect each short row of 5 holes together, so inserting components into the same row links them electrically."
+      },
+      {
+        "statement": "Rows on the left side of the center gap connect to rows on the right side.",
+        "correct": false,
+        "explanation": "The center gap splits the board in two: rows on the left don't connect to rows on the right. This gap is sized to fit chips that straddle both sides."
+      },
+      {
+        "statement": "You need to solder components onto a breadboard to make connections.",
+        "correct": false,
+        "explanation": "Breadboards are designed for solderless prototyping. You build circuits by pushing wires and components into holes, with no soldering needed."
+      }
+    ]
+  }
+}

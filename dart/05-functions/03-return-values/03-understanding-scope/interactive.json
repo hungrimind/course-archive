@@ -1,0 +1,67 @@
+{
+  "quiz": [
+    {
+      "question": "Which of the following best describes the concept of \"scope\" in Dart?",
+      "answers": [
+        {
+          "answer": "A) The data type of a variable, such as `String` or `int`.",
+          "correct": false
+        },
+        {
+          "answer": "B) The process of assigning an initial value to a variable.",
+          "correct": false
+        },
+        {
+          "answer": "C) The portion of the code where a variable can be accessed.",
+          "correct": true
+        },
+        {
+          "answer": "D) A special type of function that does not return a value.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Review the following Dart code:\n\n\n```dart\nvoid main() {\n  greetUser();\n  print(message); \n}\n\nvoid greetUser() {\n  var message = 'Hello from greetUser!';\n  print(message);\n}\n```\n\nWhat will happen when you try to run this code?",
+      "answers": [
+        {
+          "answer": "A) It will print \"Hello from greetUser!\" twice.",
+          "correct": false
+        },
+        {
+          "answer": "B) It will cause an error because `message` is not accessible in `main`.",
+          "correct": true
+        },
+        {
+          "answer": "C) It will print \"Hello from greetUser!\" and then print `null`.",
+          "correct": false
+        },
+        {
+          "answer": "D) It will only print \"Hello from greetUser!\" and then exit successfully.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "According to the lesson, what is the recommended best practice for managing a variable's scope?",
+      "answers": [
+        {
+          "answer": "A) Always define variables outside of any function to ensure they can be accessed everywhere.",
+          "correct": false
+        },
+        {
+          "answer": "B) Pass every variable as a parameter to every function.",
+          "correct": false
+        },
+        {
+          "answer": "C) Use the `final` keyword for all variables to lock their scope.",
+          "correct": false
+        },
+        {
+          "answer": "D) Keep the scope of a variable as small as possible, only making it accessible where needed.",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

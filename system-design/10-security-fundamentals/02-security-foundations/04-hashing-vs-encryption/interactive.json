@@ -1,0 +1,22 @@
+{
+  "matching": {
+    "categories": [
+      {
+        "label": "Hashing",
+        "items": [
+          "One-way function",
+          "Data integrity",
+          "SHA-256"
+        ]
+      },
+      {
+        "label": "Encryption",
+        "items": [
+          "Revert with key",
+          "Data confidentiality",
+          "AES"
+        ]
+      }
+    ]
+  }
+}
