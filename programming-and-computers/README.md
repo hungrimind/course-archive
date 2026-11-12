@@ -2,7 +2,7 @@
 
 Learn the principles of how programming and computers work.
 
-6 modules · 69 lessons
+6 modules · 68 lessons
 
 [← All courses](../README.md)
 
@@ -117,4 +117,3 @@ Learn the principles of how programming and computers work.
   1. [Key Takeaways](06-final-certification/01-course-review/01-key-takeaways/README.md)
 - **Assessment & Certificate**
   1. [Course Review](06-final-certification/02-assessment-certificate/01-course-review/README.md)
-  2. [Claim Your Certificate](06-final-certification/02-assessment-certificate/02-claim-your-certificate/README.md)

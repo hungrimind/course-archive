@@ -2,7 +2,7 @@
 
 An interactive Dart course where you code, test, and build apps directly in your browser.
 
-8 modules · 90 lessons · 42 coding challenges
+8 modules · 89 lessons · 42 coding challenges
 
 [← All courses](../README.md)
 
@@ -144,4 +144,3 @@ An interactive Dart course where you code, test, and build apps directly in your
 
 - **Thank you**
   1. [Review](08-conclusion/01-thank-you/01-review/README.md)
-  2. [Certificate](08-conclusion/01-thank-you/02-certificate/README.md)

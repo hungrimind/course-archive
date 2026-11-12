@@ -19,9 +19,30 @@ A **model from queries** approach means you design your storage shape based on t
 
 This JSON-like structure represents a denormalized model, optimizing for quick access to a user profile and recent posts in a single read.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a diagram that shows how an API designs and uses a denormalized storage shape based on the application's hottest query patterns. Include a 'Query Patterns' step that leads to a denormalized document store, ensure the API can reach the denormalized store via a valid path (not directly), and include a sync worker to represent the extra work required to keep duplicated/denormalized copies in sync.
+
+Available components: Client App, API Service, Query Patterns (Hot Reads/Writes), Denormalized Document Store, Normalized Relational DB, Sync Worker (Keep Copies in Sync), Cache Layer
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client App → API Service
+- API Service → Query Patterns (Hot Reads/Writes)
+- Query Patterns (Hot Reads/Writes) → Denormalized Document Store
+- API Service → Cache Layer
+- Cache Layer → Denormalized Document Store
+- API Service → Normalized Relational DB
+- Normalized Relational DB → Sync Worker (Keep Copies in Sync)
+- Sync Worker (Keep Copies in Sync) → Denormalized Document Store
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

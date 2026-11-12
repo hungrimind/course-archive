@@ -7,9 +7,28 @@ A **database bottleneck** occurs when the database becomes a limiting factor in 
 
 To mitigate database bottlenecks, consider techniques like caching, database partitioning, and optimizing queries to distribute and reduce load.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build an architecture that mitigates a database bottleneck by (1) routing client traffic through an application tier, (2) adding a cache to reduce database reads, and (3) distributing database load using at least one read replica and at least one shard/partition. Ensure there is a request path from the client to the primary database for writes, but do not allow clients to connect directly to the primary database.
+
+Available components: Client, Load Balancer, App Server, Cache Layer, DB Primary (Writes), DB Read Replica, DB Shard / Partition
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client → Load Balancer
+- Load Balancer → App Server
+- App Server → Cache Layer
+- App Server → DB Read Replica
+- App Server → DB Primary (Writes)
+- App Server → DB Shard / Partition
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

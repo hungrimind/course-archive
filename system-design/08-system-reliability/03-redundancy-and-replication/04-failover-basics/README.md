@@ -9,9 +9,30 @@ Primary System  →  Standby System
 > [!note]
 > Failover is crucial for maintaining high availability in systems, minimizing downtime during unexpected failures.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a failover architecture where user traffic goes through a failover component (not directly to the primary), includes both a primary and standby system, and ensures users can reach either system via the traffic path so automatic switching is possible during failures.
+
+Available components: User Client, Health Check Monitor, Primary System, Standby System, Failover Router, Shared Storage
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- User Client → Failover Router
+- Failover Router → Primary System
+- Failover Router → Standby System
+- Health Check Monitor → Primary System
+- Health Check Monitor → Standby System
+- Health Check Monitor → Failover Router
+- Primary System → Shared Storage
+- Standby System → Shared Storage
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

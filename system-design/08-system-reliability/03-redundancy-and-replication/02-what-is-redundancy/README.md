@@ -5,9 +5,29 @@ A **redundancy** is a system design strategy where additional components or proc
 > [!tip]
 > Redundancy can be implemented through multiple servers, data replication, or backup systems. This helps eliminate single points of failure.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a redundant architecture that avoids single points of failure: route client traffic through a load balancer to multiple app servers, and include both a database replica and a backup destination. Also ensure clients do not connect directly to app servers, and that the replica is connected into the end-to-end system flow.
+
+Available components: Client, Load Balancer, App Server, Primary Database, Replica Database, Backup Storage
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client → Load Balancer
+- Load Balancer → App Server
+- Load Balancer → App Server
+- App Server → Primary Database
+- App Server → Primary Database
+- Primary Database → Replica Database
+- Primary Database → Backup Storage
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

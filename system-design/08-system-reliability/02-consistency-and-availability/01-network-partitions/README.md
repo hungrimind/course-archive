@@ -5,9 +5,28 @@ A **network partition** occurs when a network splits into isolated segments, pre
 > [!tip]
 > Design systems to handle partitions gracefully, often by choosing between consistency and availability based on the CAP theorem.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a partition-tolerant request flow. Include a load balancer and an app service, and ensure storage is accessed through a quorum/consensus layer (not directly). Add at least one replica database. Your diagram must provide a complete path from the client to the primary database while preventing direct app-to-database connections that would allow unsafe reads/writes during a network partition.
+
+Available components: Client, Load Balancer, App Service, Quorum / Consensus Layer, Primary DB (Leader), Replica DB (Follower), Cache (Stale-tolerant)
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client → Load Balancer
+- Load Balancer → App Service
+- App Service → Quorum / Consensus Layer
+- Quorum / Consensus Layer → Primary DB (Leader)
+- Quorum / Consensus Layer → Replica DB (Follower)
+- App Service → Cache (Stale-tolerant)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

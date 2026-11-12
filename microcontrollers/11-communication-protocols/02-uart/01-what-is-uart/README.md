@@ -8,9 +8,29 @@ The key trick: each device's TX connects to the other device's RX. Device A talk
 
 There's no shared clock wire -- that's what "asynchronous" means. Both devices just have to agree ahead of time on how fast to send bits.
 
-## Exercise
+## Exercise: Identify the Signals
 
-On the platform this lesson ended with an interactive signal-matching exercise. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+UART uses just two wires for communication. Identify which signal is TX (transmit) and which is RX (receive). Hint: TX sends data first in this exchange.
+
+Protocol: UART
+
+```
+ Signal 1  ‾‾_‾_‾‾__‾‾‾‾‾__‾_‾‾‾
+ Signal 2  ‾‾‾‾‾‾‾_‾‾__‾_‾‾_‾‾‾‾
+```
+
+Label options: TX, RX, SCLK, SDA
+
+<details>
+<summary>Answer</summary>
+
+- Signal 1: TX
+- Signal 2: RX
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

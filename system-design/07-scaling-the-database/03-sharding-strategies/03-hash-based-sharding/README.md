@@ -8,9 +8,29 @@ Hash(User ID) % Number of Shards = Shard Index
 
 Hash-based sharding is effective for uniform distribution but may complicate range queries.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build an architecture that routes requests to one of multiple database shards using a hash-based sharding strategy. Your diagram must include a shard router that uses a hash function to compute the shard index, and at least three shard databases. Ensure requests can flow from the client to a shard database through the routing layer, and avoid connecting the gateway directly to any database shard.
+
+Available components: Client App, API Gateway, Shard Router, Hash Function, Shard 1 (DB), Shard 2 (DB), Shard 3 (DB)
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client App → API Gateway
+- API Gateway → Shard Router
+- Shard Router → Hash Function
+- Hash Function → Shard Router
+- Shard Router → Shard 1 (DB)
+- Shard Router → Shard 2 (DB)
+- Shard Router → Shard 3 (DB)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

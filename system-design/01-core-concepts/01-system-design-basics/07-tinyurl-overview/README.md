@@ -24,9 +24,28 @@ If two different long URLs produce the same short code (a **collision**), you ca
 > [!tip]
 > TinyURL systems are often **read-heavy**: many more redirects than new short-link creations. This will matter later when we talk about caching.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a TinyURL-style architecture that supports both shortening and redirecting. Your diagram must include an API/Web Server, an ID generator to create short codes, and a database to store short_code → long_url mappings. Ensure the client reaches the database only through the server (no direct client→DB connection), and make sure there is an end-to-end path from the client to the database for storing and/or looking up mappings.
+
+Available components: Client (Browser/App), API / Web Server, Short Code / ID Generator, URL Mapping Database, Cache (Redirect Lookups), Collision Check + Retry
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client (Browser/App) → API / Web Server
+- API / Web Server → Short Code / ID Generator
+- Short Code / ID Generator → Collision Check + Retry
+- Collision Check + Retry → URL Mapping Database
+- API / Web Server → Cache (Redirect Lookups)
+- Cache (Redirect Lookups) → URL Mapping Database
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

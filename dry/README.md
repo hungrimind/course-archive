@@ -2,7 +2,7 @@
 
 Learn to identify and eliminate code duplication, making your codebase cleaner and easier to maintain.
 
-5 modules · 27 lessons · 6 coding challenges
+5 modules · 26 lessons · 6 coding challenges
 
 [← All courses](../README.md)
 
@@ -58,4 +58,3 @@ Learn to identify and eliminate code duplication, making your codebase cleaner a
 - **The Big Picture**
   1. [D.R.Y as a Guide](05-conclusion/01-the-big-picture/01-d-r-y-as-a-guide/README.md)
   2. [Review](05-conclusion/01-the-big-picture/02-review/README.md)
-  3. [Certificate](05-conclusion/01-the-big-picture/03-certificate/README.md)

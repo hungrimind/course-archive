@@ -2,7 +2,7 @@
 
 Learn how electricity works, from voltage, current, and resistance to circuits, Ohm's law, and common components like resistors, LEDs, and capacitors.
 
-9 modules · 73 lessons
+9 modules · 72 lessons
 
 [← All courses](../README.md)
 
@@ -133,4 +133,3 @@ Learn how electricity works, from voltage, current, and resistance to circuits, 
   1. [Key Takeaways](09-final-certification/01-course-review/01-key-takeaways/README.md)
 - **Assessment & Certificate**
   1. [Review](09-final-certification/02-assessment-certificate/01-review/README.md)
-  2. [Claim Your Certificate](09-final-certification/02-assessment-certificate/02-claim-your-certificate/README.md)

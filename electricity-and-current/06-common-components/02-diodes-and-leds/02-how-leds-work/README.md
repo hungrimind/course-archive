@@ -6,9 +6,25 @@ An **LED** (light-emitting diode) is a special diode that produces light when cu
 
 LEDs are efficient and long-lasting compared to traditional bulbs, which is why they've taken over everything from phone screens to streetlights. But they're delicate -- *always* pair an LED with a resistor, or too much current will destroy it almost immediately.
 
-## Exercise
+## Exercise: Build the Circuit
 
-On the platform this lesson ended with an interactive circuit builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Wire the blue LED with a resistor so it lights up safely. The 3.3V battery barely exceeds the LED's 3V forward voltage, so the 100Ω resistor keeps current at a gentle 3mA.
+
+Available components: 3.3V Battery, 100Ω Resistor, Blue LED
+
+<details>
+<summary>Solution</summary>
+
+Wires:
+
+- 3.3V Battery (+) → 100Ω Resistor (in)
+- 100Ω Resistor (out) → Blue LED (anode)
+- Blue LED (cathode) → 3.3V Battery (-)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

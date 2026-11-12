@@ -9,9 +9,24 @@ Server → Response → Client
 
 This architecture allows centralized management and resource sharing, enabling efficient communication between different parts of a system.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a basic client-server architecture where a client communicates with a server over a network. Include a network layer, connect client → network → server to represent request/response flow, and avoid directly connecting the client to the server.
+
+Available components: Client App, Network / Internet, Server (API), Auth / Access Control, Database
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client App → Network / Internet
+- Network / Internet → Server (API)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

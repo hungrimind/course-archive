@@ -2,7 +2,7 @@
 
 An interactive Flutter course where you code, test, and build apps directly in your browser.
 
-12 modules · 132 lessons · 64 coding challenges
+12 modules · 131 lessons · 64 coding challenges
 
 [← All courses](../README.md)
 
@@ -217,4 +217,3 @@ An interactive Flutter course where you code, test, and build apps directly in y
 - **Thank You**
   1. [Keep Going](12-conclusion/01-thank-you/01-keep-going/README.md)
   2. [Next Steps](12-conclusion/01-thank-you/02-next-steps/README.md)
-  3. [Certificate](12-conclusion/01-thank-you/03-certificate/README.md)

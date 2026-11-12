@@ -17,9 +17,26 @@ function getData(key: string): string {
 > [!note]
 > The Cache-Aside Pattern is beneficial for data that doesn't change frequently, allowing the cache to remain current without complex invalidation logic.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a cache-aside read path: add an Application Service that the Client can reach, and connect the app to both a Cache and a Database so the app can check the cache first and fall back to the database on a miss.
+
+Available components: Client, Application Service, Cache (Redis/Memcached), Database, Metrics/Logging
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client → Application Service
+- Application Service → Cache (Redis/Memcached)
+- Application Service → Database
+- Application Service → Metrics/Logging
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

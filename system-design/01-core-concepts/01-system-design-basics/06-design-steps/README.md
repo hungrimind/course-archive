@@ -27,9 +27,28 @@ A beginner-friendly system design loop:
 > [!note]
 > You don’t “finish” system design in one pass, good designs come from iterating as you learn more constraints.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a beginner-friendly system design loop: include steps for estimating scale, sketching a high-level architecture, and identifying bottlenecks/risks. Ensure the flow starts from clarifying requirements and goes next to a scale estimate before any architecture sketch.
+
+Available components: Clarify Requirements, Estimate Scale (QPS/Data), Sketch High-Level Architecture, Find Bottlenecks & Risks, Iterate on Tradeoffs, Loop Back / Refine
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Clarify Requirements → Estimate Scale (QPS/Data)
+- Estimate Scale (QPS/Data) → Sketch High-Level Architecture
+- Sketch High-Level Architecture → Find Bottlenecks & Risks
+- Find Bottlenecks & Risks → Iterate on Tradeoffs
+- Iterate on Tradeoffs → Loop Back / Refine
+- Loop Back / Refine → Clarify Requirements
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

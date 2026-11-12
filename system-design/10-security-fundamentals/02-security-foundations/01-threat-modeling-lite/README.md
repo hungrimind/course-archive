@@ -11,9 +11,27 @@ Begin by identifying critical assets and potential threats, then design defenses
 > [!warning]
 > Ignoring threat modeling can leave critical vulnerabilities unaddressed, increasing the risk of a security breach.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a simple threat modeling workflow: start from identifying assets, include a step to identify threats, ensure threats feed into prioritizing risks, and ensure the process leads to mitigating risks. Your mitigation should result in at least one concrete security controls output, and the flow should not skip directly from assets to mitigations.
+
+Available components: Identify Assets, Identify Threats, Prioritize Risks, Mitigate Risks, Security Controls, Monitoring & Logging
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Identify Assets → Identify Threats
+- Identify Threats → Prioritize Risks
+- Prioritize Risks → Mitigate Risks
+- Mitigate Risks → Security Controls
+- Mitigate Risks → Monitoring & Logging
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

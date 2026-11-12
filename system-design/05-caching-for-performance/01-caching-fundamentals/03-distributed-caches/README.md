@@ -34,9 +34,28 @@ const node2Cache: Record<string, string> = { user124: "Profile Data" };
 > [!note]
 > In real systems, your app usually talks to the distributed cache through a client library (or a proxy) that knows which node to use for a given key.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a distributed-cache architecture where client requests reach the application tier, the application uses a cache client/proxy layer (not direct cache-node connections), and the cache is distributed across multiple cache nodes. Ensure the application can still read from the primary database, and avoid cache nodes talking directly to the database.
+
+Available components: Client, Load Balancer, App Server Fleet, Cache Client Library / Proxy, Cache Node, Primary Database
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client → Load Balancer
+- Load Balancer → App Server Fleet
+- App Server Fleet → Cache Client Library / Proxy
+- Cache Client Library / Proxy → Cache Node
+- Cache Client Library / Proxy → Cache Node
+- App Server Fleet → Primary Database
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

@@ -2,7 +2,7 @@
 
 Learn how APIs, databases, caching, and load balancing fit together to build scalable systems.
 
-11 modules · 130 lessons · 7 coding challenges
+11 modules · 129 lessons · 7 coding challenges
 
 [← All courses](../README.md)
 
@@ -197,4 +197,3 @@ Learn how APIs, databases, caching, and load balancing fit together to build sca
   1. [Key Takeaways](11-final-certification/01-course-review/01-key-takeaways/README.md)
 - **Assessment & Certificate**
   1. [Review](11-final-certification/02-assessment-certificate/01-review/README.md)
-  2. [Claim Your Certificate](11-final-certification/02-assessment-certificate/02-claim-your-certificate/README.md)

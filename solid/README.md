@@ -2,7 +2,7 @@
 
 Learn the principles of how software should be structured, so you can guide AI to build better systems.
 
-7 modules · 37 lessons · 14 coding challenges
+7 modules · 36 lessons · 14 coding challenges
 
 [← All courses](../README.md)
 
@@ -76,4 +76,3 @@ Learn the principles of how software should be structured, so you can guide AI t
   2. [S.O.L.I.D as a Guide](07-conclusion/01-the-big-picture/02-s-o-l-i-d-as-a-guide/README.md)
   3. [Next Steps in Design](07-conclusion/01-the-big-picture/03-next-steps-in-design/README.md)
   4. [Review](07-conclusion/01-the-big-picture/04-review/README.md)
-  5. [Certificate](07-conclusion/01-the-big-picture/05-certificate/README.md)

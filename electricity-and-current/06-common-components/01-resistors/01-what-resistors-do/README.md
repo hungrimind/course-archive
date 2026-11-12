@@ -8,9 +8,25 @@ Without resistors, sensitive components like LEDs would receive too much current
 
 Resistors are the single most common component in electronics. Nearly every circuit you'll ever see has at least one.
 
-## Exercise
+## Exercise: Build the Circuit
 
-On the platform this lesson ended with an interactive circuit builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a circuit with the LED. Without the resistor, the LED would burn out — add one to protect it. The 150Ω resistor limits current to exactly 20mA.
+
+Available components: 5V Battery, 150Ω Resistor, Red LED
+
+<details>
+<summary>Solution</summary>
+
+Wires:
+
+- 5V Battery (+) → 150Ω Resistor (in)
+- 150Ω Resistor (out) → Red LED (anode)
+- Red LED (cathode) → 5V Battery (-)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

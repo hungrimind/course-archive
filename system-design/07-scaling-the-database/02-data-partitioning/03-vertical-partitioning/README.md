@@ -9,9 +9,25 @@ Table 2: User IDs, Addresses
 
 Each partition can be stored and accessed independently, optimizing queries that require only certain columns.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a vertically partitioned user data design where the application sends requests through a router and can reach two separate partitions: one holding (user id, name) and another holding (user id, address). Ensure requests flow from the client through the router (not directly to partitions), and do not include a single monolithic users table.
+
+Available components: Application / Client, Query Router, User Core Partition (id, name), User Address Partition (id, address), Join / Aggregator, Monolithic Users Table (anti-pattern)
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Application / Client → Query Router
+- Query Router → User Core Partition (id, name)
+- Query Router → User Address Partition (id, address)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

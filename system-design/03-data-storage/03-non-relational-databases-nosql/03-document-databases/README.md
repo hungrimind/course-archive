@@ -15,9 +15,28 @@ This flexibility makes document databases ideal for applications requiring rapid
 > [!note]
 > Document databases handle nested data well, making them suitable for complex, hierarchical data structures.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a simple architecture for an app that stores flexible, JSON-like documents and supports real-time analytics. Include an API layer between the client and the database, ensure there is a valid request path from the client to the document database through the API (without a direct client-to-database connection), and add an analytics worker that is connected to the document database.
+
+Available components: Web Client, API Service, Document Database (JSON/BSON), Search Index, Real-time Analytics Worker, Object Storage (Media/Files)
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Web Client → API Service
+- API Service → Document Database (JSON/BSON)
+- API Service → Search Index
+- API Service → Object Storage (Media/Files)
+- Document Database (JSON/BSON) → Real-time Analytics Worker
+- Real-time Analytics Worker → Document Database (JSON/BSON)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

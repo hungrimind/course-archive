@@ -11,9 +11,27 @@ let nearestCDNServer = 'Server_US_East';
 > [!tip]
 > CDNs improve load times and reduce server load, enhancing user experience by serving content from the nearest location.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a basic CDN request flow that routes a user to a CDN edge through a routing layer, ensures the CDN can fetch from an origin on cache misses, and avoids direct user access to the origin. Include the key components necessary to represent edge caching and an origin-backed content source.
+
+Available components: User Browser, Geo DNS / Request Router, CDN Edge Server, Origin Web Server, Static Asset Storage, WAF / DDoS Protection
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- User Browser → Geo DNS / Request Router
+- Geo DNS / Request Router → WAF / DDoS Protection
+- WAF / DDoS Protection → CDN Edge Server
+- CDN Edge Server → Origin Web Server
+- Origin Web Server → Static Asset Storage
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

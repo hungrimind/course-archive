@@ -22,9 +22,29 @@ So the shared dependency becomes the new ceiling.
 > [!warning]
 > When you hit a scaling limit, the next step is usually to remove or reduce the shared bottleneck (e.g., add caching, add read replicas, shard/partition, or introduce a queue).
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a small scalable web architecture that demonstrates a scaling limit caused by a shared dependency. Your diagram must: (1) route client traffic through a load balancer, (2) scale the application tier horizontally with at least two app servers, (3) include a primary database that the client traffic depends on (through the app tier), (4) avoid connecting the load balancer directly to the database, and (5) include a shared cache used by the app servers to reduce pressure on the shared database bottleneck.
+
+Available components: Client, Load Balancer, App Server (Stateless), Cache (Shared), Primary Database (Write), Read Replica, Message Queue, Background Worker
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client → Load Balancer
+- Load Balancer → App Server (Stateless)
+- Load Balancer → App Server (Stateless)
+- App Server (Stateless) → Cache (Shared)
+- App Server (Stateless) → Cache (Shared)
+- App Server (Stateless) → Primary Database (Write)
+- App Server (Stateless) → Primary Database (Write)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

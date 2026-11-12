@@ -13,9 +13,28 @@ Node3 (50)
 > [!tip]
 > Consistent hashing reduces the number of data items that need to be remapped when scaling your system, enhancing performance and stability.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a consistent-hashing-based routing flow: include a hash function and a consistent hash ring, ensure there are at least two storage nodes reachable from the client via the hashing/ring path, and avoid directly connecting the client (or the hash function) straight to a specific storage node.
+
+Available components: Client, Hash Function, Consistent Hash Ring, Storage Node, Replica Node, Data Item (Key)
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Client → Hash Function
+- Data Item (Key) → Hash Function
+- Hash Function → Consistent Hash Ring
+- Consistent Hash Ring → Storage Node
+- Consistent Hash Ring → Storage Node
+- Storage Node → Replica Node
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

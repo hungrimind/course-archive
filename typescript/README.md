@@ -2,7 +2,7 @@
 
 Learn TypeScript from variables to generics, with coding challenges you solve directly in your browser.
 
-22 modules · 200 lessons · 142 coding challenges
+22 modules · 199 lessons · 142 coding challenges
 
 [← All courses](../README.md)
 
@@ -338,4 +338,3 @@ Learn TypeScript from variables to generics, with coding challenges you solve di
   1. [Key Takeaways](22-final-certification/01-course-review/01-key-takeaways/README.md)
 - **Assessment & Certificate**
   1. [Review](22-final-certification/02-assessment-certificate/01-review/README.md)
-  2. [Claim Your Certificate](22-final-certification/02-assessment-certificate/02-claim-your-certificate/README.md)

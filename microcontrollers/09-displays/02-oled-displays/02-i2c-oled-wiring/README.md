@@ -9,9 +9,41 @@ The default I2C address is usually `0x3C`, though some modules use `0x3D`. You c
 > [!warning]
 > Double-check whether your OLED module needs 3.3V or 5V. Many SSD1306 boards accept both, but feeding 5V to a 3.3V-only module will damage it.
 
-## Exercise
+## Exercise: Map the Pins
 
-On the platform this lesson ended with an interactive pinout-mapping exercise. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+An I2C OLED display needs four connections: power, ground, SDA, and SCL. Find these pins on the GPIO header.
+
+Label options: 3.3V, GPIO2 (SDA1), GPIO3 (SCL1), GND, 5V, GPIO4
+
+| Pin | Label |
+|---|---|
+| 1 | **?** |
+| 2 | 5V |
+| 3 | **?** |
+| 4 | 5V |
+| 5 | **?** |
+| 6 | **?** |
+| 7 | GPIO4 |
+| 8 | GPIO14 |
+| 9 | GND |
+| 10 | GPIO15 |
+| 11 | GPIO17 |
+| 12 | GPIO18 |
+| 13 | GPIO27 |
+| 14 | GND |
+
+<details>
+<summary>Answer</summary>
+
+- Pin 1: 3.3V
+- Pin 3: GPIO2 (SDA1)
+- Pin 5: GPIO3 (SCL1)
+- Pin 6: GND
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

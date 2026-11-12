@@ -6,9 +6,28 @@ In a **parallel circuit**, components are connected side by side, each on its ow
 
 The big advantage: if one path breaks, the others keep working. That's why your house is wired in parallel -- a burned-out kitchen light doesn't kill the living room.
 
-## Exercise
+## Exercise: Build the Circuit
 
-On the platform this lesson ended with an interactive circuit builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Wire two LEDs in parallel so each has its own resistor. Both should light up, and removing one shouldn't affect the other. Each branch carries 20mA.
+
+Available components: 5V Battery, 150Ω Resistor, 150Ω Resistor, Green LED, Green LED
+
+<details>
+<summary>Solution</summary>
+
+Wires:
+
+- 5V Battery (+) → 150Ω Resistor (in)
+- 5V Battery (+) → 150Ω Resistor (in)
+- 150Ω Resistor (out) → Green LED (anode)
+- 150Ω Resistor (out) → Green LED (anode)
+- Green LED (cathode) → 5V Battery (-)
+- Green LED (cathode) → 5V Battery (-)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

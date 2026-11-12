@@ -9,9 +9,29 @@ Inputs (Logs, Metrics, Traces) → Insights
 > [!tip]
 > Observability is crucial for maintaining system health and ensuring quick responses to problems.
 
-## Exercise
+## Exercise: Build the System
 
-On the platform this lesson ended with a drag-and-drop system diagram builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build an observability pipeline where an application emits the three core signals (logs, metrics, traces) into dedicated collectors, the signals are stored centrally, and insights are produced via dashboards & alerting. Ensure there is a valid end-to-end path from the application to dashboards/alerting, and do not connect the application directly to dashboards/alerting.
+
+Available components: Application Service, Log Collector, Metrics Collector, Trace Collector, Telemetry Storage, Dashboards & Alerting
+
+<details>
+<summary>Solution</summary>
+
+Connections:
+
+- Application Service → Log Collector
+- Application Service → Metrics Collector
+- Application Service → Trace Collector
+- Log Collector → Telemetry Storage
+- Metrics Collector → Telemetry Storage
+- Trace Collector → Telemetry Storage
+- Telemetry Storage → Dashboards & Alerting
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

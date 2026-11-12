@@ -10,9 +10,32 @@
 
 > [!tip] When in doubt: need speed? SPI. Need simplicity with many devices? I2C. Just talking to one module? UART.
 
-## Exercise
+## Exercise: Identify the Signals
 
-On the platform this lesson ended with an interactive signal-matching exercise. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+This is an SPI communication. Identify the three unlabeled signal lines by examining their timing patterns. The clock (SCLK) is already labeled.
+
+Protocol: SPI
+
+```
+     SCLK  _‾_‾_‾_‾_‾_‾_‾_‾_
+ Signal 2  __‾‾__‾‾‾‾____‾‾_
+ Signal 3  ____‾‾‾‾__‾‾_____
+ Signal 4  ‾_______________‾
+```
+
+Label options: MOSI, MISO, CS, SDA, TX
+
+<details>
+<summary>Answer</summary>
+
+- Signal 2: MOSI
+- Signal 3: MISO
+- Signal 4: CS
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

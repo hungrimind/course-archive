@@ -9,9 +9,25 @@ A **resistor** placed in series with the LED limits the current to a safe level.
 > [!tip]
 > This is the core idea behind all circuit protection: put something in the path that controls how much current flows.
 
-## Exercise
+## Exercise: Build the Circuit
 
-On the platform this lesson ended with an interactive circuit builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Build a safe LED circuit. If you skip the resistor, the validation will show you why it's needed.
+
+Available components: GPIO Pin (3.3V), 330Ω Resistor, Red LED
+
+<details>
+<summary>Solution</summary>
+
+Wires:
+
+- GPIO Pin (3.3V) (right) → 330Ω Resistor (left)
+- 330Ω Resistor (right) → Red LED (left)
+- Red LED (right) → GPIO Pin (3.3V) (left)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 

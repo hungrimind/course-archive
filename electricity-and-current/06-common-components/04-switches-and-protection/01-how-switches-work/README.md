@@ -6,9 +6,26 @@ A **switch** connects or disconnects a circuit path by making or breaking physic
 
 Push buttons, toggle switches, and slide switches are all variations of this same idea. Even a touchscreen ultimately triggers a digital switch inside the device's processor. The concept is ancient, but it's still at the heart of every interaction you have with electronics.
 
-## Exercise
+## Exercise: Build the Circuit
 
-On the platform this lesson ended with an interactive circuit builder. Its full definition (components, rules and the expected answer) is in [interactive.json](interactive.json).
+Add a switch to control the LED. The switch should turn the light on and off. When closed, current flows through the 220Ω resistor and LED at 13.6mA.
+
+Available components: 5V Battery, 220Ω Resistor, Red LED, Switch
+
+<details>
+<summary>Solution</summary>
+
+Wires:
+
+- 5V Battery (+) → Switch (in)
+- Switch (out) → 220Ω Resistor (in)
+- 220Ω Resistor (out) → Red LED (anode)
+- Red LED (cathode) → 5V Battery (-)
+
+</details>
+
+
+_The full exercise definition is in [interactive.json](interactive.json)._
 
 ---
 
